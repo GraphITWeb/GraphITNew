@@ -9,7 +9,7 @@ interface InputProps {
     setDisabled?: (value: boolean) => void;
     setError?: (value: boolean) => void;
     setValue: (value: string) => void;
-    value: never;
+    value: string;
     password?: boolean;
     letter?: boolean;
     number?: boolean;
