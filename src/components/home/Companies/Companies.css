@@ -1,0 +1,32 @@
+.companies{
+    display: flex;
+    padding: 76px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    position: relative;
+}
+
+.scrollable__block {
+    width: 100%;
+    overflow: hidden;
+    margin: 64px 0;
+}
+
+.scrollable__block__items {
+    display: flex;
+    animation: swipe 10s linear infinite;
+    width: 4752px;
+    user-select: none;
+}
+@keyframes swipe {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-33%);
+    }
+}

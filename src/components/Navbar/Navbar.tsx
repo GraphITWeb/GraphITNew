@@ -2,7 +2,7 @@
 import './Navbar.css';
 import React from "react";
 import Link from "next/link";
-import Button from "@/components/Button/Button";
+import Button from "@/components/UI/Button/Button";
 
 const Navbar = () => {
     return (

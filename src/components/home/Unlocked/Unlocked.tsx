@@ -27,7 +27,7 @@ const Unlocked = () => {
     }, []);
 
     return (
-        <div id="container" style={{ position: "relative", display:'flex',flexDirection:'column',width:'100%',padding:80,gap:'30vh',marginTop:'50vh',transition: 'opacity 0.5s ease', }}>
+        <div id="container" style={{ position: "relative", display:'flex',flexDirection:'column',width:'100%',padding:80,gap:130,marginTop:'50vh',transition: 'opacity 0.5s ease', }}>
             <h1 style={{
                 fontSize: 120,
                 textAlign: 'center',

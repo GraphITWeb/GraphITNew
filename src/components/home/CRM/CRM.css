@@ -1,0 +1,24 @@
+.CRM__block{
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+    border-radius: 24px;
+    background: var(--surface-blue);
+    position: relative;
+    z-index: -1;
+}
+.CRM__block__description{
+    border-radius: 12px;
+    border: 1px solid #1E1E4D;
+    background: #09091A;
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    align-self: stretch;
+    position: relative;
+}
