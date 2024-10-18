@@ -28,6 +28,23 @@ body {
   margin: 0;
   scroll-behavior: smooth;
 }
+*::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--orange); /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Rounded edges */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--orange); /* Color on hover */
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--surface-blue); /* Background of the scrollbar track */
+  border-radius: 6px; /* Rounded edges */
+}
 
 body {
   color: var(--orange);
