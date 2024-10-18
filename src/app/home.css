@@ -122,7 +122,7 @@
     background: #09091A;
     opacity: 0.6;
 }
-.nextgen__block__item .active{
+.nextgen__block__item.active{
     opacity: 1;
 }
 .feedback__block{
