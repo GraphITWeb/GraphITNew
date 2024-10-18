@@ -1,0 +1,19 @@
+nav{
+    display: flex;
+    padding: 24px 80px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    background: var(--primary);
+}
+.nav__logo__text{
+    color: var(--white);
+    font-family: var(--hanken-grotesk);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+a small{
+    color: var(--white);
+}

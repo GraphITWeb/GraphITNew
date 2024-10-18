@@ -1,0 +1,60 @@
+.myBtn {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    background: #F23704;
+    cursor: pointer;
+    transition: 150ms;
+    padding: 8px 12px;
+    gap: 8px;
+    border-radius: 4px;
+}
+
+.myBtn .myBtn__label {
+    color: #FFF;
+    font-family: var(--hanken-grotesk);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    white-space: nowrap;
+}
+
+.myBtn:hover {
+    background: #F23704;
+    transition: 150ms;
+}
+
+.myBtn.secondary {
+    background: #2c2c2c;
+    color: #F5F5F5;
+    width: auto;
+    padding: 12px;
+}
+.myBtn.secondary .myBtn__label {
+    color: #F5F5F5;
+    text-align: left;
+    font-weight: 400;
+}
+
+.disabled {
+    background: #d7dceb;
+    color: #696f7d;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+.myBtn.secondary.disabled{
+    background: #d7dceb;
+    color: #696f7d;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+.myBtn.secondary.disabled .myBtn__label {
+    color: #696f7d;
+}
+
+.disabled:hover {
+    background: #d7dceb;
+}

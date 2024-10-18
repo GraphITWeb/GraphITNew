@@ -1,0 +1,49 @@
+.myInput {
+    display: flex;
+    align-items: center;
+    background: var(--surface-blue);
+    width: 100%;
+    padding: 10px 12px;
+    gap: 10px;
+    border: 1px solid #494949;
+    border-radius:4px;
+}
+
+.myInput.active {
+    border: 1px solid #727272;
+    background: var(--surface-blue);
+    border-radius:4px;
+}
+
+.myInput.error {
+    border: 1px solid #fc4242;
+    background: rgba(255, 220, 220, 0.3);
+}
+
+.myInput input {
+    all: unset;
+    width: 100%;
+    color: var(--text-gray);
+    font-size: 14px;
+    font-style: normal;
+    font-family: var(--hanken-grotesk);
+    height: 100%;
+    font-weight: 400;
+    line-height: 150%;
+}
+.myInput.error input {
+    color: #fc4242;
+}
+.myInput__errorText {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    margin-top: 6px;
+    margin-left: 16px;
+    color: #fc4242;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}

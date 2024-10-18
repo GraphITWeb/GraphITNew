@@ -1,27 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --figtree:'Figtree',sans-serif;
+  --hanken-grotesk: 'Hanken Grotesk', sans-serif;
+  --primary: #09091A;
+  --orange: #F23704;
+  --surface-blue: #141433;
+  --light-blue: #1E1E4D;
+  --white: #FFFFFF;
+  --text-gray: #727272
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--orange);
+  background: var(--primary);
   font-family: Arial, Helvetica, sans-serif;
 }
+h1{
+  color: var(--white);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: var(--figtree);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h2 {
+  color: var(--white);
+  font-family: var(--figtree);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+h3{
+  color: var(--white);
+  font-family: var(--figtree);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+h4{
+  color: var(--white);
+  font-family: var(--figtree);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+h5 {
+  color: var(--white);
+  font-family: var(--figtree);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+h6{
+  color: var(--text-gray);
+  font-family: var(--figtree);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+strong{
+  color: var(--white);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: var(--hanken-grotesk);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+b{
+  color: var(--white);
+  font-family: var(--figtree);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+sub{
+  color: var(--text-gray);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: var(--hanken-grotesk);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+p{
+  color: var(--text-gray);
+  font-family: var(--hanken-grotesk);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+small{
+  color: var(--white);
+  font-family: var(--hanken-grotesk);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }

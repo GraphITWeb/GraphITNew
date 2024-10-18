@@ -1,0 +1,30 @@
+footer{
+    height: 50vh;
+    display: flex;
+    padding: 64px 120px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+    width: 100%;
+}
+.social__circle{
+    width: 40px;
+    height: 40px;
+    background: var(--surface-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.subscribe{
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: auto;
+    background: var(--surface-blue);
+    border-radius: 12px;
+
+}
