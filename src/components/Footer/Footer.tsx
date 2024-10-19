@@ -1,8 +1,8 @@
 "use client";
 import './Footer.css';
 import React, {useState} from "react";
-import Button from "@/components/UI/Button/Button";
-import {Input} from "@/components";
+import Button from "@/components/Button/Button";
+import Input from "@/components/Input/Input";
 
 
 const Footer = () => {
@@ -46,15 +46,15 @@ const Footer = () => {
             </div>
             <div className='flex justify-between w-full'>
                 <div className='flex flex-row gap-9'>
-                    <div className="flex flex-col gap-4" style={{width: 200}}>
+                    <div className="flex flex-col gap-4 footer__pages" style={{width: 200}}>
                         <b>Pages</b>
                         <p>What We Do</p>
                         <p>Who We Are</p>
                         <p>What We Think</p>
                         <p>Case Studies</p>
-                        <p>Contact us</p>
+                        <p onClick={()=>window.location.href='/contact-us'}>Contact us</p>
                     </div>
-                    <div className="flex flex-col gap-4" style={{width: 200}}>
+                    <div className="flex flex-col gap-4 footer__pages" style={{width: 200}}>
                         <b>What We Do</b>
                         <p>Next-Gen AI Transformation</p>
                         <p>AI Agents</p>

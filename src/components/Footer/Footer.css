@@ -26,5 +26,7 @@ footer{
     width: auto;
     background: var(--surface-blue);
     border-radius: 12px;
-
+}
+.footer__pages p{
+    cursor: pointer;
 }

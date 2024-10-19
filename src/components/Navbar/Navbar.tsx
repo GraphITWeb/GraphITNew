@@ -2,7 +2,7 @@
 import './Navbar.css';
 import React from "react";
 import Link from "next/link";
-import Button from "@/components/UI/Button/Button";
+import Button from "@/components/Button/Button";
 
 const Navbar = () => {
     return (
@@ -25,7 +25,7 @@ const Navbar = () => {
                             <small>Case Studies</small>
                         </Link>
                     </div>
-            <Button label='Contact Us'/>
+            <Button onClick={()=>window.location.href='/contact-us'} label='Contact Us'/>
         </nav>
     );
 };

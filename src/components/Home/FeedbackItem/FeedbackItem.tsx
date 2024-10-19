@@ -19,7 +19,7 @@ const FeedbackItem: React.FC<FeedbackProps> = ({imgUser, description}) => {
                     </div>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="2" height="108" viewBox="0 0 2 108" fill="none">
-                    <path d="M1 0V108" stroke="white" stroke-opacity="0.15"/>
+                    <path d="M1 0V108" stroke="white" strokeOpacity="0.15"/>
                 </svg>
                 <div className="flex flex-col gap-3 justify-start h-full" style={{marginTop: 8}}>
                     <div className="flex flex-row gap-1">
@@ -55,8 +55,8 @@ const FeedbackItem: React.FC<FeedbackProps> = ({imgUser, description}) => {
                             <defs>
                                 <linearGradient id="paint0_linear_1046_8493" x1="0" y1="9.99971" x2="20"
                                                 y2="9.99971" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#DDDDDD"/>
-                                    <stop offset="0.502224" stop-color="#DDDDDD"/>
+                                    <stop stopColor="#DDDDDD"/>
+                                    <stop offset="0.502224" stopColor="#DDDDDD"/>
                                     <stop offset="0.50257"/>
                                     <stop offset="1"/>
                                 </linearGradient>
