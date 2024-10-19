@@ -11,7 +11,7 @@
 
 .scrollable__block {
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 64px 0;
 }
 
