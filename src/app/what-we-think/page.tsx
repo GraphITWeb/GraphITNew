@@ -1,5 +1,4 @@
 import React from 'react';
-import ContactMap from "@/components/ContactUs/ContactMap/ContactMap";
 import Main from "@/components/Main/Main";
 
 export default function ContactUsPage() {
@@ -14,7 +13,6 @@ export default function ContactUsPage() {
                 justifyContent: 'center',
                 alignItems: 'center'
             }}>
-                <ContactMap/>
             </div>
         </div>
     )

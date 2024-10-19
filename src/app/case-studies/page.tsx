@@ -1,12 +1,11 @@
 import React from 'react';
-import ContactMap from "@/components/ContactUs/ContactMap/ContactMap";
 import Main from "@/components/Main/Main";
 
 export default function ContactUsPage() {
     return (
         <div className="flex flex-col items-center justify-items-center">
-            <Main subText="Contact us" header="We’d like to hear from you"
-                  description="We have offices and teams around the world."/>
+            <Main subText="Case studies" header="Together, we can reinvent your business"
+                  description="Our wide range of capabilities, ecosystem partnerships and unmatched industry expertise can help your business become the next best version of itself"/>
             <div style={{
                 position: 'relative',
                 width: '100%',
@@ -14,7 +13,6 @@ export default function ContactUsPage() {
                 justifyContent: 'center',
                 alignItems: 'center'
             }}>
-                <ContactMap/>
             </div>
         </div>
     )

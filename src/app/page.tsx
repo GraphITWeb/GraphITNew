@@ -10,7 +10,7 @@ import FeedbackItem from "@/components/Home/FeedbackItem/FeedbackItem";
 
 export default function Home() {
     return (
-        <div className="flex flex-col items-center justify-items-center hero">
+        <div className="flex flex-col items-center justify-items-center">
             <div className="get__started">
                 <div className="get__started__innovate">
                     <h1>Innovate

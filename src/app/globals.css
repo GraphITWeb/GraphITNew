@@ -20,7 +20,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 * {
@@ -50,7 +50,6 @@ body {
 body {
   color: var(--orange);
   background: var(--primary);
-  font-family: Arial, Helvetica, sans-serif;
 }
 h1{
   color: var(--white);

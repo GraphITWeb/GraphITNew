@@ -11,8 +11,7 @@ const Unlocked = () => {
         const containerRect = container.getBoundingClientRect();
         const viewportHeight = window.innerHeight;
 
-        // Перевіряємо, чи ми прокрутили достатньо, щоб заголовок з'явився
-        if (containerRect.top <= viewportHeight/2+100) {
+        if (containerRect.top <= viewportHeight / 2 + 100) {
             setIsVisible(true);
         } else {
             setIsVisible(false);
