@@ -5,22 +5,29 @@
     align-items: center;
     align-self: stretch;
     justify-content: center;
-    background: url("../../assets/HeroAll.png") no-repeat center;
-    background-size: contain;
+    /*background: var(--primary);*/
+    background: url("../../assets/HeroAll.png") no-repeat top center;
+    background-size: cover;
     gap: 8px;
     text-align: center;
+    width: 100%;
+    position: relative;
+    height: 381px;
 
     h1 {
         margin-bottom: 16px;
         max-width: 60vw;
     }
-    sub{
+
+    sub {
         max-width: 60vw;
+        height: 54px;
     }
 }
+
 @media screen and (max-width: 768px) {
     .main__block {
-        sub{
+        sub {
             max-width: 100%;
         }
     }

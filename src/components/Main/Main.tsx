@@ -8,7 +8,7 @@ interface MainProps {
 const Main:React.FC<MainProps> = ({subText,header,description}) => {
   return(
       <div className="main__block">
-          <b style={{color:'#F23704'}}>{subText}</b>
+          <b style={{color: '#F23704'}}>{subText}</b>
           <h1>{header}</h1>
           <sub>{description}</sub>
       </div>
