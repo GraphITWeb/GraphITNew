@@ -30,7 +30,7 @@
     flex-direction: column;
     gap: 16px;
     justify-content: flex-start;
-    width: 548px;
+    max-width: 548px;
     padding-left: 32px;
 
 }
