@@ -4,9 +4,10 @@
     flex-direction: row;
     align-items: center;
     align-self: stretch;
-    gap: 17.5vw;
+    justify-content: space-between;
     width: 100%;
     background-image: url("../assets/Hero.png");
+    background-repeat: no-repeat;
 }
 .get__started__innovate{
     display: flex;
@@ -28,6 +29,9 @@
     flex-direction: column;
     gap: 16px;
     justify-content: flex-start;
+    width: 548px;
+    padding-left: 32px;
+
 }
 .get__started__info_companies{
     display: flex;
