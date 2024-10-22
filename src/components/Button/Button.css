@@ -25,16 +25,16 @@
 .myBtn:hover {
     transition: 150ms;
     background: #fff;
-    .myBtn__label{
-        color: #F23704;
-    }
+}
+.myBtn:hover .myBtn__label{
+    color: #F23704;
 }
 .myBtn:active{
     transition: 150ms;
     background: #E6E6E6;
-    .myBtn__label{
-        color: #F23704;
-    }
+}
+.myBtn:active .myBtn__label{
+    color: #F23704;
 }
 
 .myBtn.secondary {
