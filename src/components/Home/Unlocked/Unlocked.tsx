@@ -12,7 +12,7 @@ const Unlocked = () => {
         const containerRect = container.getBoundingClientRect();
         const viewportHeight = window.innerHeight;
 
-        if (containerRect.top <= viewportHeight / 2 + 100) {
+        if (containerRect.top <= viewportHeight / 2 + 150 ) {
             setIsVisible(true);
         } else {
             setIsVisible(false);
@@ -27,7 +27,7 @@ const Unlocked = () => {
     }, []);
 
     return (
-        <div id="container" style={{ position: "relative", display:'flex',flexDirection:'column',width:'100%',padding:80,gap:130,marginTop:'50vh',transition: 'opacity 0.5s ease', }}>
+        <div id="container" style={{ position: "relative", display:'flex',flexDirection:'column',width:'100%',padding:80,gap:130,marginTop:200,transition: 'opacity 0.5s ease', }}>
             <h1 className="sticky__text" style={{
                 opacity: isVisible ? 1 : 0,
                 whiteSpace: 'nowrap',
