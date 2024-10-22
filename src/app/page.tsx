@@ -1,12 +1,12 @@
 import './home.css'
 import User from '../assets/user.png'
-import Button from "@/components/Button/Button";
 import Business from "@/components/Home/Business/Business";
 import Companies from "@/components/Home/Companies/Companies";
 import CRM from "@/components/Home/CRM/CRM";
 import Nextgen from "@/components/Home/Nextgen/Nextgen";
 import Unlocked from "@/components/Home/Unlocked/Unlocked";
 import FeedbackItem from "@/components/Home/FeedbackItem/FeedbackItem";
+import GetStarted from "@/components/Home/GetStarted/GetStarted";
 
 export default function Home() {
     return (
@@ -47,7 +47,7 @@ export default function Home() {
                         new opportunities. With AI, the future isn’t just envisioned—it’s built. the technology built
                         to empower you.
                     </p>
-                    <Button label='Get Started' btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>
+                    <GetStarted/>
                 </div>
             </div>
             <Companies/>
