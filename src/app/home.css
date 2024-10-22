@@ -42,6 +42,7 @@
     border: 1px solid #1E1E4D;
     width: 100%;
     background: rgba(20, 20, 51, 0.70);
+    -webkit-backdrop-filter: blur(14px);
     backdrop-filter: blur(14px);
     padding: 4px 12px;
     align-items: center;
@@ -62,6 +63,7 @@
     border-radius: 16px;
     border: 1px solid #1E1E4D;
     background: rgba(20, 20, 51, 0.70);
+    -webkit-backdrop-filter: blur(14px);
     backdrop-filter: blur(14px);
     display: inline-flex;
     padding: 36px;
