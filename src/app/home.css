@@ -32,7 +32,6 @@
     justify-content: flex-start;
     max-width: 548px;
     padding-left: 32px;
-
 }
 .get__started__info_companies{
     display: flex;
@@ -71,14 +70,14 @@
     align-items: flex-start;
     gap: 20px;
     width: Calc(100vw - 160px - 32vw);
-    h3{
-        color: var(--orange);
-        display: flex;
-        flex-direction: row;
-        div h3{
-            color: var(--white);
-        }
-    }
+}
+.unlocked_block h3{
+    color: var(--orange);
+    display: flex;
+    flex-direction: row;
+}
+.unlocked_block h3 div h3{
+    color: var(--white);
 }
 .feedback__block{
     display: flex;
@@ -90,11 +89,11 @@
     border: 1px solid #1E1E4D;
     background: #141433;
     width: 100%;
-    span{
-        height: 108px;
-        width: 0;
-        border-left: 1px solid rgba(255, 255, 255, 0.15);
-    }
+}
+.feedback__block span{
+    height: 108px;
+    width: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 .business{
     align-items: flex-start;
