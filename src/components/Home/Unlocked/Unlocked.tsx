@@ -1,4 +1,5 @@
 'use client';
+import './Unlocked.css'
 import { useEffect, useState } from "react";
 
 const Unlocked = () => {
@@ -27,13 +28,7 @@ const Unlocked = () => {
 
     return (
         <div id="container" style={{ position: "relative", display:'flex',flexDirection:'column',width:'100%',padding:80,gap:130,marginTop:'50vh',transition: 'opacity 0.5s ease', }}>
-            <h1 style={{
-                fontSize: 120,
-                textAlign: 'center',
-                position: 'sticky',
-                top: 'Calc(50vh - 80px)',
-                left: '50%',
-                transition: 'opacity 0.5s ease',
+            <h1 className="sticky__text" style={{
                 opacity: isVisible ? 1 : 0,
                 whiteSpace: 'nowrap',
             }}>

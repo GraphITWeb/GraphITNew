@@ -1,0 +1,9 @@
+.sticky__text{
+    font-size: 120px;
+    text-Align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: Calc(50vh - 80px);
+    left: 50%;
+    transition: opacity 0.5s ease
+}
