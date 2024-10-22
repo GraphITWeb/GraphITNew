@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Polygon from "@/assets/Polygon.png";
 import Illustration from "@/assets/Illustration.png";
@@ -43,7 +44,7 @@ const CRM = () => {
                             automotive world—innovation that’s driving change for a greener/
                         </p>
                     </div>
-                    <Button label='See case studies' btnStyle={{padding: '12px 32px', marginLeft: 70}}
+                    <Button onClick={()=>window.location.href='/case-studies'} label='See case studies' btnStyle={{padding: '12px 32px', marginLeft: 70}}
                             btnDivStyle={{fontSize: 18}}/>
                 </div>
             </div>
