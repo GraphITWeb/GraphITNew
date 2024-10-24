@@ -1,4 +1,15 @@
-
+.nextgen__sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 24px;
+    left: 50%;
+    gap: 24px;
+    align-self: stretch;
+}
 .nextgen__block{
     display: flex;
     padding: 24px;
@@ -23,4 +34,9 @@
 }
 .nextgen__block__item.active{
     opacity: 1;
+}
+.nextgen__image{
+    height: 100%;
+    background: #09091A;
+    border-radius: 12px;
 }

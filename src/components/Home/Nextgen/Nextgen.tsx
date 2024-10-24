@@ -1,5 +1,8 @@
+'use client'
 import './Nextgen.css'
-const NextgenIcon=()=>{
+import {useEffect, useRef, useState} from "react";
+
+const NextgenIcon = () => {
     return (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                  fill="none">
         <path d="M9 14.25H15" stroke="white" strokeWidth="1.5" strokeLinecap="round"
@@ -17,66 +20,101 @@ const NextgenIcon=()=>{
     </svg>)
 }
 const Nextgen = () => {
+    const [active, setActive] = useState(0);
+    const sectionRef = useRef(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (sectionRef.current) {
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-expect-error
+                const { top, height } = sectionRef.current.getBoundingClientRect();
+                const scrollPosition = window.scrollY + window.innerHeight / 2; // Поточна позиція скролу + половина вікна
+
+                // Визначаємо номер активного блоку
+                const sectionTop = window.scrollY + top;
+                const blockHeight = height / 4; // Оскільки у нас 4 блоки
+                const currentBlock = Math.floor((scrollPosition - sectionTop) / blockHeight);
+
+                // Переконуємося, що індекс активного блоку знаходиться в допустимих межах
+                if (currentBlock >= 0 && currentBlock < 4) {
+                    setActive(currentBlock);
+                }
+            }
+        };
+
+        // Додаємо слухача на подію прокручування
+        window.addEventListener('scroll', handleScroll);
+
+        // Видаляємо слухача, коли компонент буде знищено
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <>
-            <div className="nextgen">
-                <div>
-                    <h2>A CRM Designed with You in Mind.</h2>
-                    <sub style={{textAlign: 'center', width: '100%', display: 'block'}}>Customize everything to make
-                        Venture adapt to your business, not the other way around.</sub>
-                </div>
-                <div className="nextgen__block">
-                    <div className="flex flex-col gap-3 w-1/3">
-                        <div className="nextgen__block__item active">
-                            <div className="flex flex-row gap-2">
-                                <NextgenIcon/>
-                                <h5>
-                                    Next Gen AI
-                                </h5>
+            <div ref={sectionRef} className="nextgen" style={{height: '200vh', position: 'relative', justifyContent: 'flex-start'}}>
+                <div className="nextgen__sticky">
+                    <div>
+                        <h2>A CRM Designed with You in Mind.</h2>
+                        <sub style={{textAlign: 'center', width: '100%', display: 'block'}}>Customize everything to make
+                            Venture adapt to your business, not the other way around.</sub>
+                    </div>
+                    <div className="nextgen__block">
+                        <div className="flex flex-col gap-3 w-5/12">
+                            <div className={active === 0 ? "nextgen__block__item active" : "nextgen__block__item"}>
+                                <div className="flex flex-row gap-2">
+                                    <NextgenIcon/>
+                                    <h5>
+                                        Next Gen AI
+                                    </h5>
+                                </div>
+                                <p>
+                                    Effortlessly manage customer data and interactions in a user-friendly platform.
+                                    Effortlessly manage customer data and interactions in a user-friendly platform.
+                                </p>
                             </div>
-                            <p>
-                                Effortlessly manage customer data and interactions in a user-friendly platform.
-                            </p>
+                            <div className={active === 1 ? "nextgen__block__item active" : "nextgen__block__item"}>
+                                <div className="flex flex-row gap-2">
+                                    <NextgenIcon/>
+                                    <h5>
+                                        Next Gen AI
+                                    </h5>
+                                </div>
+                                <p>
+                                    Effortlessly manage customer data and interactions in a user-friendly platform.
+                                    Effortlessly manage customer data and interactions in a user-friendly platform. </p>
+                            </div>
+                            <div className={active === 2 ? "nextgen__block__item active" : "nextgen__block__item"}>
+                                <div className="flex flex-row gap-2">
+                                    <NextgenIcon/>
+                                    <h5>
+                                        Next Gen AI
+                                    </h5>
+                                </div>
+                                <p>
+                                    Effortlessly manage customer data and interactions in a user-friendly platform.
+                                    Effortlessly manage customer data and interactions in a user-friendly platform. </p>
+                            </div>
+                            <div className={active === 3 ? "nextgen__block__item active" : "nextgen__block__item"}>
+                                <div className="flex flex-row gap-2">
+                                    <NextgenIcon/>
+                                    <h5>
+                                        Next Gen AI
+                                    </h5>
+                                </div>
+                                <p>
+                                    Effortlessly manage customer data and interactions in a user-friendly platform.
+                                    Effortlessly manage customer data and interactions in a user-friendly platform. </p>
+                            </div>
                         </div>
-                        <div className="nextgen__block__item">
-                            <div className="flex flex-row gap-2">
-                                <NextgenIcon/>
-                                <h5>
-                                  Next Gen AI
-                              </h5>
-                          </div>
-                          <p>
-                              Effortlessly manage customer data and interactions in a user-friendly platform.
-                          </p>
-                      </div>
-                      <div className="nextgen__block__item">
-                          <div className="flex flex-row gap-2">
-                              <NextgenIcon/>
-                              <h5>
-                                  Next Gen AI
-                              </h5>
-                          </div>
-                          <p>
-                              Effortlessly manage customer data and interactions in a user-friendly platform.
-                          </p>
-                      </div>
-                      <div className="nextgen__block__item">
-                          <div className="flex flex-row gap-2">
-                              <NextgenIcon/>
-                              <h5>
-                                  Next Gen AI
-                              </h5>
-                          </div>
-                          <p>
-                              Effortlessly manage customer data and interactions in a user-friendly platform.
-                          </p>
-                      </div>
-                  </div>
-                  <div>
-                  </div>
-              </div>
-          </div>
-      </>
-  )
+                        <div className="nextgen__image w-7/12">
+                            Nextgen Image {active}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
 }
 export default Nextgen;
