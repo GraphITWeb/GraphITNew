@@ -9,7 +9,7 @@ export default function ContactUsPage() {
             <Main subText="What we think" header="Our thinking"
                   description="The latest research, analyses and strategies to help future-focused organisations thrive in this period of great challenge"/>
             <Editors/>
-            <Articles/>
+            <Articles type="All articles"/>
         </div>
     )
 }

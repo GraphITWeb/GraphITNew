@@ -1,11 +1,14 @@
 'use client'
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {IPost} from "@/interfaces/interfaces";
 import postsData from "@/data/posts.json";
 import Post from "@/components/Post/Post";
 import './Articles.css';
 import Dropdown from "@/components/Dropdown/Dropdown";
-const Articles = () => {
+interface ArticlesProps{
+    type: string;
+}
+const Articles:React.FC<ArticlesProps> = ({type}) => {
     const [posts, setPosts] = useState<IPost[]>([]);
     useEffect(() => {
         const loadImages = async () => {
@@ -27,7 +30,7 @@ const Articles = () => {
 
     return(
       <div className="what__we__think__articles">
-          <h3>All articles</h3>
+          <h3>{type}</h3>
           <div className="flex flex-row justify-between w-full gap-8">
               <Dropdown variants={['Research report','Engineer']} label='Topic' selected={selectedTopic} setSelected={setSelectedTopic}/>
               <Dropdown variants={['AI','Big Data']} label='Industry' selected={selectedIndustry} setSelected={setSelectedIndustry}/>
