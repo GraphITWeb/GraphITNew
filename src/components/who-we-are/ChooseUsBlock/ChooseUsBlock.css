@@ -1,0 +1,19 @@
+.choose__us__block{
+    gap: 8px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.choose__us__svg{
+    border-radius: 12px;
+    border: 1px solid rgba(242, 55, 4, 0.30);
+    background: rgba(242, 55, 4, 0.20);
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}

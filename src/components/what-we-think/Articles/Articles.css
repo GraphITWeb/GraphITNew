@@ -1,0 +1,13 @@
+.what__we__think__articles{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px 96px 80px;
+    align-items: flex-start;
+    gap: 32px;
+}
+.what__we__think__articles__block{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 32px;
+}

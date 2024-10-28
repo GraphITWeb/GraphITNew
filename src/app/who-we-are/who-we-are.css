@@ -1,0 +1,15 @@
+.our__vision,.why__choose__us{
+    display: flex;
+    padding: 96px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    z-index: 1;
+    position: relative;
+}
+.why__choose__us{
+    padding: 96px 80px;
+    background: var(--surface-blue);
+}

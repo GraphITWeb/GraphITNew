@@ -1,0 +1,8 @@
+.contactus__blocks{
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+    margin-top: 64px;
+    padding: 0 80px 96px;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import Main from "@/components/Main/Main";
 
-export default function ContactUsPage() {
+export default function CaseStudiesPage() {
     return (
         <div className="flex flex-col items-center justify-items-center">
             <Main subText="Case studies" header="Together, we can reinvent your business"

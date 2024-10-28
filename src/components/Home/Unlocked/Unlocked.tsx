@@ -1,5 +1,4 @@
 'use client';
-import './Unlocked.css'
 import { useEffect, useState } from "react";
 
 const Unlocked = () => {
