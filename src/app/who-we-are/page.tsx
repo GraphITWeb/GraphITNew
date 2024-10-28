@@ -8,11 +8,14 @@ import Image3 from '../../assets/Image3.png'
 import WeMeant from "@/components/who-we-are/WeMeant/WeMeant";
 import ChooseUsBlock from "@/components/who-we-are/ChooseUsBlock/ChooseUsBlock";
 
-export default function ContactUsPage() {
+export default function WhoWeArePage() {
     return (
         <div className="flex flex-col items-center justify-items-center p-0">
             <Main subText="About us" header="Who we are?"
                   description="Graphit is a technology company which is expert in advanced AI solutions that propel your business forward. Learn more about the company and the team behind it."/>
+            <svg style={{maxWidth:"Calc(100vw - 160px)"}} xmlns="http://www.w3.org/2000/svg" width="10000" height="2" viewBox="0 0 1280 2" fill="none">
+                <path d="M0 1H1280" stroke="#1E1E4D"/>
+            </svg>
             <div className="our__vision">
                 <h2>Our vision</h2>
                 <sub>We are committed to providing cutting edge solutions what serve your unique business needs</sub>
