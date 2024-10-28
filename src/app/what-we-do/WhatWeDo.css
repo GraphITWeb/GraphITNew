@@ -1,6 +1,6 @@
 .offering__blocks__big{
     display: flex;
-    padding: 96px 80px;
+    padding: 0 80px 96px 80px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
