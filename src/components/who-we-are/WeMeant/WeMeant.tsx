@@ -38,10 +38,8 @@ const WeMeant = () => {
         }}>
             <h1 className="sticky__text" style={{
                 opacity: isVisible ? 1 : 0,
-                whiteSpace: 'word-wrap',
-            }}>
-                WE MEANT IT WHEN WE SAID
-            </h1>
+                whiteSpace: "word-wrap",
+            }}>WE MEANT IT WHEN WE SAID</h1>
 
             <div className="unlocked_block" style={{marginTop: '1vh'}}>
                 <h3>
@@ -49,7 +47,7 @@ const WeMeant = () => {
                 </h3>
                 <strong style={{color: 'var(--text-gray)'}}>
                     When you go onto this square, the description changes to reflect the new environment or scenario
-                    you're in, providing context-specific information or actions. </strong>
+                    you&apos;re in, providing context-specific information or actions. </strong>
             </div>
 
             <div className="unlocked_block" style={{marginLeft: 'auto'}}>
