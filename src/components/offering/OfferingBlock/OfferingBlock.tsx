@@ -99,7 +99,7 @@ const OfferingBlock = () => {
                             <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white"/>
                         </svg>
                     </div>
-                    <div>
+                    <div className="justify-end" style={{paddingBottom:72}}>
                         <h2 style={{marginTop:64}}>34%</h2>
                         <p style={{color:'#fff'}}>of companies sat legacy infrastructure is one of the top three barriers to realizing cloud value</p>
                     </div>
