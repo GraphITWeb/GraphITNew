@@ -1,0 +1,101 @@
+.offering__offering__block{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+    align-self: stretch;
+    border-radius: 24px;
+    position: relative;
+    align-items: center;
+    padding: 48px 80px 96px 80px;
+}
+.offering__offering__block__small{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    align-self: stretch;
+    border-radius: 24px;
+    position: relative;
+}
+.offering__offering__block__small__big,.offering__offering__block__small__small{
+    min-height: 560px;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    background: var(--surface-blue);
+    border-radius: 24px;
+    gap: 16px;
+    position: relative;
+}
+.offering__offering__block__small__small{
+    min-height: 280px;
+    height: 280px;
+    padding: 32px;
+}
+.offering__offering__block__small__small div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.offering__offering__block__small__big div{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    width: 100%;
+    height: 100%;
+    gap: 16px;
+}
+.offering__offering__block__small__big div span,.offering__offering__block__small__small div span{
+    min-width: 40px;
+    max-width: 40px;
+    max-height: 4px;
+    min-height: 4px;
+    display: block;
+    background: var(--orange);
+}
+.offering__offering__block__small__big__second{
+    background: url('../../../assets/HalfOffering.png') center no-repeat;
+    background-size: cover;
+    min-height: 280px;
+    height: 280px;
+}
+.offering__offering__block__small__big div:last-child{
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+.offering__offering__block__expand{
+    position: absolute;
+    bottom:32px;
+    right: 32px;
+    z-index: 100;
+    width: auto!important;
+    height: auto!important;
+    padding: 0!important;
+    display: flex;
+    flex-direction: row!important;
+    align-items: center;
+    gap: 8px!important;
+    cursor: pointer;
+}
+.offering__offering__block__expand sub{
+    color: var(--white);
+}
+.offering__offering__block__expand svg{
+    margin-top: 8px;
+}
+.offering__offering__block__small__big:hover .offering__offering__block__expand,
+.offering__offering__block__small__small:hover .offering__offering__block__expand{
+    gap: 16px!important;
+    right: 24px!important;
+}
+.offering__offering__block__small__big div small,.offering__offering__block__small__small div small{
+    display: flex;
+    padding: 2px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid;
+    width: fit-content;
+}
