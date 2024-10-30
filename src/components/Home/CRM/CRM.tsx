@@ -1,6 +1,5 @@
 'use client'
 import Image from "next/image";
-import Polygon from "@/assets/Polygon.png";
 import Illustration from "@/assets/Illustration.png";
 import Button from "@/components/Button/Button";
 import './CRM.css'

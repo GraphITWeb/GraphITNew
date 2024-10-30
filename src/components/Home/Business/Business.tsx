@@ -1,7 +1,5 @@
 'use client'
 import Button from "@/components/Button/Button";
-import Image from "next/image";
-import CTAImage from '../../../assets/CTA2.png'
 export default function Business(){
     return (
         <div className="business">
