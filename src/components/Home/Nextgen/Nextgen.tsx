@@ -3,7 +3,8 @@ import './Nextgen.css'
 import Image from "next/image";
 import {useEffect, useRef, useState} from "react";
 import Phit from "../../../assets/phit.jpg";
-import Illustration from "../../../assets/img.png";
+import Illustration from "../../../assets/NextGen.png";
+import Button from "@/components/Button/Button";
 
 const NextgenIcon = () => {
     return (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -32,7 +33,7 @@ const Nextgen = () => {
             if (sectionRef.current) {
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-expect-error
-                const { top, height } = sectionRef.current.getBoundingClientRect();
+                const {top, height} = sectionRef.current.getBoundingClientRect();
                 const scrollPosition = window.scrollY + window.innerHeight / 2; // Поточна позиція скролу + половина вікна
 
                 // Визначаємо номер активного блоку
@@ -57,7 +58,8 @@ const Nextgen = () => {
     }, []);
     return (
         <>
-            <div ref={sectionRef} className="nextgen" style={{height: '200vh', position: 'relative', justifyContent: 'flex-start'}}>
+            <div ref={sectionRef} className="nextgen"
+                 style={{height: '200vh', position: 'relative', justifyContent: 'flex-start'}}>
                 <div className="nextgen__sticky">
                     <div>
                         <h2>A CRM Designed with You in Mind.</h2>
@@ -65,7 +67,7 @@ const Nextgen = () => {
                             Venture adapt to your business, not the other way around.</sub>
                     </div>
                     <div className="nextgen__block">
-                        <div className="flex flex-col gap-3 w-5/12">
+                        <div className="flex flex-col gap-3 w-6/12">
                             <div className={active === 0 ? "nextgen__block__item active" : "nextgen__block__item"}>
                                 <div className="flex flex-row gap-2">
                                     <NextgenIcon/>
@@ -74,7 +76,6 @@ const Nextgen = () => {
                                     </h5>
                                 </div>
                                 <p>
-                                    Effortlessly manage customer data and interactions in a user-friendly platform.
                                     Effortlessly manage customer data and interactions in a user-friendly platform.
                                 </p>
                             </div>
@@ -87,7 +88,7 @@ const Nextgen = () => {
                                 </div>
                                 <p>
                                     Effortlessly manage customer data and interactions in a user-friendly platform.
-                                    Effortlessly manage customer data and interactions in a user-friendly platform. </p>
+                                </p>
                             </div>
                             <div className={active === 2 ? "nextgen__block__item active" : "nextgen__block__item"}>
                                 <div className="flex flex-row gap-2">
@@ -98,7 +99,7 @@ const Nextgen = () => {
                                 </div>
                                 <p>
                                     Effortlessly manage customer data and interactions in a user-friendly platform.
-                                    Effortlessly manage customer data and interactions in a user-friendly platform. </p>
+                                </p>
                             </div>
                             <div className={active === 3 ? "nextgen__block__item active" : "nextgen__block__item"}>
                                 <div className="flex flex-row gap-2">
@@ -109,11 +110,13 @@ const Nextgen = () => {
                                 </div>
                                 <p>
                                     Effortlessly manage customer data and interactions in a user-friendly platform.
-                                    Effortlessly manage customer data and interactions in a user-friendly platform. </p>
+                                </p>
                             </div>
                         </div>
-                        <div className="nextgen__image w-7/12">
-                            <Image style={{width:'100%',height:'100%',borderRadius:12}} src={images[active]} alt={''} />
+                        <div className="nextgen__image w-6/12">
+                            <Image style={{width: '100%', height: '100%', borderRadius: 12}} src={images[active]}
+                                   alt={''}/>
+                            <Button label={'Learn more'} btnStyle={{padding:'12px 32px',position:"absolute",right:24,bottom:24}} btnDivStyle={{fontSize:18}}/>
                         </div>
                     </div>
                 </div>

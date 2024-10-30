@@ -13,21 +13,25 @@ const CRM = () => {
                     Venture adapt to your business, not the other way around.</sub>
             </div>
             <div style={{position: 'relative', width: '100%'}}>
-                {/*<svg style={{position: "absolute", bottom: -65, right: -40, zIndex: -1}}*/}
-                {/*     xmlns="http://www.w3.org/2000/svg" width="157" height="182" viewBox="0 0 157 182"*/}
-                {/*     fill="none">*/}
-                {/*    <path d="M0.5 46.25L78.5 1.5L156.5 46.25V135.75L78.5 180.5L0.5 135.75L0.5 46.25Z"*/}
-                {/*          stroke="#F23704" stroke-opacity="0.5" stroke-dasharray="12 12"/>*/}
-                {/*</svg>*/}
-                <Image width={179} height={156} src={Polygon} alt='Polygon'
-                       style={{position: "absolute", bottom: -73, right: -51, zIndex: -1}}/>
+                {/*<Image width={179} height={156} src={Polygon} alt='Polygon'*/}
+                {/*       style={{position: "absolute", bottom: -73, right: -51, zIndex: -1}}/>*/}
             </div>
             <div className="CRM__block">
                 <Image
                     src={Illustration}
                     alt="Illustration"
-                    className="w-full h-auto"
+                    className="w-full"
                 />
+                <div className="CRM__block__arrow" style={{left:32}}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M10 18L4 12L10 6L11.4 7.45L7.85 11H20V13H7.85L11.4 16.55L10 18Z" fill="white"/>
+                    </svg>
+                </div>
+                <div className="CRM__block__arrow" style={{right:32}}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white"/>
+                    </svg>
+                </div>
                 <div className="CRM__block__description">
                     <div>
                         <h5>
@@ -44,7 +48,7 @@ const CRM = () => {
                             automotive world—innovation that’s driving change for a greener/
                         </p>
                     </div>
-                    <Button onClick={()=>window.location.href='/case-studies'} label='See case studies' btnStyle={{padding: '12px 32px', marginLeft: 70}}
+                    <Button onClick={()=>window.location.href='/case-studies'} label='See case studies' btnStyle={{padding: '12px 32px'}}
                             btnDivStyle={{fontSize: 18}}/>
                 </div>
             </div>

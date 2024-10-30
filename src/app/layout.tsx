@@ -27,3 +27,11 @@ export default function RootLayout({
     </html>
   );
 }
+
+export function Loading() {
+  return (
+      <div className="loading">
+       LOADING TEXT
+      </div>
+  );
+}

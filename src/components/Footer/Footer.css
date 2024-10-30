@@ -30,3 +30,19 @@ footer{
 .footer__pages p{
     cursor: pointer;
 }
+@media screen and (max-width: 1200px) {
+    footer{
+        padding: 48px 90px
+    }
+}
+
+@media screen and (max-width: 992px) {
+    footer{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px) {
+    footer{
+        flex-direction: column;
+    }
+}

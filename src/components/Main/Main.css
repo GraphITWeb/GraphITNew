@@ -6,7 +6,7 @@
     align-self: stretch;
     justify-content: center;
     /*background: var(--primary);*/
-    background: url("../../assets/HeroAll.png") no-repeat top center;
+    background: url("../../assets/HeroAll.png") no-repeat center center;
     background-size: cover;
     gap: 8px;
     text-align: center;

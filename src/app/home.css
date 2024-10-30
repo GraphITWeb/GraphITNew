@@ -47,7 +47,7 @@
     align-items: center;
     max-width: fit-content;
 }
-.CRM,.feedback,.nextgen,.business{
+.feedback,.nextgen,.business{
     display: flex;
     padding: 96px 80px;
     flex-direction: column;
@@ -76,7 +76,7 @@
 }
 .business{
     align-items: flex-start;
-    background: var(--surface-blue) url("../assets/CTA.png") no-repeat center center;
+    background:url("../assets/CTA.png") no-repeat center center;
     background-size: cover;
     gap: 16px;
 }
