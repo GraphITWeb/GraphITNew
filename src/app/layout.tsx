@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
 import "./globals.css";
-import React, {Suspense} from "react";
+import React from "react";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 
@@ -20,20 +20,10 @@ export default function RootLayout({
         <body>
         <div>
             <Navbar/>
-            <Suspense fallback={<div>Loading...</div>}>
-                {children}
-            </Suspense>
+            {children}
             <Footer/>
         </div>
         </body>
         </html>
-    );
-}
-
-export function Loading() {
-    return (
-        <div className="loading">
-            LOADING TEXT
-        </div>
     );
 }
