@@ -33,7 +33,7 @@ const WeMeant = () => {
             width: '100%',
             padding: 80,
             gap: 130,
-            marginTop: 200,
+            marginTop: 150,
             transition: 'opacity 0.5s ease',
         }}>
             <h1 className="sticky__text" style={{

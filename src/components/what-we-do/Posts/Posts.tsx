@@ -44,7 +44,7 @@ const Posts = () => {
                 <Button label='View all posts'
                         btnStyle={{ padding: '12px 32px', marginRight: 80 }}
                         btnDivStyle={{ fontSize: 18 }}
-                        onClick={() => window.location.href = '/blogs'} />
+                        onClick={() => window.location.href = '/what-we-think'} />
             </div>
             <sub>The latest research, analyses and strategies to help future-focused organisations thrive in this period of great challenge</sub>
             <div className="what__we__do__posts__block" ref={postsRef}

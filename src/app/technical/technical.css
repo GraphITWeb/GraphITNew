@@ -1,0 +1,65 @@
+.technical__why__h2{
+    width: 100%;
+    padding: 0 80px;
+}
+.technical__why{
+    margin-top: 48px;
+    padding: 0 80px 96px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: flex-start;
+}
+.technical__why div{
+    width: 300px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.technical__why div p{
+    color: #FFFFFF;
+}
+.technical__access{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 96px 0;
+}
+.technical__access div{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    gap: 16px;
+    padding: 0 64px 0 80px;
+}
+.technical__what{
+    background:#12122E;
+    padding: 96px 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+.why__choose__us{
+    display: flex;
+    padding: 0 0 96px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    z-index: 1;
+    position: relative;
+}
+.why__choose__us{
+    padding: 96px 80px;
+    background: var(--surface-blue);
+}

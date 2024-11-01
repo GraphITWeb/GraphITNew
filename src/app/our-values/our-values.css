@@ -1,0 +1,32 @@
+.our__values__text {
+    padding-top: 96px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our__values__text p {
+    max-width: 60%;
+}
+.our__value__what{
+    background:#12122E;
+    padding: 96px 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+.our__value__what__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+.our__value__what__header p {
+    max-width: 60%;
+}

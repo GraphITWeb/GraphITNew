@@ -11,10 +11,6 @@ const CRM = () => {
                 <sub style={{textAlign: 'center', width: '100%', display: 'block'}}>Customize everything to make
                     Venture adapt to your business, not the other way around.</sub>
             </div>
-            <div style={{position: 'relative', width: '100%'}}>
-                {/*<Image width={179} height={156} src={Polygon} alt='Polygon'*/}
-                {/*       style={{position: "absolute", bottom: -73, right: -51, zIndex: -1}}/>*/}
-            </div>
             <div className="CRM__block">
                 <Image
                     src={Illustration}

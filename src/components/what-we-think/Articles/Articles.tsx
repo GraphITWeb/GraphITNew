@@ -24,17 +24,17 @@ const Articles:React.FC<ArticlesProps> = ({type}) => {
 
         loadImages().then();
     }, []);
-    const [selectedTopic, setSelectedTopic] = useState('Topic')
-    const [selectedIndustry, setSelectedIndustry] = useState('Industry')
-    const [selectedSort, setSelectedSort] = useState('Sort By')
+    const [selectedTopic, setSelectedTopic] = useState('Select topic')
+    const [selectedIndustry, setSelectedIndustry] = useState('Select industry')
+    const [selectedSort, setSelectedSort] = useState('Content Type')
 
     return(
       <div className="what__we__think__articles">
           <h3>{type}</h3>
           <div className="flex flex-row justify-between w-full gap-8">
-              <Dropdown variants={['Research report','Engineer']} label='Topic' selected={selectedTopic} setSelected={setSelectedTopic}/>
-              <Dropdown variants={['AI','Big Data']} label='Industry' selected={selectedIndustry} setSelected={setSelectedIndustry}/>
-              <Dropdown variants={['Sort from Oldest to Newest','Sort from Newest to Oldest']} label='Sort By' selected={selectedSort} setSelected={setSelectedSort}/>
+              <Dropdown variants={['Research report','Engineer']} label='Select topic' selected={selectedTopic} setSelected={setSelectedTopic}/>
+              <Dropdown variants={['AI','Big Data']} label='Select industry' selected={selectedIndustry} setSelected={setSelectedIndustry}/>
+              <Dropdown variants={['Content A','Content B']} label='Content Type' selected={selectedSort} setSelected={setSelectedSort}/>
           </div>
           <div className="what__we__think__articles__block">
               {posts.map((post, index) => (<Post key={index} {...post}/>))}

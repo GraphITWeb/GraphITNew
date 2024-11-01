@@ -46,14 +46,7 @@
     height: 100%;
     gap: 16px;
 }
-.offering__offering__block__small__big div span,.offering__offering__block__small__small div span{
-    min-width: 40px;
-    max-width: 40px;
-    max-height: 4px;
-    min-height: 4px;
-    display: block;
-    background: var(--orange);
-}
+
 .offering__offering__block__small__big__second{
     background: url('../../../assets/HalfOffering.png') center no-repeat;
     background-size: cover;
@@ -89,7 +82,7 @@
     gap: 16px!important;
     right: 24px!important;
 }
-.offering__offering__block__small__big div small,.offering__offering__block__small__small div small{
+.offering__offering__block__small__big div small,.offering__offering__block__small__small div small,.offering__offering__block__expand__content div small{
     display: flex;
     padding: 2px 12px;
     justify-content: center;
@@ -98,4 +91,101 @@
     border-radius: 100px;
     border: 1px solid;
     width: fit-content;
+}
+@keyframes expandHeight {
+    0% {
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        min-height: 560px;
+        height: 560px;
+        opacity: 1;
+    }
+}
+
+.offering__offering__block__expand__block{
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 0 80px;
+}
+
+.offering__offering__block__expand__content{
+    display: flex;
+    padding: 48px 32px 0px 32px;
+    flex-direction: row;
+    background: var(--surface-blue);
+    border-radius: 24px;
+    position: relative;
+    margin-left: 0;
+    gap: 48px;
+    margin-top: 48px;
+    opacity: 0;
+    width: 0;
+    height: 280px;
+    max-height: 280px;
+    overflow: hidden; /* Ховає контент, поки він не буде видимим */
+    transition: width 1.5s ease, opacity 2s ease;
+    /*transform: translate(-100%, -100%);*/
+    /*transition: opacity 0.5s ease, transform 0.5s ease;*/
+}
+.offering__offering__block__expand__content.visible {
+    opacity: 1;
+    /*transform: translate(0, 0);*/
+    width: 100%;
+    /*height: auto;*/
+    /*max-height: max-content;*/
+    animation: expandHeight 2s forwards; /* Animation for collapsing */
+}
+
+.offering__offering__block__expand__content__right{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    height: auto;
+    width: 0;
+    max-height: 0;
+    max-width: 0;
+    overflow: hidden;
+    transition: width 1s ease, height 1s ease;
+}
+.offering__offering__block__expand__content.visible .offering__offering__block__expand__content__right{
+    width: 66.7%;
+    max-width: 66.7%;
+    max-height: none;
+    height: auto;
+}
+.offering__offering__block__expand__content__right__block{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.offering__offering__block__expand__content__right__block div{
+    height: 225px;
+    min-height: 225px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.offering__offering__block__expand__content__svg{
+    border-radius: 100px;
+    border: 6px solid #F2370414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 0!important;
+    height: auto!important;
+    width: min-content;
+    margin-bottom: 12px;
+}
+.offering__offering__block__expand__content__svg__small{
+    background: rgba(242, 55, 4, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 48px!important;
+    height: 48px!important;
+    min-height: 0!important;
 }

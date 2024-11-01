@@ -31,12 +31,12 @@ body {
   scroll-behavior: smooth;
 }
 *::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 *::-webkit-scrollbar-thumb {
   background: var(--orange);
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 *::-webkit-scrollbar-thumb:hover {
@@ -160,7 +160,7 @@ small{
   top: Calc(50vh - 80px);
   left: 50%;
   z-index: -1;
-  transition: opacity 0.5s ease
+  transition: opacity 0.5s ease;
 }
 
 .unlocked_block{
@@ -183,4 +183,12 @@ small{
 }
 .unlocked_block h3 div h3{
   color: var(--white);
+}
+.orange__span{
+  min-width: 40px;
+  max-width: 40px;
+  max-height: 4px;
+  min-height: 4px;
+  display: block;
+  background: var(--orange);
 }

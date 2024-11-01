@@ -1,0 +1,18 @@
+.technical__what__block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #1E1E4D;
+    padding-top: 32px;
+}
+.technical__what__block:last-child{
+    border-bottom: none;
+}
+.technical__what__block__header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -14,6 +14,21 @@ nav{
     font-weight: 500;
     line-height: 140%;
 }
+a{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    position: relative;
+}
 a small{
     color: var(--white);
+}
+.navbar__open{
+    position: absolute;
+    z-index: 10000;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    top: 30px;
 }

@@ -1,0 +1,30 @@
+.technical__main__block {
+    display: flex;
+    padding: 96px 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: center;
+    /*background: var(--primary);*/
+    background: url("../../../assets/TechincalHero.png") no-repeat center center;
+    background-size: cover;
+    gap: 8px;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    height: 381px;
+}
+.technical__main__block h1 {
+    margin-bottom: 16px;
+    max-width: 75vw;
+}
+.technical__main__block sub {
+    max-width: 60vw;
+    height: 54px;
+}
+
+@media screen and (max-width: 768px) {
+    .technical__main__block sub {
+            max-width: 100%;
+    }
+}

@@ -1,110 +1,373 @@
+'use client'
 import './OfferingBlock.css';
+import {useEffect, useState} from "react";
 
 const OfferingBlock = () => {
-    return (
-        <div className="offering__offering__block">
-            <div className="offering__offering__block__small">
-                <div
-                    className="offering__offering__block__small__big">
-                    <div>
-                        <span/>
-                        <h3>
-                            Data is the driver and AI is the differentiator
-                        </h3>
-                        <small
-                        style={{
-                            borderColor: 'rgba(51, 138, 243, 0.30)',
-                            backgroundColor: 'rgba(51, 138, 243, 0.20)',
-                        }}
-                        >Cloud data and AI</small>
-                    </div>
-                    <div className="offering__offering__block__expand">
-                        <sub>
-                            Expand
-                        </sub>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white"/>
+    const [selected, setSelected] = useState<number | null>(null);
+    const [isVisible, setIsVisible] = useState(false);
+    useEffect(() => {
+        if (selected !== null) {
+            const element = document.querySelector('.offering__offering__block__expand__content');
+            if (element) {
+                const topPosition = element.getBoundingClientRect().top + window.scrollY - 100;
+                window.scrollTo({top: topPosition, behavior: 'smooth'});
+                setIsVisible(true);
+            }
+        } else {
+            setIsVisible(false);
+        }
+    }, [selected]);
+    return (<div style={{position:'relative'}}>
+            {selected !== null &&
+                <div className='offering__offering__block__expand__block'>
+                    <div className={`offering__offering__block__expand__content ${isVisible ? 'visible' : ''}`}>
+                        <svg onClick={() => setSelected(null)} style={{position: "absolute", right: 32, top: 32}}
+                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"
+                                fill="white"/>
                         </svg>
-                    </div>
-                    <div className="offering__offering__block__small__big__second">
+                        <div style={{position: 'absolute', right: 32, bottom: 32, alignItems: 'center'}}
+                             className="flex flex-row gap-2" onClick={() => window.location.href = '/offering'}>
+                            <sub style={{color: "#fff"}}>
+                                Learn more
+                            </sub>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none">
+                                <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z"
+                                      fill="white"/>
+                            </svg>
+                        </div>
+                        <div className="w-1/3 flex flex-col gap-3">
+                            <h4>Bringing intelligent business operations to innovate and run core processes</h4>
+                            <small
+                                style={{
+                                    borderColor: 'rgba(51, 138, 243, 0.30)',
+                                    backgroundColor: 'rgba(51, 138, 243, 0.20)',
+                                }}
+                            >Cloud data and AI</small>
+                            <p style={{marginTop: 12}}>Operations reinventors are running end-to-end digitized processes
+                                and
+                                achieving top-quartile performance. Strategic Managed Services are empowering them to:
+                            </p>
+                        </div>
+                        <div className="offering__offering__block__expand__content__right w-2/3">
+                            <div className="offering__offering__block__expand__content__right__block">
+                                <div>
+                                    <span className="orange__span"/>
+                                    <h3 style={{marginTop: 4}}>42%</h3>
+                                    <p style={{marginTop: 4}}>
+                                        improvement in process innovation for top performers in operations compared with
+                                        other
+                                        organizations.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div className="offering__offering__block__expand__content__svg">
+                                        <div className="offering__offering__block__expand__content__svg__small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none">
+                                                <path
+                                                    d="M22 12.8337C22 13.2945 21.6267 13.667 21.1667 13.667C19.7727 13.667 18.432 13.0787 17.487 12.0529L15.1431 9.50385C14.6906 8.99971 14.4656 8.3589 14.5023 7.6931C14.5156 7.45144 14.574 7.22145 14.6523 6.99979H10.3326C8.95442 6.99979 7.83285 5.87817 7.83285 4.4999C7.83285 3.12162 8.95442 2 10.3326 2H18.5645C19.6827 2 20.7868 2.37498 21.6734 3.05746C22.0383 3.33828 22.1067 3.86159 21.8258 4.22574C21.545 4.58989 21.0226 4.65906 20.6576 4.37907C20.061 3.91992 19.3177 3.66743 18.5653 3.66743H10.3326C9.87351 3.66743 9.49937 4.04075 9.49937 4.50073C9.49937 4.96071 9.87351 5.33403 10.3326 5.33403C10.3326 5.33403 17.0329 5.34319 17.0504 5.34486C17.6029 5.35653 18.1537 5.54319 18.6003 5.919L20.9093 8.13641C21.2409 8.45556 21.2509 8.98304 20.9318 9.3147C20.6134 9.64635 20.086 9.65635 19.7535 9.33719L17.4862 7.15729C16.7329 6.56481 15.703 7.67976 16.3763 8.38557L18.7128 10.9255C19.3419 11.6088 20.2368 12.0013 21.1659 12.0013C21.6259 12.0013 21.9992 12.3737 21.9992 12.8345L22 12.8337ZM13.6674 17.0002H9.34772C9.42605 16.7786 9.48438 16.5486 9.49771 16.3069C9.53437 15.6411 9.30939 15.0011 8.85693 14.4961L6.51296 11.9471C5.56887 10.9221 4.22731 10.333 2.83326 10.333C2.3733 10.333 2 10.7055 2 11.1663C2 11.6271 2.3733 11.9996 2.83326 11.9996C3.76235 11.9996 4.65645 12.3921 5.28639 13.0754L7.62286 15.6153C8.29698 16.3211 7.26539 17.4344 6.51296 16.8435L4.24565 14.6636C3.91484 14.3445 3.38655 14.3553 3.06741 14.6861C2.74827 15.0178 2.75827 15.5453 3.08991 15.8644L5.39888 18.0818C5.85051 18.461 6.4063 18.6501 6.96459 18.6585C6.97709 18.6585 13.6665 18.666 13.6665 18.666C14.1257 18.666 14.4998 19.0393 14.4998 19.4993C14.4998 19.9593 14.1257 20.3326 13.6665 20.3326H5.43555C4.68311 20.3326 3.93984 20.0792 3.34322 19.6209C2.97825 19.3401 2.45496 19.4093 2.17499 19.7743C1.89418 20.1392 1.9625 20.6617 2.32747 20.9425C3.21407 21.6242 4.31814 22 5.43638 22H13.6674C15.0456 22 16.1672 20.8784 16.1672 19.5001C16.1672 18.1218 15.0456 17.0002 13.6674 17.0002ZM11.46 15.3361C11.7759 15.5919 12.2225 15.5919 12.5391 15.3361C13.4465 14.6011 15.1814 13.0204 15.1814 11.6671C15.1814 10.7005 14.469 9.91717 13.5907 9.91717C12.7124 9.91717 12 10.7005 12 11.6671C12 10.7005 11.2876 9.91717 10.4093 9.91717C9.53104 9.91717 8.8186 10.7005 8.8186 11.6671C8.8186 13.0204 10.5535 14.6011 11.4609 15.3361H11.46Z"
+                                                    fill="#F23704"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h5>Improve human experiences</h5>
+                                    <p>
+                                        Those that apply leading practices and benchmark customer, employee and partner
+                                        experiences are 2.5x more likely to increase operational maturity.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="offering__offering__block__expand__content__right__block">
+                                <div>
+                                    <div className="offering__offering__block__expand__content__svg">
+                                        <div className="offering__offering__block__expand__content__svg__small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none">
+                                                <path
+                                                    d="M21.1667 18.6659H14.3467C14.0946 17.9602 13.5392 17.4049 12.8334 17.1528V13.6851C13.9534 13.6851 14.9334 13.6751 15.4126 13.666C15.7117 13.6603 16.0094 13.6238 16.3009 13.5568C17.8322 13.2006 19.0279 12.0051 19.3842 10.4741C19.9076 8.28046 18.5947 6.06755 16.4184 5.47501L16.2751 5.44334C16.0251 5.38753 15.8992 5.36003 15.7851 5.0859C14.7275 2.53548 11.8022 1.32509 9.25134 2.38243C7.78454 2.9904 6.6938 4.25883 6.31251 5.79991C6.13208 6.54629 6.11587 7.3229 6.26501 8.07616C4.78532 8.71272 4.10196 10.428 4.7386 11.9074C5.08805 12.7194 5.78708 13.3291 6.63915 13.5651C6.86591 13.6254 7.0988 13.6595 7.33333 13.6668C7.87915 13.6818 9.44501 13.6885 11.0783 13.6885H11.1667V17.1536C10.4611 17.4055 9.90564 17.9605 9.65334 18.6659H2.83332C2.37309 18.6659 2 19.0389 2 19.499C2 19.9592 2.37309 20.3322 2.83332 20.3322H9.65334C10.1049 21.628 11.5215 22.3124 12.8176 21.861C13.534 21.6115 14.0971 21.0485 14.3467 20.3322H21.1667C21.6269 20.3322 22 19.9592 22 19.499C22 19.0389 21.627 18.6659 21.1667 18.6659ZM7.38001 12.0004C7.27302 11.9966 7.16677 11.9807 7.06333 11.9529C6.65138 11.8374 6.32931 11.5157 6.21333 11.1039C6.03598 10.4966 6.34052 9.85259 6.92251 9.60419C7.67091 9.2875 8.08505 8.48042 7.90583 7.68788C7.52591 5.88689 8.67822 4.11898 10.4795 3.73916C10.5397 3.72647 10.6001 3.71546 10.6608 3.70612C10.8234 3.6821 10.9874 3.66957 11.1517 3.66863C12.5058 3.66394 13.729 4.47613 14.25 5.72574C14.5442 6.45662 15.2064 6.97477 15.9867 7.08467C17.2958 7.44714 18.0818 8.78212 17.7634 10.1024C17.5439 11.0072 16.8358 11.7127 15.93 11.9288C15.7502 11.9709 15.5664 11.9938 15.3817 11.9971C14.8042 12.0079 8.00919 12.0171 7.38001 12.0004ZM12 20.3322C11.5398 20.3322 11.1667 19.9592 11.1667 19.499C11.1667 19.0389 11.5398 18.6659 12 18.6659C12.4603 18.6659 12.8333 19.0389 12.8333 19.499C12.8333 19.9592 12.4603 20.3322 12 20.3322Z"
+                                                    fill="#F23704"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h5>Pinpoint inefficiencies</h5>
+                                    <p>
+                                        Use virtual representations to visualize the as-is process and discover
+                                        inefficiencies
+                                        caused by duplicative activites and process deviations.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div className="offering__offering__block__expand__content__svg">
+                                        <div className="offering__offering__block__expand__content__svg__small">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                 viewBox="0 0 24 24"
+                                                 fill="none">
+                                                <path
+                                                    d="M19.4302 16.2858C18.7658 16.2865 18.1277 16.5243 17.6511 16.9489L15.1156 15.7853C15.1327 15.6909 15.1433 15.5957 15.1473 15.5001C15.1433 15.4045 15.1327 15.3092 15.1156 15.2149L17.6511 14.0512C18.078 14.4263 18.6332 14.6546 19.2225 14.6974C19.8119 14.7403 20.3992 14.595 20.8853 14.2863C21.3713 13.9775 21.7261 13.5243 21.8896 13.0032C22.0532 12.482 22.0154 11.9251 21.7827 11.4266C21.5501 10.9281 21.1368 10.5186 20.6128 10.2675C20.0888 10.0163 19.4864 9.93896 18.9073 10.0484C18.3283 10.1579 17.8083 10.4475 17.4353 10.8683C17.0623 11.289 16.8592 11.815 16.8605 12.3573C16.8645 12.4528 16.8751 12.5481 16.8922 12.6425L14.3567 13.8061C13.994 13.4842 13.536 13.2674 13.0399 13.1827C12.5438 13.0981 12.0314 13.1492 11.5668 13.3299C11.1022 13.5105 10.7059 13.8127 10.4272 14.1986C10.1486 14.5845 10 15.0372 10 15.5001C10 15.963 10.1486 16.4156 10.4272 16.8015C10.7059 17.1875 11.1022 17.4896 11.5668 17.6702C12.0314 17.8509 12.5438 17.9021 13.0399 17.8174C13.536 17.7327 13.994 17.5159 14.3567 17.194L16.8922 18.3577C16.8751 18.452 16.8645 18.5473 16.8605 18.6429C16.8605 19.1091 17.0112 19.5648 17.2936 19.9524C17.5759 20.3401 17.9773 20.6422 18.4468 20.8206C18.9164 20.999 19.4331 21.0457 19.9316 20.9547C20.4301 20.8638 20.8879 20.6393 21.2473 20.3096C21.6067 19.98 21.8515 19.56 21.9506 19.1027C22.0498 18.6455 21.9989 18.1716 21.8044 17.7409C21.6099 17.3102 21.2805 16.942 20.8579 16.683C20.4353 16.424 19.9385 16.2858 19.4302 16.2858ZM19.4302 11.5716C19.5997 11.5716 19.7653 11.6176 19.9061 11.704C20.047 11.7903 20.1568 11.913 20.2216 12.0566C20.2865 12.2001 20.3034 12.3581 20.2704 12.5105C20.2373 12.663 20.1557 12.8029 20.0359 12.9128C19.9161 13.0227 19.7635 13.0975 19.5973 13.1279C19.4312 13.1582 19.259 13.1426 19.1024 13.0832C18.9459 13.0237 18.8121 12.923 18.718 12.7938C18.6239 12.6646 18.5736 12.5127 18.5736 12.3573C18.5736 12.1489 18.6639 11.949 18.8245 11.8017C18.9852 11.6543 19.2031 11.5716 19.4302 11.5716ZM12.5775 16.2858C12.4081 16.2858 12.2425 16.2397 12.1016 16.1534C11.9608 16.067 11.851 15.9443 11.7861 15.8007C11.7213 15.6572 11.7043 15.4992 11.7374 15.3468C11.7705 15.1944 11.852 15.0544 11.9718 14.9445C12.0916 14.8346 12.2443 14.7598 12.4104 14.7295C12.5766 14.6991 12.7488 14.7147 12.9053 14.7742C13.0619 14.8336 13.1956 14.9343 13.2898 15.0636C13.3839 15.1928 13.4341 15.3447 13.4341 15.5001C13.4341 15.7085 13.3439 15.9083 13.1832 16.0556C13.0226 16.203 12.8047 16.2858 12.5775 16.2858ZM19.4302 19.4286C19.2608 19.4286 19.0952 19.3825 18.9543 19.2962C18.8135 19.2098 18.7037 19.0871 18.6388 18.9436C18.574 18.8 18.5571 18.642 18.5901 18.4896C18.6232 18.3372 18.7047 18.1972 18.8245 18.0873C18.9443 17.9774 19.097 17.9026 19.2631 17.8723C19.4293 17.842 19.6015 17.8575 19.758 17.917C19.9146 17.9765 20.0483 18.0772 20.1425 18.2064C20.2366 18.3356 20.2868 18.4875 20.2868 18.6429C20.2868 18.8513 20.1966 19.0511 20.0359 19.1985C19.8753 19.3458 19.6574 19.4286 19.4302 19.4286Z"
+                                                    fill="#F23704"/>
+                                                <path
+                                                    d="M15.492 19.3623H6.63616C5.91793 19.3644 5.22368 19.1116 4.6841 18.6513C4.14451 18.1911 3.7968 17.5553 3.70641 16.8636C3.61602 16.1718 3.78919 15.4718 4.19333 14.8954C4.59746 14.3189 5.20469 13.9058 5.9007 13.7337L7.11353 13.4299L6.36795 12.4539C5.71981 11.6114 5.37007 10.5879 5.37104 9.53639C5.38066 8.29667 5.87269 7.10631 6.74845 6.20404C7.62421 5.30177 8.81895 4.7543 10.0931 4.67142C11.3672 4.58854 12.6265 4.97638 13.6184 5.75716C14.6103 6.53794 15.2615 7.65393 15.4414 8.88132L15.5257 9.48398L17 8.05267C16.6218 6.48967 15.6656 5.11594 14.3128 4.19235C12.9601 3.26877 11.3051 2.85967 9.66215 3.04274C8.01919 3.22581 6.5027 3.98829 5.40067 5.1854C4.29863 6.3825 3.68782 7.93085 3.68422 9.53639C3.68339 10.5832 3.94384 11.6146 4.44329 12.5423C3.53335 13.0157 2.81247 13.7707 2.39516 14.6875C1.97786 15.6042 1.88807 16.63 2.14007 17.602C2.39207 18.5739 2.9714 19.4362 3.78602 20.0519C4.60063 20.6675 5.60381 21.0013 6.63616 21H15.492C15.7661 20.9985 16.0399 20.9807 16.3118 20.9468C15.9514 20.4765 15.7005 19.9359 15.5763 19.3623C15.5485 19.3623 15.5207 19.3623 15.492 19.3623Z"
+                                                    fill="#F23704"/>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                    <h5>Optimize using cloud</h5>
+                                    <p>
+                                        Adapt to change more quickly and improve cost to serve by moving all critical
+                                        business
+                                        operations to the cloud.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div
-                    className="offering__offering__block__small__small">
-                    <div>
-                        <span/>
-                        <h3>
-                            Become a world-class software organization
-                        </h3>
-                        <small
-                        style={{
-                            borderColor: 'rgba(242, 55, 4, 0.30)',
-                            backgroundColor: 'rgba(242, 55, 4, 0.20)',
-                        }}
-                        >Application transformation</small>
-                    </div>
-                    <div className="offering__offering__block__expand">
-                        <sub>
-                            Expand
-                        </sub>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white"/>
-                        </svg>
-                    </div>
+            }
+            <div className="offering__offering__block">
+                <div className="offering__offering__block__small">
+                    {selected !== 0 &&
+                        <div
+                            className="offering__offering__block__small__big">
+                            <div>
+                                <span className="orange__span"/>
+                                <h3>
+                                    Data is the driver and AI is the differentiator
+                                </h3>
+                                <small
+                                    style={{
+                                        borderColor: 'rgba(51, 138, 243, 0.30)',
+                                        backgroundColor: 'rgba(51, 138, 243, 0.20)',
+                                    }}
+                                >Cloud data and AI</small>
+                            </div>
+                            <div className="offering__offering__block__expand" onClick={() => setSelected(0)}>
+                                <sub>
+                                    Expand
+                                </sub>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none">
+                                    <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z"
+                                          fill="white"/>
+                                </svg>
+                            </div>
+                            <div className="offering__offering__block__small__big__second">
+                            </div>
+                        </div>}
+                    {selected !== 1 &&
+                        <div
+                            className="offering__offering__block__small__small">
+                            <div>
+                                <span className="orange__span"/>
+                                <h3>
+                                    Become a world-class software organization
+                                </h3>
+                                <small
+                                    style={{
+                                        borderColor: 'rgba(242, 55, 4, 0.30)',
+                                        backgroundColor: 'rgba(242, 55, 4, 0.20)',
+                                    }}
+                                >Application transformation</small>
+                            </div>
+                            <div className="offering__offering__block__expand" onClick={() => setSelected(1)}>
+                                <sub>
+                                    Expand
+                                </sub>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none">
+                                    <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z"
+                                          fill="white"/>
+                                </svg>
+                            </div>
+                        </div>}
+                </div>
+                <div className="offering__offering__block__small">
+                    {selected !== 2 &&
+                        <div
+                            className="offering__offering__block__small__small">
+                            <div>
+                                <span className="orange__span"/>
+                                <h3>
+                                    Reimagining experiences for people, purpose and profitability
+                                </h3>
+                                <small
+                                    style={{
+                                        borderColor: 'rgba(255, 79, 202, 0.30)',
+                                        backgroundColor: 'rgba(255, 79, 202, 0.20)',
+                                    }}
+                                >Edge computing</small>
+                            </div>
+                            <div className="offering__offering__block__expand" onClick={() => setSelected(2)}>
+                                <sub>
+                                    Expand
+                                </sub>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none">
+                                    <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z"
+                                          fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    }
+                    {selected !== 3 &&
+                        <div
+                            className="offering__offering__block__small__big"
+                        >
+                            <div>
+                                <span className="orange__span"/>
+                                <h3>
+                                    Gain resilience and innovate faster with a modern infrastructure </h3>
+                                <small
+                                    style={{
+                                        borderColor: 'rgba(150, 255, 108, 0.30)',
+                                        backgroundColor: 'rgba(150, 255, 108, 0.20)',
+                                    }}
+                                >Cloud infrastructure</small>
+                            </div>
+                            <div className="offering__offering__block__expand" onClick={() => setSelected(3)}>
+                                <sub>
+                                    Expand
+                                </sub>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none">
+                                    <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z"
+                                          fill="white"/>
+                                </svg>
+                            </div>
+                            <div className="justify-end" style={{paddingBottom: 72}}>
+                                <h2 style={{marginTop: 64}}>34%</h2>
+                                <p style={{color: '#fff'}}>of companies sat legacy infrastructure is one of the top
+                                    three
+                                    barriers to realizing cloud value</p>
+                            </div>
+                        </div>}
                 </div>
             </div>
-            <div className="offering__offering__block__small">
-                <div
-                    className="offering__offering__block__small__small">
-                    <div>
-                        <span/>
-                        <h3>
-                            Reimagining experiences for people, purpose and profitability
-                        </h3>
-                        <small
-                        style={{
-                            borderColor: 'rgba(255, 79, 202, 0.30)',
-                            backgroundColor: 'rgba(255, 79, 202, 0.20)',
-                        }}
-                        >Edge computing</small>
+            {selected !== null &&
+                <div className="offering__offering__block">
+                    <div className="offering__offering__block__small">
+                        {selected !== 0 &&
+                            <div
+                                className="offering__offering__block__small__big">
+                                <div>
+                                    <span className="orange__span"/>
+                                    <h3>
+                                        Data is the driver and AI is the differentiator
+                                    </h3>
+                                    <small
+                                        style={{
+                                            borderColor: 'rgba(51, 138, 243, 0.30)',
+                                            backgroundColor: 'rgba(51, 138, 243, 0.20)',
+                                        }}
+                                    >Cloud data and AI</small>
+                                </div>
+                                <div className="offering__offering__block__expand" onClick={() => setSelected(0)}>
+                                    <sub>
+                                        Expand
+                                    </sub>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none">
+                                        <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z"
+                                              fill="white"/>
+                                    </svg>
+                                </div>
+                                <div className="offering__offering__block__small__big__second">
+                                </div>
+                            </div>}
+                        {selected !== 1 &&
+                            <div
+                                className="offering__offering__block__small__small">
+                                <div>
+                                    <span className="orange__span"/>
+                                    <h3>
+                                        Become a world-class software organization
+                                    </h3>
+                                    <small
+                                        style={{
+                                            borderColor: 'rgba(242, 55, 4, 0.30)',
+                                            backgroundColor: 'rgba(242, 55, 4, 0.20)',
+                                        }}
+                                    >Application transformation</small>
+                                </div>
+                                <div className="offering__offering__block__expand" onClick={() => setSelected(1)}>
+                                    <sub>
+                                        Expand
+                                    </sub>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none">
+                                        <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z"
+                                              fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>}
                     </div>
-                    <div className="offering__offering__block__expand">
-                        <sub>
-                            Expand
-                        </sub>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white"/>
-                        </svg>
+                    <div className="offering__offering__block__small">
+                        {selected !== 2 &&
+                            <div
+                                className="offering__offering__block__small__small">
+                                <div>
+                                    <span className="orange__span"/>
+                                    <h3>
+                                        Reimagining experiences for people, purpose and profitability
+                                    </h3>
+                                    <small
+                                        style={{
+                                            borderColor: 'rgba(255, 79, 202, 0.30)',
+                                            backgroundColor: 'rgba(255, 79, 202, 0.20)',
+                                        }}
+                                    >Edge computing</small>
+                                </div>
+                                <div className="offering__offering__block__expand" onClick={() => setSelected(2)}>
+                                    <sub>
+                                        Expand
+                                    </sub>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none">
+                                        <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z"
+                                              fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        }
+                        {selected !== 3 &&
+                            <div
+                                className="offering__offering__block__small__big"
+                            >
+                                <div>
+                                    <span className="orange__span"/>
+                                    <h3>
+                                        Gain resilience and innovate faster with a modern infrastructure </h3>
+                                    <small
+                                        style={{
+                                            borderColor: 'rgba(150, 255, 108, 0.30)',
+                                            backgroundColor: 'rgba(150, 255, 108, 0.20)',
+                                        }}
+                                    >Cloud infrastructure</small>
+                                </div>
+                                <div className="offering__offering__block__expand" onClick={() => setSelected(3)}>
+                                    <sub>
+                                        Expand
+                                    </sub>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none">
+                                        <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z"
+                                              fill="white"/>
+                                    </svg>
+                                </div>
+                                <div className="justify-end" style={{paddingBottom: 72}}>
+                                    <h2 style={{marginTop: 64}}>34%</h2>
+                                    <p style={{color: '#fff'}}>of companies sat legacy infrastructure is one of the top
+                                        three
+                                        barriers to realizing cloud value</p>
+                                </div>
+                            </div>}
                     </div>
-                </div>
-                <div
-                    className="offering__offering__block__small__big"
-                >
-                    <div>
-                        <span/>
-                        <h3>
-                            Gain resilience and innovate faster with a modern infrastructure                        </h3>
-                        <small
-                        style={{
-                            borderColor: 'rgba(150, 255, 108, 0.30)',
-                            backgroundColor: 'rgba(150, 255, 108, 0.20)',
-                        }}
-                        >Cloud infrastructure</small>
-                    </div>
-                    <div className="offering__offering__block__expand">
-                        <sub>
-                            Expand
-                        </sub>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white"/>
-                        </svg>
-                    </div>
-                    <div className="justify-end" style={{paddingBottom:72}}>
-                        <h2 style={{marginTop:64}}>34%</h2>
-                        <p style={{color:'#fff'}}>of companies sat legacy infrastructure is one of the top three barriers to realizing cloud value</p>
-                    </div>
-                </div>
-            </div>
+                </div>}
         </div>
     )
 }
