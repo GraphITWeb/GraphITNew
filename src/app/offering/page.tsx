@@ -15,6 +15,7 @@ export default function Page() {
                 <h2 style={{fontWeight:700}}>Next-Gen AI Transformation</h2>
             </div>
             <OfferingBlock/>
+            <div style={{marginTop:96}}/>
             <Posts/>
         </div>
     )

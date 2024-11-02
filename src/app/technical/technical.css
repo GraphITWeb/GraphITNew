@@ -50,7 +50,7 @@
 }
 .why__choose__us{
     display: flex;
-    padding: 0 0 96px 0;
+    padding: 96px 80px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -58,8 +58,4 @@
     align-self: stretch;
     z-index: 1;
     position: relative;
-}
-.why__choose__us{
-    padding: 96px 80px;
-    background: var(--surface-blue);
 }

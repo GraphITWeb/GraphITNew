@@ -1,6 +1,6 @@
 .what__we__do__posts{
     display: flex;
-    padding: 0 0 96px 0;
+    padding: 96px 0 0 0;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
