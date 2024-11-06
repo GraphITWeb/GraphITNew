@@ -58,7 +58,6 @@
 .get__started svg g path:nth-child(8n + 7) {
     animation-delay: 1.75s;
 }
-
 .get__started svg g path:nth-child(8n + 8) {
     animation-delay: 2s;
 }
@@ -153,7 +152,75 @@
 }
 .business{
     align-items: flex-start;
-    background:url("../assets/CTA.png") no-repeat center center;
+    background:url("../../assets/CTA.png") no-repeat center center;
     background-size: cover;
     gap: 16px;
 }
+
+.loading-animation{
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--primary);
+    z-index: 90999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading-animation svg{
+    width: 330px;
+    height: 370px;
+}
+@keyframes logoOpacity {
+     0%{
+         opacity: 0;
+     }
+    100%{
+        opacity: 1;
+    }
+}
+.loading-animation svg path{
+    animation: logoOpacity 0.5s ease-in-out forwards;
+    opacity: 0;
+}
+.loading-animation svg path:nth-child(1) {
+    animation-delay: 0s;
+}
+.loading-animation svg path:nth-child(2) {
+    animation-delay: 3s;
+}
+.loading-animation svg path:nth-child(3) {
+    animation-delay: 2s;
+}
+.loading-animation svg path:nth-child(4) {
+    animation-delay: 1s;
+}
+.loading-animation svg path:nth-child(5) {
+     animation-delay: 4s;
+ }
+.loading-animation svg path:nth-child(6) {
+    animation-delay: 5s;
+}
+.loading-animation svg path:nth-child(7) {
+    animation-delay: 1.5s;
+}
+.loading-animation svg path:nth-child(8) {
+    animation-delay: 2.4s;
+}
+.loading-animation svg path:nth-child(9) {
+    animation-delay: 0.5s;
+}
+.loading-animation svg path:nth-child(10) {
+    animation-delay: 4.5s;
+}
+.loading-animation svg path:nth-child(11) {
+    animation-delay: 3.5s;
+}
+.loading-animation svg path:nth-child(12) {
+    animation-delay: 5.5s;
+}
+
+
+
