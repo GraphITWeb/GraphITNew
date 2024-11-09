@@ -17,8 +17,7 @@
 
 .scrollable__block__items {
     display: flex;
-    animation: swipe 10s linear infinite;
-    width: 4752px;
+    animation: swipe 30s linear infinite;
     user-select: none;
 }
 @keyframes swipe {

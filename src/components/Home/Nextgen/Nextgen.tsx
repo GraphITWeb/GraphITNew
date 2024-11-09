@@ -116,7 +116,7 @@ const Nextgen = () => {
                         <div className="nextgen__image w-6/12">
                             <Image style={{width: '100%', height: '100%', borderRadius: 12}} src={images[active]}
                                    alt={''}/>
-                            <Button label={'Learn more'} btnStyle={{padding:'12px 32px',position:"absolute",right:24,bottom:24}} btnDivStyle={{fontSize:18}}/>
+                            <Button onClick={()=>window.location.href='/technical'} label={'Learn more'} btnStyle={{padding:'12px 32px',position:"absolute",right:24,bottom:24}} btnDivStyle={{fontSize:18}}/>
                         </div>
                     </div>
                 </div>

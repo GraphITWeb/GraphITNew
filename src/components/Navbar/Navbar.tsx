@@ -1,11 +1,25 @@
 "use client";
 import './Navbar.css';
-import React, {useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import Link from "next/link";
 import Button from "@/components/Button/Button";
 
 const Navbar = () => {
     const [isOpen,setIsOpen]=useState(false)
+    const dropdownRef = useRef<HTMLAnchorElement>(null);
+
+    const handleClickOutside = (event: MouseEvent) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+            setIsOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
     return (
         <nav>
             <div className="flex flex-row gap-3 align-middle items-center text-center" onClick={() => window.location.href = '/'} style={{cursor: 'pointer'}}>
@@ -53,7 +67,7 @@ const Navbar = () => {
                 <Link href='/what-we-do'>
                     <small> What We Do</small>
                 </Link>
-                <a>
+                <a ref={dropdownRef}>
                     <small onClick={() => setIsOpen(!isOpen)}>Who We Are </small>
                     <svg onClick={() => setIsOpen(!isOpen)} xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
                         <path
