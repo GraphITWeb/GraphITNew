@@ -1,0 +1,17 @@
+.visit {
+    display: flex;
+    padding: 96px 80px;
+    align-items: flex-start;
+    gap: 142px;
+    align-self: stretch;
+    background: var(--surface-blue);
+}
+
+.visit div h2 {
+    margin-bottom: 20px;
+}
+
+.visit div b {
+    color: var(--orange);
+    margin-bottom: 12px;
+}

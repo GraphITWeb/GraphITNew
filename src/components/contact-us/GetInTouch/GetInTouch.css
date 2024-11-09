@@ -1,0 +1,25 @@
+.GetInTouch{
+    text-align: center;
+    width: 50vw;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 96px;
+}
+.GetInTouch__first{
+    display: flex;
+    flex-direction: row!important;
+    gap: 32px!important;
+    margin-top: 32px;
+    width: 100%;
+}
+.GetInTouch div,.GetInTouch__first div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.GetInTouch div small{
+    text-align: left;
+    color: var(--text-gray);
+}

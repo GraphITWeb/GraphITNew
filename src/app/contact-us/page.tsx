@@ -3,6 +3,8 @@ import ContactMap from "@/components/contact-us/ContactMap/ContactMap";
 import Main from "@/components/Main/Main";
 import './ContactUs.css';
 import ContactUsBlock from "@/components/contact-us/ContactUsBlock/ContactUsBlock";
+import GetInTouch from "@/components/contact-us/GetInTouch/GetInTouch";
+import Visit from "@/components/contact-us/Visit/Visit";
 export default function ContactUsPage() {
     return (
         <div className="flex flex-col items-center justify-items-center">
@@ -45,8 +47,9 @@ export default function ContactUsPage() {
                     details="1 (877) 889-9009<br/>1 (216) 672-0266"
 
                 />
-
             </div>
+            <GetInTouch/>
+            <Visit/>
         </div>
     )
 }
