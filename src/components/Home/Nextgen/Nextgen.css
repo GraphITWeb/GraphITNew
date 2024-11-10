@@ -80,7 +80,9 @@
     }
 }
 @media screen and (max-width: 768px) {
-
+    .nextgen__block{
+        padding:16px;
+    }
     .nextgen__image{
         height: 420px;
     }
