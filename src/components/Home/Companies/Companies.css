@@ -1,4 +1,4 @@
-.companies{
+.companies {
     display: flex;
     padding: 76px 0;
     flex-direction: column;
@@ -7,6 +7,11 @@
     gap: 24px;
     align-self: stretch;
     position: relative;
+}
+
+.companies h2 {
+    word-wrap: break-word;
+    text-align: center;
 }
 
 .scrollable__block {
@@ -27,5 +32,26 @@
 
     100% {
         transform: translateX(-33%);
+    }
+}
+.companies__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 24px;
+}
+.companies__grid div{
+    width: 100%!important;
+    margin: 0!important;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+}
+.companies sub{
+    text-align: center;
+}
+@media screen and (max-width: 576px) {
+    .companies {
+        padding: 40px 16px;
     }
 }

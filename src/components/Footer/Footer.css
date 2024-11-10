@@ -7,6 +7,12 @@ footer{
     gap: 36px;
     width: 100%;
 }
+.footer__first,.footer__second{
+   display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+}
 .social__circle{
     width: 40px;
     height: 40px;
@@ -39,10 +45,18 @@ footer{
 @media screen and (max-width: 992px) {
     footer{
         flex-direction: column;
+        padding: 64px 32px;
+    }
+    .footer__first,.footer__second{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .subscribe{
+        max-width: 450px;
     }
 }
 @media screen and (max-width: 768px) {
     footer{
-        flex-direction: column;
+        padding: 64px 16px;
     }
 }

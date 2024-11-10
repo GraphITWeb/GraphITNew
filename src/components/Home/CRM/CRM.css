@@ -49,3 +49,45 @@
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
 }
+
+@media screen and (max-width: 992px) {
+    .CRM__block__description{
+        padding: 0 40px;
+        flex-direction: column;
+    }
+    .CRM__block__description div p{
+        width: 100%;
+    }
+    .CRM__block__description button{
+        margin-top: 16px;
+    }
+    .CRM div h2{
+        word-wrap: break-word;
+        text-align: center;
+    }
+    .CRM{
+        padding: 64px 0;
+    }
+}
+@media screen and (max-width: 576px) {
+    .CRM__block__arrow{
+        display: none;
+    }
+    .CRM__block img{
+        height: 200px;
+        border-radius: 12px;
+    }
+    .CRM__block__description button{
+        width: 100%;
+        padding: 8px 0!important;
+    }
+    .CRM__block__description button div {
+        font-size: 16px!important;
+    }
+    .CRM{
+        padding: 64px 16px;
+    }
+    .CRM__block__description {
+        padding: 0;
+    }
+}

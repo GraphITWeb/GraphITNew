@@ -36,6 +36,13 @@
     opacity: 0.6;
     cursor: pointer;
 }
+.nextgen__block__block {
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    width: 50%;
+}
+
 .nextgen__block__item.active{
     opacity: 1;
 }
@@ -44,4 +51,23 @@
     background: #09091A;
     border-radius: 12px;
     position: relative;
+    width: 50%;
+}
+@media screen and (max-width: 768px) {
+    .nextgen__block{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .nextgen__block__block, .nextgen__image{
+        width: 100%;
+    }
+    .nextgen__block__block{
+        flex-direction: row;
+        overflow: hidden;
+        width: max-content;
+    }
+    .nextgen__block__item{
+        max-width: 60vw;
+    }
 }

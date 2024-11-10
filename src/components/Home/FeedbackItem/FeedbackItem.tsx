@@ -1,5 +1,6 @@
 import Image, {StaticImageData} from "next/image";
 import React from "react";
+import useMobile from "@/hooks/useMobile";
 
 interface FeedbackProps {
     imgUser: StaticImageData;
@@ -7,21 +8,25 @@ interface FeedbackProps {
 }
 
 const FeedbackItem: React.FC<FeedbackProps> = ({imgUser, description}) => {
+    const isMobile = useMobile(768);
     return (
         <>
             <div className="feedback__block">
-
-                <div className="flex flex-col gap-3 w-32">
+                <div className="feedback__block__header">
                     <Image width={48} height={48} src={imgUser} alt='user'/>
                     <div className="flex flex-col gap-0">
                         <p style={{fontWeight: 500, color: 'white'}}>Courtney H.</p>
                         <small style={{color: 'var(--text-gray)'}}>UI/UX Designer</small>
                     </div>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="108" viewBox="0 0 2 108" fill="none">
-                    <path d="M1 0V108" stroke="white" strokeOpacity="0.15"/>
-                </svg>
-                <div className="flex flex-col gap-3 justify-start h-full" style={{marginTop: 8}}>
+                {isMobile ?
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="100%" height="2" style={{border:'solid 1px rgba(255, 255, 255, 0.15)'}} viewBox="0 0 303 2" fill="none">
+                    </svg> :
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="108" viewBox="0 0 2 108" fill="none">
+                        <path d="M1 0V108" stroke="white" strokeOpacity="0.15"/>
+                    </svg>
+                }
+                <div className="feedback__block__description">
                     <div className="flex flex-row gap-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                              fill="none">

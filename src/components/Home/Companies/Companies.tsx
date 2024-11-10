@@ -1,9 +1,12 @@
 'use client'
 import './Companies.css'
-
-const Wizz = () => {
+import React from "react";
+interface ItemProps{
+    margin:number;
+}
+const Wizz: React.FC<ItemProps>  = ({margin}) => {
     return (
-        <div style={{width: 195, marginLeft: 100}}>
+        <div style={{width: 195, marginLeft: margin}}>
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
                  id="Layer_1" x="0px" y="0px" width={195} height={90} viewBox="0 0 130 60"
                  enable-background="new 0 0 130 60">
@@ -304,7 +307,7 @@ const BMW = () => {
 
 const Cisco = () => {
     return (
-        <div style={{width: 164, marginLeft: 100,display:'flex',alignItems:'center',justifyContent:'flex-start'}}>
+        <div style={{width: 164, marginLeft: 100, display: 'flex', alignItems: 'center', justifyContent: 'flex-start'}}>
             <svg width={96} height={96} viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -326,7 +329,7 @@ const Cisco = () => {
 
 const WPP = () => {
     return (
-        <div style={{width: 164, marginLeft: 100,display:'flex',alignItems: 'center'}}>
+        <div style={{width: 164, marginLeft: 100, display: 'flex', alignItems: 'center'}}>
             <svg xmlns="http://www.w3.org/2000/svg" id="svg7447" version="1.1"
                  width="155" height="48" viewBox="-1.53 -1.53 173.15961 54.06">
                 <defs id="defs7444"/>
@@ -350,35 +353,47 @@ const COOP = () => {
     )
 }
 const Items = () => {
-  return(<>
-      <Wizz/>
-    <BMW/>
-    <Cisco/>
-    <WPP/>
-    <COOP/>
-    </>
-  )
+    return (<>
+            <Wizz margin={100}/>
+            <BMW/>
+            <Cisco/>
+            <WPP/>
+            <COOP/>
+        </>
+    )
 }
 const Companies = () => {
-
+    // const isMobile = useMobile(768)
     return (
         <div className="companies">
             <h2>Trusted by Many Established Companies</h2>
             <sub>350+ partnerships to help accelerate change</sub>
-            <div className='scrollable__block'>
-                <div className='flex'>
-                    <div className='scrollable__block__items'>
-                       <Items/>
+            {/*{isMobile ?*/}
+            {/*    <>*/}
+            {/*        <div className="companies__grid">*/}
+            {/*            <BMW/>*/}
+            {/*            <Cisco/>*/}
+            {/*            <WPP/>*/}
+            {/*            <COOP/>*/}
+            {/*        </div>*/}
+            {/*        <Wizz margin={0}/>*/}
+            {/*    </>*/}
+            {/*    :*/}
+                <div className='scrollable__block'>
+                    <div className='flex'>
+                        <div className='scrollable__block__items'>
                         <Items/>
-                        <Items/>
-                        <Items/>
-                        <Items/>
-                        <Items/>
-                        <Items/>
-                        <Items/>
+                            <Items/>
+                            <Items/>
+                            <Items/>
+                            <Items/>
+                            <Items/>
+                            <Items/>
+                            <Items/>
+                        </div>
                     </div>
                 </div>
-            </div>
+            {/*}*/}
         </div>
     );
 };

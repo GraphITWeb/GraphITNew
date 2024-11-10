@@ -41,7 +41,6 @@ const Nextgen = () => {
                 const blockHeight = height / 4; // Оскільки у нас 4 блоки
                 const currentBlock = Math.floor((scrollPosition - sectionTop) / blockHeight);
 
-                // Переконуємося, що індекс активного блоку знаходиться в допустимих межах
                 if (currentBlock >= 0 && currentBlock < 4) {
                     setActive(currentBlock);
                 }
@@ -67,7 +66,7 @@ const Nextgen = () => {
                             Venture adapt to your business, not the other way around.</sub>
                     </div>
                     <div className="nextgen__block">
-                        <div className="flex flex-col gap-3 w-6/12">
+                        <div className="nextgen__block__block">
                             <div className={active === 0 ? "nextgen__block__item active" : "nextgen__block__item"}>
                                 <div className="flex flex-row gap-2">
                                     <NextgenIcon/>
@@ -113,7 +112,7 @@ const Nextgen = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="nextgen__image w-6/12">
+                        <div className="nextgen__image">
                             <Image style={{width: '100%', height: '100%', borderRadius: 12}} src={images[active]}
                                    alt={''}/>
                             <Button onClick={()=>window.location.href='/technical'} label={'Learn more'} btnStyle={{padding:'12px 32px',position:"absolute",right:24,bottom:24}} btnDivStyle={{fontSize:18}}/>

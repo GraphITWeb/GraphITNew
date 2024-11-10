@@ -1,4 +1,4 @@
-.get__started{
+.get__started {
     display: flex;
     padding: 96px 80px;
     flex-direction: row;
@@ -8,6 +8,7 @@
     width: 100%;
     background: linear-gradient(0deg, #09091A 0%, rgba(9, 9, 26, 0.00) 100%);
 }
+
 @keyframes fadeInOpacity {
     0% {
         opacity: 1;
@@ -26,41 +27,50 @@
     }
 }
 
-.get__started svg{
+.get__started svg {
     position: absolute;
     cursor: default;
     z-index: -1;
 }
+
 .get__started svg g path {
     fill: #FF0800;
-    opacity: 1; /* Start invisible */
+    opacity: 1;
     animation: fadeInOpacity 4s ease-in-out infinite alternate;
 }
-/* Apply a delay to every group of paths */
+
 .get__started svg g path:nth-child(8n + 1) {
     animation-delay: 0.25s;
 }
+
 .get__started svg g path:nth-child(8n + 2) {
     animation-delay: 0.5s;
 }
+
 .get__started svg g path:nth-child(8n + 3) {
     animation-delay: 0.75s;
 }
+
 .get__started svg g path:nth-child(8n + 4) {
     animation-delay: 1s;
 }
+
 .get__started svg g path:nth-child(8n + 5) {
     animation-delay: 1.25s;
 }
+
 .get__started svg g path:nth-child(8n + 6) {
     animation-delay: 1.5s;
 }
+
 .get__started svg g path:nth-child(8n + 7) {
     animation-delay: 1.75s;
 }
+
 .get__started svg g path:nth-child(8n + 8) {
     animation-delay: 2s;
 }
+
 @keyframes slideIn {
     from {
         transform: translateX(-100%);
@@ -71,6 +81,7 @@
         opacity: 1;
     }
 }
+
 .get__started__innovate {
     display: flex;
     padding-right: 32px;
@@ -80,13 +91,15 @@
     max-width: 548px;
     flex: 1 0 0;
 }
-.get__started__innovate h1{
+
+.get__started__innovate h1 {
     display: flex;
     flex-direction: row;
     transform: translateX(-100%);
     opacity: 0;
     animation: slideIn 1s ease-out forwards;
 }
+
 .get__started__innovate h1:nth-child(1) {
     animation-delay: 0s;
 }
@@ -98,10 +111,12 @@
 .get__started__innovate h1:nth-child(3) {
     animation-delay: 1.5s;
 }
-.get__started__innovate h1 div{
+
+.get__started__innovate h1 div {
     color: var(--orange);
 }
-.get__started__info{
+
+.get__started__info {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -109,7 +124,8 @@
     max-width: 548px;
     padding-left: 32px;
 }
-.get__started__info_companies{
+
+.get__started__info_companies {
     display: flex;
     flex-direction: row;
     gap: 6px;
@@ -122,8 +138,10 @@
     padding: 4px 12px;
     align-items: center;
     max-width: fit-content;
+    white-space: nowrap;
 }
-.feedback,.nextgen,.business{
+
+.feedback, .nextgen, .business {
     display: flex;
     padding: 96px 80px;
     flex-direction: column;
@@ -134,7 +152,9 @@
     z-index: 1;
     position: relative;
 }
-.feedback__block{
+
+
+.feedback__block {
     display: flex;
     padding: 32px;
     align-items: flex-start;
@@ -145,19 +165,39 @@
     background: #141433;
     width: 100%;
 }
-.feedback__block span{
+
+.feedback__block__header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 8rem;
+}
+
+.feedback__block__description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: flex-start;
+    height: 100%;
+    margin-top: 8px;
+}
+
+.feedback__block span {
     height: 108px;
     width: 0;
     border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
-.business{
+
+.business {
     align-items: flex-start;
-    background:url("../../assets/CTA.png") no-repeat center center;
+    background: url("../../assets/CTA.png") no-repeat center center;
     background-size: cover;
     gap: 16px;
 }
-
-.loading-animation{
+.business h2{
+    display: grid;
+}
+.loading-animation {
     position: fixed;
     height: 100vh;
     top: 0;
@@ -169,6 +209,109 @@
     align-items: center;
     justify-content: center;
 }
-.cls-2{
+
+.cls-2 {
     fill: var(--orange);
+}
+
+@media screen and (max-width: 1200px) {
+    .get__started__innovate {
+        transform: scale(0.8);
+        padding-right: 0;
+    }
+
+    .get__started__info {
+        padding-left: 0;
+    }
+
+    .get__started svg {
+        top: 90px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nextgen__sticky div h2, .feedback div h2 {
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .feedback__block__header {
+        min-width: 7rem;
+    }
+
+    .get__started {
+        padding: 64px 16px;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .get__started svg {
+        max-width: 100vw;
+        height: auto;
+    }
+
+    .get__started__innovate {
+        transform: scale(1);
+        /*max-width: none;*/
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .get__started svg {
+        /*top: 0;*/
+        top: 74px;
+    }
+    .get__started__info {
+        max-width: 100%;
+    }
+    .feedback__block__header {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .get__started__innovate {
+        transform: scale(1);
+        max-width: none;
+    }
+
+    .feedback__block {
+        flex-direction: column;
+    }
+
+    .feedback {
+        padding: 0 32px 64px 32px;
+    }
+    .business{
+        background: url("../../assets/CTAMobile.png") no-repeat center center;
+        background-size: cover;
+    }
+    .nextgen,.business{
+        padding: 64px 32px;
+    }
+    .business h2{
+        display: block;
+    }
+    .business button{
+        padding: 8px 0!important;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .get__started__innovate h1 {
+        font-size: 40px;
+    }
+
+    .feedback {
+        padding: 0 16px 64px 16px;
+    }
+
+    .get__started__info button {
+        width: 100%;
+        padding: 12px 0 !important;
+    }
+
+    .nextgen,.business{
+        padding: 64px 16px;
+    }
 }

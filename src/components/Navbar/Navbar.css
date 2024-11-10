@@ -32,3 +32,13 @@ a small{
     gap: 12px;
     top: 30px;
 }
+@media screen and (max-width: 992px) {
+    nav{
+        padding: 24px;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav{
+        padding: 16px;
+    }
+}
