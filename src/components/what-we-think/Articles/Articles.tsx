@@ -31,7 +31,7 @@ const Articles:React.FC<ArticlesProps> = ({type}) => {
     return(
       <div className="what__we__think__articles">
           <h3>{type}</h3>
-          <div className="flex flex-row justify-between w-full gap-8">
+          <div className="what__we__think__articles__dropdowns">
               <Dropdown variants={['Research report','Engineer']} label='Select topic' selected={selectedTopic} setSelected={setSelectedTopic}/>
               <Dropdown variants={['AI','Big Data']} label='Select industry' selected={selectedIndustry} setSelected={setSelectedIndustry}/>
               <Dropdown variants={['Content A','Content B']} label='Content Type' selected={selectedSort} setSelected={setSelectedSort}/>

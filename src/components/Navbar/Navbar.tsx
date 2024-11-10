@@ -87,13 +87,13 @@ const Navbar = () => {
             {mobileOpen &&
                 <div className="navbar__mobile">
                     <div className="navbar__mobile__div__first">
-                        <div className="navbar__mobile__div__first__header">
+                        <div className="navbar__mobile__div__first__header"  onClick={() => {
+                            setIsOpenMobile(!isOpenMobile)
+                        }}>
                             <h4>
                                 Who we are
                             </h4>
-                            <svg onClick={() => {
-                                setIsOpenMobile(!isOpenMobile)
-                            }}
+                            <svg
                                  className={`${isOpenMobile ? '' : 'svgOpen'} `}
                                  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none">
@@ -101,8 +101,9 @@ const Navbar = () => {
                             </svg>
                         </div>
                         {isOpenMobile&&<>
-                        <div className="navbar__mobile__div__first__block">
-                            <div className="our__vision__svg">
+                            <div className="navbar__mobile__div__first__block"
+                                 onClick={() => window.location.href = '/our-approach'}>
+                                <div className="our__vision__svg">
                                 <div className="our__vision__svg__small" style={{width:40,height:40}}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
                                          fill="none">
@@ -117,8 +118,9 @@ const Navbar = () => {
                                 <small>Lorem ipsum</small>
                             </div>
                         </div>
-                        <div className="navbar__mobile__div__first__block">
-                            <div className="our__vision__svg">
+                            <div className="navbar__mobile__div__first__block"
+                                 onClick={() => window.location.href = '/our-values'}>
+                                <div className="our__vision__svg">
                                 <div className="our__vision__svg__small" style={{width: 40, height: 40}}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
                                          fill="none">
@@ -133,7 +135,7 @@ const Navbar = () => {
                                 <small>Lorem ipsum</small>
                             </div>
                         </div>
-                        <div className="navbar__mobile__div__first__block">
+                        <div className="navbar__mobile__div__first__block" onClick={()=>window.location.href='/our-people'}>
                             <div className="our__vision__svg">
                                 <div className="our__vision__svg__small" style={{width: 40, height: 40}}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
@@ -151,17 +153,17 @@ const Navbar = () => {
                         </div>
                         </>}
                     </div>
-                    <div className="navbar__mobile__div">
+                    <div className="navbar__mobile__div"  onClick={() => window.location.href = '/what-we-do'}>
                         <h4>
                             What we do
                         </h4>
                     </div>
-                    <div className="navbar__mobile__div">
+                    <div className="navbar__mobile__div"  onClick={() => window.location.href = '/what-we-think'}>
                         <h4>
                             What we think
                         </h4>
                     </div>
-                    <div className="navbar__mobile__div">
+                    <div className="navbar__mobile__div"  onClick={() => window.location.href = '/case-studies'}>
                         <h4>
                             Case studies
                         </h4>

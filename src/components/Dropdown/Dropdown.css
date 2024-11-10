@@ -26,6 +26,7 @@
     border: 1px solid var(--light-blue);
     background: rgba(18, 18, 46, 0.70);
     width: 100%;
+    z-index: 9;
 }
 
 .dropdown__select div:first-child {

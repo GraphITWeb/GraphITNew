@@ -30,3 +30,24 @@
 .our__value__what__header p {
     max-width: 60%;
 }
+@media screen and (max-width: 992px) {
+    .our__value__what{
+        padding: 64px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .our__value__what{
+        padding: 64px 32px;
+    }
+    .our__value__what h2 {
+        font-size: 32px;
+    }
+    .our__value__what__header p{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .our__value__what{
+        padding: 64px 16px;
+    }
+}

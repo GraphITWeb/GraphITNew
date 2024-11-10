@@ -123,7 +123,4 @@ a small{
     .navbar__mobile__div__first__block__small small{
         color: var(--text-gray);
     }
-    .navbar__mobile div h4{
-        font-size: 20px;
-    }
 }

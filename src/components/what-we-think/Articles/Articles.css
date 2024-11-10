@@ -11,3 +11,38 @@
     grid-template-columns: auto auto auto;
     gap: 32px;
 }
+.what__we__think__articles__dropdowns{
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+    .what__we__think__articles {
+        padding: 0 32px 64px 32px;
+    }
+    .what__we__think__articles__block{
+        gap: 16px;
+    }
+    .what__we__think__articles__dropdowns{
+        gap: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .what__we__think__articles {
+        padding: 0 16px 64px 16px;
+    }
+    .what__we__think__articles__block{
+        grid-template-columns: auto;
+    }
+    .what__we__think__articles__dropdowns{
+        gap: 8px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .what__we__think__articles__dropdowns{
+        gap: 16px;
+        flex-direction: column;
+    }
+}

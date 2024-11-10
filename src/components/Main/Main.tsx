@@ -11,12 +11,10 @@ const Main: React.FC<MainProps> = ({subText, header, description}) => {
     return (
                 <div className="main__block">
                     <div style={{
-                        position: "absolute", top: 0, left: 0, overflow: "hidden",
+                        position: "absolute", top: 0, left: 0, overflow: "hidden",zIndex:-1
                         // animation: "gradientAnimation 4s forwards"
                     }}>
-
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="348" height="323" viewBox="0 0 348 323"
+                        <svg xmlns="http://www.w3.org/2000/svg" className="main__block__svg" viewBox="0 0 348 323"
                              fill="none">
                             <g opacity="0.5">
                                 <path
@@ -38,7 +36,7 @@ const Main: React.FC<MainProps> = ({subText, header, description}) => {
 
                     <div style={{
                         position: "absolute", bottom: -76, right: 0, overflow: "hidden",
-                    }}>
+                    }} className="pc">
                         <svg xmlns="http://www.w3.org/2000/svg" width="330" height="500" viewBox="0 0 330 500"
                              fill="none">
                             <g opacity="0.5">

@@ -1,4 +1,5 @@
 'use client';
+import './WeMeant.css'
 import {useEffect, useState} from "react";
 
 const WeMeant = () => {
@@ -26,16 +27,7 @@ const WeMeant = () => {
     }, []);
 
     return (
-        <div id="container" style={{
-            position: "relative",
-            display: 'flex',
-            flexDirection: 'column',
-            width: '100%',
-            padding: 80,
-            gap: 130,
-            marginTop: 150,
-            transition: 'opacity 0.5s ease',
-        }}>
+        <div id="container" className="we__meant__sticky">
             <h1 className="sticky__text" style={{
                 opacity: isVisible ? 1 : 0,
                 whiteSpace: "word-wrap",
