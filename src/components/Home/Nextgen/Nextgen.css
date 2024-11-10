@@ -93,16 +93,16 @@
         height: 300px;
     }
     .nextgen__sticky {
-        top: 15vh;
+        top: 12.5vh;
     }
 }
 @media screen and (max-width: 522px) {
     .nextgen__sticky {
-        top: 12.5vh;
+        top: 7.5vh;
     }
 }
 @media screen and (max-width: 420px) {
     .nextgen__sticky {
-        top: 10vh;
+        top: 5vh;
     }
 }
