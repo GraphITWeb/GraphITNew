@@ -219,14 +219,24 @@ small {
         width: Calc(100vw - 120px);
     }
 }
-
+.mobile{
+    display: none;
+}
+.pc{
+    display: block;
+}
 @media screen and (max-width: 768px) {
     .sticky__text {
         font-size: 90px;
     }
-
     .unlocked_block {
         width: Calc(100vw - 64px);
+    }
+    .mobile{
+        display: block;
+    }
+    .pc{
+        display: none;
     }
 }
 

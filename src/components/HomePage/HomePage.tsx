@@ -9,7 +9,6 @@ import Unlocked from "@/components/Home/Unlocked/Unlocked";
 import FeedbackItem from "@/components/Home/FeedbackItem/FeedbackItem";
 import GetStarted from "@/components/Home/GetStarted/GetStarted";
 import React, {useEffect, useState} from "react";
-import useMobile from "@/hooks/useMobile";
 
 const HomePage = () => {
     const [loading, setLoading] = useState(false);
@@ -44,7 +43,6 @@ const HomePage = () => {
 
         return () => clearInterval(intervalId); // очищення інтервалу при размонтуванні
     }, []);
-    const isMobile = useMobile(768)
     return (
         <>
             {loading ?
@@ -89,7 +87,7 @@ const HomePage = () => {
                 :
                 <div className="flex flex-col items-center justify-items-center">
                     <div className="get__started">
-                        {isMobile ? <svg width="375" height="396" viewBox="0 0 375 396" fill="none"
+                        <svg className="mobile" width="375" height="396" viewBox="0 0 375 396" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="1">
                                     <path
@@ -832,8 +830,7 @@ const HomePage = () => {
                                         fill="#FF0800"/>
                                 </g>
                             </svg>
-                            :
-                            <svg xmlns="http://www.w3.org/2000/svg" width="932" height="471" viewBox="0 0 932 471"
+                            <svg className="pc" xmlns="http://www.w3.org/2000/svg" width="932" height="471" viewBox="0 0 932 471"
                                  fill="none">
                                 <g opacity="1">
                                     <path
@@ -1642,7 +1639,7 @@ const HomePage = () => {
                                         fill="#FF0800"/>
                                 </g>
                             </svg>
-                        }
+
                         <div className="get__started__innovate">
                             <h1>Innovate
                                 <div>.</div>

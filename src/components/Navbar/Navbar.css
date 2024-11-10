@@ -32,6 +32,9 @@ a small{
     gap: 12px;
     top: 30px;
 }
+.navbar__right svg{
+    display: none;
+}
 @media screen and (max-width: 992px) {
     nav{
         padding: 24px;
@@ -40,5 +43,14 @@ a small{
 @media screen and (max-width: 768px) {
     nav{
         padding: 16px;
+    }
+    .navbar__pc{
+        display: none;
+    }
+    .navbar__right button{
+        display: none;
+    }
+    .navbar__right svg{
+        display: block;
     }
 }

@@ -1,10 +1,12 @@
 'use client'
 import './Companies.css'
 import React from "react";
-interface ItemProps{
-    margin:number;
+
+interface ItemProps {
+    margin: number;
 }
-const Wizz: React.FC<ItemProps>  = ({margin}) => {
+
+const Wizz: React.FC<ItemProps> = ({margin}) => {
     return (
         <div style={{width: 195, marginLeft: margin}}>
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -363,37 +365,24 @@ const Items = () => {
     )
 }
 const Companies = () => {
-    // const isMobile = useMobile(768)
     return (
         <div className="companies">
             <h2>Trusted by Many Established Companies</h2>
             <sub>350+ partnerships to help accelerate change</sub>
-            {/*{isMobile ?*/}
-            {/*    <>*/}
-            {/*        <div className="companies__grid">*/}
-            {/*            <BMW/>*/}
-            {/*            <Cisco/>*/}
-            {/*            <WPP/>*/}
-            {/*            <COOP/>*/}
-            {/*        </div>*/}
-            {/*        <Wizz margin={0}/>*/}
-            {/*    </>*/}
-            {/*    :*/}
-                <div className='scrollable__block'>
-                    <div className='flex'>
-                        <div className='scrollable__block__items'>
+            <div className='scrollable__block'>
+                <div className='flex'>
+                    <div className='scrollable__block__items'>
                         <Items/>
-                            <Items/>
-                            <Items/>
-                            <Items/>
-                            <Items/>
-                            <Items/>
-                            <Items/>
-                            <Items/>
-                        </div>
+                        <Items/>
+                        <Items/>
+                        <Items/>
+                        <Items/>
+                        <Items/>
+                        <Items/>
+                        <Items/>
                     </div>
                 </div>
-            {/*}*/}
+            </div>
         </div>
     );
 };

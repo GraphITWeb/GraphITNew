@@ -3,7 +3,6 @@ import './Navbar.css';
 import React, {useEffect, useRef, useState} from "react";
 import Link from "next/link";
 import Button from "@/components/Button/Button";
-import useMobile from "@/hooks/useMobile";
 
 const Navbar = () => {
     const [isOpen,setIsOpen]=useState(false)
@@ -14,7 +13,6 @@ const Navbar = () => {
             setIsOpen(false);
         }
     };
-    const isMobile=useMobile(768)
 
     useEffect(() => {
         document.addEventListener('mousedown', handleClickOutside);
@@ -33,8 +31,7 @@ const Navbar = () => {
                 </svg>
                 <div className="nav__logo__text">GraphIT</div>
             </div>
-            {!isMobile&&
-            <div className="flex flex-row gap-10">
+            <div className="flex flex-row gap-10 navbar__pc">
                 <Link href='/what-we-do'>
                     <small> What We Do</small>
                 </Link>
@@ -67,14 +64,12 @@ const Navbar = () => {
                     <small>Case Studies</small>
                 </Link>
             </div>
-            }
-            {isMobile? <>
+            <div className="navbar__right">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z" fill="white"/>
                     </svg>
-                </> :
                 <Button onClick={() => window.location.href = '/contact-us'} label='Contact Us'/>
-            }
+            </div>
         </nav>
     );
 };
