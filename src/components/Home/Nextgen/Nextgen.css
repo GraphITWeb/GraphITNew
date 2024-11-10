@@ -67,7 +67,7 @@
     }
     .nextgen__block__block{
         flex-direction: row;
-        overflow: hidden;
+        overflow: scroll;
         width: max-content;
     }
     .nextgen__block{
