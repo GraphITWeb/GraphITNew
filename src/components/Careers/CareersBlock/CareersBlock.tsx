@@ -40,7 +40,7 @@ const CareersBlock: React.FC<CareersBlockProps>  = ({position,direction,flagImag
                       {time}
                   </h6>
                   <svg style={{marginLeft:12}} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <g clip-path="url(#clip0_1271_17962)">
+                      <g clipPath="url(#clip0_1271_17962)">
                           <mask id="mask0_1271_17962" maskUnits="userSpaceOnUse" x="0"
                                 y="0" width="24" height="24">
                               <rect width="24" height="24" fill="#D9D9D9"/>

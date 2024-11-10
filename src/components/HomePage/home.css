@@ -248,6 +248,7 @@
     .get__started svg {
         max-width: 100vw;
         height: auto;
+        width: 100%;
     }
 
     .get__started__innovate {
@@ -294,6 +295,7 @@
     .business button{
         padding: 8px 0!important;
         width: 100%;
+        max-width: 350px;
     }
 }
 
@@ -313,5 +315,15 @@
 
     .nextgen,.business{
         padding: 64px 16px;
+    }
+    .business button{
+        max-width: none;
+    }
+    .get__started__info_companies svg{
+        width: 20px;
+        height: 20px;
+    }
+    .get__started__info_companies p{
+        font-size: 14px;
     }
 }

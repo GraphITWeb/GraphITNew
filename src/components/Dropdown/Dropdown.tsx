@@ -34,8 +34,8 @@ const Dropdown: React.FC<DropdownProps> = ({label, selected, setSelected, varian
                         {selected == variant &&
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                  fill="none">
-                                <path d="M20 6L9 17L4 12" stroke="#fff" stroke-width="2" stroke-linecap="round"
-                                      stroke-linejoin="round"/>
+                                <path d="M20 6L9 17L4 12" stroke="#fff" strokeWidth="2" strokeLinecap="round"
+                                      strokeLinejoin="round"/>
                             </svg>}
                     </div>))}
             </div>}

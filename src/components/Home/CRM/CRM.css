@@ -1,4 +1,4 @@
-.CRM{
+.CRM {
     display: flex;
     padding: 96px 0;
     flex-direction: column;
@@ -9,7 +9,8 @@
     z-index: 1;
     position: relative;
 }
-.CRM__block{
+
+.CRM__block {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -18,10 +19,12 @@
     position: relative;
     z-index: -1;
 }
-.CRM__block img{
+
+.CRM__block img {
     height: 460px;
 }
-.CRM__block__description{
+
+.CRM__block__description {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -31,10 +34,12 @@
     position: relative;
     padding: 0 80px;
 }
-.CRM__block__description div p{
+
+.CRM__block__description div p {
     width: 90%;
 }
-.CRM__block__arrow{
+
+.CRM__block__arrow {
     display: flex;
     padding: 16px;
     align-items: center;
@@ -51,42 +56,61 @@
 }
 
 @media screen and (max-width: 992px) {
-    .CRM__block__description{
+    .CRM__block__description {
         padding: 0 40px;
         flex-direction: column;
     }
-    .CRM__block__description div p{
+
+    .CRM__block__description div p {
         width: 100%;
     }
-    .CRM__block__description button{
+
+    .CRM__block__description button {
         margin-top: 16px;
     }
-    .CRM div h2{
+
+    .CRM div h2 {
         word-wrap: break-word;
         text-align: center;
     }
-    .CRM{
+
+    .CRM {
         padding: 64px 0;
     }
 }
-@media screen and (max-width: 576px) {
+
+@media screen and (max-width: 768px) {
+    .CRM__block img {
+        height: 300px;
+    }
     .CRM__block__arrow{
+        top: 150px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .CRM__block__arrow {
         display: none;
     }
-    .CRM__block img{
+
+    .CRM__block img {
         height: 200px;
         border-radius: 12px;
     }
-    .CRM__block__description button{
+
+    .CRM__block__description button {
         width: 100%;
-        padding: 8px 0!important;
+        padding: 8px 0 !important;
     }
+
     .CRM__block__description button div {
-        font-size: 16px!important;
+        font-size: 16px !important;
     }
-    .CRM{
+
+    .CRM {
         padding: 64px 16px;
     }
+
     .CRM__block__description {
         padding: 0;
     }

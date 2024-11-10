@@ -17,9 +17,8 @@ export default function useMobile(width: number) {
                 window.removeEventListener('resize', handleSizeChange);
             };
         }
-    }, [width]); // Use `width` in the dependency array instead of `isMobile`
+    }, [width]);
 
-    // Return `null` until the window is available and the state is set
     if (isMobile === null) {
         return null;
     }

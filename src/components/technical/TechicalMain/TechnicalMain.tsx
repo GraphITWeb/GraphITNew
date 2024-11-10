@@ -21,8 +21,8 @@ const TechnicalMain:React.FC<MainProps> = ({subText,header,description}) => {
                   <defs>
                       <linearGradient id="paint0_linear_1271_12275" x1="260.721" y1="-87.1905" x2="246.731" y2="426.94"
                                       gradientUnits="userSpaceOnUse">
-                          <stop offset="0.46" stop-color="#FF0800"/>
-                          <stop offset="1" stop-color="#09091B"/>
+                          <stop offset="0.46" stopColor="#FF0800"/>
+                          <stop offset="1" stopColor="#09091B"/>
                       </linearGradient>
                   </defs>
               </svg>

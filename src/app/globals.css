@@ -234,11 +234,16 @@ small {
     .sticky__text {
         font-size: 64px;
     }
-
     h2 {
         font-size: 32px;
     }
     .unlocked_block {
         width: Calc(100vw - 32px);
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .sticky__text {
+        font-size: 56px;
     }
 }

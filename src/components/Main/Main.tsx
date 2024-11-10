@@ -26,8 +26,8 @@ const Main: React.FC<MainProps> = ({subText, header, description}) => {
                             <defs>
                                 <linearGradient id="paint0_linear_1271_13234" x1="130.678" y1="1.89386" x2="134.901"
                                                 y2="287.388" gradientUnits="userSpaceOnUse">
-                                    <stop offset="0.24" stop-color="#FF0800"/>
-                                    <stop offset="1" stop-color="#09091B"/>
+                                    <stop offset="0.24" stopColor="#FF0800"/>
+                                    <stop offset="1" stopColor="#09091B"/>
                                 </linearGradient>
                             </defs>
                         </svg>
@@ -50,8 +50,8 @@ const Main: React.FC<MainProps> = ({subText, header, description}) => {
                                 <linearGradient id="paint0_linear_1271_13236" x1="252.7" y1="126.621" x2="247.79"
                                                 y2="458.591"
                                                 gradientUnits="userSpaceOnUse">
-                                    <stop offset="0.24" stop-color="#FF0800"/>
-                                    <stop offset="1" stop-color="#09091B"/>
+                                    <stop offset="0.24" stopColor="#FF0800"/>
+                                    <stop offset="1" stopColor="#09091B"/>
                                 </linearGradient>
                             </defs>
                         </svg>
