@@ -23,16 +23,35 @@ a{
 a small{
     color: var(--white);
 }
+
+.svgOpen{
+    transform: rotate(180deg);
+}
+
+
 .navbar__open{
     position: absolute;
     z-index: 10000;
-    align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 12px;
     top: 30px;
+    width: 144px;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--light-blue);
+    background: rgba(18, 18, 46, 0.70);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+.navbar__open a:hover{
+    border-radius: 4px;
 }
 .navbar__right svg{
+    display: none;
+}
+.navbar__mobile{
     display: none;
 }
 @media screen and (max-width: 992px) {
@@ -43,6 +62,11 @@ a small{
 @media screen and (max-width: 768px) {
     nav{
         padding: 16px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: var(--primary);
+        z-index: 99999999;
     }
     .navbar__pc{
         display: none;
@@ -52,5 +76,54 @@ a small{
     }
     .navbar__right svg{
         display: block;
+    }
+    .navbar__mobile{
+        display: flex;
+        position: fixed;
+        top:73px;
+        min-height: 100vh;
+        width: 100%;
+        background: var(--primary);
+        z-index: 9999999;
+        flex-direction: column;
+        padding: 24px 16px;
+        gap: 24px;
+    }
+    .navbar__mobile__div,.navbar__mobile__div__first{
+        border-bottom: 1px solid var(--light-blue);
+        display: flex;
+        padding-bottom: 16px;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        align-self: stretch;
+        justify-content: space-between;
+    }
+    .navbar__mobile__div__first{
+        flex-direction: column;
+    }
+    .navbar__mobile__div__first__header{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar__mobile__div__first__block{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+    .navbar__mobile__div__first__block__small h5{
+        font-size: 16px;
+    }
+    .navbar__mobile__div__first__block__small small{
+        color: var(--text-gray);
+    }
+    .navbar__mobile div h4{
+        font-size: 20px;
     }
 }

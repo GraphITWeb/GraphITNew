@@ -46,8 +46,8 @@ const Nextgen = () => {
                     console.log((scrollPosition - sectionTop - 200) / 25)
                     let translateXValue = (scrollPosition - sectionTop - 200) / 25;
 
-                    if(translateXValue>71.9) {
-                        translateXValue=71.9
+                    if(translateXValue>80) {
+                        translateXValue=80
                     }
                     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                     // @ts-expect-error

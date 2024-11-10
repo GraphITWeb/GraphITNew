@@ -1,10 +1,11 @@
-.nextgen{
+.nextgen {
     background: url("../../../assets/NextGenAI.svg") no-repeat left;
     height: 200vh;
     position: relative;
     justify-content: flex-start;
 }
-.nextgen__sticky{
+
+.nextgen__sticky {
     position: -webkit-sticky;
     position: sticky;
     display: flex;
@@ -16,7 +17,8 @@
     gap: 24px;
     align-self: stretch;
 }
-.nextgen__block{
+
+.nextgen__block {
     display: flex;
     padding: 24px;
     align-items: flex-start;
@@ -26,7 +28,8 @@
     background: #141433;
     margin-top: 24px;
 }
-.nextgen__block__item{
+
+.nextgen__block__item {
     display: flex;
     padding: 16px;
     flex-direction: column;
@@ -39,74 +42,94 @@
     opacity: 0.6;
     cursor: pointer;
 }
+
 .nextgen__block__block {
     display: flex;
     flex-direction: column;
-    gap:12px;
+    gap: 12px;
     width: 50%;
 }
 
-.nextgen__block__item.active{
+.nextgen__block__item.active {
     opacity: 1;
 }
-.nextgen__image{
+
+.nextgen__image {
     height: 420px;
     background: #09091A;
     border-radius: 12px;
     position: relative;
     width: 50%;
 }
+
 @media screen and (max-width: 1421px) {
-    .nextgen__image{
+    .nextgen__image {
         height: 516px;
     }
 }
+
 @media screen and (max-width: 992px) {
-    .nextgen__image{
+    .nextgen__image {
         height: 460px;
     }
-    .nextgen__block__block, .nextgen__image{
+
+    .nextgen__block__block, .nextgen__image {
         width: 100%;
     }
-    .nextgen__block__block{
+
+    .nextgen__block__block {
         flex-direction: row;
         overflow: hidden;
         width: max-content;
     }
-    .nextgen__block{
+
+    .nextgen__block {
         display: flex;
         flex-direction: column;
         overflow: hidden;
     }
+
     .nextgen__sticky {
         top: 2.5vh;
     }
 }
+
 @media screen and (max-width: 768px) {
     .nextgen {
         height: 300vh;
     }
-    .nextgen__block{
-        padding:16px;
+
+    .nextgen__block {
+        padding: 16px;
     }
-    .nextgen__image{
+
+    .nextgen__image {
         height: 420px;
     }
-    .nextgen__block__item{
+
+    .nextgen__block__item {
         max-width: 60vw;
     }
-}
-@media screen and (max-width: 576px) {
-    .nextgen__image{
-        height: 300px;
-    }
+
     .nextgen__sticky {
-        top: 2.5vh;
+        top: 74px;
         gap: 12px;
     }
-    .nextgen__block__item{
-        max-width: 75vw;
+}
+
+@media screen and (max-width: 576px) {
+    .nextgen__image {
+        height: 240px;
     }
+
+    .nextgen__block {
+        margin-top: 0;
+    }
+
+    .nextgen__block__item {
+        max-width: 85vw;
+    }
+
     .nextgen__block__item {
         display: flex;
         padding-right: 8px;
