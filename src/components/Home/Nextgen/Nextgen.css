@@ -95,6 +95,9 @@
     .nextgen__sticky {
         top: 2.5vh;
     }
+    .nextgen__block__item{
+        max-width: 80vw;
+    }
     .nextgen__block__item {
         display: flex;
         padding-right: 8px;
