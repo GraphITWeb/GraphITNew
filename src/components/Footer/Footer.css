@@ -44,15 +44,20 @@ footer{
 
 @media screen and (max-width: 992px) {
     footer{
+        height: auto;
         flex-direction: column;
         padding: 64px 32px;
     }
-    .footer__first,.footer__second{
+    .footer__first{
         flex-direction: column;
         gap: 24px;
     }
     .subscribe{
         max-width: 450px;
+    }
+    .footer__second{
+        flex-direction: column-reverse;
+        gap: 24px;
     }
 }
 @media screen and (max-width: 768px) {
