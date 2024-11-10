@@ -1,5 +1,8 @@
 .nextgen{
     background: url("../../../assets/NextGenAI.svg") no-repeat left;
+    height: 200vh;
+    position: relative;
+    justify-content: flex-start;
 }
 .nextgen__sticky{
     position: -webkit-sticky;
@@ -80,6 +83,9 @@
     }
 }
 @media screen and (max-width: 768px) {
+    .nextgen {
+        height: 300vh;
+    }
     .nextgen__block{
         padding:16px;
     }
@@ -96,6 +102,7 @@
     }
     .nextgen__sticky {
         top: 2.5vh;
+        gap: 12px;
     }
     .nextgen__block__item{
         max-width: 75vw;

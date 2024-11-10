@@ -156,6 +156,10 @@ small {
     line-height: 150%;
 }
 
+.cls-2 {
+    fill: var(--orange);
+}
+
 .sticky__text {
     font-size: 120px;
     text-Align: center;
@@ -185,6 +189,7 @@ small {
     color: var(--orange);
     display: flex;
     flex-direction: row;
+    gap: 8px;
 }
 
 .unlocked_block h3 div h3 {
@@ -231,6 +236,13 @@ small {
     }
     .unlocked_block {
         width: Calc(100vw - 64px);
+        padding: 20px;
+    }
+    .unlocked_block h3{
+        font-size: 24px;
+    }
+    .unlocked_block strong{
+        font-size: 20px;
     }
     .mobile{
         display: block;

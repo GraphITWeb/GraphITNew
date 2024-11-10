@@ -5,6 +5,7 @@ import {useEffect, useRef, useState} from "react";
 import Phit from "../../../assets/phit.jpg";
 import Illustration from "../../../assets/NextGen.png";
 import Button from "@/components/Button/Button";
+import useMobile from "@/hooks/useMobile";
 
 const NextgenIcon = () => {
     return (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -27,7 +28,8 @@ const Nextgen = () => {
     const [active, setActive] = useState(0);
     const sectionRef = useRef(null);
     const images = [Phit, Illustration, Phit, Illustration];
-
+    const nextgenRef = useRef(null);
+    const isMobile=useMobile(768)
     useEffect(() => {
         const handleScroll = () => {
             if (sectionRef.current) {
@@ -35,12 +37,22 @@ const Nextgen = () => {
                 // @ts-expect-error
                 const {top, height} = sectionRef.current.getBoundingClientRect();
                 const scrollPosition = window.scrollY + window.innerHeight / 2; // Поточна позиція скролу + половина вікна
-
                 // Визначаємо номер активного блоку
                 const sectionTop = window.scrollY + top;
                 const blockHeight = height / 4; // Оскільки у нас 4 блоки
                 const currentBlock = Math.floor((scrollPosition - sectionTop) / blockHeight);
+                console.log(isMobile)
+                if (nextgenRef.current&&isMobile) {
+                    console.log((scrollPosition - sectionTop - 200) / 25)
+                    let translateXValue = (scrollPosition - sectionTop - 200) / 25;
 
+                    if(translateXValue>71.9) {
+                        translateXValue=71.9
+                    }
+                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                    // @ts-expect-error
+                    nextgenRef.current.style.transform = `translateX(-${translateXValue}%)`;
+                }
                 if (currentBlock >= 0 && currentBlock < 4) {
                     setActive(currentBlock);
                 }
@@ -57,8 +69,7 @@ const Nextgen = () => {
     }, []);
     return (
         <>
-            <div ref={sectionRef} className="nextgen"
-                 style={{height: '200vh', position: 'relative', justifyContent: 'flex-start'}}>
+            <div ref={sectionRef} className="nextgen">
                 <div className="nextgen__sticky">
                     <div>
                         <h2>A CRM Designed with You in Mind.</h2>
@@ -66,7 +77,7 @@ const Nextgen = () => {
                             Venture adapt to your business, not the other way around.</sub>
                     </div>
                     <div className="nextgen__block">
-                        <div className="nextgen__block__block">
+                        <div className="nextgen__block__block" ref={nextgenRef}>
                             <div className={active === 0 ? "nextgen__block__item active" : "nextgen__block__item"}>
                                 <div className="flex flex-row gap-2">
                                     <NextgenIcon/>
@@ -115,7 +126,9 @@ const Nextgen = () => {
                         <div className="nextgen__image">
                             <Image style={{width: '100%', height: '100%', borderRadius: 12}} src={images[active]}
                                    alt={''}/>
-                            <Button onClick={()=>window.location.href='/technical'} label={'Learn more'} btnStyle={{padding:'12px 32px',position:"absolute",right:24,bottom:24}} btnDivStyle={{fontSize:18}}/>
+                            <Button onClick={() => window.location.href = '/technical'} label={'Learn more'}
+                                    btnStyle={{padding: '12px 32px', position: "absolute", right: 24, bottom: 24}}
+                                    btnDivStyle={{fontSize: 18}}/>
                         </div>
                     </div>
                 </div>
