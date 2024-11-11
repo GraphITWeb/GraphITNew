@@ -17,3 +17,23 @@
     gap: 16px;
     align-self: stretch;
 }
+
+@media screen and (max-width: 992px) {
+    .offering__blocks__big{
+        padding: 0 40px 64px 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .offering__blocks__big{
+        padding: 0 32px 64px 32px;
+    }
+    .offering__blocks{
+        padding: 0;
+        background: none;
+    }
+}
+@media screen and (max-width: 576px) {
+    .offering__blocks__big{
+        padding: 0 16px 64px 16px;
+    }
+}

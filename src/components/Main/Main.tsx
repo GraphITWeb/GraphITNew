@@ -35,7 +35,7 @@ const Main: React.FC<MainProps> = ({subText, header, description}) => {
                     </div>
 
                     <div style={{
-                        position: "absolute", bottom: -76, right: 0, overflow: "hidden",
+                        position: "absolute", bottom: -76, right: 0, overflow: "hidden",zIndex:-1
                     }} className="pc">
                         <svg xmlns="http://www.w3.org/2000/svg" width="330" height="500" viewBox="0 0 330 500"
                              fill="none">

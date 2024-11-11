@@ -10,6 +10,10 @@
     height: auto;
     margin-top: 32px;
 }
+.what__we__think__posts__h3{
+    padding-left: 80px;
+    width:100%;
+}
 .what__we__think__post__big{
     display: flex;
     flex-direction: column;
@@ -47,4 +51,17 @@
     height: Calc(27.5vh - 8px);
     border: 1px solid var(--light-blue);
     object-position: center;
+}
+@media screen and (max-width: 1200px) {
+    .what__we__think__post__big{
+        width: 40%;
+    }
+    .what__we__think__posts__small{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .what__we__think__posts,.what__we__think__posts__h3{
+        display: none;
+    }
 }

@@ -42,20 +42,20 @@ const Posts = () => {
             <div className="what__we__do__posts__header">
                 <h2>What we think</h2>
                 <Button label='View all posts'
-                        btnStyle={{ padding: '12px 32px', marginRight: 80 }}
+                        btnStyle={{ padding: '12px 32px', marginRight: 0 }}
                         btnDivStyle={{ fontSize: 18 }}
                         onClick={() => window.location.href = '/what-we-think'} />
             </div>
             <sub>The latest research, analyses and strategies to help future-focused organisations thrive in this period of great challenge</sub>
             <div className="what__we__do__posts__block" ref={postsRef}
                  style={{display: 'flex', overflowX: 'auto', scrollBehavior: 'smooth'}}>
-                <span style={{minWidth: 48, height: "auto"}}/>
+                <span style={{height: "auto"}}/>
                 {posts.map((post, index) => (
                     <Post key={index} {...post}/>
                 ))}
                 <span style={{minWidth: 48, height: "auto"}}/>
             </div>
-            <div className="flex flex-row gap-8" style={{marginTop: 32, marginLeft: 80 }}>
+            <div className="what__we__do__posts__buttons">
                 <div className="arrow" onClick={() => scroll('left')} style={{ cursor: 'pointer' }}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M10 18L4 12L10 6L11.4 7.45L7.85 11H20V13H7.85L11.4 16.55L10 18Z" fill="white"/>
@@ -66,6 +66,12 @@ const Posts = () => {
                         <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white"/>
                     </svg>
                 </div>
+            </div>
+            <div className="mobile w-full what__we__do__posts__button">
+                <Button label='View all posts'
+                        btnStyle={{ padding: '12px 0',width:'100%' }}
+                        btnDivStyle={{ fontSize: 18 }}
+                        onClick={() => window.location.href = '/what-we-think'} />
             </div>
         </div>
     )

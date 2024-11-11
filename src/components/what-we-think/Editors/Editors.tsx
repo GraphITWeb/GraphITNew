@@ -25,7 +25,7 @@ const Editors = () => {
     }, []);
     return (
         <>
-            <h3 style={{paddingLeft: 80,width:'100%'}}>Editor’s choice</h3>
+            <h3 className="what__we__think__posts__h3">Editor’s choice</h3>
             <div className="what__we__think__posts">
                 <div className="what__we__think__post__big">
                     {posts.length > 0 && <>

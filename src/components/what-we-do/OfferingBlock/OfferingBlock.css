@@ -25,3 +25,24 @@
     height: 24px;
     cursor: pointer;
 }
+.offering__block strong{
+    margin-bottom: 24px;
+}
+@media screen and (max-width: 768px) {
+    .offering__block{
+        height: 422px;
+        padding: 24px;
+    }
+    .offering__block strong{
+        margin-bottom: 36px;
+    }
+    .offering__block div{
+        left: 24px;
+        bottom: 24px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .offering__block strong{
+        font-size: 20px;
+    }
+}

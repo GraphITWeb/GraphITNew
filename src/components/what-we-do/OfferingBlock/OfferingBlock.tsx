@@ -16,7 +16,7 @@ const OfferingBlock: React.FC<OfferingBlockProps> = ({imgBlock, title, descripti
             backgroundSize: "cover",
         }}>
             <h2 style={{marginTop: 8}}>{title}</h2>
-            <strong style={{marginBottom: 24}}>{description}</strong>
+            <strong>{description}</strong>
             <div onClick={()=>{window.location.href='/technical'}}><sub style={{color: '#fff', lineHeight: '24px', textAlign: "center"}}>Learn More</sub>
                 <svg style={{marginTop:8}} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                      fill="none">
