@@ -11,16 +11,6 @@ import GetStarted from "@/components/Home/GetStarted/GetStarted";
 import React, {useEffect, useState} from "react";
 
 const HomePage = () => {
-    // const [loading, setLoading] = useState(true);
-    //
-    // useEffect(() => {
-    //     const timer = setTimeout(() => {
-    //         setLoading(false);
-    //     }, 200000);
-    //
-    //     return () => clearTimeout(timer);
-    // }, []);
-
     const [angle, setAngle] = useState(360);
     const radius = 120;
     const circumference = 2 * Math.PI * radius;
@@ -33,15 +23,13 @@ const HomePage = () => {
             setAngle((prevAngle) => {
                 const newAngle = prevAngle - angleIncrement;
                 if (newAngle <= -1) {
-                    clearInterval(intervalId); // припиняємо анімацію після 360°
-                    setSlideOut(true); // trigger slide-out
-                    // setLoading(false)
+                    clearInterval(intervalId);
+                    setSlideOut(true);
                 }
                 return newAngle;
             });
         }, intervalTime);
-
-        return () => clearInterval(intervalId); // очищення інтервалу при размонтуванні
+        return () => clearInterval(intervalId);
     }, []);
     return (
         <>
