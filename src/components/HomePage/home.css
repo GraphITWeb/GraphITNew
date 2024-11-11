@@ -197,7 +197,22 @@
 .business h2{
     display: grid;
 }
+@keyframes slideOut {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100%;
+    }
+}
+
+.slide-out {
+    animation: slideOut 0.66s ease-out forwards;
+}
+
 .loading-animation {
+    transition: top 0.5s ease;
+
     position: fixed;
     height: 100vh;
     top: 0;
