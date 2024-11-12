@@ -168,6 +168,10 @@ const Navbar = () => {
                             Case studies
                         </h4>
                     </div>
+                    <Button onClick={() => window.location.href = '/contact-us'}
+                            btnStyle={{width:'Calc(100%)',padding:'12px 0'}}
+                            label='Contact Us'
+                            btnDivStyle={{fontSize:16}}/>
                 </div>
             }
         </>
