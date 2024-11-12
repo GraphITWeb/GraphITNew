@@ -23,7 +23,7 @@ export default function ContactUsPage() {
                             fill="#F23704"/>
                     </svg>}
                     title="Office"
-                    description="Come say hello to our office HQ"
+                    description="Come say hello to our HQ"
                     details="167-169, Great Portland Street, 5th Floor,<br/>London, England, W1W 5PF"/>
                 <ContactUsBlock
                     icon={<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"

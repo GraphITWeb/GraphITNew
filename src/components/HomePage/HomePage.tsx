@@ -1653,18 +1653,10 @@ const HomePage = () => {
                             Venture
                             and why you should choose Venture</sub>
                     </div>
-                    <FeedbackItem imgUser={User} description="I was looking for a CRM that was easy to use and could adapt to my
-                    business. This CRM has exceeded my expectations. It&#39;s simple, intuitive, and
-                    customizable."/>
-                    <FeedbackItem imgUser={User} description="I was looking for a CRM that was easy to use and could adapt to my
-                    business. This CRM has exceeded my expectations. It&#39;s simple, intuitive, and
-                    customizable."/>
-                    <FeedbackItem imgUser={User} description="I was looking for a CRM that was easy to use and could adapt to my
-                    business. This CRM has exceeded my expectations. It&#39;s simple, intuitive, and
-                    customizable."/>
-                    <FeedbackItem imgUser={User} description="I was looking for a CRM that was easy to use and could adapt to my
-                    business. This CRM has exceeded my expectations. It&#39;s simple, intuitive, and
-                    customizable."/>
+                    <FeedbackItem imgUser={User} description="Graphit has been an incredible asset to us at Broya. Their technical expertise combined with business acumen are not only profound but also practically applied to real-world problems. Their work has significantly contributed to the success of our e-commerce revenue growth through data analytics capability roll-out enabling us to monitor factors such as customer lifetime and forecast demand. Graphit team is extremely professional and a pleasure to work with."/>
+                    <FeedbackItem imgUser={User} description="Graphit has been an incredible asset to us at Broya. Their technical expertise combined with business acumen are not only profound but also practically applied to real-world problems. Their work has significantly contributed to the success of our e-commerce revenue growth through data analytics capability roll-out enabling us to monitor factors such as customer lifetime and forecast demand. Graphit team is extremely professional and a pleasure to work with."/>
+                    <FeedbackItem imgUser={User} description="Graphit has been an incredible asset to us at Broya. Their technical expertise combined with business acumen are not only profound but also practically applied to real-world problems. Their work has significantly contributed to the success of our e-commerce revenue growth through data analytics capability roll-out enabling us to monitor factors such as customer lifetime and forecast demand. Graphit team is extremely professional and a pleasure to work with."/>
+                    <FeedbackItem imgUser={User} description="Graphit has been an incredible asset to us at Broya. Their technical expertise combined with business acumen are not only profound but also practically applied to real-world problems. Their work has significantly contributed to the success of our e-commerce revenue growth through data analytics capability roll-out enabling us to monitor factors such as customer lifetime and forecast demand. Graphit team is extremely professional and a pleasure to work with."/>
                 </div>
                 <Business/>
             </div>

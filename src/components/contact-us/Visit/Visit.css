@@ -41,6 +41,8 @@
         gap: 40px;
         background: var(--surface-blue);
         flex-direction: column;
+        background: url("../../../assets/CTAMobile.png") no-repeat center center;
+        background-size: cover;
     }
 
     .visit div h2 {
@@ -56,7 +58,7 @@
     .visit {
         padding: 64px 16px;
         gap: 24px;
-        background: var(--surface-blue);
+        /*background: var(--surface-blue);*/
     }
     .visit div h2 {
         margin-bottom: 0;
