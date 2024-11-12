@@ -24,7 +24,7 @@ export default function ContactUsPage() {
                     </svg>}
                     title="Office"
                     description="Come say hello to our office HQ"
-                    details="53 Beresteyskyi Prospect<br />Kyiv, 02000"/>
+                    details="167-169, Great Portland Street, 5th Floor,<br/>London, England, W1W 5PF"/>
                 <ContactUsBlock
                     icon={<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                fill="none">
@@ -34,7 +34,7 @@ export default function ContactUsPage() {
                     </svg>}
                     title="Email"
                     description="Our friendly team is here to help."
-                    details="hello@graphit.com"/>
+                    details="transform@graph-it.co.uk"/>
                 <ContactUsBlock
                     icon={<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                fill="none">
@@ -44,8 +44,7 @@ export default function ContactUsPage() {
                     </svg>}
                     title="Call us"
                     description="Mon-Fri from 8 am to 5 pm."
-                    details="1 (877) 889-9009<br />1 (216) 672-0266"
-
+                    details="+44 (0) 7423280274"
                 />
             </div>
             <GetInTouch/>
