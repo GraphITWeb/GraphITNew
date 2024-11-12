@@ -34,7 +34,7 @@ const GetInTouch = () => {
             </div>
             <div>
                 <small>Message</small>
-                <TextArea placeholder='Message' setValue={setMessage} value={message}/>
+                <TextArea resize={true} placeholder='Message' setValue={setMessage} value={message}/>
             </div>
             <Button label='Send message' btnStyle={{width:'100%',padding: '12px 0',marginTop:16}}
             btnDivStyle={{fontSize:18,lineHeight:'24px'}}/>

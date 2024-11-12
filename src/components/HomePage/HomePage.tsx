@@ -59,7 +59,7 @@ const HomePage = () => {
                         fill="none"
                         // stroke="#00CC33"
                         stroke="rgba(9,9,25,0.6)"
-                        strokeWidth="86"
+                        strokeWidth="100"
                         // strokeDasharray='5,810'
                         strokeDasharray={`${((angle <= maxFillAngle ? angle : maxFillAngle) / 360) * circumference}, ${circumference}`}
                         // transform="rotate(0 150 150)" // початок з верхньої частини кола

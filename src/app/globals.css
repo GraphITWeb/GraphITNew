@@ -256,7 +256,7 @@ small {
         width: Calc(100vw - 64px);
         padding: 20px;
     }
-    .unlocked_block h3{
+    h3{
         font-size: 24px;
     }
     .unlocked_block strong{
@@ -279,6 +279,9 @@ small {
     }
     h2 {
         font-size: 32px;
+    }
+    sub,b{
+        font-size: 16px;
     }
     .unlocked_block {
         width: Calc(100vw - 32px);

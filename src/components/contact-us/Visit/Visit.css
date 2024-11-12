@@ -4,7 +4,10 @@
     align-items: flex-start;
     gap: 142px;
     align-self: stretch;
-    background: var(--surface-blue);
+    /*background: var(--surface-blue);*/
+    background: url("../../../assets/CTA.png") no-repeat center center;
+    background-size: cover;
+    width: 100%;
 }
 
 .visit div h2 {
@@ -14,4 +17,48 @@
 .visit div b {
     color: var(--orange);
     margin-bottom: 12px;
+}
+
+.visit__offices {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+}
+.visit__office{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .visit {
+        padding: 64px 32px;
+        gap: 40px;
+        background: var(--surface-blue);
+        flex-direction: column;
+    }
+
+    .visit div h2 {
+        margin-bottom: 6px;
+    }
+
+    .visit__offices {
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .visit {
+        padding: 64px 16px;
+        gap: 24px;
+        background: var(--surface-blue);
+    }
+    .visit div h2 {
+        margin-bottom: 0;
+    }
 }

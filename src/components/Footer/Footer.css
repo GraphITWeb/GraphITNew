@@ -1,7 +1,7 @@
 footer{
-    height: 50vh;
+    height: auto;
     display: flex;
-    padding: 64px 120px;
+    padding: 64px 80px;
     flex-direction: column;
     align-items: flex-start;
     gap: 36px;
@@ -32,6 +32,7 @@ footer{
     width: auto;
     background: var(--surface-blue);
     border-radius: 12px;
+    max-width: 380px;
 }
 .footer__pages p{
     cursor: pointer;
@@ -45,23 +46,38 @@ footer{
 @media screen and (max-width: 992px) {
     footer{
         height: auto;
+        padding: 32px 32px;
+    }
+    .footer__first{
+        gap: 24px;
+    }
+    .footer__second{
+        gap: 24px;
+    }
+    .footer__pages{
+        max-width: 150px;
+    }
+}
+@media screen and (max-width: 768px) {
+    footer{
         flex-direction: column;
         padding: 64px 32px;
     }
     .footer__first{
         flex-direction: column;
-        gap: 24px;
     }
     .subscribe{
         max-width: 450px;
     }
     .footer__second{
         flex-direction: column-reverse;
-        gap: 24px;
+    }
+    .footer__pages{
+        max-width: 200px;
     }
 }
-@media screen and (max-width: 768px) {
-    footer{
+@media screen and (max-width: 576px) {
+    footer {
         padding: 64px 16px;
     }
 }

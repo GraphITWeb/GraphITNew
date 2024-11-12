@@ -11,3 +11,13 @@
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
 }
+@media screen and (max-width: 768px) {
+    .contactus__block {
+        height: 274px;
+        min-height: 274px;
+        max-height: 274px;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+}

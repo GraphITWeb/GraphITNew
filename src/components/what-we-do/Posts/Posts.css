@@ -115,7 +115,6 @@
     .what__we__do__posts sub {
         padding: 0 0 0 16px;
         max-width: Calc(100% - 16px);
-        font-size: 16px;
     }
     .what__we__do__posts__block span {
         min-width: 0;

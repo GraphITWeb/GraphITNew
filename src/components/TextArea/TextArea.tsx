@@ -11,18 +11,20 @@ interface InputProps {
     setValue: (value: string) => void;
     value: string;
     letter?: boolean;
+    resize?: boolean;
 }
 
 const TextArea: React.FC<InputProps> = ({
-                                         value,
-                                         setValue,
-                                         placeholder,
-                                         error,
-                                         setError,
-                                         errorText,
-                                         setDisabled,
-                                         letter,
-                                     }) => {
+                                            value,
+                                            setValue,
+                                            placeholder,
+                                            error,
+                                            setError,
+                                            errorText,
+                                            setDisabled,
+                                            letter,
+                                            resize
+                                        }) => {
     const inputRef = useRef<HTMLTextAreaElement>(null);
     const containerRef = useRef<HTMLDivElement>(null);
     const [inputActive, setInputActive] = useState(false);
@@ -67,6 +69,7 @@ const TextArea: React.FC<InputProps> = ({
                         }
                     }}
                     ref={inputRef}
+                    style={resize?{resize:"vertical"}:{}}
                 />
 
             </div>

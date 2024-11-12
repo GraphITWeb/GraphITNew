@@ -17,7 +17,7 @@ const ContactUsBlock: React.FC<ContactUsBlockProps> = ({icon,title,description,d
         <div>
             <h5>{title}</h5>
             <p>{description}</p>
-            <h6 style={{color:'var(--orange)'}}>{details}</h6>
+            <h6 style={{color:'var(--orange)'}} dangerouslySetInnerHTML={{ __html: details }}/>
         </div>
 
     </div>

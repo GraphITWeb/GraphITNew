@@ -69,7 +69,7 @@ const Footer = () => {
                 </div>
                 <div className='subscribe'>
                     <h5>
-                        Subscribe to Our Newsletter to Get<br/>Free Demo for First One Month
+                        Subscribe to Our Newsletter to Get Free Demo for First One Month
                     </h5>
                     <Input placeholder='Enter your email' setValue={setEmail} value={email}/>
                     <Button label='Subscribe' btnStyle={{padding: '12px 0',width:'100%'}} btnDivStyle={{fontSize: 18}}/>

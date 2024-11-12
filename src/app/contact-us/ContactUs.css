@@ -1,8 +1,29 @@
-.contactus__blocks{
+.contactus__blocks {
     display: flex;
     align-items: flex-start;
     gap: 32px;
     align-self: stretch;
     margin-top: 64px;
     padding: 0 80px 96px;
+    flex-direction: row;
+}
+@media screen and (max-width: 992px) {
+    .contactus__blocks {
+        padding: 0 64px 80px;
+        gap: 16px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .contactus__blocks {
+        flex-direction: column;
+        padding: 0 32px 64px;
+        margin-top: 0;
+        gap:64px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .contactus__blocks {
+        padding: 0 16px 64px;
+    }
 }

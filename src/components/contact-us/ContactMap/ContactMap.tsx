@@ -1,6 +1,6 @@
 const ContactMap = () => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="768" viewBox="0 0 1280 768" fill="none">
+        <svg className="pc" xmlns="http://www.w3.org/2000/svg" style={{maxWidth:'90vw'}} width="1280" height="768" viewBox="0 0 1280 768" fill="none">
             <path
                 d="M630 413C631.657 413 633 411.657 633 410C633 408.343 631.657 407 630 407C628.343 407 627 408.343 627 410C627 411.657 628.343 413 630 413Z"
                 fill="#727272"/>
