@@ -226,8 +226,9 @@
     width: 150px;
     height: 170px;
     background: rgba(9,9,26,0.6);
-    z-index: 9999999991;
+    z-index: 1001;
     animation: animateTo 1.05s ease-out forwards;
+    animation-delay: 0.2s;
 }
 
 .loading-animation {
@@ -238,7 +239,7 @@
     left: 0;
     width: 100%;
     background: var(--primary);
-    z-index: 999999999;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;

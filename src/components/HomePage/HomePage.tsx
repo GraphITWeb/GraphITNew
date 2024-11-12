@@ -11,62 +11,16 @@ import GetStarted from "@/components/Home/GetStarted/GetStarted";
 import React, {useEffect, useState} from "react";
 
 const HomePage = () => {
-    // const [angle, setAngle] = useState(360);
-    // const radius = 120;
-    // const circumference = 2 * Math.PI * radius;
-    // const angleIncrement = 6;
-    // const intervalTime = 15;
-    // const maxFillAngle = 360;
     const [slideOut, setSlideOut] = useState(false)
     useEffect(() => {
         const intervalId = setInterval(() => {
-            // setAngle((prevAngle) => {
-            //     const newAngle = prevAngle - angleIncrement;
-            //     if (newAngle <= -1) {
-            //         clearInterval(intervalId);
-            //         setSlideOut(true);
-            //     }
-            //     return newAngle;
-            // });
             setSlideOut(true);
-
-        }, 1000);
+        }, 1250);
         return () => clearInterval(intervalId);
     }, []);
     return (
         <>
             <div className={`loading-animation ${slideOut ? 'slide-out' : ''}`}>
-                {/*<svg*/}
-                {/*    style={{*/}
-                {/*        position: 'absolute',*/}
-                {/*        top: '50%',*/}
-                {/*        left: '50%',*/}
-                {/*        transform: 'translate(-50%, -50%) rotate(-90deg)',*/}
-                {/*        width: 170,*/}
-                {/*        height: 150,*/}
-                {/*        zIndex: 99*/}
-                {/*    }}*/}
-                {/*    xmlns="http://www.w3.org/2000/svg"*/}
-                {/*    version="1.1"*/}
-                {/*    viewBox="0 0 300 300"*/}
-                {/*    className="test"*/}
-                {/*    preserveAspectRatio="none"*/}
-                {/*    // width={330}*/}
-                {/*    // height={370}*/}
-                {/*>*/}
-                {/*    <circle*/}
-                {/*        cx="150"*/}
-                {/*        cy="150"*/}
-                {/*        r={radius}*/}
-                {/*        fill="none"*/}
-                {/*        // stroke="#00CC33"*/}
-                {/*        stroke="rgba(9,9,25,0.6)"*/}
-                {/*        strokeWidth="100"*/}
-                {/*        // strokeDasharray='5,810'*/}
-                {/*        strokeDasharray={`${((angle <= maxFillAngle ? angle : maxFillAngle) / 360) * circumference}, ${circumference}`}*/}
-                {/*        // transform="rotate(0 150 150)" // початок з верхньої частини кола*/}
-                {/*    />*/}
-                {/*</svg>*/}
                 <div
                    className="animate__to"
                 />
