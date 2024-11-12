@@ -13,11 +13,18 @@ import React, {useEffect, useState} from "react";
 const HomePage = () => {
     const [slideOut, setSlideOut] = useState(false)
     useEffect(() => {
+        document.body.style.overflow = 'hidden';
+
         const intervalId = setInterval(() => {
             setSlideOut(true);
+            document.body.style.overflow= 'auto';
         }, 1250);
-        return () => clearInterval(intervalId);
+
+        return () => {
+            clearInterval(intervalId);
+        };
     }, []);
+
     return (
         <>
             <div className={`loading-animation ${slideOut ? 'slide-out' : ''}`}>
