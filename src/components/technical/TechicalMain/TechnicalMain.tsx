@@ -9,7 +9,7 @@ const TechnicalMain:React.FC<MainProps> = ({subText,header,description}) => {
   return(
       <div className="technical__main__block">
           <div style={{
-              position: "absolute", top: -42, right: 0, overflow: "hidden",
+              position: "absolute", top: -42, right: 0, overflow: "hidden",zIndex:-1
               // animation: "gradientAnimation 4s forwards"
           }}>
               <svg xmlns="http://www.w3.org/2000/svg" width="412" height="500" viewBox="0 0 412 500" fill="none">

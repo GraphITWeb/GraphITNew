@@ -11,10 +11,12 @@
     position: relative;
     height: 381px;
 }
+
 .technical__main__block h1 {
     margin-bottom: 16px;
     max-width: 75vw;
 }
+
 .technical__main__block sub {
     max-width: 60vw;
     height: 54px;
@@ -22,7 +24,7 @@
 
 @media screen and (max-width: 768px) {
     .technical__main__block sub {
-            max-width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -31,12 +33,13 @@
         left: 412px;
         background: linear-gradient(90deg, #09091A 0%, rgba(9, 9, 26, 0.00) 100%);
     }
-    100%{
+    100% {
         left: 0;
         background: linear-gradient(90deg, #09091A 0%, rgba(9, 9, 26, 0.00) 100%);
     }
 }
-.absolute__svg3{
+
+.absolute__svg3 {
     position: absolute;
     width: 80px;
     bottom: 0;
@@ -44,4 +47,33 @@
     height: 450px;
     animation: absoluteAnimation2 14s infinite ease-in-out;
     transition: height 0.5s ease-in-out, left 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+    .technical__main__block {
+        padding: 96px 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .technical__main__block {
+        margin-top: 150px;
+        padding: 96px 32px;
+    }
+
+    .technical__main__block h1 {
+        font-size: 48px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .technical__main__block {
+        margin-top: 150px;
+        padding: 96px 16px;
+    }
+
+    .technical__main__block h1 {
+        font-size: 40px;
+    }
 }

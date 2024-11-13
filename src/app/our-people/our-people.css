@@ -1,0 +1,7 @@
+.our__people {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    padding: 0 80px;
+    gap: 32px;
+}

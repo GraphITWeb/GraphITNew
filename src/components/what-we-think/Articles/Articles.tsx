@@ -24,9 +24,9 @@ const Articles:React.FC<ArticlesProps> = ({type}) => {
 
         loadImages().then();
     }, []);
-    const [selectedTopic, setSelectedTopic] = useState('Select topic')
-    const [selectedIndustry, setSelectedIndustry] = useState('Select industry')
-    const [selectedSort, setSelectedSort] = useState('Content Type')
+    const [selectedTopic, setSelectedTopic] = useState<string[]>([])
+    const [selectedIndustry, setSelectedIndustry] = useState<string[]>([])
+    const [selectedSort, setSelectedSort] = useState<string[]>([])
 
     return(
       <div className="what__we__think__articles">

@@ -1,6 +1,7 @@
 .technical__why__h2{
     width: 100%;
     padding: 0 80px;
+    margin-top:48px
 }
 .technical__why{
     margin-top: 48px;
@@ -58,4 +59,22 @@
     align-self: stretch;
     z-index: 1;
     position: relative;
+}
+@media screen and (max-width: 992px) {
+    .technical__why__h2 {
+        margin-top: 96px;
+        padding: 0 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .technical__why__h2 {
+        margin-top: 96px;
+        padding: 0 32px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .technical__why__h2 {
+        margin-top: 96px;
+        padding: 0 16px;
+    }
 }
