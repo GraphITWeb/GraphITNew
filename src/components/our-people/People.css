@@ -69,4 +69,7 @@
     height: 100%;
 }
 
+.people__flip-card-back div svg{
+    cursor: pointer;
+}
 
