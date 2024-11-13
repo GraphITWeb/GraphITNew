@@ -81,8 +81,9 @@
 @media screen and (max-width: 576px) {
     .people__flip-card-front,
     .people__flip-card-back,.people__flip-card {
-        height: 420px;
+        height: Calc((100vw - 64px)*1.2);
     }
+
 }
 
 
