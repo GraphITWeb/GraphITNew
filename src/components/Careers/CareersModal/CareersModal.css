@@ -1,0 +1,130 @@
+.careers__modal__background {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    align-items: center;
+    justify-content: center;
+    background: rgba(9, 9, 26, 0.4);
+}
+
+.careers__modal {
+    width: 90vw;
+    height: 90vh;
+    max-height: 90vh;
+    padding-bottom: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 24px;
+    border: 1px solid var(--light-blue);
+    background: var(--primary);
+    overflow: hidden;
+}
+
+.careers__modal__header {
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.careers__modal__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1 0 0;
+    align-self: stretch;
+    flex-direction: row;
+    overflow: scroll;
+    max-height: 100%;
+    padding: 0 24px 24px;
+}
+
+.careers__modal__body {
+    display: flex;
+    width: 60%;
+    padding: 16px 0 24px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    overflow: scroll;
+    max-height: 100%;
+}
+.careers__modal__body h4{
+    margin-top: 16px;
+}
+.careers__modal__body__first {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.modal__span{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 1px;
+    min-height: 1px;
+    display: block;
+    background: var(--light-blue);
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.careers__modal__graphit{
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 24px;
+    gap: 16px;
+    background: var(--surface-blue);
+}
+.careers__modal__contact{
+    display: flex;
+    height: 100%;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:16px;
+    flex: 1 0 0;
+    border-radius: 12px;
+    border: 1px solid var(--light-blue);
+    background: var(--surface-blue);
+}
+.careers__modal__contact div{
+    width: 100%;
+}
+.careers__modal__contact__first{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+}
+.careers__modal__contact__first div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.careers__modal__contact div small{
+    text-align: left;
+    color: var(--text-gray);
+}
+
+@media screen and (max-width: 768px) {
+    .careers__modal__contact__first{
+        gap: 16px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .careers__modal__contact__first{
+        flex-direction: column;
+    }
+}

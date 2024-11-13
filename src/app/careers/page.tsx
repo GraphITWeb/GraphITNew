@@ -3,8 +3,7 @@ import React from "react";
 import Image from "next/image";
 import CareersImage from "@/assets/Careers.png";
 import './Careers.css'
-import BritishFlag from "@/assets/british.png";
-import CareersBlock from "@/components/Careers/CareersBlock/CareersBlock";
+import CareersList from "@/components/Careers/CareersList/CareersList";
 export default function Careers() {
     return (
         <>
@@ -18,30 +17,7 @@ export default function Careers() {
                     width:'Calc(100vw - 160px)',
                     height:'auto',
                 }}/>
-                <h3 style={{marginTop:64,width:842,marginBottom:8}}>
-                    Design
-                </h3>
-                <CareersBlock position='Product Designer'
-                              direction="Design"
-                              flagImage={BritishFlag}
-                              country="United Kingdom"
-                              description="We’re looking for a mid-level product designer to join our team."
-                              time="Full-time"
-                              salary="80k - 100k"/>
-                <CareersBlock position='Product Designer'
-                              direction="Design"
-                              flagImage={BritishFlag}
-                              country="United Kingdom"
-                              description="We’re looking for a mid-level product designer to join our team."
-                              time="Full-time"
-                              salary="80k - 100k"/>
-                <CareersBlock position='Product Designer'
-                              direction="Design"
-                              flagImage={BritishFlag}
-                              country="United Kingdom"
-                              description="We’re looking for a mid-level product designer to join our team."
-                              time="Full-time"
-                              salary="80k - 100k"/>
+                <CareersList />
             </div>
         </>
     )

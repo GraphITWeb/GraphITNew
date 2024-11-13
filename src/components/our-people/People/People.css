@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 400px;
     height: auto;
 }
 .people__info{
@@ -72,4 +73,16 @@
 .people__flip-card-back div svg{
     cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+    .people__info {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .people__flip-card-front,
+    .people__flip-card-back,.people__flip-card {
+        height: 420px;
+    }
+}
+
 

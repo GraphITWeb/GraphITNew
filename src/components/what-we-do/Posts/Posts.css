@@ -38,18 +38,7 @@
     width: 0;
     height: 0;
 }
-.arrow{
-    border-radius: 100px;
-    border: 1px solid var(--light-blue);
-    background: rgba(18, 18, 46, 0.70);
-    display: flex;
-    padding: 16px;
-    align-items: center;
-    gap: 8px;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    cursor: pointer;
-}
+
 .what__we__do__posts__block span{
     min-width: 48px;
 }
