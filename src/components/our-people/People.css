@@ -27,7 +27,7 @@
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 0.3s;
+    transition: transform 0.2s;
 }
 
 .people__flip-card:hover .people__flip-card-inner {
