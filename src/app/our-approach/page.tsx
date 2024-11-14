@@ -9,7 +9,7 @@ import Posts from "@/components/what-we-do/Posts/Posts";
 
 export default function WhoWeArePage() {
     return (
-        <div className="flex flex-col items-center justify-items-center p-0">
+        <div className="flex flex-col items-center justify-items-center p-0 overflow-x-hidden">
             <Main subText="Who we are" header="Our approach"
                   description="Graphit is a technology company which is expert in advanced AI solutions that propel your business forward. Learn more about the company and the team behind it."/>
             <div className="our__vision">

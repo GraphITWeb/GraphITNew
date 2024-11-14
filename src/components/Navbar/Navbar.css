@@ -6,14 +6,37 @@ nav{
     align-self: stretch;
     background: var(--primary);
 }
+.nav__logo{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    width: 124px;
+}
 .nav__logo__text{
     color: var(--white);
     font-family: var(--hanken-grotesk);
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
+    transform: translateX(-20px);
     line-height: 140%;
+    transition: transform 0.75s ease-out, opacity 0.75s ease-out;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
 }
+
+.nav__logo__text div{
+    color: var(--orange);
+}
+.nav__logo:hover .nav__logo__text{
+    opacity: 1;
+    transform: translateX(0) !important;
+}
+
 a{
     display: flex;
     flex-direction: row;
