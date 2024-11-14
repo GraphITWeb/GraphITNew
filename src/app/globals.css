@@ -226,7 +226,7 @@ small {
     border-radius: 100px;
     border: 1px solid rgba(51, 138, 243, 0.30);
     background: rgba(51, 138, 243, 0.20);
-    display: flex;
+    display: flex!important;
     height: 24px;
     padding: 2px 12px;
     justify-content: center;
@@ -260,10 +260,10 @@ small {
     }
 }
 .mobile{
-    display: none;
+    display: none!important;
 }
 .pc{
-    display: block;
+    display: flex!important;
 }
 .arrow{
     border-radius: 100px;
@@ -292,10 +292,10 @@ small {
         font-size: 20px;
     }
     .mobile{
-        display: block;
+        display: flex!important;
     }
     .pc{
-        display: none;
+        display: none!important;
     }
     h4{
         font-size: 20px;

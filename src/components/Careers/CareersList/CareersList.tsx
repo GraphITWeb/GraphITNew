@@ -1,12 +1,20 @@
 'use client'
 import './CareersList.css';
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import CareersBlock from "@/components/Careers/CareersBlock/CareersBlock";
 import BritishFlag from "@/assets/british.png";
 import CareersModal from "@/components/Careers/CareersModal/CareersModal";
 
 const CareersList = () => {
     const [activeCareers, setActiveCareers] = useState<number|null>(null);
+    useEffect(() => {
+        if(activeCareers===null){
+            document.body.style.overflow= 'auto';
+        }
+        else{
+            document.body.style.overflow = 'hidden';
+        }
+    }, [activeCareers]);
     return (<>
             {activeCareers!==null &&
                 <CareersModal position='Product Designer'
@@ -19,7 +27,7 @@ const CareersList = () => {
                               setActiveCareers={setActiveCareers}
                 />
             }
-            <h3 style={{marginTop: 64, width: 842, marginBottom: 8}}>
+            <h3 className="careers__header">
                 Design
             </h3>
             <CareersBlock position='Product Designer'

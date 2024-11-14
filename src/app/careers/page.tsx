@@ -11,12 +11,7 @@ export default function Careers() {
                 <Main subText="Careers" header="We’re looking for talented people"
                       description="Lorem ipsum dolor sit amet consectetur. Risus tortor ipsum nunc mattis scelerisque curabitur at. In ac tortor cras at scelerisque risus. Congue odio mauris scelerisque ipsum."
                       />
-                <Image src={CareersImage} alt="Careers" style={{
-                    borderRadius: 24,
-                    border: '1px solid #1E1E4D',
-                    width:'Calc(100vw - 160px)',
-                    height:'auto',
-                }}/>
+                <Image src={CareersImage} className="careers__image" alt="Careers"/>
                 <CareersList />
             </div>
         </>

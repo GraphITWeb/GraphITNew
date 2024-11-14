@@ -14,7 +14,7 @@ interface CareersBlockProps {
     description: string;
     time: string;
     salary: string;
-    setActiveCareers:(value:number|null)=>void;
+    setActiveCareers: (value: number | null) => void;
 }
 
 const CareersModal: React.FC<CareersBlockProps> = ({
@@ -34,6 +34,18 @@ const CareersModal: React.FC<CareersBlockProps> = ({
     const [number, setNumber] = useState('');
     const [linkedin, setLinkedin] = useState('');
     const [message, setMessage] = useState('');
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const [selectedFile, setSelectedFile] = useState(null);
+    const [selectedName, setSelectedName] = useState("");
+
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
+    const handleFileChange = (event) => {
+        const file = event.target.files[0];
+        setSelectedFile(file);
+        setSelectedName(file.name);
+    };
+
     return (
         <div className="careers__modal__background">
             <div className="careers__modal">
@@ -41,7 +53,8 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                     <h5>
                         {position} career
                     </h5>
-                    <svg onClick={()=>setActiveCareers(null)} style={{cursor: 'pointer'}} xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    <svg onClick={() => setActiveCareers(null)} style={{cursor: 'pointer'}}
+                         xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                          viewBox="0 0 24 24" fill="none">
                         <path
                             d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"
@@ -50,10 +63,19 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                 </div>
                 <div className="careers__modal__content">
                     <div className="careers__modal__body">
-                        <small className="flag">
+                        <small className="flag pc">
                             {direction}
                         </small>
                         <h2>{position}</h2>
+                        <div className="flex flex-row justify-start gap-2 mobile">
+                            <small className="flag">
+                                {direction}
+                            </small>
+                            <div className="flag">
+                                <Image src={flagImage} alt="flag"/>
+                                <small>{country}</small>
+                            </div>
+                        </div>
                         <p style={{marginTop: 16}}>
                             {description}
                         </p>
@@ -91,7 +113,7 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                                     {salary}
                                 </h6>
                             </div>
-                            <div className="flag">
+                            <div className="flag pc">
                                 <Image src={flagImage} alt="flag"/>
                                 <small>{country}</small>
                             </div>
@@ -130,7 +152,7 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                             <li>Continuously enhance your skills and bring passion to your work.</li>
                         </div>
                         <div className="careers__modal__graphit">
-                            <h4 style={{marginTop:0}}>About Graphit</h4>
+                            <h4 style={{marginTop: 0}}>About Graphit</h4>
                             <p>Graphit is a London-based company driving next-gen AI transformations. Our solutions sit
                                 at the nexus of AI and Big Data, with a strong emphasis on Generative AI to innovate,
                                 redefine, and transform business operations. We specialise in enabling corporate
@@ -175,7 +197,25 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                             <small>Message</small>
                             <TextArea resize={true} placeholder='Message' setValue={setMessage} value={message}/>
                         </div>
-                        <Button label='Apply' btnStyle={{width: '100%', padding: '12px 0', marginTop: 16}}
+                        <div className="file__upload">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="21" viewBox="0 0 13 21"
+                                 fill="none">
+                                <path
+                                    d="M13 14.25C13 15.9833 12.3917 17.4583 11.175 18.675C9.95833 19.8917 8.48333 20.5 6.75 20.5C5.01667 20.5 3.54167 19.8917 2.325 18.675C1.10833 17.4583 0.5 15.9833 0.5 14.25V5C0.5 3.75 0.9375 2.6875 1.8125 1.8125C2.6875 0.9375 3.75 0.5 5 0.5C6.25 0.5 7.3125 0.9375 8.1875 1.8125C9.0625 2.6875 9.5 3.75 9.5 5V13.75C9.5 14.5167 9.23333 15.1667 8.7 15.7C8.16667 16.2333 7.51667 16.5 6.75 16.5C5.98333 16.5 5.33333 16.2333 4.8 15.7C4.26667 15.1667 4 14.5167 4 13.75V4.5H6V13.75C6 13.9667 6.07083 14.1458 6.2125 14.2875C6.35417 14.4292 6.53333 14.5 6.75 14.5C6.96667 14.5 7.14583 14.4292 7.2875 14.2875C7.42917 14.1458 7.5 13.9667 7.5 13.75V5C7.48333 4.3 7.2375 3.70833 6.7625 3.225C6.2875 2.74167 5.7 2.5 5 2.5C4.3 2.5 3.70833 2.74167 3.225 3.225C2.74167 3.70833 2.5 4.3 2.5 5V14.25C2.48333 15.4333 2.89167 16.4375 3.725 17.2625C4.55833 18.0875 5.56667 18.5 6.75 18.5C7.91667 18.5 8.90833 18.0875 9.725 17.2625C10.5417 16.4375 10.9667 15.4333 11 14.25V4.5H13V14.25Z"
+                                    fill="#B3B3B3"/>
+                            </svg>
+                            <div>
+                                {selectedName !== "" ? <h6 style={{color: 'var(--white)'}}>{selectedName}</h6> :
+                                    <>
+                                        <h6 style={{color: 'var(--white)'}}>Attach your CV file</h6>
+                                        <small>.docx, .pdf up to 10 MB</small>
+                                    </>
+                                }
+                            </div>
+                            <input accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,text/plain, application/pdf, image/*"
+                                   onChange={handleFileChange} type="file"/>
+                        </div>
+                        <Button label='Apply' btnStyle={{width: '100%', padding: '12px 0'}}
                                 btnDivStyle={{fontSize: 18, lineHeight: '24px', textAlign: 'center'}}/>
                     </div>
                 </div>
