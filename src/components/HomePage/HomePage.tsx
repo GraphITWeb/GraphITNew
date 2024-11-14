@@ -1642,8 +1642,8 @@ const HomePage = () => {
                         <GetStarted/>
                     </div>
                 </div>
-                <Companies/>
                 <CRM/>
+                <Companies/>
                 <Nextgen/>
                 <Unlocked/>
                 <div className="feedback">

@@ -1,6 +1,6 @@
 .companies {
     display: flex;
-    padding: 76px 0;
+    padding: 64px 0 32px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
