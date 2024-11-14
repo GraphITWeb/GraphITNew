@@ -1,3 +1,9 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
 .our__vision__block{
     display: flex;
     padding: 0;
@@ -23,6 +29,16 @@
     align-self: stretch;
     gap: 16px;
 }
+.our__vision__content {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.our__vision__content.visible {
+    opacity: 1;
+    transform: translateX(0) !important;
+}
 
 @media screen and (max-width: 992px) {
     .our__vision__content{
@@ -31,7 +47,16 @@
     }
 }
 @media screen and (max-width: 768px) {
+    .our__vision__content {
+        opacity: 0;
+        transform: translateX(-100px)!important;
+        transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    }
 
+    .our__vision__content.visible {
+        opacity: 1;
+        transform: translateX(0) !important;
+    }
     .our__vision__block{
         padding:0 32px;
         flex-direction: column-reverse!important;
