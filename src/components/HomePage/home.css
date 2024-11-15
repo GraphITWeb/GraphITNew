@@ -192,7 +192,7 @@
     align-items: flex-start;
     background: url("../../assets/CTA.png") no-repeat center center;
     background-size: cover;
-    gap: 16px;
+    gap: 80px;
 }
 .business h2{
     display: grid;
