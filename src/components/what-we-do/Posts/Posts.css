@@ -25,12 +25,26 @@
     min-width: 405px;
     align-items: flex-start;
     max-width:Calc(100vw - 64px);
+    overflow: visible;
+    cursor: pointer;
+}
+.what__we__do__post img{
+    transition: scale 0.5s ease;
+}
+.what__we__do__post:hover img{
+    scale: 1.05;
+}
+.what__we__do__post div svg path {
+    transition: fill 0.5s ease;
+}
+.what__we__do__post:hover div svg path{
+    fill: var(--orange);
 }
 .what__we__do__posts__block{
     display: flex;
     flex-direction: row;
     gap: 32px;
-    margin-top: 48px;
+    padding-top: 48px;
     overflow-x: hidden;
     max-width: 100%;
 }
@@ -84,7 +98,7 @@
     }
     .what__we__do__posts__block{
         gap: 16px;
-        margin-top: 32px;
+        padding-top: 32px;
     }
     .what__we__do__posts__button{
         padding: 0 32px;

@@ -9,6 +9,7 @@
     border-radius: 12px;
     position: relative;
     transition: background-color 300ms ease-out;
+    cursor: pointer;
 }
 .offering__block:hover{
     background: var(--orange)!important;

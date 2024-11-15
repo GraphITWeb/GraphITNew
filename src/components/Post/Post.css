@@ -3,6 +3,19 @@
     flex-direction: column;
     gap: 8px;
     align-items: flex-start;
+    cursor: pointer;
+}
+.articles__post img{
+    transition: scale 0.5s ease;
+}
+.articles__post:hover img{
+    scale: 1.05;
+}
+.articles__post div svg path {
+    transition: fill 0.5s ease;
+}
+.articles__post:hover div svg path{
+    fill: var(--orange);
 }
 
 @media screen and (max-width: 576px) {
