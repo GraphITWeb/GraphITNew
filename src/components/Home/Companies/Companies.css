@@ -1,10 +1,10 @@
 .companies {
     display: flex;
-    padding: 64px 0 32px;
+    padding: 0 0 32px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 0;
     align-self: stretch;
     position: relative;
 }
@@ -18,7 +18,7 @@
 .scrollable__block {
     width: 100%;
     overflow-x: hidden;
-    margin: 64px 0;
+    margin: 32px 0;
 }
 @keyframes swipe {
     0% {
