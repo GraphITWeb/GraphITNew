@@ -11,6 +11,7 @@ export default function ContactUsPage() {
             <Main subText="Contact us" header="We’d like to hear from you"
                   description="We have offices and teams around the world."/>
             <ContactMap/>
+
             <div className="contactus__blocks">
                 <ContactUsBlock
                     icon={<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"

@@ -36,10 +36,9 @@ const Nextgen = () => {
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-expect-error
                 const {top, height} = sectionRef.current.getBoundingClientRect();
-                const scrollPosition = window.scrollY + window.innerHeight / 2; // Поточна позиція скролу + половина вікна
-                // Визначаємо номер активного блоку
+                const scrollPosition = window.scrollY + window.innerHeight / 2;
                 const sectionTop = window.scrollY + top;
-                const blockHeight = height / 4; // Оскільки у нас 4 блоки
+                const blockHeight = height / 4;
                 const currentBlock = Math.floor((scrollPosition - sectionTop) / blockHeight);
                 console.log(isMobile)
                 if (nextgenRef.current&&isMobile) {

@@ -24,8 +24,8 @@
 .myInput input {
     all: unset;
     width: 100%;
-    color: var(--text-gray);
-    font-size: 14px;
+    color: var(--white);
+    font-size: 16px;
     font-style: normal;
     font-family: var(--hanken-grotesk);
     height: 100%;

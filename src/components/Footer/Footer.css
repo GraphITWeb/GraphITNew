@@ -36,6 +36,26 @@ footer{
 }
 .footer__pages p{
     cursor: pointer;
+    position: relative;
+    width: min-content;
+    white-space: nowrap;
+}
+.footer__pages p::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 1px;
+    opacity: 0;
+    height: 1.5px;
+    border-radius: 2px;
+    background-color: var(--white);
+    transition: width 0.2s ease-in-out;
+}
+
+.footer__pages p:hover::after {
+    width: 100%;
+    opacity: 1;
 }
 @media screen and (max-width: 1200px) {
     footer{
