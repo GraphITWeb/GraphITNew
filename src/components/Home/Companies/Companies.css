@@ -20,12 +20,6 @@
     overflow-x: hidden;
     margin: 64px 0;
 }
-
-.scrollable__block__items {
-    display: flex;
-    animation: swipe 30s linear infinite;
-    user-select: none;
-}
 @keyframes swipe {
     0% {
         transform: translateX(0);
@@ -35,6 +29,22 @@
         transform: translateX(-33%);
     }
 }
+
+.scrollable__block__items {
+    display: flex;
+    animation: swipe 40s linear infinite;
+    user-select: none;
+    /*margin-left: -300px;*/
+}
+.scrollable__block__items div{
+    display: flex;
+    align-items: center;
+}
+
+.scrollable__block__items div svg{
+    width: auto;
+}
+
 .companies__grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
