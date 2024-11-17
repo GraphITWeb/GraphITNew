@@ -38,8 +38,9 @@ const WeMeant = () => {
                     <div><h3>Innovate</h3></div>
                 </h3>
                 <strong style={{color: 'var(--text-gray)'}}>
-                    When you go onto this square, the description changes to reflect the new environment or scenario
-                    you&apos;re in, providing context-specific information or actions. </strong>
+                    Push boundaries and unlock new horizons. At Graphit, innovation is more than a buzzword—it’s our way
+                    of building intelligent, forward-thinking solutions that help organizations stay ahead in a rapidly
+                    evolving world.</strong>
             </div>
 
             <div className="unlocked_block" style={{marginLeft: 'auto'}}>
@@ -47,8 +48,10 @@ const WeMeant = () => {
                     <div><h3>Redefine</h3></div>
                 </h3>
                 <strong style={{color: 'var(--text-gray)'}}>
-                    Define clear objectives, set achievable milestones, and outline actionable steps to ensure
-                    continuous progress toward your goals. </strong>
+                    Reimagine what’s achievable by setting ambitious goals and carving out clear paths to success. We
+                    work with our clients to refine strategies, clarify objectives, and design actionable steps that
+                    drive continuous, meaningful progress.
+                </strong>
             </div>
 
             <div className="unlocked_block" style={{marginBottom: '50vh'}}>
@@ -56,8 +59,10 @@ const WeMeant = () => {
                     <div><h3>Transform</h3></div>
                 </h3>
                 <strong style={{color: 'var(--text-gray)'}}>
-                    Identify gaps in the market or workflow, explore new ideas, and leverage existing strengths to
-                    unlock untapped potential. </strong>
+                    Turn potential into reality. We identify untapped opportunities, leverage existing strengths, and
+                    deploy AI-driven insights that enable lasting transformation, unlocking new levels of impact for our
+                    clients and their industries.
+                </strong>
             </div>
         </div>
     );

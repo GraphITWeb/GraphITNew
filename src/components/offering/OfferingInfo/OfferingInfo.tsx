@@ -6,25 +6,24 @@ const OfferingInfo = () => {
             <div className="offering__info__block">
                 <div className="offering__info__block__inside">
                     <span className="orange__span"/>
-                    <h2>86%</h2>
-                    <p>of companies reported an increase in their cloud initiatives over a two-year period</p>
+                    <h2>85%</h2>
+                    <p>of executives believe AI will fundamentally change their businesses within the next five years.</p>
                 </div>
                 <div className="offering__info__block__inside">
                     <span className="orange__span"/>
-                    <h2>57%</h2>
-                    <p>of IT budgets are spent on maintenance rather than innovation with technologies like cloud and
-                        AI</p>
+                    <h2>9%</h2>
+                    <p>of companies are in the late stage of AI integration into their operations, leaving vast opportunities untapped.</p>
                 </div>
                 <div className="offering__info__block__inside">
                     <span className="orange__span"/>
-                    <h2>2-3x</h2>
-                    <p>probability to innovate for the companies who are using cloud to transform their business and
-                        products</p>
+                    <h2>3x</h2>
+                    <p>Organizations leveraging AI at scale are 3× more likely to outperform their peers in revenue growth.
+                    </p>
                 </div>
                 <div className="offering__info__block__inside">
                     <span className="orange__span"/>
-                    <h2>$10B+</h2>
-                    <p>collective spending on innovation per month by major cloud providers</p>
+                    <h2>$500B+</h2>
+                    <p>in projected global spending on AI technologies in the coming years.</p>
                 </div>
 
             </div>

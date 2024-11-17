@@ -32,6 +32,7 @@ footer{
     width: auto;
     background: var(--surface-blue);
     border-radius: 12px;
+    height: min-content;
     max-width: 380px;
 }
 .footer__pages p{

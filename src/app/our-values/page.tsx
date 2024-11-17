@@ -8,7 +8,7 @@ export default function OurValuesPage() {
     return (
         <div className="flex flex-col items-center justify-items-center p-0">
             <Main subText="Who we are" header="Our values"
-                  description="Graphit is a technology company which is expert in advanced AI solutions that propel your business forward. Learn more about the company and the team behind it."/>
+                  description="At Graphit, our core values—Innovate, Redefine, Transform—drive everything we do. These principles guide our approach to tackling complex client challenges."/>
             <WeMeant/>
             <div className="our__value__what">
                 <div className="our__value__what__header">

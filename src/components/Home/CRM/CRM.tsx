@@ -61,9 +61,9 @@ const CRM = () => {
         <>
             <div className="CRM">
                 <div>
-                    <h2>A CRM Designed with You in Mind.</h2>
+                    <h2>DELIVERING VALUE BY REDEFINING WHAT’S POSSIBLE</h2>
                     <sub style={{ textAlign: 'center', width: '100%', display: 'block' }}>
-                        Customize everything to make Venture adapt to your business, not the other way around.
+                        Explore how our transformative solutions drive growth, innovation, and success across industries
                     </sub>
                 </div>
                 <div className="CRM__blocks" ref={crmRef}>

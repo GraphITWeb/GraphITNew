@@ -11,10 +11,10 @@ export default function WhoWeArePage() {
     return (
         <div className="flex flex-col items-center justify-items-center p-0 overflow-x-hidden">
             <Main subText="Who we are" header="Our approach"
-                  description="Graphit is a technology company which is expert in advanced AI solutions that propel your business forward. Learn more about the company and the team behind it."/>
+                  description="At Graphit, we place clients at the center, combining tailored strategies and AI-driven insights to deliver solutions that fuel growth, enhance efficiency, and drive meaningful impact."/>
             <div className="our__vision">
                 <OurVision style={{flexDirection: 'row-reverse'}} image={Image} title="Client-centric solutions"
-                           description="Lorem ipsum dolor sit amet consectetur. Orci fringilla sollicitudin nisi volutpat nisl cursus. Egestas tempus neque convallis imperdiet in mollis lacus nunc morbi. Ultrices quis commodo nisl risus eu. Bibendum sollicitudin laoreet massa massa amet bibendum eget urna."
+                           description="At Graphit, our clients are at the core of everything we do. We listen closely, understand deeply, and design AI-driven solutions that address your specific challenges. By aligning with your unique objectives, we create impactful outcomes that empower your organization to move forward with clarity and confidence."
                            svgIcon={
                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
@@ -23,7 +23,7 @@ export default function WhoWeArePage() {
                                        fill="#F23704"/>
                                </svg>}/>
                 <OurVision style={{flexDirection: 'row'}} image={Image2} title="Tailored strategies"
-                           description="Lorem ipsum dolor sit amet consectetur. Orci fringilla sollicitudin nisi volutpat nisl cursus. Egestas tempus neque convallis imperdiet in mollis lacus nunc morbi. Ultrices quis commodo nisl risus eu. Bibendum sollicitudin laoreet massa massa amet bibendum eget urna."
+                           description="Our approach is never one-size-fits-all. We develop customized strategies that align with your business goals, blending advanced AI and data insights to drive measurable results. Each solution is crafted to enhance efficiency, fuel growth, and support your long-term vision."
                            svgIcon={
                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                                     fill="none">
@@ -32,7 +32,7 @@ export default function WhoWeArePage() {
                                        fill="#F23704"/>
                                </svg>}/>
                 <OurVision style={{flexDirection: 'row-reverse'}} image={Image3} title="Boutique service"
-                           description="Lorem ipsum dolor sit amet consectetur. Orci fringilla sollicitudin nisi volutpat nisl cursus. Egestas tempus neque convallis imperdiet in mollis lacus nunc morbi. Ultrices quis commodo nisl risus eu. Bibendum sollicitudin laoreet massa massa amet bibendum eget urna."
+                           description="Graphit offers a boutique consulting experience defined by agility, expertise, and close collaboration. Our dedicated team works alongside you at every stage, delivering bespoke service and specialized knowledge to unlock the full potential of AI and data within your organization."
                            svgIcon={
                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">

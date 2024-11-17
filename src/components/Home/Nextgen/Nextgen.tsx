@@ -45,8 +45,8 @@ const Nextgen = () => {
                     console.log((scrollPosition - sectionTop - 200) / 25)
                     let translateXValue = (scrollPosition - sectionTop - 200) / 25;
 
-                    if(translateXValue>80) {
-                        translateXValue=80
+                    if(translateXValue>75.8) {
+                        translateXValue=75.8
                     }
                     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                     // @ts-expect-error
@@ -81,45 +81,44 @@ const Nextgen = () => {
                                 <div className="flex flex-row gap-2">
                                     <NextgenIcon/>
                                     <h5>
-                                        Next Gen AI
+                                        Next-Gen AI Transformation
                                     </h5>
                                 </div>
                                 <p>
-                                    Effortlessly manage customer data and interactions in a user-friendly platform.
+                                    Modernize your business by adopting AI the right way, optimizing operations and unlocking new horizons for future growth.
                                 </p>
                             </div>
                             <div className={active === 1 ? "nextgen__block__item active" : "nextgen__block__item"}>
                                 <div className="flex flex-row gap-2">
                                     <NextgenIcon/>
                                     <h5>
-                                        Next Gen AI
+                                        AI Copilots
                                     </h5>
                                 </div>
                                 <p>
-                                    Effortlessly manage customer data and interactions in a user-friendly platform.
+                                    Empower users with intelligent copilots that simplify workflows and enhance productivity across platforms.
                                 </p>
                             </div>
                             <div className={active === 2 ? "nextgen__block__item active" : "nextgen__block__item"}>
                                 <div className="flex flex-row gap-2">
                                     <NextgenIcon/>
                                     <h5>
-                                        Next Gen AI
+                                        Generative AI
                                     </h5>
                                 </div>
                                 <p>
-                                    Effortlessly manage customer data and interactions in a user-friendly platform.
+                                    Drive innovation with custom Generative AI tools that elevate user engagement and automate complex tasks.
                                 </p>
                             </div>
                             <div className={active === 3 ? "nextgen__block__item active" : "nextgen__block__item"}>
                                 <div className="flex flex-row gap-2">
                                     <NextgenIcon/>
                                     <h5>
-                                        Next Gen AI
+                                        Big Data
                                     </h5>
                                 </div>
                                 <p>
-                                    Effortlessly manage customer data and interactions in a user-friendly platform.
-                                </p>
+                                    Transform vast data into actionable insights with platforms and cloud solutions designed for optimised, AI-powered decision-making.                                </p>
                             </div>
                         </div>
                         <div className="nextgen__image">

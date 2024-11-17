@@ -40,25 +40,24 @@ const Unlocked = () => {
                     <div><h3>Your Needs</h3></div>
                 </h3>
                 <strong style={{ color: 'var(--text-gray)' }}>
-                    When you go onto this square, the description changes to reflect the new environment or scenario you&#39;re in, providing context-specific information or actions.
-                </strong>
+                    We begin by immersing ourselves in your organization’s strategic landscape, engaging with key stakeholders to identify unique challenges and goals. This foundational phase ensures that our AI-driven solutions are precisely aligned with your business vision.                </strong>
             </div>
 
             <div className="unlocked_block" style={{marginLeft:'auto'}}>
-                <h3>Understanding
-                    <div><h3>Your Needs</h3></div>
+                <h3>Identifying
+                    <div><h3>Opportunities</h3></div>
                 </h3>
                 <strong style={{ color: 'var(--text-gray)' }}>
-                    When you go onto this square, the description changes to reflect the new environment or scenario you&#39;re in, providing context-specific information or actions.
+                    Leveraging our expertise in AI and analytics, we uncover hidden opportunities within your operations. From streamlining workflows to enhancing decision-making, we reveal areas where intelligent solutions can drive significant impact.
                 </strong>
             </div>
 
             <div className="unlocked_block" style={{marginBottom:'50vh'}}>
-                <h3>Understanding
-                    <div><h3>Your Needs</h3></div>
+                <h3>Creating
+                    <div><h3>a Success Roadmap</h3></div>
                 </h3>
                 <strong style={{ color: 'var(--text-gray)' }}>
-                    When you go onto this square, the description changes to reflect the new environment or scenario you&#39;re in, providing context-specific information or actions.
+                    We craft a comprehensive roadmap that integrates AI and big data seamlessly into your business. Designed for flexibility and scalability, our approach ensures that each phase - from discovery to implementation - delivers measurable results and supports your long-term strategy.
                 </strong>
             </div>
         </div>

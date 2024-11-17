@@ -7,8 +7,8 @@ import CRM from "@/components/Home/CRM/CRM";
 import Nextgen from "@/components/Home/Nextgen/Nextgen";
 import Unlocked from "@/components/Home/Unlocked/Unlocked";
 import FeedbackItem from "@/components/Home/FeedbackItem/FeedbackItem";
-import GetStarted from "@/components/Home/GetStarted/GetStarted";
 import React, {useEffect, useState} from "react";
+import Button from "@/components/Button/Button";
 
 const HomePage = () => {
     const [slideOut, setSlideOut] = useState(false)
@@ -1611,8 +1611,8 @@ const HomePage = () => {
                     </div>
                     <div className="get__started__info">
                         <div className="get__started__info_companies">
-                            <p>Used and helping over more</p>
-                            <p style={{fontWeight: 600, color: "white"}}>200+ Companies</p>
+                            <p>Join leading companies in pursuit of</p>
+                            <p style={{fontWeight: 600, color: "white"}}>change.</p>
                             <svg style={{position: "relative", top: 0}} xmlns="http://www.w3.org/2000/svg"
                                  width="20"
                                  height="20" viewBox="0 0 20 20" fill="none">
@@ -1629,17 +1629,9 @@ const HomePage = () => {
                             </svg>
                         </div>
                         <p style={{marginBottom: 16}}>
-                            Innovate by integrating advanced AI solutions that propel your business forward.
-                            Redefine the
-                            status quo, turning complex data into clear insights and streamlined operations that
-                            push
-                            boundaries. Transform your future by leveraging technology to optimize what exists and
-                            unlock
-                            new opportunities. With AI, the future isn’t just envisioned—it’s built. the technology
-                            built
-                            to empower you.
+                            The Future Belongs to Those Who Innovate. At Graphit, we turn ambition into action, empowering organizations to lead with advanced AI and data-driven insights. We blend deep technical expertise with bold strategy, building transformative solutions that redefine what’s possible. From revolutionizing decision-making to creating seamless user experiences, our AI and data solutions enable organizations to break boundaries and drive impact at scale. We are strategists, engineers, and innovators dedicated to solving the world’s toughest challenges. We are Graphit.
                         </p>
-                        <GetStarted/>
+                        <Button onClick={()=>window.location.href='/contact-us'} label='Contact Us' btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>
                     </div>
                 </div>
                 <CRM/>
@@ -1653,11 +1645,27 @@ const HomePage = () => {
                             Venture
                             and why you should choose Venture</sub>
                     </div>
-                    <FeedbackItem imgUser={User} description="Graphit has been an incredible asset to us at Broya. Their technical expertise combined with business acumen are not only profound but also practically applied to real-world problems. Their work has significantly contributed to the success of our e-commerce revenue growth through data analytics capability roll-out enabling us to monitor factors such as customer lifetime and forecast demand. Graphit team is extremely professional and a pleasure to work with."/>
-                    <FeedbackItem imgUser={User} description="Graphit has been an incredible asset to us at Broya. Their technical expertise combined with business acumen are not only profound but also practically applied to real-world problems. Their work has significantly contributed to the success of our e-commerce revenue growth through data analytics capability roll-out enabling us to monitor factors such as customer lifetime and forecast demand. Graphit team is extremely professional and a pleasure to work with."/>
-                    <FeedbackItem imgUser={User} description="Graphit has been an incredible asset to us at Broya. Their technical expertise combined with business acumen are not only profound but also practically applied to real-world problems. Their work has significantly contributed to the success of our e-commerce revenue growth through data analytics capability roll-out enabling us to monitor factors such as customer lifetime and forecast demand. Graphit team is extremely professional and a pleasure to work with."/>
-                    <FeedbackItem imgUser={User} description="Graphit has been an incredible asset to us at Broya. Their technical expertise combined with business acumen are not only profound but also practically applied to real-world problems. Their work has significantly contributed to the success of our e-commerce revenue growth through data analytics capability roll-out enabling us to monitor factors such as customer lifetime and forecast demand. Graphit team is extremely professional and a pleasure to work with."/>
-                </div>
+                    <FeedbackItem imgUser={User}
+                                  description="Graphit has been an incredible asset to us at Broya. Their technical expertise combined with business acumen are not only profound but also practically applied to real-world problems. Their work has significantly contributed to the success of our e-commerce revenue growth through data analytics capability roll-out enabling us to monitor factors such as customer lifetime and forecast demand. Graphit team is extremely professional and a pleasure to work with."
+                                  name="Nima Sotodaeh"
+                                  position="Founder of Broya"
+                    />
+                    <FeedbackItem imgUser={User}
+                                  description="Working with Graphit has transformed our approach to data management at Libernetix. Their contributions helped develop an efficient, intelligent and automated data analytics system, complemented by real-time dashboarding, which streamlined our operations and decision-making processes. Beyond their technical expertise, Graphit team’s value-first mindset played a key role in creating a 360° view of the business and substantially boosted overall operational efficiency."
+                                  name="Pavel Yeliseev"
+                                  position="CTO of Libernetix"
+                    />
+                    <FeedbackItem imgUser={User}
+                                  description="Graphit provided us with a clear, actionable strategy for AI adoption. By identifying the most suitable AI use-cases for our business, they significantly facilitated and accelerated AI solution roll-out across our department, ensuring it targeted actual business bottlenecks. Thanks to their approach, we became a data-driven organization and substantially streamlined our operations, resulting in increased efficiency and measurable growth. Focusing on our needs ensured that the transformation was both effective and relevant to our internal KPIs."
+                                  name="Ruslan Kravets"
+                                  position="CEO of Medikit"
+                    />
+                    <FeedbackItem imgUser={User}
+                                  description={`Graphit's "Talk-To-Your-Data" AI Copilot has been a game-changer for our organization. Enabling customers to seamlessly interact with data boosted user’s platform engagement, made complex insights easily accessible and further informed analyst’s decision-making. translated into a substantial uptick in subscriptions to our platform. Graphit's AI Copilot has not only made our data more accessible but also turned it into a strategic advantage that powers our growth.`}
+                                  name="Gaz Summer"
+                                  position="CEO of Locarla"
+                    />
+                    </div>
                 <Business/>
             </div>
         </>
