@@ -31,11 +31,15 @@ body {
     scroll-behavior: smooth;
 }
 
-*::-webkit-scrollbar {
+*::-webkit-scrollbar,*::-webkit-scrollbar:horizontal {
     /*width: 6px;*/
     width: 0;
+    opacity: 0;
 }
-
+/*::-webkit-scrollbar-thumb:horizontal{*/
+/*   height: 0;*/
+/*    opacity: 0;*/
+/*}*/
 *::-webkit-scrollbar-thumb {
     background: var(--orange);
     border-radius: 0;
