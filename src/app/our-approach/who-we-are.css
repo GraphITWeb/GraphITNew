@@ -53,12 +53,15 @@
 .stgroup5 {
     fill: var(--primary);
 }
+.partners__block{
+    padding: 0 80px;
+    text-align: center;
+}
 .partners{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 0 80px;
     align-items: center;
 }
 .partners svg,.partners img{
@@ -70,19 +73,38 @@
 
 
 @media screen and (max-width: 992px) {
-    .our__vision {
-        padding: 0 0 96px 0;
+    .partners__block {
+        padding: 0 40px;
+    }
+    .partners{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .partners svg{
+        margin-top: -100px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .partners__block {
+        padding: 0 32px;
+    }
     .our__vision {
         padding: 0 0 64px 0;
     }
 }
 
 @media screen and (max-width: 576px) {
+    .partners__block {
+        padding: 0 16px;
+    }
     .our__vision {
         padding: 0 0 48px 0;
+    }
+    .partners svg,.partners img{
+        scale: 0.8;
     }
 }
