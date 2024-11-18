@@ -1,4 +1,4 @@
-.our__vision{
+.our__vision {
     display: flex;
     padding: 0 0 192px 0;
     flex-direction: column;
@@ -9,16 +9,78 @@
     z-index: 1;
     position: relative;
 }
+
+.st0 {
+    fill: #F15A29;
+}
+
+.st1 {
+    fill: #81BD50;
+}
+
+.st2 {
+    fill: #19A3D7;
+}
+
+.st3 {
+    fill: #FDB636;
+}
+
+.microsoft g path {
+    fill: #fff;
+}
+
+.stgroup0 {
+    fill: #3291E6;
+}
+
+.stgroup1 {
+    fill: #122861;
+}
+
+.stgroup2 {
+    fill: #CE5619;
+}
+
+.stgroup3 {
+    fill: #F39C12;
+}
+
+.stgroup4 {
+    fill: #fff;
+}
+
+.stgroup5 {
+    fill: var(--primary);
+}
+.partners{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 80px;
+    align-items: center;
+}
+.partners svg,.partners img{
+    width: auto;
+}
+.microsoft{
+    height: 64px;
+}
+
+
 @media screen and (max-width: 992px) {
     .our__vision {
         padding: 0 0 96px 0;
     }
 }
+
 @media screen and (max-width: 768px) {
     .our__vision {
         padding: 0 0 64px 0;
     }
 }
+
 @media screen and (max-width: 576px) {
     .our__vision {
         padding: 0 0 48px 0;
