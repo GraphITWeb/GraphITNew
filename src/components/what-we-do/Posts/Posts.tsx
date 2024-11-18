@@ -44,7 +44,7 @@ const Posts = () => {
                 <Button label='View all posts'
                         btnStyle={{ padding: '12px 32px', marginRight: 0 }}
                         btnDivStyle={{ fontSize: 18 }}
-                        onClick={() => window.location.href = '/what-we-think'} />
+                        onClick={() => window.location.href = '/case-studies'} />
             </div>
             <sub>See our expertise in action – solutions that drive innovation and create unprecedented impact across industries.</sub>
             <div className="what__we__do__posts__block" ref={postsRef}
@@ -71,7 +71,7 @@ const Posts = () => {
                 <Button label='View all posts'
                         btnStyle={{ padding: '12px 0',width:'100%' }}
                         btnDivStyle={{ fontSize: 18 }}
-                        onClick={() => window.location.href = '/what-we-think'} />
+                        onClick={() => window.location.href = '/case-studiesk'} />
             </div>
         </div>
     )

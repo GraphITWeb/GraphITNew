@@ -47,7 +47,7 @@ const Footer = () => {
                     <div className='flex flex-row gap-9'>
                         <div className="flex flex-col gap-4 footer__pages" style={{width: 200}}>
                             <p onClick={() => window.location.href = '/what-we-do'}>What We Do</p>
-                            <p onClick={() => window.location.href = '/what-we-think'}>What We Think</p>
+                            <p style={{cursor:'not-allowed'}}>What We Think</p>
                             <p onClick={() => window.location.href = '/case-studies'}>Case Studies</p>
                             <p onClick={() => window.location.href = '/careers'}>Careers</p>
                             <p onClick={() => window.location.href = '/contact-us'}>Contact us</p>
