@@ -41,6 +41,8 @@ export default function WhoWeArePage() {
                                        fill="#F23704"/>
                                </svg>}/>
             </div>
+            <div>
+            </div>
             <Posts/>
         </div>
     )

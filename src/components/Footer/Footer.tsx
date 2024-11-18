@@ -47,9 +47,6 @@ const Footer = () => {
                     <div className='flex flex-row gap-9'>
                         <div className="flex flex-col gap-4 footer__pages" style={{width: 200}}>
                             <p onClick={() => window.location.href = '/what-we-do'}>What We Do</p>
-                            <p onClick={() => window.location.href = '/our-approach'}>Our Approach</p>
-                            <p onClick={() => window.location.href = '/our-values'}>Our Values</p>
-                            <p onClick={() => window.location.href = '/our-people'}>Our People</p>
                             <p onClick={() => window.location.href = '/what-we-think'}>What We Think</p>
                             <p onClick={() => window.location.href = '/case-studies'}>Case Studies</p>
                             <p onClick={() => window.location.href = '/careers'}>Careers</p>
@@ -61,19 +58,18 @@ const Footer = () => {
                             <p>Cookie Policy/Settings</p>
                             <p>Accessibility Statement</p>
                             <p>Modern Slavery Act Statement</p>
-                            <p>Graphit Tax Strategy</p>
                         </div>
                     </div>
                     <div className='subscribe'>
                         <h5>
-                            Subscribe to Our Newsletter to Get Free Demo for First One Month
+                            Subscribe to our insights that bring AI future to your enterprise today
                         </h5>
                         <Input placeholder='Enter your email' setValue={setEmail} value={email}/>
                         <Button label='Subscribe' btnStyle={{padding: '12px 0', width: '100%'}}
                                 btnDivStyle={{fontSize: 18}}/>
                     </div>
                 </div>
-                <p>Copyright ® Graphit, Inc. All rights reserved.</p>
+                <p>© 2024 Graphit. All Rights Reserved.</p>
             </footer>
         </>
     );

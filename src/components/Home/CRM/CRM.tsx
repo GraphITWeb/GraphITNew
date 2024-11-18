@@ -61,9 +61,9 @@ const CRM = () => {
         <>
             <div className="CRM">
                 <div>
-                    <h2>DELIVERING VALUE BY REDEFINING WHAT’S POSSIBLE</h2>
+                    <h2 style={{textAlign:"center"}}>Redefining What’s Possible</h2>
                     <sub style={{ textAlign: 'center', width: '100%', display: 'block' }}>
-                        Explore how our transformative solutions drive growth, innovation, and success across industries
+                        Explore how our transformative solutions drive growth, innovation, and value across industries
                     </sub>
                 </div>
                 <div className="CRM__blocks" ref={crmRef}>
@@ -86,11 +86,11 @@ const CRM = () => {
                         />
                         <div className={`CRM__block__description ${visible ? 'visible' : ''}`}>
                             <div>
-                                <h5>
-                                    Powering the Future: AI-Driven Innovation for Renewable Cars
-                                </h5>
+                                <h4>
+                                    Powering Legal Excellence: AI Solutions for Swiss Legal Professionals
+                                </h4>
                                 <p>
-                                    By optimizing performance, increasing efficiency, and driving sustainability, our AI-powered solutions are transforming the future of transportation. See how we’re pushing the boundaries of what’s possible in the automotive world—innovation that’s driving change for a greener tomorrow.
+                                    We designed an intelligent legal assistant that transforms how legal professionals access and use information. By turning complex legal data into instant, actionable insights, it empowers users to navigate over 100,000 legal cases and laws effortlessly—redefining the future of legal practice.
                                 </p>
                             </div>
                             <Button onClick={() => window.location.href = '/case-studies'} label='See case studies'

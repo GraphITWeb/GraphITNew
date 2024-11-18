@@ -5,7 +5,8 @@ import Link from "next/link";
 import Button from "@/components/Button/Button";
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
+
     const [isOpenMobile, setIsOpenMobile] = useState(false)
     const dropdownRef = useRef<HTMLAnchorElement>(null);
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -34,12 +35,20 @@ const Navbar = () => {
                     <div className="nav__logo__text">Gr<div>a</div>ph<div>i</div>t</div>
                 </div>
                 <div className="flex flex-row gap-10 navbar__pc">
-                    <Link href='/what-we-do'>
+                    <Link href='/what-we-do' style={{    height: 24,
+                        lineHeight: 24,
+                        alignItems: "flex-end"}}>
                         <small> What We Do</small>
                     </Link>
-                    <a ref={dropdownRef}>
-                        <small style={{cursor: "pointer"}} onClick={() => setIsOpen(!isOpen)}>Who We Are </small>
-                        <svg style={{cursor: "pointer"}} onClick={() => setIsOpen(!isOpen)}
+                    <a ref={dropdownRef}
+                       style={{    height: 24,
+                           lineHeight: 24,
+                           alignItems: "flex-end"}}
+                                className="navbar__mobile__div__first"
+                                onMouseOver={()=>setIsOpen(true)}
+                                onMouseLeave={()=>setIsOpen(false)}>
+                        <small style={{cursor: "pointer"}} >Who We Are </small>
+                        <svg style={{cursor: "pointer"}}
                              className={`${isOpen ? 'svgOpen' : ''} `}
                              xmlns="http://www.w3.org/2000/svg" width="21" height="21"
                              viewBox="0 0 21 21" fill="none">
@@ -48,7 +57,9 @@ const Navbar = () => {
                                 fill="white"/>
                         </svg>
                         {isOpen &&
-                            <div className="navbar__open">
+                            <div className="navbar__open"
+                                 onMouseOver={()=>setIsOpen(true)}
+                            >
                                 <Link href='/our-approach' onClick={() => setIsOpen(false)}>
                                     <small>Our Approach</small>
                                 </Link>
@@ -61,10 +72,14 @@ const Navbar = () => {
                             </div>
                         }
                     </a>
-                    <Link href='/what-we-think'>
+                    <Link href='/what-we-think' style={{    height: 24,
+                        lineHeight: 24,
+                        alignItems: "flex-end"}}>
                         <small>What We Think</small>
                     </Link>
-                    <Link href='/case-studies'>
+                    <Link href='/case-studies' style={{    height: 24,
+                        lineHeight: 24,
+                        alignItems: "flex-end"}}>
                         <small>Case Studies</small>
                     </Link>
                 </div>

@@ -54,7 +54,7 @@ const Unlocked = () => {
 
             <div className="unlocked_block" style={{marginBottom:'50vh'}}>
                 <h3>Creating
-                    <div><h3>a Success Roadmap</h3></div>
+                    <div><h3>Success Roadmap</h3></div>
                 </h3>
                 <strong style={{ color: 'var(--text-gray)' }}>
                     We craft a comprehensive roadmap that integrates AI and big data seamlessly into your business. Designed for flexibility and scalability, our approach ensures that each phase - from discovery to implementation - delivers measurable results and supports your long-term strategy.

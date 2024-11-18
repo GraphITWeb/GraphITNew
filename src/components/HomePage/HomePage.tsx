@@ -1628,10 +1628,9 @@ const HomePage = () => {
                                     stroke="white" strokeMiterlimit="10"/>
                             </svg>
                         </div>
-                        <p style={{marginBottom: 16}}>
-                            The Future Belongs to Those Who Innovate. At Graphit, we turn ambition into action, empowering organizations to lead with advanced AI and data-driven insights. We blend deep technical expertise with bold strategy, building transformative solutions that redefine what’s possible. From revolutionizing decision-making to creating seamless user experiences, our AI and data solutions enable organizations to break boundaries and drive impact at scale. We are strategists, engineers, and innovators dedicated to solving the world’s toughest challenges. We are Graphit.
-                        </p>
-                        <Button onClick={()=>window.location.href='/contact-us'} label='Contact Us' btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>
+                        <p style={{marginBottom: 16,textAlign:"justify"}}>
+                            The future belongs to those who innovate. At Graphit, we turn ambition into action, empowering organizations to lead with advanced AI and data-driven insights. We blend deep technical expertise with bold strategy, building transformative solutions that shape next-gen enterprises. From revolutionizing decision-making to creating seamless user experiences, our AI and data solutions enable organizations to break boundaries and drive impact at scale. We are strategists, engineers, and innovators dedicated to solving the world’s toughest challenges. We are Graphit.                        </p>
+                        <Button onClick={()=>window.location.href='/what-we-do'} label='See What We Do' btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>
                     </div>
                 </div>
                 <CRM/>
@@ -1647,7 +1646,7 @@ const HomePage = () => {
                     </div>
                     <FeedbackItem imgUser={User}
                                   description="Graphit has been an incredible asset to us at Broya. Their technical expertise combined with business acumen are not only profound but also practically applied to real-world problems. Their work has significantly contributed to the success of our e-commerce revenue growth through data analytics capability roll-out enabling us to monitor factors such as customer lifetime and forecast demand. Graphit team is extremely professional and a pleasure to work with."
-                                  name="Nima Sotodaeh"
+                                  name="Nima Sotoadeh"
                                   position="Founder of Broya"
                     />
                     <FeedbackItem imgUser={User}

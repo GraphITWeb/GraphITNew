@@ -15,20 +15,20 @@ export default function ContactUsPage() {
             <div className="offering__blocks__big">
                 <div className="offering__blocks">
                     <OfferingBlock imgBlock={Offering}
-                                   title="Next Gen AI Transformation"
-                                   description="Focus on modernizing legacy IT systems to make companies AI-centric and AI-driven, data engineering, and cloud integration."
+                                   title="Next-Gen AI Transformation"
+                                   description="Together with you, we define, build, implement, and scale cutting-edge Generative AI solutions that drive unparalleled impact for your business and society. Our expertise accelerates progress, empowering organizations to achieve breakthrough moments and redefine their future."
                     />
                     <OfferingBlock imgBlock={Offering2}
                                    title="AI Copilots"
-                                   description="Emphasizes customer offering quite unique to our company - AI Agent/Copilots - specialist solutions that helps companies create their platform specific companions, which assist users with navigating their softwares, databanks and web pages"
+                                   description="Revolutionise data interaction with a powerful AI copilot that transforms complex data into clear, actionable insights. Tailored for each platform, this AI-driven tool empowers users to access critical information by simply asking a question, delivering rapid, high-quality insights that elevate decision-making and drive strategic advantage."
                     />
                     <OfferingBlock imgBlock={Offering3}
                                    title="Generative AI"
-                                    description="Emphasize your custom GenAI development, such as intellectual chat bots or other similar services (AI Outsourcing)"
+                                   description="Our Generative AI solutions empower organizations to revolutionize user engagement, automate complex processes, and drive innovation at scale. By developing custom AI-driven tools Graphit enables clients to transform their operations and deliver seamless, highly personalised experiences."
                     />
                     <OfferingBlock imgBlock={Offering4}
                                    title="Big Data"
-                                   description="Will comprise of multiple subsections"
+                                   description="Big Data solutions turn raw information into powerful, strategic assets that drive informed decision-making and uncover new growth opportunities. From data integration and structuring to advanced analytics, we provide end-to-end support that enables organizations to leverage their data at scale."
                     />
                 </div>
             </div>

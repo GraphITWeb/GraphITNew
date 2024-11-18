@@ -40,13 +40,13 @@ const Posts = () => {
     return (
         <div className="what__we__do__posts">
             <div className="what__we__do__posts__header">
-                <h2>What we think</h2>
+                <h2>Case Studies</h2>
                 <Button label='View all posts'
                         btnStyle={{ padding: '12px 32px', marginRight: 0 }}
                         btnDivStyle={{ fontSize: 18 }}
                         onClick={() => window.location.href = '/what-we-think'} />
             </div>
-            <sub>The latest research, analyses and strategies to help future-focused organisations thrive in this period of great challenge</sub>
+            <sub>See our expertise in action – solutions that drive innovation and create unprecedented impact across industries.</sub>
             <div className="what__we__do__posts__block" ref={postsRef}
                  style={{display: 'flex', overflowX: 'auto', scrollBehavior: 'smooth'}}>
                 <span style={{height: "auto"}}/>
