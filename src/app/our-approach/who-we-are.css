@@ -56,6 +56,7 @@
 .partners__block{
     padding: 0 80px;
     text-align: center;
+    width: 100%;
 }
 .partners{
     display: flex;
