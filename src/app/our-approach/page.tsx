@@ -139,7 +139,9 @@ export default function WhoWeArePage() {
                     </svg>
                 </div>
             </div>
-            <Posts/>
+            <div className="posts__margin">
+                <Posts/>
+            </div>
         </div>
     )
 }
