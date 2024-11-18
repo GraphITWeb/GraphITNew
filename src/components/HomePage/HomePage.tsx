@@ -2,7 +2,7 @@
 import './home.css'
 import User from '../../assets/user.png'
 import Nima from '../../assets/Nima Photo.jpg'
-import Pavel from '../../assets/Pasha Yeliseev Photo.jpeg'
+import Pavel from '../../assets/Pavel.png'
 import Ruslan from '../../assets/Ruslan Kravets Photo.jpeg'
 
 import Business from "@/components/Home/Business/Business";
