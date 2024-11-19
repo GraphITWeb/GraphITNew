@@ -16,3 +16,8 @@
     justify-content: space-between;
     align-items: center;
 }
+.technical__what__block p{
+    text-align: justify;
+    color: var(--white);
+    margin-top: 8px;
+}

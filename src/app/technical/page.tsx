@@ -59,14 +59,16 @@ export default function Technical() {
                         We’d like to hear from you. Please fill out this form
                     </p>
                 </div>
-                <TechnicalWhatBlock header="Focus first on talent"
-                                    description="The largest growth area in global capability centers is in research and development. Other growing areas include engineering, technology innovation, product design and development, marketing, supply chain and transformation."/>
-                <TechnicalWhatBlock header="Enable innovation"
-                                    description="The largest growth area in global capability centers is in research and development. Other growing areas include engineering, technology innovation, product design and development, marketing, supply chain and transformation."/>
-                <TechnicalWhatBlock header="Identify the optimal location"
-                                    description="The largest growth area in global capability centers is in research and development. Other growing areas include engineering, technology innovation, product design and development, marketing, supply chain and transformation."/>
-                <TechnicalWhatBlock header="Strengthen your digital core"
-                                    description="The largest growth area in global capability centers is in research and development. Other growing areas include engineering, technology innovation, product design and development, marketing, supply chain and transformation."/>
+                <TechnicalWhatBlock header="Driving Positive Impact"
+                                    description="We are dedicated to creating meaningful impact for our clients, our people, and the communities we serve. At Graphit, we believe in responsible leadership that drives progress, supports sustainability, and builds a better future for all."/>
+                <TechnicalWhatBlock header="Commitment to Ethical Business"
+                                    description="At Graphit, integrity is at the heart of everything we do. Our team is united by a commitment to doing what’s right, providing exceptional value for our clients while upholding the highest ethical standards. This dedication to ethical business practices is what sets us apart."/>
+                <TechnicalWhatBlock header="Sustainability in Action"
+                                    description="We partner with clients to integrate sustainability into their transformations, helping them achieve environmental, social, and governance (ESG) goals. Our own operations reflect this commitment, as we work to minimize our environmental footprint and contribute positively to society."/>
+                <TechnicalWhatBlock header="Championing Diversity and Inclusion"
+                                    description="We value diverse perspectives and experiences as essential drivers of innovation. By fostering an inclusive environment, we attract and empower individuals with unique insights, enabling us to deliver creative, effective solutions for our clients."/>
+                <TechnicalWhatBlock header="Responsible AI"
+                                    description="AI holds transformative potential, and with it comes responsibility. Graphit helps clients design, deploy, and manage AI in a way that builds trust, mitigates risks, and maximizes value—ensuring AI serves as a force for good."/>
             </div>
             <div className="why__choose__us">
                 <h2>What you’ll achieve</h2>
