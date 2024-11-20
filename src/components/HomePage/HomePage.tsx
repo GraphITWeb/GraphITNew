@@ -1687,6 +1687,11 @@ const HomePage = () => {
                             See what business leaders say about our team and how we deliver value
                         </sub>
                     </div>
+                    <FeedbackItem imgUser={Ales}
+                                  description={`Graphit's "Talk-To-Your-Data" AI Copilot has been a game-changer for our organization. Enabling customers to seamlessly interact with data boosted user’s platform engagement, made complex insights easily accessible and further informed analyst’s decision-making. translated into a substantial uptick in subscriptions to our platform. Graphit's AI Copilot has not only made our data more accessible but also turned it into a strategic advantage that powers our growth.`}
+                                  name="Ales Prochazka"
+                                  position="CEO of Legaltools"
+                    />
                     <FeedbackItem imgUser={Ruslan}
                                   description="Graphit provided us with a clear, actionable strategy for AI adoption. By identifying the most suitable AI use-cases for our business, they significantly facilitated and accelerated AI solution roll-out across our department, ensuring it targeted actual business bottlenecks. Thanks to their approach, we became a data-driven organization and substantially streamlined our operations, resulting in increased efficiency and measurable growth. Focusing on our needs ensured that the transformation was both effective and relevant to our internal KPIs."
                                   name="Ruslan Kravets"
@@ -1701,11 +1706,6 @@ const HomePage = () => {
                                   description="Graphit has been an incredible asset to us at Broya. Their technical expertise combined with business acumen are not only profound but also practically applied to real-world problems. Their work has significantly contributed to the success of our e-commerce revenue growth through data analytics capability roll-out enabling us to monitor factors such as customer lifetime and forecast demand. Graphit team is extremely professional and a pleasure to work with."
                                   name="Nima Sotoadeh"
                                   position="Founder of Broya"
-                    />
-                    <FeedbackItem imgUser={Ales}
-                                  description={`Graphit's "Talk-To-Your-Data" AI Copilot has been a game-changer for our organization. Enabling customers to seamlessly interact with data boosted user’s platform engagement, made complex insights easily accessible and further informed analyst’s decision-making. translated into a substantial uptick in subscriptions to our platform. Graphit's AI Copilot has not only made our data more accessible but also turned it into a strategic advantage that powers our growth.`}
-                                  name="Ales Prochazka"
-                                  position="CEO of Legaltools"
                     />
                 </div>
                 <Business/>
