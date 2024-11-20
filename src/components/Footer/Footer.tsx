@@ -57,7 +57,6 @@ const Footer = () => {
                             <p>Terms & Conditions</p>
                             <p>Cookie Policy/Settings</p>
                             <p>Accessibility Statement</p>
-                            <p>Modern Slavery Act Statement</p>
                         </div>
                     </div>
                     <div className='subscribe'>

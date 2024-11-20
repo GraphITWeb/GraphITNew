@@ -9,9 +9,9 @@ const TechnicalWhatBlock: React.FC<TechnicalWhatBlockProps> = ({header,descripti
   const [isOpen, setIsOpen] = useState(false);
     return (
       <div className="technical__what__block">
-          <div className="technical__what__block__header">
+          <div className="technical__what__block__header" onClick={()=>setIsOpen(!isOpen)} >
               <h4>{header}</h4>
-              {!isOpen&&<svg style={{cursor:"pointer"}} onClick={()=>setIsOpen(true)} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              {!isOpen&&<svg style={{cursor:"pointer"}} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path d="M11 13H5V11H11V5H13V11H19V13H13V19H11V13Z" fill="white"/>
               </svg>}
               {isOpen &&
