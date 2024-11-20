@@ -187,7 +187,6 @@ const Items = () => {
 const Companies = () => {
     return (
         <div className="companies">
-            <h2>Team Trusted By Leaders</h2>
             <sub>Our talent accelerated change for world’s leading brands</sub>
             <div className='scrollable__block'>
                 <div className='flex'>
