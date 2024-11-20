@@ -131,7 +131,6 @@ const Navbar = () => {
                                 </div>
                                 <div className="navbar__mobile__div__first__block__small">
                                     <h5>Our approach</h5>
-                                    <small>Lorem ipsum</small>
                                 </div>
                             </div>
                             <div className="navbar__mobile__div__first__block"
@@ -149,7 +148,6 @@ const Navbar = () => {
                                 </div>
                                 <div className="navbar__mobile__div__first__block__small">
                                     <h5>Our values</h5>
-                                    <small>Lorem ipsum</small>
                                 </div>
                             </div>
                             <div className="navbar__mobile__div__first__block"
@@ -167,7 +165,6 @@ const Navbar = () => {
                                 </div>
                                 <div className="navbar__mobile__div__first__block__small">
                                     <h5>Our people</h5>
-                                    <small>Lorem ipsum</small>
                                 </div>
                             </div>
                         </>}

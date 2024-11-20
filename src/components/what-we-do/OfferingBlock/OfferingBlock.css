@@ -1,9 +1,10 @@
 .offering__block{
     display: flex;
-    height: 320px;
-    padding: 36px;
+    height: 224px;
+    padding: 24px;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 16px;
     align-items: flex-start;
     align-self: stretch;
     border-radius: 12px;
@@ -57,18 +58,15 @@ color: #fff;
     text-align: center;
     height: 24px;
     cursor: pointer;
+    width: max-content;
 }
-.offering__block strong{
-    margin-bottom: 36px;
+.offering__block sub{
     text-align: justify;
 }
 @media screen and (max-width: 768px) {
     .offering__block{
-        height: 422px;
+        height: 300px;
         padding: 24px;
-    }
-    .offering__block strong{
-        margin-bottom: 36px;
     }
     .offering__block div{
         left: 24px;

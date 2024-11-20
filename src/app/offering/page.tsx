@@ -9,8 +9,15 @@ export default function Page() {
         <div className="flex flex-col items-center justify-items-center">
             <Main subText="Offerings" header="Take the world by Next-Gen AI Transformation"
                   description="Every day, cloud computing becomes more integral in driving reinvention and meeting the ever-changing needs of people around the world."/>
-            <OfferingInfo/>
-            <div className="flex flex-row gap-2 justify-start w-full" style={{paddingLeft:80}}>
+            <OfferingInfo
+                header1={''}
+                header2={''}
+                header3={''}
+                header4={''}
+                text1={''}
+                text2={''}
+                text3={''}
+                text4={''}/>            <div className="flex flex-row gap-2 justify-start w-full" style={{paddingLeft:80}}>
                 <h2>Redefine with</h2>
                 <h2 style={{fontWeight:700}}>Next-Gen AI Transformation</h2>
             </div>

@@ -1,0 +1,72 @@
+.case__study{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.case__study img{
+    border-radius: 24px;
+    margin: 0 80px;
+    width: Calc(100vw - 160px);
+}
+.case__study__text{
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 96px;
+    text-align: justify;
+}
+.case__study__impact{
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 24px;
+    background: #12122E;
+    text-align: justify;
+}
+.case__study__text__dots{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.case__study__text__dots svg{
+    width: 24px;
+    height: 24px;
+    min-height: 24px;
+    min-width: 24px;
+    margin-top: 2px;
+}
+@media screen and (max-width: 992px) {
+    .case__study img{
+        border-radius: 24px;
+        margin: 0 80px;
+        width: Calc(100vw - 128px);
+    }
+    .case__study__text{
+        margin-top: 64px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .case__study__text{
+        margin-top: 32px;
+        gap: 12px;
+        max-width: Calc(100vw - 64px);
+    }
+    .case__study img{
+        margin: 0 64px;
+        width: Calc(100vw - 64px);
+    }
+}
+@media screen and (max-width: 568px) {
+    .case__study__text{
+        margin-top: 16px;
+        max-width: Calc(100vw - 32px);
+    }
+    .case__study img{
+        margin: 0 32px;
+        width: Calc(100vw - 32px);
+    }
+}

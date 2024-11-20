@@ -7,18 +7,19 @@ interface OfferingBlockProps {
     imgBlock: StaticImageData;
     title: string;
     description: string;
+    link:string;
 }
 
-const OfferingBlock: React.FC<OfferingBlockProps> = ({imgBlock, title, description}) => {
+const OfferingBlock: React.FC<OfferingBlockProps> = ({imgBlock, title, description,link}) => {
     return (
         <div className="offering__block" style={{
             background: `url(${imgBlock.src}) no-repeat center center`,
             backgroundSize: "cover",
         }}
-             onClick={()=>{window.location.href='/offering'}}
+             onClick={()=>{window.location.href=link}}
         >
-            <h2 style={{marginTop: 8}}>{title}</h2>
-            <strong>{description}</strong>
+            <h3 >{title}</h3>
+            <sub style={{color:'var(--white)'}}>{description}</sub>
             <div><sub style={{lineHeight: '24px', textAlign: "center"}}>Learn More</sub>
                 <svg style={{marginTop:8}} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                      fill="none">

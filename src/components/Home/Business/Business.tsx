@@ -1,6 +1,6 @@
 'use client'
 import Button from "@/components/Button/Button";
-
+import './Business.css'
 export default function Business() {
     return (
         <div className="business">

@@ -23,7 +23,7 @@ const CareersList = () => {
                               country="United Kingdom"
                               description="We’re looking for a mid-level product designer to join our team."
                               time="Full-time"
-                              salary="80k - 100k"
+                              salary="Competitive"
                               setActiveCareers={setActiveCareers}
                 />
             }
@@ -36,7 +36,7 @@ const CareersList = () => {
                           country="United Kingdom"
                           description="We’re looking for a mid-level product designer to join our team."
                           time="Full-time"
-                          salary="80k - 100k"
+                          salary="Competitive"
                           setActiveCareers={setActiveCareers}
             />
             <CareersBlock position='Product Designer'
@@ -45,7 +45,7 @@ const CareersList = () => {
                           country="United Kingdom"
                           description="We’re looking for a mid-level product designer to join our team."
                           time="Full-time"
-                          salary="80k - 100k"
+                          salary="Competitive"
                           setActiveCareers={setActiveCareers}
             />
             <CareersBlock position='Product Designer'
@@ -54,7 +54,7 @@ const CareersList = () => {
                           country="United Kingdom"
                           description="We’re looking for a mid-level product designer to join our team."
                           time="Full-time"
-                          salary="80k - 100k"
+                          salary="Competitive"
                           setActiveCareers={setActiveCareers}
             />
         </>

@@ -1,6 +1,6 @@
 'use client'
 import './home.css'
-import User from '../../assets/user.png'
+import Ales from '../../assets/Ales.jpg'
 import Nima from '../../assets/Nima Photo.jpg'
 import Pavel from '../../assets/Pavel.png'
 import Ruslan from '../../assets/Ruslan Kravets Photo.jpeg'
@@ -1663,10 +1663,10 @@ const HomePage = () => {
                                   name="Nima Sotoadeh"
                                   position="Founder of Broya"
                     />
-                    <FeedbackItem imgUser={User}
+                    <FeedbackItem imgUser={Ales}
                                   description={`Graphit's "Talk-To-Your-Data" AI Copilot has been a game-changer for our organization. Enabling customers to seamlessly interact with data boosted user’s platform engagement, made complex insights easily accessible and further informed analyst’s decision-making. translated into a substantial uptick in subscriptions to our platform. Graphit's AI Copilot has not only made our data more accessible but also turned it into a strategic advantage that powers our growth.`}
-                                  name="Gaz Summer"
-                                  position="CEO of Locarla"
+                                  name="Ales Prochazka"
+                                  position="CEO of Legaltools"
                     />
                     </div>
                 <Business/>

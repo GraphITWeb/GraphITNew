@@ -8,8 +8,8 @@ export default function Careers() {
     return (
         <>
             <div className="flex flex-col items-center justify-items-center">
-                <Main subText="Careers" header="We’re looking for talented people"
-                      description="Lorem ipsum dolor sit amet consectetur. Risus tortor ipsum nunc mattis scelerisque curabitur at. In ac tortor cras at scelerisque risus. Congue odio mauris scelerisque ipsum."
+                <Main subText="Careers" header="Where People Drive Progress"
+                      description="Join a team where innovation meets opportunity. Explore a culture that empowers you to grow, lead, and make a lasting impact."
                       />
                 <Image src={CareersImage} className="careers__image" alt="Careers"/>
                 <CareersList />

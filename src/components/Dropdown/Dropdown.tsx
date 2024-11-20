@@ -12,7 +12,7 @@ interface DropdownProps {
 const Dropdown: React.FC<DropdownProps> = ({label, selected, setSelected, variants}) => {
     const [isOpen, setIsOpen] = useState(false)
     return (
-        <div className="dropdown" onClick={() => setIsOpen(!isOpen)}>
+        <div className="dropdown"  onClick={() => setIsOpen(!isOpen)}>
             <small>{selected.length>0?selected.join(', '):label}</small>
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
                 <path
@@ -21,7 +21,8 @@ const Dropdown: React.FC<DropdownProps> = ({label, selected, setSelected, varian
             </svg>
             {isOpen && <div className="dropdown__select">
                 {variants.map((variant, index) => (
-                    <div className="dropdown__select__item" key={index} onClick={() => {
+                    <div className="dropdown__select__item" key={index} onClick={(e) => {
+                        e.stopPropagation()
                         if (selected.includes(variant)) {
                             setSelected(selected.filter(item => item !== variant));
                         } else {
