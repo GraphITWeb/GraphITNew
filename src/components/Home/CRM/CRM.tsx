@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import Illustration from "@/assets/Illustration.png";
+import Illustration from "@/assets/Case.png";
 import Careers from "@/assets/Careers.png";
 import Illustration2 from "@/assets/Illustration2.png";
 import Button from "@/components/Button/Button";
