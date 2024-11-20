@@ -5,7 +5,7 @@ import OfferingInfo from "@/components/offering/OfferingInfo/OfferingInfo";
 import './nextgen.css'
 import StepSVG from "@/components/NextGen/stepSvg";
 import Copilots from "@/components/AICopilots/Copilots/Copilots";
-import Leadership from "@/components/NextGen/Leadership/Leadership";
+import Business from "@/components/Home/Business/Business";
 export default function Page() {
     return (
         <div className="flex flex-col items-center justify-items-center">
@@ -112,7 +112,7 @@ export default function Page() {
             </div>
             <div style={{marginTop: 96}}/>
             <Posts/>
-            <Leadership/>
+                <Business/>
         </div>
     )
 }

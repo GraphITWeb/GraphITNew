@@ -140,8 +140,7 @@
     max-width: fit-content;
     white-space: nowrap;
 }
-
-.feedback, .nextgen, .business {
+.feedback, .nextgen {
     display: flex;
     padding: 96px 80px;
     flex-direction: column;

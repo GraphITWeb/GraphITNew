@@ -1,4 +1,4 @@
-.business {
+.ToContact {
     display: flex;
     padding: 96px 80px;
     flex-direction: column;
@@ -8,38 +8,31 @@
     align-self: stretch;
     z-index: 1;
     position: relative;
+    width: 100vw;
 }
-.business {
-    align-items: flex-start;
-    background: url("../../../assets/CTA.png") no-repeat center center;
-    background-size: cover;
-    gap: 80px;
-}
-.business h2{
-    display: grid;
-}
+
 @media screen and (max-width: 768px) {
-    .business{
+    .ToContact{
         background: url("../../../assets/CTAMobile.png") no-repeat center center;
         background-size: cover;
     }
-    .business{
+    .ToContact{
         padding: 64px 32px;
     }
-    .business h2{
+    .ToContact h2{
         display: block;
     }
-    .business button{
+    .ToContact button{
         padding: 8px 0!important;
         width: 100%;
         max-width: 350px;
     }
 }
 @media screen and (max-width: 576px) {
-    .business{
+    .ToContact{
         padding: 64px 16px;
     }
-    .business button{
+    .ToContact button{
         max-width: none;
     }
 

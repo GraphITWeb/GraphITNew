@@ -1,7 +1,7 @@
 import React from 'react';
 import Main from "@/components/Main/Main";
 import OurPeopleBlock from "@/components/our-people/OurPeopleBlock/OurPeopleBlock";
-import Business from "@/components/Careers/ToContact/Business";
+import ToContact from "@/components/Careers/ToContact/ToContact";
 export default function OurPeoplePage() {
 
     return (
@@ -10,7 +10,7 @@ export default function OurPeoplePage() {
                   description="At Graphit, our team unites scientific expertise with business acumen, crafting innovative solutions that blend technical excellence with real-world impact to drive our clients forward."
             />
             <OurPeopleBlock/>
-            <Business/>
+            <ToContact/>
         </div>
     )
 }

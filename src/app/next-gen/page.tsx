@@ -5,7 +5,7 @@ import OfferingInfo from "@/components/offering/OfferingInfo/OfferingInfo";
 import './nextgen.css'
 import StepSVG from "@/components/NextGen/stepSvg";
 import Transform from "@/components/NextGen/Transform/Transform";
-import Leadership from "@/components/NextGen/Leadership/Leadership";
+import Business from "@/components/Home/Business/Business";
 export default function Page() {
 
     return (
@@ -105,7 +105,9 @@ export default function Page() {
             </div>
             <div style={{marginTop: 96}}/>
             <Posts/>
-            <Leadership/>
+            <div style={{marginTop: 64}}>
+                <Business/>
+            </div>
         </div>
     )
 }
