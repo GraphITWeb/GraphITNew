@@ -2,15 +2,19 @@
     display: flex;
     padding: 96px 80px;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+    justify-content: flex-start;
+    align-items: flex-start;
     align-self: stretch;
     z-index: 1;
     position: relative;
     width: 100vw;
+    background: url("../../../assets/CTA.png") no-repeat center center;
+    background-size: cover;
+    gap: 80px;
 }
-
+.ToContact h2{
+    display: grid;
+}
 @media screen and (max-width: 768px) {
     .ToContact{
         background: url("../../../assets/CTAMobile.png") no-repeat center center;
