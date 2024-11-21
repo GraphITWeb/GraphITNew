@@ -22,15 +22,18 @@ export default function Page() {
                 text3={'Organizations leveraging AI at scale are 3× more likely to outperform their peers in revenue growth.'}
                 text4={'in projected global spending on AI technologies in the coming years.'}/>
             <Transform/>
-            <div className="flex flex-row gap-2 justify-start w-full" style={{paddingLeft: 80}}>
-                <h2>Reinvent with</h2>
-                <h2 style={{fontWeight: 700}}>Next-Gen AI Transformation</h2>
+            <div className="textPadding">
+                <h2>Reinvent with <span style={{fontWeight: 700}}>Next-Gen AI Transformation</span>
+                </h2>
             </div>
             <div className="reinvent">
                 <div className="fade__reinvent"/>
-                <svg style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2" height="177"
+                <svg className="pc" style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2" height="177"
                      viewBox="0 0 2 177" fill="none">
                     <path d="M1 1L1.00001 176" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                </svg>
+                <svg className="mobile" style={{marginLeft:15}} xmlns="http://www.w3.org/2000/svg" width="2" height="100" viewBox="0 0 2 100" fill="none">
+                    <path d="M1 1L1 99" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
                 </svg>
                 <div>
                     <StepSVG/>
@@ -40,11 +43,16 @@ export default function Page() {
                             garners support across your organization.</p>
                     </div>
                 </div>
-                <svg style={{marginLeft: 15, width: '50vw'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 722 286"
+                <svg className="pc" style={{marginLeft: 15, width: '50vw'}} xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 722 286"
                      fill="none">
                     <path
                         d="M1 1V155.912C1 162.54 6.37258 167.912 13 167.912H709C715.627 167.912 721 173.285 721 179.912V285"
                         stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                </svg>
+                <svg className="mobile" style={{marginLeft: 15}}  xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
+                     fill="none">
+                    <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
                 </svg>
                 <div style={{marginLeft: 'auto'}}>
                     <StepSVG/>
@@ -57,11 +65,15 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-                <svg style={{marginLeft: 'auto', marginRight: 'Calc(50vw - 175px)', width: '25vw'}}
+                <svg className="pc" style={{marginLeft: 'auto', marginRight: 'Calc(50vw - 175px)', width: '25vw'}}
                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 362 274" fill="none">
                     <path
                         d="M1 273L1 125.14C1 118.513 6.37258 113.14 13 113.14L349 113.14C355.627 113.14 361 107.768 361 101.14L361 1"
                         stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                </svg>
+                <svg className="mobile" style={{marginLeft: 15}}  xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
+                     fill="none">
+                    <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
                 </svg>
                 <div style={{marginRight: 'auto', marginLeft: 'auto'}}>
                     <StepSVG/>
@@ -71,7 +83,12 @@ export default function Page() {
                             AI practices, and upskilling your teams through customized learning programs.</p>
                     </div>
                 </div>
-                <svg style={{marginLeft: 15, width: '25vw'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 362 274"
+                <svg className="mobile" style={{marginLeft: 15}}  xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
+                     fill="none">
+                    <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                </svg>
+                <svg className="pc" style={{marginLeft: 15, width: '25vw'}} xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 362 274"
                      fill="none">
                     <path
                         d="M1 273L1 125.14C1 118.513 6.37258 113.14 13 113.14L349 113.14C355.627 113.14 361 107.768 361 101.14L361 1"
@@ -87,7 +104,12 @@ export default function Page() {
                         </p>
                     </div>
                 </div>
-                <svg style={{marginLeft: 15, width: '50vw'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 722 262"
+                <svg className="mobile" style={{marginLeft: 15}}  xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
+                     fill="none">
+                    <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                </svg>
+                <svg className="pc" style={{marginLeft: 15, width: '50vw'}} xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 722 262"
                      fill="none">
                     <path
                         d="M1 1L1 141.807C1 148.434 6.37258 153.807 13 153.807L709 153.807C715.627 153.807 721 159.18 721 165.807V261"

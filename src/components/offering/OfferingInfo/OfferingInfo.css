@@ -6,7 +6,7 @@
     background: url("../../../assets/OfferingInfo.png") no-repeat center;
     background-size: cover;
     display: flex;
-    height: 326px;
+    height: auto;
     padding: 40px;
     align-items: flex-start;
     gap: 32px;
@@ -33,4 +33,38 @@
     width: 40px;
     height: 4px;
     background: var(--orange);
+}
+@media screen and (max-width: 1100px) {
+    .offering__info__block {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 768px) {
+    .offering__info {
+        padding: 50px 32px 64px 32px;
+    }
+    .offering__info__block {
+        height: auto;
+        display: flex;
+        padding: 32px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        align-self: stretch;
+    }
+}
+@media screen and (max-width: 576px) {
+    .offering__info {
+        padding: 50px 16px 32px 16px;
+    }
+    .offering__info__block {
+        display: flex;
+        padding: 32px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        align-self: stretch;
+    }
 }

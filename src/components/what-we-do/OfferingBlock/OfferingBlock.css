@@ -65,12 +65,13 @@ color: #fff;
 }
 @media screen and (max-width: 768px) {
     .offering__block{
-        height: 300px;
+        height: auto;
         padding: 24px;
     }
-    .offering__block div{
-        left: 24px;
-        bottom: 24px;
+    .offering__block div {
+        position: relative;
+        right: auto;
+        bottom: auto;
     }
 }
 @media screen and (max-width: 576px) {

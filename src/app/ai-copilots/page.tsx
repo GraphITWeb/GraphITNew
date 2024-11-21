@@ -21,17 +21,21 @@ export default function Page() {
                 text3={'Personalized AI tools improve retention rates, reducing churn by up to 25%.\n'}
                 text4={'Companies that prioritize user-friendly AI integrations are 3x more likely to achieve platform growth.'}/>
             <Copilots/>
-            <div className="flex flex-row gap-2 justify-start w-full" style={{paddingLeft: 80}}>
+            <div className="textPadding">
                 <h2>
                     Reimagine Your Platform with
+                    <span style={{fontWeight: 700}}>AI Copilot</span>
                 </h2>
-                <h2 style={{fontWeight: 700}}>AI Copilot</h2>
             </div>
             <div className="reinvent">
                 <div className="fade__reinvent"/>
-                <svg style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2" height="177"
+                <svg className="pc" style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2" height="177"
                      viewBox="0 0 2 177" fill="none">
                     <path d="M1 1L1.00001 176" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                </svg>
+                <svg className="mobile" style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2"
+                     height="100" viewBox="0 0 2 100" fill="none">
+                    <path d="M1 1L1 99" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
                 </svg>
                 <div>
                     <StepSVG/>
@@ -39,14 +43,20 @@ export default function Page() {
                         <h3>Design the Vision
                         </h3>
                         <p>
-                            We work with you to explore how an AI Copilot can transform your platform, creating a vision for a seamless, intuitive user experience.</p>
+                            We work with you to explore how an AI Copilot can transform your platform, creating a vision
+                            for a seamless, intuitive user experience.</p>
                     </div>
                 </div>
-                <svg style={{marginLeft: 15, width: '50vw'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 722 286"
+                <svg className="pc" style={{marginLeft: 15, width: '50vw'}} xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 722 286"
                      fill="none">
                     <path
                         d="M1 1V155.912C1 162.54 6.37258 167.912 13 167.912H709C715.627 167.912 721 173.285 721 179.912V285"
                         stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                </svg>
+                <svg className="mobile" xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
+                     fill="none">
+                    <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
                 </svg>
                 <div style={{marginLeft: 'auto'}}>
                     <StepSVG/>
@@ -55,16 +65,21 @@ export default function Page() {
                             <h3>Develop Custom Solutions
                             </h3>
                             <p>
-                                Leveraging your platform’s data and goals, we design and build a Copilot that delivers personalized insights and enhances end-user productivity.
+                                Leveraging your platform’s data and goals, we design and build a Copilot that delivers
+                                personalized insights and enhances end-user productivity.
                             </p>
                         </div>
                     </div>
                 </div>
-                <svg style={{marginLeft: 'auto', marginRight: 'Calc(50vw - 175px)', width: '25vw'}}
+                <svg className="pc" style={{marginLeft: 'auto', marginRight: 'Calc(50vw - 175px)', width: '25vw'}}
                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 362 274" fill="none">
                     <path
                         d="M1 273L1 125.14C1 118.513 6.37258 113.14 13 113.14L349 113.14C355.627 113.14 361 107.768 361 101.14L361 1"
                         stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                </svg>
+                <svg className="mobile" xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
+                     fill="none">
+                    <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
                 </svg>
                 <div style={{marginRight: 'auto', marginLeft: 'auto'}}>
                     <StepSVG/>
@@ -72,11 +87,17 @@ export default function Page() {
                         <h3>Pilot the Experience
                         </h3>
                         <p>
-                            We develop and test pilot implementations of the AI Copilot, ensuring it provides meaningful value and aligns with user expectations.
+                            We develop and test pilot implementations of the AI Copilot, ensuring it provides meaningful
+                            value and aligns with user expectations.
                         </p>
                     </div>
                 </div>
-                <svg style={{marginLeft: 15, width: '25vw'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 362 274"
+                <svg className="mobile" xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
+                     fill="none">
+                    <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                </svg>
+                <svg className="pc" style={{marginLeft: 15, width: '25vw'}} xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 362 274"
                      fill="none">
                     <path
                         d="M1 273L1 125.14C1 118.513 6.37258 113.14 13 113.14L349 113.14C355.627 113.14 361 107.768 361 101.14L361 1"
@@ -88,11 +109,17 @@ export default function Page() {
                         <h3>Scale for Impact
                         </h3>
                         <p>
-                            Once validated, we scale the Copilot across your platform, optimizing features, ensuring compliance, and delivering a consistently excellent user experience.
+                            Once validated, we scale the Copilot across your platform, optimizing features, ensuring
+                            compliance, and delivering a consistently excellent user experience.
                         </p>
                     </div>
                 </div>
-                <svg style={{marginLeft: 15, width: '50vw'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 722 262"
+                <svg className="mobile" xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
+                     fill="none">
+                    <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                </svg>
+                <svg className="pc" style={{marginLeft: 15, width: '50vw'}} xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 722 262"
                      fill="none">
                     <path
                         d="M1 1L1 141.807C1 148.434 6.37258 153.807 13 153.807L709 153.807C715.627 153.807 721 159.18 721 165.807V261"
@@ -104,15 +131,17 @@ export default function Page() {
                         <h3>Embed Long-Term Innovation
                         </h3>
                         <p>
-                            We provide ongoing support and refinement, ensuring your AI Copilot evolves with your platform and continues to meet the needs of your users.
-                            Whether they’re analyzing data, making decisions, or exploring new opportunities, your Copilot transforms the way they engage with your product.
+                            We provide ongoing support and refinement, ensuring your AI Copilot evolves with your
+                            platform and continues to meet the needs of your users.
+                            Whether they’re analyzing data, making decisions, or exploring new opportunities, your
+                            Copilot transforms the way they engage with your product.
                         </p>
                     </div>
                 </div>
             </div>
             <div style={{marginTop: 96}}/>
             <Posts/>
-                <Business/>
+            <Business/>
         </div>
     )
 }
