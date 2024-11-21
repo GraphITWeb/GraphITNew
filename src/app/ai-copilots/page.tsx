@@ -54,7 +54,7 @@ export default function Page() {
                         d="M1 1V155.912C1 162.54 6.37258 167.912 13 167.912H709C715.627 167.912 721 173.285 721 179.912V285"
                         stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
                 </svg>
-                <svg className="mobile" xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
+                <svg className="mobile" style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
                      fill="none">
                     <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
                 </svg>
@@ -77,7 +77,7 @@ export default function Page() {
                         d="M1 273L1 125.14C1 118.513 6.37258 113.14 13 113.14L349 113.14C355.627 113.14 361 107.768 361 101.14L361 1"
                         stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
                 </svg>
-                <svg className="mobile" xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
+                <svg className="mobile" style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
                      fill="none">
                     <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
                 </svg>
@@ -92,7 +92,7 @@ export default function Page() {
                         </p>
                     </div>
                 </div>
-                <svg className="mobile" xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
+                <svg className="mobile" style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
                      fill="none">
                     <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
                 </svg>
@@ -114,7 +114,7 @@ export default function Page() {
                         </p>
                     </div>
                 </div>
-                <svg className="mobile" xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
+                <svg className="mobile" style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
                      fill="none">
                     <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
                 </svg>
