@@ -316,7 +316,9 @@
         padding: 64px 32px;
     }
 }
-
+.review__buttons{
+    display: none;
+}
 @media screen and (max-width: 576px) {
     .get__started__innovate h1 {
         font-size: 40px;
@@ -363,5 +365,14 @@
         min-width: Calc(100vw - 48px);
         gap: 12px;
         padding: 24px;
+    }
+    .review__buttons {
+        margin-left: 32px;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        margin-top: 32px;
+        width: 100%;
+        justify-content: flex-start;
     }
 }

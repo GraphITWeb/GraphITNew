@@ -11,7 +11,7 @@ import CRM from "@/components/Home/CRM/CRM";
 import Nextgen from "@/components/Home/Nextgen/Nextgen";
 import Unlocked from "@/components/Home/Unlocked/Unlocked";
 import FeedbackItem from "@/components/Home/FeedbackItem/FeedbackItem";
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import Button from "@/components/Button/Button";
 
 const HomePage = () => {
@@ -28,7 +28,21 @@ const HomePage = () => {
             clearInterval(intervalId);
         };
     }, []);
-
+    const reviewRef= useRef(null);
+    const scroll = (direction:string) => {
+        console.log(direction)
+        const scrollAmount = 0.9*window.innerWidth;
+        console.log(scrollAmount)
+        if (reviewRef.current) {
+            console.log(reviewRef.current)
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-expect-error
+            reviewRef.current.scrollBy({
+                left: direction === 'right' ? scrollAmount : -scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    };
     return (
         <>
             <div className={`loading-animation ${slideOut ? 'slide-out' : ''}`}>
@@ -785,7 +799,8 @@ const HomePage = () => {
                             fill="#FF0800"/>
                     </g>
                 </svg>
-                <svg className="pc get__started__svg" style={{left: 150, top: 48,maxWidth:'Calc(90vw - 160px)'}} xmlns="http://www.w3.org/2000/svg"
+                <svg className="pc get__started__svg" style={{left: 150, top: 48, maxWidth: 'Calc(90vw - 160px)'}}
+                     xmlns="http://www.w3.org/2000/svg"
                      width="932" height="677" viewBox="0 0 932 677" fill="none">
                     <g opacity="1">
                         <path
@@ -1681,7 +1696,7 @@ const HomePage = () => {
                             See what business leaders say about our team and how we deliver value
                         </sub>
                     </div>
-                    <div className="feedback__items">
+                    <div className="feedback__items" ref={reviewRef}>
                         <FeedbackItem imgUser={Ales}
                                       description={`Graphit's "Talk-To-Your-Data" AI Copilot has been a game-changer for our organization. Enabling customers to seamlessly interact with data boosted user’s platform engagement, made complex insights easily accessible and further informed analyst’s decision-making. translated into a substantial uptick in subscriptions to our platform. Graphit's AI Copilot has not only made our data more accessible but also turned it into a strategic advantage that powers our growth.`}
                                       name="Ales Prochazka"
@@ -1702,6 +1717,21 @@ const HomePage = () => {
                                       name="Nima Sotoadeh"
                                       position="Founder of Broya"
                         />
+                    </div>
+                    <div className="review__buttons">
+                        <div className="arrow" onClick={() => scroll('left')} style={{cursor: 'pointer'}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none">
+                                <path d="M10 18L4 12L10 6L11.4 7.45L7.85 11H20V13H7.85L11.4 16.55L10 18Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div className="arrow" onClick={() => scroll('right')} style={{cursor: 'pointer'}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none">
+                                <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z"
+                                      fill="white"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 <Business/>

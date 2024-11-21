@@ -46,6 +46,7 @@
         width: 100%;
         justify-content: flex-start;
     }
+
 }
 @media screen and (max-width: 768px) {
     .our__people:first-child {

@@ -254,6 +254,7 @@ small {
     width: 100%;
     display: flex;
 }
+
 @media screen and (max-width: 992px) {
     .sticky__text {
         font-size: 120px;

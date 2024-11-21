@@ -117,10 +117,9 @@ const CRM = () => {
                         />
                         <div className={`CRM__block__description ${visible ? 'visible' : ''}`}>
                             <div>
-                                <h5>Big data innovation</h5>
+                                <h5>Revolutionizing Streaming Performance: Scalable Data Platform for Telecom Leaders</h5>
                                 <p>
-                                    See how we’re pushing the boundaries of what’s possible in the automotive world—innovation that’s driving change for a greener tomorrow.
-                                </p>
+                                    Bespoke cloud-agnostic, high-performance platform, transforming network reliability. The solution empowered the client to enhance user experience, secure high-profile streaming clients like Disney and Netflix, and open-up new revenue streams - redefining the standards of streaming service performance.                                </p>
                             </div>
                             <Button onClick={() => window.location.href = '/case-studies'} label='See case studies'
                                     btnStyle={{ padding: '12px 32px' }} btnDivStyle={{ fontSize: 18 }} />
