@@ -144,7 +144,7 @@
     max-width: fit-content;
     white-space: nowrap;
 }
-.feedback, .nextgen {
+.feedback, .nextgen,.feedback__items{
     display: flex;
     padding: 96px 80px;
     flex-direction: column;
@@ -155,7 +155,9 @@
     z-index: 1;
     position: relative;
 }
-
+.feedback__items{
+    padding:0;
+}
 
 .feedback__block {
     display: flex;
@@ -310,7 +312,6 @@
     .feedback {
         padding: 0 32px 64px 32px;
     }
-
     .nextgen{
         padding: 64px 32px;
     }
@@ -339,5 +340,28 @@
     }
     .get__started__info_companies p{
         font-size: 14px;
+    }
+    .feedback{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .feedback__items{
+        flex-direction: row;
+        overflow: scroll;
+        justify-content: flex-start;
+        padding-left: 16px;
+        padding-right: 16px;
+        align-items: stretch;
+        gap: 16px;
+    }
+    .feedback__items::-webkit-scrollbar:horizontal {
+        height: 0;
+        opacity: 0;
+    }
+    .feedback__block{
+        width: Calc(100vw - 48px);
+        min-width: Calc(100vw - 48px);
+        gap: 12px;
+        padding: 24px;
     }
 }
