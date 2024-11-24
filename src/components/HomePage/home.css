@@ -274,7 +274,7 @@
         padding: 64px 16px;
         flex-direction: column;
         gap: 32px;
-        min-height: min-content;
+        min-height: max-content;
     }
 
     .get__started__svg {
