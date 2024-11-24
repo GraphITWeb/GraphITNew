@@ -8,7 +8,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(true);
 
     const [isOpenMobile, setIsOpenMobile] = useState(false)
-    const dropdownRef = useRef<HTMLAnchorElement>(null);
+    const dropdownRef = useRef<HTMLDivElement>(null);
     const [mobileOpen, setMobileOpen] = useState(false);
     const handleClickOutside = (event: MouseEvent) => {
         if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -22,6 +22,7 @@ const Navbar = () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
     }, []);
+
     return (
         <>
             <nav>
@@ -40,7 +41,7 @@ const Navbar = () => {
                         alignItems: "flex-end"}}>
                         <small> What We Do</small>
                     </Link>
-                    <a ref={dropdownRef}
+                    <div ref={dropdownRef}
                        style={{    height: 24,
                            lineHeight: 24,
                            alignItems: "flex-end"}}
@@ -104,7 +105,7 @@ const Navbar = () => {
                                 </Link>
                             </div>
                         }
-                    </a>
+                    </div>
                     <Link href='/case-studies' style={{
                         height: 24,
                         lineHeight: 24,

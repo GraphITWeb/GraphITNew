@@ -44,21 +44,20 @@ nav{
 .nav__logo:hover svg{
     transform: rotate(60deg);
 }
-a{
+a,.navbar__pc div{
     display: flex;
     flex-direction: row;
     gap: 4px;
     position: relative;
-
 }
-a small{
+a small,.navbar__pc div small{
     color: var(--white);
 }
 
-a small{
+a small,.navbar__pc div small{
     color: var(--white);
 }
-a small::after {
+a small::after,.navbar__pc div small::after {
     content: "";
     position: absolute;
     bottom: -4px;
@@ -70,7 +69,7 @@ a small::after {
     transition: width 0.2s ease-in-out;
 }
 
-a small:hover::after {
+a small:hover::after,.navbar__pc div small:hover::after  {
     width: 100%;
 }
 .svgOpen{
@@ -79,15 +78,15 @@ a small:hover::after {
 
 
 .navbar__open{
-    position: absolute;
+    position: absolute!important;
     z-index: 200;
     display: flex;
-    flex-direction: column;
+    flex-direction: column!important;
     top: 28px;
     width: 160px;
     padding: 12px;
     align-items: flex-start;
-    gap: 16px;
+    gap: 16px!important;
     border-radius: 12px;
     border: 1px solid var(--light-blue);
     background: rgba(18, 18, 46, 0.70);
