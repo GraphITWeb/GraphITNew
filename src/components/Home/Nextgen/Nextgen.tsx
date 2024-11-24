@@ -2,15 +2,17 @@
 import './Nextgen.css'
 import Image from "next/image";
 import {useEffect, useRef, useState} from "react";
-import Phit from "../../../assets/phit.jpg";
-import Illustration from "../../../assets/NextGen.png";
+import NextGenImage from "../../../assets/NextGen.jpg";
+import GenAI from "../../../assets/GenAI.jpg";
+import AICopilots from "../../../assets/AICopilots.jpg";
+import BigData from "../../../assets/BigData.jpg";
 import Button from "@/components/Button/Button";
 import useMobile from "@/hooks/useMobile";
 
 const Nextgen = () => {
     const [active, setActive] = useState(0);
     const sectionRef = useRef(null);
-    const images = [Phit, Illustration, Phit, Illustration];
+    const images = [NextGenImage, AICopilots, GenAI, BigData];
     const nextgenRef = useRef(null);
     const isMobile=useMobile(768)
     useEffect(() => {

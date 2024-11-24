@@ -24,7 +24,7 @@ export default function Page() {
                 text4={'in projected global spending on AI technologies in the coming years.'}/>
             <Transform/>
             <div className="textPadding">
-                <h2>Reinvent with <span style={{fontWeight: 700}}>Next-Gen AI Transformation</span>
+                <h2>Redefine with <span>Next-Gen AI Transformation</span>
                 </h2>
             </div>
             <div className="reinvent">

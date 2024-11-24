@@ -24,7 +24,7 @@ export default function Page() {
             <div className="textPadding">
                 <h2>
                     Reimagine Your Platform with
-                    <span style={{fontWeight: 700}}>AI Copilot</span>
+                    <span> AI Copilot</span>
                 </h2>
             </div>
             <div className="reinvent">

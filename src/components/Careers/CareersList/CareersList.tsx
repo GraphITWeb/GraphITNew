@@ -4,8 +4,10 @@ import React, {useEffect, useState} from "react";
 import CareersBlock from "@/components/Careers/CareersBlock/CareersBlock";
 import BritishFlag from "@/assets/british.png";
 import CareersModal from "@/components/Careers/CareersModal/CareersModal";
-
-const CareersList = () => {
+interface ListProps {
+    name:string;
+}
+const CareersList: React.FC<ListProps> = ({name}) => {
     const [activeCareers, setActiveCareers] = useState<number|null>(null);
     useEffect(() => {
         if(activeCareers===null){
@@ -28,17 +30,8 @@ const CareersList = () => {
                 />
             }
             <h3 className="careers__header">
-                Design
+                {name}
             </h3>
-            <CareersBlock position='Product Designer'
-                          direction="Design"
-                          flagImage={BritishFlag}
-                          country="United Kingdom"
-                          description="We’re looking for a mid-level product designer to join our team."
-                          time="Full-time"
-                          salary="Competitive"
-                          setActiveCareers={setActiveCareers}
-            />
             <CareersBlock position='Product Designer'
                           direction="Design"
                           flagImage={BritishFlag}

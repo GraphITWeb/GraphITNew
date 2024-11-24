@@ -1,8 +1,8 @@
 'use client';
 import Image from "next/image";
-import Illustration from "@/assets/Case.png";
-import Careers from "@/assets/Careers.png";
-import Illustration2 from "@/assets/Illustration2.png";
+import Illustration from "@/assets/Case1.jpg";
+import Netflix from "@/assets/Netflix.jpg";
+import Netflix2 from "@/assets/Netflix2.jpg";
 import Button from "@/components/Button/Button";
 import './CRM.css';
 import {useEffect, useRef, useState} from "react";
@@ -110,7 +110,7 @@ const CRM = () => {
                             </svg>
                         </div>
                         <Image
-                            src={Careers}
+                            src={Netflix2}
                             alt="Illustration"
                             className={`w-full CRM__block__image ${visible ? 'visible' : ''}`}
                         />
@@ -138,7 +138,7 @@ const CRM = () => {
                             </svg>
                         </div>
                         <Image
-                            src={Illustration2}
+                            src={Netflix}
                             alt="Illustration"
                             className={`w-full CRM__block__image ${visible ? 'visible' : ''}`}
                         />

@@ -10,8 +10,10 @@ import Posts from "@/components/what-we-do/Posts/Posts";
 export default function Page() {
     return (
         <div className="flex flex-col items-center justify-items-center">
-            <Main subText="What we do" header="Our core offerings"
-                  description="Lorem ipsum dolor sit amet consectetur. At in pulvinar vitae amet vel enim sapien purus. Sapien interdum nec facilisi tempus. Faucibus laoreet sed fames purus"/>
+            <Main subText="What we do" header="Pioneering success together"
+                  description="Our offerings are built to inspire and deliver results. Find out how we can partner with you to create impactful changes that last."
+                  />
+
             <div className="offering__blocks__big">
                 <div className="offering__blocks">
                     <OfferingBlock imgBlock={Offering}

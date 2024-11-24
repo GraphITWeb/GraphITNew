@@ -35,7 +35,7 @@ const WeMeant = () => {
 
             <div className="unlocked_block" style={{marginTop: '1vh'}}>
                 <h3>
-                    <div><h3>Innovate</h3></div>
+                    <div><h3 style={{color:"var(--orange)"}}>Innovate</h3></div>
                 </h3>
                 <strong style={{color: 'var(--text-gray)'}}>
                     Push boundaries and unlock new horizons. At Graphit, innovation is more than a buzzword—it’s our way
@@ -45,7 +45,7 @@ const WeMeant = () => {
 
             <div className="unlocked_block" style={{marginLeft: 'auto'}}>
                 <h3>
-                    <div><h3>Redefine</h3></div>
+                    <div><h3 style={{color:"var(--orange)"}}>Redefine</h3></div>
                 </h3>
                 <strong style={{color: 'var(--text-gray)'}}>
                     Reimagine what’s achievable by setting ambitious goals and carving out clear paths to success. We
@@ -56,7 +56,7 @@ const WeMeant = () => {
 
             <div className="unlocked_block" style={{marginBottom: '50vh'}}>
                 <h3>
-                    <div><h3>Transform</h3></div>
+                    <div><h3 style={{color:"var(--orange)"}}>Transform</h3></div>
                 </h3>
                 <strong style={{color: 'var(--text-gray)'}}>
                     Turn potential into reality. We identify untapped opportunities, leverage existing strengths, and
