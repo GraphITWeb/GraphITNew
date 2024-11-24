@@ -126,7 +126,11 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                             or middle level candidates.</p>
                         <h4>Responsibilities</h4>
                         <div>
-                            <li>Collaborate with customers to understand their needs and deliver solutions.</li>
+                            <div style={{display:"flex",flexDirection:"row"}}>
+                                <p> &#9679;</p>
+                                <p>Collaborate with customers to understand their needs and deliver solutions.</p>
+                            </div>
+
                             <li>Tackle technical challenges independently and proactively.</li>
                             <li>Continuously enhance your skills and bring passion to your work.</li>
                             <li>Design and implement ETL pipelines using Azure or AWS tools, ensuring eﬃcient data

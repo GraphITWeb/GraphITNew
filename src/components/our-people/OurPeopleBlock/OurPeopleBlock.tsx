@@ -7,9 +7,7 @@ import Nick from "../../../assets/Nick.png";
 import Mykola from '../../../assets/Kolya.png'
 import Sasha from '../../../assets/Sasha.png'
 import Yevhen from '../../../assets/Yevhen.png'
-import Roman from '../../../assets/Roman.png'
 import Viktoriia from '../../../assets/Viktoriia.png'
-import Marian from '../../../assets/Maryan.png'
 
 import './OurPeopleBlock.css'
 const OurPeopleBlock = () =>{
@@ -33,9 +31,7 @@ const OurPeopleBlock = () =>{
                 <People imgUser={Mykola} name='Mykola Kyrychenko' description='Founder & CEO'/>
                 <People imgUser={Sasha} name='Sasha Slyusar' description='Founder & CEO'/>
                 <People imgUser={Yevhen} name='Yevhen Kravchenko' description='Founder & CEO'/>
-                {/*<People imgUser={Roman} name='Roman Bozhovskiy' description='Founder & CEO'/>*/}
                 <People imgUser={Viktoriia} name='Viktoriia Denysenko' description='Founder & CEO'/>
-                {/*<People imgUser={Marian} name='Marian Kyrychenko' description='Founder & CEO'/>*/}
             </div>
             <div className="our__people__buttons">
                 <div className="arrow" onClick={() => scroll('left')} style={{cursor: 'pointer'}}>
