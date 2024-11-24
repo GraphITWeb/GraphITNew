@@ -271,7 +271,7 @@
     }
 
     .get__started {
-        padding: 64px 16px;
+        padding: 80px 16px 48px;
         flex-direction: column;
         gap: 32px;
         height: max-content;
