@@ -50,12 +50,11 @@ const CRM = () => {
     }, [index]);
 
     useEffect(() => {
-        // Автоматичне переміщення через 5 секунд
         timeoutRef.current = setTimeout(() => {
             changeIndex('right');
         }, 5000);
 
-        return () => clearExistingTimeout(); // Очищення таймера при зміні
+        return () => clearExistingTimeout();
     }, [index]);
     return (
         <>
@@ -147,8 +146,7 @@ const CRM = () => {
                             <div>
                                 <h5>Information task</h5>
                                 <p>
-                                    By optimizing performance, increasing efficiency, and driving sustainability, our AI-powered solutions are transforming the future of transportation.
-                                </p>
+                                    Bespoke cloud-agnostic, high-performance platform, transforming network reliability. The solution empowered the client to enhance user experience, secure high-profile streaming clients like Disney and Netflix, and open-up new revenue streams - redefining the standards of streaming service performance.                                </p>
                             </div>
                             <Button onClick={() => window.location.href = '/case-studies'} label='See case studies'
                                     btnStyle={{ padding: '12px 32px' }} btnDivStyle={{ fontSize: 18 }} />
