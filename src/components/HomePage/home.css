@@ -274,6 +274,7 @@
         padding: 64px 16px;
         flex-direction: column;
         gap: 32px;
+        height: max-content;
         min-height: max-content;
     }
 
