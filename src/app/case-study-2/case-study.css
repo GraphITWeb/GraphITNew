@@ -9,6 +9,7 @@
     margin: 0 80px;
     width: Calc(100vw - 160px);
     min-height: 240px;
+    max-height: 480px;
     object-fit: cover;
 }
 .case__study__text{

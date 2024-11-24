@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
-import Illustration from "@/assets/Case1.jpg";
-import Netflix from "@/assets/Netflix.jpg";
+import Illustration from "@/assets/CaseTest.jpg";
+import AI from "@/assets/AI.jpg";
 import Netflix2 from "@/assets/Netflix2.jpg";
 import Button from "@/components/Button/Button";
 import './CRM.css';
@@ -103,13 +103,10 @@ const CRM = () => {
                         <div className={`CRM__block__description ${visible ? 'visible' : ''}`}>
                             <div>
                                 <h4>
-                                    Powering Legal Excellence: AI Solutions for Swiss Legal Professionals
+                                    Powering Legal Excellence: AI Solution for Swiss Legal Professionals
                                 </h4>
                                 <p>
-                                    We designed an intelligent legal assistant that transforms how legal professionals
-                                    access and use information. By turning complex legal data into instant, actionable
-                                    insights, it empowers users to navigate over 100,000 legal cases and laws
-                                    effortlessly—redefining the future of legal practice.
+                                    Handcrafted intelligent legal assistant that transforms how legal professionals access and use information. By turning complex legal data into instant, actionable insights, it empowers users to navigate over 100,000 legal cases and laws effortlessly—redefining the future of legal practice.
                                 </p>
                             </div>
                             <Button onClick={() => window.location.href = '/case-studies'} label='See case studies'
@@ -139,13 +136,9 @@ const CRM = () => {
                         />
                         <div className={`CRM__block__description ${visible ? 'visible' : ''}`}>
                             <div>
-                                <h4>Revolutionizing Streaming Performance: Scalable Data Platform for Telecom
-                                    Leaders</h4>
+                                <h4>Revolutionising Streaming Performance: Scalable Data Platform for Telecom Leaders</h4>
                                 <p>
-                                    Bespoke cloud-agnostic, high-performance platform, transforming network reliability.
-                                    The solution empowered the client to enhance user experience, secure high-profile
-                                    streaming clients like Disney and Netflix, and open-up new revenue streams -
-                                    redefining the standards of streaming service performance. </p>
+                                    Bespoke cloud-agnostic, high-performance platform, transforming network reliability. The solution empowered the client to enhance user experience, secure high-profile streaming clients like Disney and Netflix, and open-up new revenue streams - redefining the standards of streaming service performance.  </p>
                             </div>
                             <Button onClick={() => window.location.href = '/case-studies'} label='See case studies'
                                     btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>
@@ -168,7 +161,7 @@ const CRM = () => {
                             </svg>
                         </div>
                         <Image
-                            src={Netflix}
+                            src={AI}
                             alt="Illustration"
                             className={`w-full CRM__block__image ${visible ? 'visible' : ''}`}
                         />
@@ -177,10 +170,8 @@ const CRM = () => {
                                 <h4>Building Empathy at Scale: AI-Powered Mental Health Chatbot for Accessible Support
                                 </h4>
                                 <p>
-                                    Bespoke cloud-agnostic, high-performance platform, transforming network reliability.
-                                    The solution empowered the client to enhance user experience, secure high-profile
-                                    streaming clients like Disney and Netflix, and open-up new revenue streams -
-                                    redefining the standards of streaming service performance. </p>
+                                    AI-driven mental health chatbot designed to make mental health support more accessible and effective. The platform allowed the client to offer human-like therapeutic interactions, boost user engagement , and achieve scalable performance - setting a new standard for digital healthcare and opening pathways for broader wellness innovation.
+                                </p>
                             </div>
                             <Button onClick={() => window.location.href = '/case-studies'} label='See case studies'
                                     btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>

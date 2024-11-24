@@ -9,8 +9,8 @@ export default function Page() {
     return (
         <div className="case__study">
             <Main subText={'Case study • 8 min read'}
-                  header="Building Empathy at Scale: AI-Powered Mental Health Chatbot"
-                  description={'Legal'}/>
+                  header="AI-Powered Mental Health Chatbot"
+                  description={'Healthcare'}/>
             <Image src={Case} alt="Case"/>
             <div className="case__study__text">
                 <h4>Key Outcomes
@@ -148,7 +148,7 @@ export default function Page() {
                     <p>
                      <span style={{fontWeight: 500}}>
                         Retrieval-Augmented Generation (RAG):
-                     </span>To enhance response accuracy by retrieving relevant information.
+                     </span> To enhance response accuracy by retrieving relevant information.
                     </p>
                 </div>
                 <div className="case__study__text__dots">
@@ -172,7 +172,7 @@ export default function Page() {
                     <p>
                      <span style={{fontWeight: 500}}>
                         AWS:
-                     </span>Ensuring scalable deployment and providing a user-friendly interface.
+                     </span> Ensuring scalable deployment and providing a user-friendly interface.
                     </p>
                 </div>
                 <p>

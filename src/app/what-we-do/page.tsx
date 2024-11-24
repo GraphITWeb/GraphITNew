@@ -19,7 +19,7 @@ export default function Page() {
                     <OfferingBlock imgBlock={Offering}
                                    link='/next-gen'
                                    title="Next-Gen AI Transformation"
-                                   description="Together with you, we define, build, implement, and scale cutting-edge Generative AI solutions that drive unparalleled impact for your business and society. Our expertise accelerates progress, empowering organizations to achieve breakthrough moments and redefine their future."
+                                   description="Together with you, we define, build, implement, and scale cutting-edge Generative Client that drive unparalleled impact for your business and society. Our expertise accelerates progress, empowering organizations to achieve breakthrough moments and redefine their future."
                     />
                     <OfferingBlock imgBlock={Offering2}
                                    link='/ai-copilots'
