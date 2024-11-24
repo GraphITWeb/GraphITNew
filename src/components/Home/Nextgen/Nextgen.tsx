@@ -3,7 +3,6 @@ import './Nextgen.css'
 import Image from "next/image";
 import React, {useEffect, useRef, useState} from "react";
 import NextGenImage from "../../../assets/NextGen.jpg";
-import GenAI from "../../../assets/GenAI.jpg";
 import AICopilots from "../../../assets/AICopilots.jpg";
 import BigData from "../../../assets/BigData.jpg";
 import Button from "@/components/Button/Button";
@@ -12,7 +11,7 @@ import useMobile from "@/hooks/useMobile";
 const Nextgen = () => {
     const [active, setActive] = useState(0);
     const sectionRef = useRef(null);
-    const images = [NextGenImage, AICopilots, GenAI, BigData];
+    const images = [NextGenImage, AICopilots, BigData];
     const nextgenRef = useRef(null);
     const isMobile=useMobile(768)
     const blockRefs = useRef<(HTMLDivElement)[]>([]);
@@ -24,7 +23,7 @@ const Nextgen = () => {
             if(index===3){
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-expect-error
-                const scrollToPosition = window.scrollY + top + (index * sectionRef.current.offsetHeight) / 4 - 375;
+                const scrollToPosition = window.scrollY + top + (index * sectionRef.current.offsetHeight) / 3 - 375;
                 console.log(scrollToPosition);
                 window.scrollTo({
                     top: scrollToPosition,
@@ -34,7 +33,7 @@ const Nextgen = () => {
             else{
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-expect-error
-                const scrollToPosition = window.scrollY + top + (index * sectionRef.current.offsetHeight) / 4;
+                const scrollToPosition = window.scrollY + top + (index * sectionRef.current.offsetHeight) / 3;
                 window.scrollTo({
                     top: scrollToPosition,
                     behavior: 'smooth',
@@ -54,10 +53,10 @@ const Nextgen = () => {
                 const {top, height} = sectionRef.current.getBoundingClientRect();
                 const scrollPosition = window.scrollY + window.innerHeight / 2;
                 const sectionTop = window.scrollY + top;
-                const blockHeight = height / 4;
+                const blockHeight = height / 3;
                 const currentBlock = Math.floor((scrollPosition - sectionTop) / blockHeight);
                 console.log(isMobile)
-                if ((currentBlock >= 0 && currentBlock < 4)&&!isMobile) {
+                if ((currentBlock >= 0 && currentBlock < 3)&&!isMobile) {
                     setActive(currentBlock);
                 }
             }
@@ -89,13 +88,13 @@ const Nextgen = () => {
                                 className={active === 0 ? "nextgen__block__item active" : "nextgen__block__item"} onClick={()=>handleSetActive(0)}>
                                 <div className="flex flex-row gap-2">
                                     {/*<NextgenIcon/>*/}
-                                    <h5>
+                                    <h4>
                                         Next-Gen AI Transformation
-                                    </h5>
+                                    </h4>
                                 </div>
-                                <p>
+                                <sub>
                                     Modernize your business by adopting AI the right way, optimizing operations and unlocking new horizons for future growth.
-                                </p>
+                                </sub>
                             </div>
                             <div
                                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -105,13 +104,13 @@ const Nextgen = () => {
                                 <div
                                     className="flex flex-row gap-2">
                                     {/*<NextgenIcon/>*/}
-                                    <h5>
+                                    <h4>
                                         AI Copilots
-                                    </h5>
+                                    </h4>
                                 </div>
-                                <p>
+                                <sub>
                                     Empower users with intelligent copilots that simplify workflows and enhance productivity across platforms.
-                                </p>
+                                </sub>
                             </div>
                             <div
                                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -120,27 +119,12 @@ const Nextgen = () => {
                                 className={active === 2 ? "nextgen__block__item active" : "nextgen__block__item"}  onClick={()=>handleSetActive(2)}>
                                 <div className="flex flex-row gap-2">
                                     {/*<NextgenIcon/>*/}
-                                    <h5>
-                                        Generative AI
-                                    </h5>
+                                    <h4>
+                                        Data Platforms
+                                    </h4>
                                 </div>
-                                <p>
-                                    Drive innovation with custom Generative AI tools that elevate user engagement and automate complex tasks.
-                                </p>
-                            </div>
-                            <div
-                                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                                // @ts-expect-error
-                                ref={blockRefs.current[3]}
-                                className={active === 3 ? "nextgen__block__item active" : "nextgen__block__item"}  onClick={()=>handleSetActive(3)}>
-                                <div className="flex flex-row gap-2">
-                                    {/*<NextgenIcon/>*/}
-                                    <h5>
-                                        Big Data
-                                    </h5>
-                                </div>
-                                <p>
-                                    Transform vast data into actionable insights with platforms and cloud solutions designed for optimised, AI-powered decision-making.                                </p>
+                                <sub>
+                                    Transform vast data into actionable insights with platforms and cloud solutions designed for optimised, AI-powered decision-making.                                </sub>
                             </div>
                         </div>
                         <div className="nextgen__image">

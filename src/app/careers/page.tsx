@@ -13,7 +13,7 @@ export default function Careers() {
                       />
                 <Image src={CareersImage} className="careers__image" alt="Careers"/>
                 <CareersList name='AI'/>
-                <CareersList name='Big Data'/>
+                <CareersList name='Data Platforms'/>
                 <CareersList name='Sales'/>
 
             </div>

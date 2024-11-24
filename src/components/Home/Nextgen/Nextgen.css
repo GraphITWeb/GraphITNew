@@ -34,7 +34,8 @@
     padding: 16px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    justify-content: space-between;
+    gap: 18px;
     align-self: stretch;
     border-radius: 12px;
     border: 1px solid #1E1E4D;
@@ -46,7 +47,9 @@
 .nextgen__block__block {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
+    justify-content: space-between;
+    height: 100%;
     width: 50%;
 }
 
@@ -55,7 +58,7 @@
 }
 
 .nextgen__image {
-    height: 516px;
+    height: 460px;
     background: #09091A;
     border-radius: 12px;
     position: relative;

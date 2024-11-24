@@ -33,7 +33,7 @@ const Articles:React.FC<ArticlesProps> = ({type}) => {
           <h3>{type}</h3>
           <div className="what__we__think__articles__dropdowns">
               <Dropdown variants={['Research report','Engineer']} label='Select topic' selected={selectedTopic} setSelected={setSelectedTopic}/>
-              <Dropdown variants={['AI','Big Data']} label='Select industry' selected={selectedIndustry} setSelected={setSelectedIndustry}/>
+              <Dropdown variants={['AI','Data Platforms']} label='Select industry' selected={selectedIndustry} setSelected={setSelectedIndustry}/>
               <Dropdown variants={['Content A','Content B']} label='Content Type' selected={selectedSort} setSelected={setSelectedSort}/>
           </div>
           <div className="what__we__think__articles__block">

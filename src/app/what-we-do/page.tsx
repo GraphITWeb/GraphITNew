@@ -26,14 +26,9 @@ export default function Page() {
                                    title="AI Copilots"
                                    description="Revolutionise data interaction with a powerful AI copilot that transforms complex data into clear, actionable insights. Tailored for each platform, this AI-driven tool empowers users to access critical information by simply asking a question, delivering rapid, high-quality insights that elevate decision-making and drive strategic advantage."
                     />
-                    <OfferingBlock imgBlock={Offering3}
-                                   link='/offering'
-                                   title="Generative AI"
-                                   description="Our Generative AI solutions empower organizations to revolutionize user engagement, automate complex processes, and drive innovation at scale. By developing custom AI-driven tools Graphit enables clients to transform their operations and deliver seamless, highly personalised experiences."
-                    />
                     <OfferingBlock imgBlock={Offering4}
                                    link='/offering'
-                                   title="Big Data"
+                                   title="Data Platforms"
                                    description="Big Data solutions turn raw information into powerful, strategic assets that drive informed decision-making and uncover new growth opportunities. From data integration and structuring to advanced analytics, we provide end-to-end support that enables organizations to leverage their data at scale."
                     />
                 </div>
