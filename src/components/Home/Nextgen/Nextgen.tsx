@@ -43,10 +43,8 @@ const Nextgen = () => {
             }
         };
 
-        // Додаємо слухача на подію прокручування
         window.addEventListener('scroll', handleScroll);
 
-        // Видаляємо слухача, коли компонент буде знищено
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };

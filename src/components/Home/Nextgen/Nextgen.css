@@ -83,6 +83,10 @@
     }
 }
 @media screen and (max-width: 992px) {
+    .nextgen {
+        height: 100vh;
+    }
+
     .nextgen__image {
         height: 460px;
     }
@@ -93,8 +97,8 @@
 
     .nextgen__block__block {
         flex-direction: row;
-        overflow: hidden;
         width: max-content;
+        overflow: scroll;
     }
 
     .nextgen__block {
@@ -109,10 +113,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .nextgen {
-        height: 300vh;
-    }
-
     .nextgen__block {
         padding: 16px;
     }
@@ -141,7 +141,7 @@
     }
 
     .nextgen__block__item {
-        max-width: 85vw;
+        max-width: 75vw;
     }
 
     .nextgen__block__item {
