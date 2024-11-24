@@ -33,9 +33,9 @@ const OurPeopleBlock = () =>{
                 <People imgUser={Mykola} name='Mykola Kyrychenko' description='Founder & CEO'/>
                 <People imgUser={Sasha} name='Sasha Slyusar' description='Founder & CEO'/>
                 <People imgUser={Yevhen} name='Yevhen Kravchenko' description='Founder & CEO'/>
-                <People imgUser={Roman} name='Roman Bozhovskiy' description='Founder & CEO'/>
+                {/*<People imgUser={Roman} name='Roman Bozhovskiy' description='Founder & CEO'/>*/}
                 <People imgUser={Viktoriia} name='Viktoriia Denysenko' description='Founder & CEO'/>
-                <People imgUser={Marian} name='Marian Kyrychenko' description='Founder & CEO'/>
+                {/*<People imgUser={Marian} name='Marian Kyrychenko' description='Founder & CEO'/>*/}
             </div>
             <div className="our__people__buttons">
                 <div className="arrow" onClick={() => scroll('left')} style={{cursor: 'pointer'}}>

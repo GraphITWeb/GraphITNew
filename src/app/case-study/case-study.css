@@ -8,6 +8,8 @@
     border-radius: 24px;
     margin: 0 80px;
     width: Calc(100vw - 160px);
+    min-height: 240px;
+    object-fit: cover;
 }
 .case__study__text{
     max-width: 50vw;
