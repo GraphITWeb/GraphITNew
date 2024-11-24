@@ -84,8 +84,8 @@ a small:hover::after {
     display: flex;
     flex-direction: column;
     top: 28px;
-    width: 144px;
-    padding: 16px;
+    width: 160px;
+    padding: 12px;
     align-items: flex-start;
     gap: 16px;
     border-radius: 12px;
@@ -93,6 +93,19 @@ a small:hover::after {
     background: rgba(18, 18, 46, 0.70);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
+    text-align: center;
+}
+.navbar__open span{
+    width: 36px!important;
+    height: 36px!important;
+    span{
+        width: 24px!important;
+        height: 24px!important;
+        svg{
+            width: 14px!important;
+            height: 14px!important;
+        }
+    }
 }
 .navbar__open a:hover{
     border-radius: 4px;
