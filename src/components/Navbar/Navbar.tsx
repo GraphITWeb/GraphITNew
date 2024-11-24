@@ -5,7 +5,7 @@ import Link from "next/link";
 import Button from "@/components/Button/Button";
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
     const [isOpenMobile, setIsOpenMobile] = useState(false)
     const dropdownRef = useRef<HTMLDivElement>(null);
