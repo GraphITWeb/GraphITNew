@@ -269,7 +269,9 @@
     .feedback__block__header {
         min-width: 7rem;
     }
-
+    .nextgen{
+        padding: 64px 48px;
+    }
     .get__started {
         padding: 80px 16px 48px;
         flex-direction: column;

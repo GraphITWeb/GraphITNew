@@ -1,4 +1,4 @@
-.what__we__do__posts{
+.what__we__do__posts {
     display: flex;
     padding: 96px 0 0 0;
     flex-direction: column;
@@ -65,7 +65,7 @@
 }
 @media screen and (max-width: 992px) {
     .what__we__do__posts {
-        padding: 64px 0 0 0;
+        padding: 64px 0 0 32px;
     }
     .what__we__do__posts__header {
         padding: 0 40px;
@@ -84,7 +84,7 @@
 }
 @media screen and (max-width: 768px) {
     .what__we__do__posts {
-        padding: 32px 0 0 0;
+        padding: 32px 0;
     }
     .what__we__do__posts__header {
         padding: 0 32px;
@@ -113,7 +113,7 @@
         padding: 0 16px;
     }
     .what__we__do__posts {
-        padding: 16px 0 0 0;
+        padding: 32px 0;
     }
     .what__we__do__posts sub {
         padding: 0 0 0 16px;
