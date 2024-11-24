@@ -25,6 +25,7 @@
     /*width: 6px;*/
     width: 0;
     opacity: 0;
+    height: 0;
 }
 .CRM__block {
     display: flex;
@@ -115,19 +116,21 @@
     .CRM__block img {
         height: 300px;
     }
-    .CRM__block__arrow{
-        top: 150px;
+    .CRM__block__arrow {
+        display: none;
     }
     .CRM__block{
         padding: 0 32px;
     }
+    .CRM__blocks{
+        overflow: auto;
+    }
+    .CRM__block__image{
+        border-radius: 24px;
+    }
 }
 
 @media screen and (max-width: 576px) {
-    .CRM__block__arrow {
-        display: none;
-    }
-
     .CRM__block img {
         height: 200px;
         border-radius: 12px;

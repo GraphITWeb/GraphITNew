@@ -1,7 +1,7 @@
 'use client'
 import './Nextgen.css'
 import Image from "next/image";
-import {useEffect, useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import NextGenImage from "../../../assets/NextGen.jpg";
 import GenAI from "../../../assets/GenAI.jpg";
 import AICopilots from "../../../assets/AICopilots.jpg";
@@ -15,6 +15,37 @@ const Nextgen = () => {
     const images = [NextGenImage, AICopilots, GenAI, BigData];
     const nextgenRef = useRef(null);
     const isMobile=useMobile(768)
+    const blockRefs = useRef<(HTMLDivElement)[]>([]);
+    const handleSetActive = (index: number) => {
+        if (!isMobile && sectionRef.current) {
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-expect-error
+            const {top} = sectionRef.current.getBoundingClientRect();
+            if(index===3){
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-expect-error
+                const scrollToPosition = window.scrollY + top + (index * sectionRef.current.offsetHeight) / 4 - 375;
+                console.log(scrollToPosition);
+                window.scrollTo({
+                    top: scrollToPosition,
+                    behavior: 'smooth',
+                });
+            }
+            else{
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-expect-error
+                const scrollToPosition = window.scrollY + top + (index * sectionRef.current.offsetHeight) / 4;
+                window.scrollTo({
+                    top: scrollToPosition,
+                    behavior: 'smooth',
+                });
+            }
+        }
+        else{
+            setActive(index);
+        }
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             if (sectionRef.current) {
@@ -26,18 +57,7 @@ const Nextgen = () => {
                 const blockHeight = height / 4;
                 const currentBlock = Math.floor((scrollPosition - sectionTop) / blockHeight);
                 console.log(isMobile)
-                if (nextgenRef.current&&isMobile) {
-                    console.log((scrollPosition - sectionTop - 200) / 25)
-                    let translateXValue = (scrollPosition - sectionTop - 200) / 25;
-
-                    if(translateXValue>75.8) {
-                        translateXValue=75.8
-                    }
-                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                    // @ts-expect-error
-                    nextgenRef.current.style.transform = `translateX(-${translateXValue}%)`;
-                }
-                if (currentBlock >= 0 && currentBlock < 4) {
+                if ((currentBlock >= 0 && currentBlock < 4)&&!isMobile) {
                     setActive(currentBlock);
                 }
             }
@@ -62,7 +82,11 @@ const Nextgen = () => {
                     </div>
                     <div className="nextgen__block">
                         <div className="nextgen__block__block" ref={nextgenRef}>
-                            <div className={active === 0 ? "nextgen__block__item active" : "nextgen__block__item"}>
+                            <div
+                                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                                // @ts-expect-error
+                                ref={blockRefs.current[0]}
+                                className={active === 0 ? "nextgen__block__item active" : "nextgen__block__item"} onClick={()=>handleSetActive(0)}>
                                 <div className="flex flex-row gap-2">
                                     {/*<NextgenIcon/>*/}
                                     <h5>
@@ -73,8 +97,13 @@ const Nextgen = () => {
                                     Modernize your business by adopting AI the right way, optimizing operations and unlocking new horizons for future growth.
                                 </p>
                             </div>
-                            <div className={active === 1 ? "nextgen__block__item active" : "nextgen__block__item"}>
-                                <div className="flex flex-row gap-2">
+                            <div
+                                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                                // @ts-expect-error
+                                ref={blockRefs.current[1]}
+                                className={active === 1 ? "nextgen__block__item active" : "nextgen__block__item"} onClick={()=>handleSetActive(1)}>
+                                <div
+                                    className="flex flex-row gap-2">
                                     {/*<NextgenIcon/>*/}
                                     <h5>
                                         AI Copilots
@@ -84,7 +113,11 @@ const Nextgen = () => {
                                     Empower users with intelligent copilots that simplify workflows and enhance productivity across platforms.
                                 </p>
                             </div>
-                            <div className={active === 2 ? "nextgen__block__item active" : "nextgen__block__item"}>
+                            <div
+                                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                                // @ts-expect-error
+                                ref={blockRefs.current[2]}
+                                className={active === 2 ? "nextgen__block__item active" : "nextgen__block__item"}  onClick={()=>handleSetActive(2)}>
                                 <div className="flex flex-row gap-2">
                                     {/*<NextgenIcon/>*/}
                                     <h5>
@@ -95,7 +128,11 @@ const Nextgen = () => {
                                     Drive innovation with custom Generative AI tools that elevate user engagement and automate complex tasks.
                                 </p>
                             </div>
-                            <div className={active === 3 ? "nextgen__block__item active" : "nextgen__block__item"}>
+                            <div
+                                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                                // @ts-expect-error
+                                ref={blockRefs.current[3]}
+                                className={active === 3 ? "nextgen__block__item active" : "nextgen__block__item"}  onClick={()=>handleSetActive(3)}>
                                 <div className="flex flex-row gap-2">
                                     {/*<NextgenIcon/>*/}
                                     <h5>
