@@ -1,6 +1,6 @@
 .companies {
     display: flex;
-    padding: 0 0 32px;
+    padding: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -64,6 +64,6 @@
 }
 @media screen and (max-width: 576px) {
     .companies {
-        padding: 40px 0 0;
+        padding: 0;
     }
 }
