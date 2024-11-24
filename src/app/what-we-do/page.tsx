@@ -3,7 +3,6 @@ import Main from "@/components/Main/Main";
 import OfferingBlock from "@/components/what-we-do/OfferingBlock/OfferingBlock";
 import Offering from "../../assets/Offering.png";
 import Offering2 from "../../assets/Offering2.png";
-import Offering3 from "../../assets/Offering3.png";
 import Offering4 from "../../assets/Offering4.png";
 import './WhatWeDo.css'
 import Posts from "@/components/what-we-do/Posts/Posts";
