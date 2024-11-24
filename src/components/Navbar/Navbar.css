@@ -3,6 +3,7 @@ nav{
     padding: 24px 80px;
     justify-content: space-between;
     align-items: center;
+    max-width: 100vw;
     align-self: stretch;
     background: var(--primary);
 }

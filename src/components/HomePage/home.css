@@ -374,7 +374,8 @@
         flex-direction: row;
         gap: 32px;
         margin-top: 32px;
-        width: 100%;
+        margin-right: auto;
+        width: auto;
         justify-content: flex-start;
     }
 }
