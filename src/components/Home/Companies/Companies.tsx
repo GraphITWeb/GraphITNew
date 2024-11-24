@@ -140,7 +140,7 @@ const COOP = () => {
         </div>
     )
 }
-const Spirent = () => {
+const Client = () => {
     return <div style={{
         // width: 164,
         marginLeft: 160
@@ -180,7 +180,7 @@ const Items = () => {
             <Cisco/>
             <WPP/>
             <COOP/>
-            <Spirent/>
+            <Client/>
         </>
     )
 }

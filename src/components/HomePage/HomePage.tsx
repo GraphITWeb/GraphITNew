@@ -1681,7 +1681,7 @@ const HomePage = () => {
                             drive
                             impact at scale. We are strategists, engineers, and innovators dedicated to solving the
                             world’s toughest challenges. We are Graphit. </p>
-                        <Button onClick={() => window.location.href = '/what-we-do'} label='See What We Do'
+                        <Button onClick={() => window.location.href = '/what-we-do'} label='See what we do'
                                 btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>
                     </div>
                 </div>

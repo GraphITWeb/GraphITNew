@@ -14,7 +14,7 @@
     --light-blue: #1E1E4D;
     --white: #FFFFFF;
     /*--text-gray: #727272*/
-    --text-gray: #B3B3B3;
+    --text-gray: rgb(220,220,220);
 }
 
 html,

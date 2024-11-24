@@ -139,8 +139,8 @@ const CRM = () => {
                         />
                         <div className={`CRM__block__description ${visible ? 'visible' : ''}`}>
                             <div>
-                                <h5>Revolutionizing Streaming Performance: Scalable Data Platform for Telecom
-                                    Leaders</h5>
+                                <h4>Revolutionizing Streaming Performance: Scalable Data Platform for Telecom
+                                    Leaders</h4>
                                 <p>
                                     Bespoke cloud-agnostic, high-performance platform, transforming network reliability.
                                     The solution empowered the client to enhance user experience, secure high-profile
@@ -174,7 +174,8 @@ const CRM = () => {
                         />
                         <div className={`CRM__block__description ${visible ? 'visible' : ''}`}>
                             <div>
-                                <h5>Information task</h5>
+                                <h4>Building Empathy at Scale: AI-Powered Mental Health Chatbot for Accessible Support
+                                </h4>
                                 <p>
                                     Bespoke cloud-agnostic, high-performance platform, transforming network reliability.
                                     The solution empowered the client to enhance user experience, secure high-profile
@@ -186,7 +187,7 @@ const CRM = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{position: "relative", display: 'flex', flexDirection: 'row', gap: 32,marginTop:32,justifyContent:'flex-start',width:'100%'}}>
+                <div style={{position: "relative", display: 'flex', flexDirection: 'row',marginTop:32,justifyContent:'space-between',width:'100%'}}>
                     <div onClick={() => changeIndex('left')} className="CRM__block__arrow mobile"
                          style={{position: "relative", top: 0, left: 0}}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
