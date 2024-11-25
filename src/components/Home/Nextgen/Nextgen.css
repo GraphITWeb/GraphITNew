@@ -26,7 +26,6 @@
     align-self: stretch;
     border-radius: 24px;
     background: #141433;
-    margin-top: 24px;
 }
 
 .nextgen__block__item {
@@ -164,9 +163,6 @@
         height: 240px;
     }
 
-    .nextgen__block {
-        margin-top: 0;
-    }
 
     .nextgen__block__item {
         max-width: 75vw;
