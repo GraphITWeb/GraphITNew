@@ -9,7 +9,7 @@ export default function Page() {
     return (
         <div className="case__study">
             <Main subText={'Case study • 8 min read'}
-                  header="Revolutionizing Legal Research with Generative AI"
+                  header="Revolutionising Legal Research with Generative AI"
                   description={'Legal'}/>
             <Image src={Case} alt="Case"/>
             <div className="case__study__text">

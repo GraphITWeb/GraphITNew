@@ -167,10 +167,10 @@ const CRM = () => {
                         />
                         <div className={`CRM__block__description ${visible ? 'visible' : ''}`}>
                             <div>
-                                <h4>Building Empathy at Scale: AI-Powered Mental Health Chatbot for Accessible Support
+                                <h4>Building Empathy at Scale: Mental Health Chatbot for Accessible Support
                                 </h4>
                                 <p>
-                                    AI-driven mental health chatbot designed to make mental health support more accessible and effective. The platform allowed the client to offer human-like therapeutic interactions, boost user engagement , and achieve scalable performance - setting a new standard for digital healthcare and opening pathways for broader wellness innovation.
+                                    AI-powered chatbot designed to make mental health support more accessible and effective. The platform permitted the client to offer human-like therapeutic interactions, boost user engagement and achieve scalable performance - setting a new standard for digital healthcare and broader wellness innovation.
                                 </p>
                             </div>
                             <Button onClick={() => window.location.href = '/case-studies'} label='See case studies'

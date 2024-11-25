@@ -29,6 +29,15 @@ const Nextgen = () => {
                     behavior: 'smooth',
                 });
             }
+            else{
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-expect-error
+                const scrollToPosition = window.scrollY + top + (index * sectionRef.current.offsetHeight) / 3;
+                window.scrollTo({
+                    top: scrollToPosition,
+                    behavior: 'smooth',
+                });
+            }
         } else {
             if (nextgenRef.current) {
                 console.log('yeah')
