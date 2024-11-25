@@ -13,10 +13,9 @@
 }
 @media screen and (max-width: 768px) {
     .contactus__block {
-        height: 224px;
-        min-height: 224px;
-        max-height: 224px;
-        gap: 0;
+        height: auto;
+        gap: 32px;
+        max-height: 250px;
         justify-content: space-between;
     }
 

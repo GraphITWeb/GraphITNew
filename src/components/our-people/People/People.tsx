@@ -31,7 +31,7 @@ const People: React.FC<PeopleProps> = ({imgUser,name,description}) => {
                 </div>
             <div className="people__info">
                 <h3>{name}</h3>
-                <sub>{description}</sub>
+                <p>{description}</p>
             </div>
         </div>
     )
