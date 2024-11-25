@@ -32,9 +32,9 @@ const Articles:React.FC<ArticlesProps> = ({type}) => {
       <div className="what__we__think__articles">
           <h3>{type}</h3>
           <div className="what__we__think__articles__dropdowns">
-              <Dropdown variants={['Research report','Engineer']} label='Select topic' selected={selectedTopic} setSelected={setSelectedTopic}/>
-              <Dropdown variants={['AI','Data Platforms']} label='Select industry' selected={selectedIndustry} setSelected={setSelectedIndustry}/>
-              <Dropdown variants={['Content A','Content B']} label='Content Type' selected={selectedSort} setSelected={setSelectedSort}/>
+              <Dropdown variants={['Next-Gen AI Transformation','AI Copilots','Data Platforms']} label='Select topic' selected={selectedTopic} setSelected={setSelectedTopic}/>
+              <Dropdown variants={['Retail','Healthcare','Legal','E-Commerce','Telecommunications','Automotive']} label='Select industry' selected={selectedIndustry} setSelected={setSelectedIndustry}/>
+              <Dropdown variants={['Case Study','Research Report']} label='Content Type' selected={selectedSort} setSelected={setSelectedSort}/>
           </div>
           <div className="what__we__think__articles__block">
               {posts.map((post, index) => (<Post key={index} {...post}/>))}

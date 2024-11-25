@@ -6,8 +6,8 @@ import Footer from "@/components/Footer/Footer";
 
 
 export const metadata: Metadata = {
-    title: "GraphIT",
-    description: "GraphIT description",
+    title: "Graphit",
+    description: "Graphit is a London-based technology-consulting firm that operates on the intersection of data, AI and business strategy.",
 };
 
 export default function RootLayout({

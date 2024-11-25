@@ -1,30 +1,30 @@
 [
   {
-    "title": "The tech-powered operating model",
-    "description": "Accenture details 5 key steps to help companies unlock the full value of their data technology investment",
-    "imgPost": "Post.png",
-    "type": "Article",
-    "time": "8 min read",
-    "link": "/blogs",
-    "tags": ["Research report"]
+    "title": "Сomprehensive Platform Development for Major Telecom Company",
+    "description": "Bespoke cloud-agnostic, high-performance platform, transforming network reliability.",
+    "imgPost": "Netflix2.jpg",
+    "type": "Case Study",
+    "time": "7 min read",
+    "link": "/comprehensive-platform",
+    "tags": ["Data Platforms","Telecommunications"]
   },
   {
-    "title": "The tech-powered operating model",
-    "description": "Accenture details 5 key steps to help companies unlock the full value of their data technology investment",
-    "imgPost": "Post.png",
-    "type": "Article",
-    "time": "8 min read",
-    "link": "/blogs",
-    "tags": ["Research report"]
+    "title": "Revolutionising Legal Research with Generative AI",
+    "description": "Handcrafted intelligent legal assistant that transforms how legal professionals access and use information.",
+    "imgPost": "Case1.jpg",
+    "type": "Case Study",
+    "time": "5 min read",
+    "link": "/revolutionising-legal",
+    "tags": ["AI Copilots","Legal"]
   },
   {
-    "title": "The tech-powered operating model",
-    "description": "Accenture details 5 key steps to help companies unlock the full value of their data technology investment",
-    "imgPost": "Post.png",
+    "title": "AI-Powered Mental Health Chatbot for Accessible Support",
+    "description": "AI-powered chatbot designed to make mental health support more accessible and effective.",
+    "imgPost": "AI.jpg",
     "type": "Article",
-    "time": "8 min read",
-    "link": "/blogs",
-    "tags": ["Research report"]
+    "time": "5 min read",
+    "link": "/mental-health-chatbot",
+    "tags": ["AI Copilots","Healthcare"]
   },
   {
     "title": "The tech-powered operating model",

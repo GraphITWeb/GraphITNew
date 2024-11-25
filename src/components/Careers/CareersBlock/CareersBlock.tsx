@@ -1,17 +1,15 @@
 import './CareersBlock.css';
-import Image, {StaticImageData} from "next/image";
 import React from "react";
 interface CareersBlockProps{
     position: string;
     direction: string;
-    flagImage: StaticImageData;
     country:string;
     description:string;
     time:string;
     salary:string;
     setActiveCareers:(careers:number) => void;
 }
-const CareersBlock: React.FC<CareersBlockProps>  = ({position,direction,flagImage,country,description,time,salary,setActiveCareers}) => {
+const CareersBlock: React.FC<CareersBlockProps>  = ({position,direction,country,description,time,salary,setActiveCareers}) => {
   return(<>
           <div className="careers__block" onClick={()=>setActiveCareers(0)}>
               <div className="careers__block__header">
@@ -19,21 +17,47 @@ const CareersBlock: React.FC<CareersBlockProps>  = ({position,direction,flagImag
                       <h5>
                           {position}
                       </h5>
-                      <small className="flag pc">
+                      <small className="flag pc" >
                           {direction}
                       </small>
                   </div>
-                  <div className="flag pc">
-                      <Image src={flagImage} alt="flag"/>
+                  <div className="flag pc" style={{gap:6}}>
+                      <svg style={{position: "relative", top: 0}} xmlns="http://www.w3.org/2000/svg"
+                           width="18"
+                           height="18" viewBox="0 0 20 20" fill="none">
+                          <path
+                              d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z"
+                              stroke="white" strokeMiterlimit="10"/>
+                          <path d="M2.92773 7.5H17.0734" stroke="white" strokeLinecap="round"
+                                strokeLinejoin="round"/>
+                          <path d="M2.92773 12.5H17.0734" stroke="white" strokeLinecap="round"
+                                strokeLinejoin="round"/>
+                          <path
+                              d="M10 17.2985C11.7259 17.2985 13.125 14.0308 13.125 9.99984C13.125 5.9689 11.7259 2.70117 10 2.70117C8.27411 2.70117 6.875 5.9689 6.875 9.99984C6.875 14.0308 8.27411 17.2985 10 17.2985Z"
+                              stroke="white" strokeMiterlimit="10"/>
+                      </svg>
                       <small>{country}</small>
                   </div>
                   <div className="flex-row justify-start gap-2 mobile">
                       <div className="flag mobile">
-                          <Image src={flagImage} alt="flag"/>
+                          <svg style={{position: "relative", top: 0}} xmlns="http://www.w3.org/2000/svg"
+                               width="20"
+                               height="20" viewBox="0 0 20 20" fill="none">
+                              <path
+                                  d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z"
+                                  stroke="white" strokeMiterlimit="10"/>
+                              <path d="M2.92773 7.5H17.0734" stroke="white" strokeLinecap="round"
+                                    strokeLinejoin="round"/>
+                              <path d="M2.92773 12.5H17.0734" stroke="white" strokeLinecap="round"
+                                    strokeLinejoin="round"/>
+                              <path
+                                  d="M10 17.2985C11.7259 17.2985 13.125 14.0308 13.125 9.99984C13.125 5.9689 11.7259 2.70117 10 2.70117C8.27411 2.70117 6.875 5.9689 6.875 9.99984C6.875 14.0308 8.27411 17.2985 10 17.2985Z"
+                                  stroke="white" strokeMiterlimit="10"/>
+                          </svg>
                           <small>{country}</small>
                       </div>
                       <small className="flag mobile">
-                          {direction}
+                      {direction}
                       </small>
                   </div>
               </div>

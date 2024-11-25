@@ -8,7 +8,7 @@
 }
 .what__we__think__articles__block{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 32px;
 }
 .what__we__think__articles__dropdowns{
