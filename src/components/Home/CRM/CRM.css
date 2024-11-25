@@ -118,7 +118,7 @@
         height: 300px;
     }
     .CRM__block__description{
-        height: -webkit-fill-available;
+        height: auto;
         justify-content: space-between;
         gap: 8px;
     }
