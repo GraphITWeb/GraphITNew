@@ -115,7 +115,15 @@
     .nextgen__image {
         height: 460px;
     }
-
+    .nextgen__image button{
+        padding: 8px 16px!important;
+    }
+    .nextgen__image button div{
+        font-size: 14px!important;
+    }
+    .nextgen__block__item{
+        gap: 0;
+    }
 
     .nextgen__block__block {
         flex-direction: row;
