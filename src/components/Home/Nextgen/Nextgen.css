@@ -122,7 +122,8 @@
         font-size: 14px!important;
     }
     .nextgen__block__item{
-        gap: 0;
+        gap: 4px;
+        justify-content: flex-start;
     }
 
     .nextgen__block__block {
