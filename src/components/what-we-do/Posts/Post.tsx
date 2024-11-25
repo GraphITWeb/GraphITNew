@@ -15,7 +15,7 @@ const Post: React.FC<PostProps> = ({imgPost, type, time, title, link, descriptio
                 <small>{time}</small>
             </div>
             <div className="flex flex-row justify-between w-full">
-                <h4 style={{width:'90%'}}>{title}</h4>
+                <h5 style={{width:'90%'}}>{title}</h5>
                 <svg onClick={()=>window.location.href=link} style={{marginTop:4}} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M6.4 18L5 16.6L14.6 7H6V5H18V17H16V8.4L6.4 18Z" fill="white"/>
                 </svg>
@@ -23,10 +23,15 @@ const Post: React.FC<PostProps> = ({imgPost, type, time, title, link, descriptio
             <p style={{color:"#fff"}}>{description}</p>
             <div className="flex flex-row gap-1">
                 {tags.map((tag, index) => <small
-                    key={index} style={{color: 'var(--white)',
+                    key={index} style={index===0?{color: 'var(--white)',
                     borderRadius:  100,
                     border: '1px solid rgba(242, 55, 4, 0.30)',
                     background: 'rgba(242, 55, 4, 0.20)',
+                    padding:'2px 12px'
+                }:{color: 'var(--white)',
+                    borderRadius:  100,
+                    border: '1px solid rgba(51, 138, 243, 0.30)',
+                    background: 'rgba(51, 138, 243, 0.20)',
                     padding:'2px 12px'
                 }}>{tag}</small>)}
             </div>
