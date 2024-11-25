@@ -26,10 +26,10 @@ const OurPeopleBlock = () =>{
             <div ref={ourPeopleRef} className="our__people">
                 <People imgUser={Nick} name='Nick Gontarev' description='Founder, CEO'/>
                 <People imgUser={Max} name='Max Verveha' description='Founder, Lead - Next-Gen AI Transformation'/>
-                <People imgUser={Sviat} name='Sviatoslav Nahirnyi' description='Founder, Lead - Data Platforms'/>
+                <People imgUser={Sviat} name='Sviat Nahirnyi' description='Founder, Lead - Data Platforms'/>
                 <People imgUser={Mykola} name='Mykola Kyrychenko' description='Founder, Lead - AI Copilots'/>
-                <People imgUser={Sasha} name='Sasha Slyusar' description='Vice President, Sales & Strategic Initiatives'/>
-                <People imgUser={Viktoriia} name='Viktoriia Denysenko' description='Vice President, Brand Development & Growth'/>
+                <People imgUser={Sasha} name='Alexandra Slyusar' description='Vice President, Sales & Strategic Initiatives'/>
+                <People imgUser={Viktoriia} name='Viktoria Denysenko' description='Vice President, Brand Development & Growth'/>
             </div>
             <div className="our__people__buttons">
                 <div className="arrow" onClick={() => scroll('left')} style={{cursor: 'pointer'}}>
