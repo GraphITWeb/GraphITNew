@@ -8,7 +8,7 @@ export default function Page() {
     return (
         <div className="case__study">
             <Main subText={'Case study • 5 min read'}
-                  header="Shaping Operational Efficiency: Data Solutions Driving Global Expansion"
+                  header="Growth-Oriented Data Solutions Driving Global Expansion"
                   description={'E-Commerce'}/>
             <Image src={Case} alt="Case"/>
             <div className="case__study__text">

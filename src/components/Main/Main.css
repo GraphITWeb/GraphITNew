@@ -135,10 +135,14 @@
 .main__block h1 {
     margin-bottom: 16px;
     max-width: 60vw;
+    text-transform: capitalize;
 }
 .main__block sub {
     max-width: 60vw;
     height: 54px;
+}
+.main__block b{
+    text-transform: capitalize;
 }
 
 .main__block__svg{

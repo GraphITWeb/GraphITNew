@@ -89,6 +89,7 @@
     border-radius: 24px;
     gap: 16px;
     background: var(--surface-blue);
+    text-align: justify;
 }
 
 .careers__modal__contact {

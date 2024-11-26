@@ -143,10 +143,7 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                         </div>
                         <span className="modal__span"/>
                         <h4>Description</h4>
-                        <p>We are seeking a motivated Big Data engineer, who is ready for the new challenges and career
-                            growth. You will play a key role in building MVPs, contributing to presales activities, and
-                            contributing to the growth of our Big Data practice. The best fit for us are strong junior
-                            or middle level candidates.</p>
+                        <p>We are seeking a motivated Mid-Level Data Engineer, who is ready for the new challenges and career growth. You will play a key role in building MVPs, contributing to pre-sales activities, and contributing to the growth of our Data Platforms practice. </p>
                         <h4>Responsibilities</h4>
                         <div>
                             <div style={{display:"flex",flexDirection:"row"}}>
@@ -180,14 +177,7 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                         </div>
                         <div className="careers__modal__graphit">
                             <h4 style={{marginTop: 0}}>About Graphit</h4>
-                            <p>Graphit is a London-based company driving next-gen AI transformations. Our solutions sit
-                                at the nexus of AI and Big Data, with a strong emphasis on Generative AI to innovate,
-                                redefine, and transform business operations. We specialise in enabling corporate
-                                adaptability, helping organisations seamlessly integrate new technologies and unlock
-                                their potential for further growth. At Graphit, we go beyond technical execution by
-                                creating a powerful synergy between cutting-edge technology and a deep understanding of
-                                business needs - empowering corporations to embrace digital transformation and
-                                transition toward a smarter, AI-driven future.</p>
+                            <p>Graphit is a London-based tech-consulting driving next-gen AI transformations. Our solutions sit at the nexus of AI and Big Data to innovate, redefine, and transform business operations. We specialise in enabling corporate adaptability, helping organisations seamlessly integrate new technologies and unlock their potential for further growth. At Graphit, we go beyond technical execution by creating a powerful synergy between cutting-edge technology and a deep understanding of business needs - empowering corporations to embrace digital transformation and transition toward a smarter, AI-driven future.</p>
                         </div>
                     </div>
                     <div className="careers__modal__contact">

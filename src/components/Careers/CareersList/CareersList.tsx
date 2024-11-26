@@ -19,10 +19,10 @@ const CareersList: React.FC<ListProps> = ({name}) => {
     }, [activeCareers]);
     return (<>
             {activeCareers!==null &&
-                <CareersModal position='Product Designer'
-                              direction="Design"
+                <CareersModal position='Data Engineer'
+                              direction="Engineering"
                               country="Interntaional"
-                              description="We’re looking for a mid-level product designer to join our team."
+                              description="We’re looking for an ambitious and motivated Middle Data Engineer to join our rapidly growing international team."
                               time="Full-time"
                               salary="Competitive"
                               setActiveCareers={setActiveCareers}
@@ -31,6 +31,22 @@ const CareersList: React.FC<ListProps> = ({name}) => {
             <h3 className="careers__header">
                 {name}
             </h3>
+            <CareersBlock position='Data Engineer'
+                          direction="Engineering"
+                          country="International"
+                          description="We’re looking for an ambitious and motivated Middle Data Engineer to join our rapidly growing international team."
+                          time="Full-time"
+                          salary="Competitive"
+                          setActiveCareers={setActiveCareers}
+            />
+            <CareersBlock position='Product Designer'
+                          direction="Design"
+                          country="International"
+                          description="We’re looking for a mid-level product designer to join our team."
+                          time="Full-time"
+                          salary="Competitive"
+                          setActiveCareers={setActiveCareers}
+            />
             <CareersBlock position='Product Designer'
                           direction="Design"
 
@@ -42,6 +58,7 @@ const CareersList: React.FC<ListProps> = ({name}) => {
             />
             <CareersBlock position='Product Designer'
                           direction="Design"
+
                           country="International"
                           description="We’re looking for a mid-level product designer to join our team."
                           time="Full-time"

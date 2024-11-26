@@ -8,14 +8,11 @@ export default function Careers() {
     return (
         <>
             <div className="flex flex-col items-center justify-items-center">
-                <Main subText="Careers" header="Where people drive progress"
+                <Main subText="Careers" header="Where People Drive Progress"
                       description="Join a team where innovation meets opportunity. Explore a culture that empowers you to grow, lead, and make a lasting impact."
                       />
                 <Image src={CareersImage} className="careers__image" alt="Careers"/>
-                <CareersList name='AI'/>
-                <CareersList name='Data Platforms'/>
-                <CareersList name='Sales'/>
-
+                <CareersList name='Open Positions'/>
             </div>
         </>
     )
