@@ -144,7 +144,7 @@ const Navbar = () => {
                             setIsOpenMobile(!isOpenMobile)
                         }}>
                             <h4>
-                                Who we are
+                                Who We Are
                             </h4>
                             <svg
                                 className={`${isOpenMobile ? '' : 'svgOpen'} `}
@@ -209,12 +209,12 @@ const Navbar = () => {
                     </div>
                     <div className="navbar__mobile__div" onClick={() => window.location.href = '/what-we-do'}>
                         <h4>
-                            What we do
+                            What We Do
                         </h4>
                     </div>
                     <div className="navbar__mobile__div" onClick={() => window.location.href = '/case-studies'}>
                         <h4>
-                            Case studies
+                            Case Studies
                         </h4>
                     </div>
                     <div className="navbar__mobile__div" onClick={() => window.location.href = '/careers'}>
