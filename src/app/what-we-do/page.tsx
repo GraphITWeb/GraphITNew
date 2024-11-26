@@ -9,7 +9,7 @@ import Posts from "@/components/what-we-do/Posts/Posts";
 export default function Page() {
     return (
         <div className="flex flex-col items-center justify-items-center">
-            <Main subText="Driving the next frontier" header="Pioneering boundless innovation"
+            <Main subText="What we do" header="Pioneering boundless innovation"
                   description="Our offerings are built to inspire and deliver results. Find out how we can partner with you to create impactful changes that last."
                   />
 

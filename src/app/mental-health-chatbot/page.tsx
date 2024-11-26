@@ -1,5 +1,4 @@
 'use client'
-import './case-study.css'
 import Main from "@/components/Main/Main";
 import Case from '../../assets/AI.jpg'
 import Image from "next/image";

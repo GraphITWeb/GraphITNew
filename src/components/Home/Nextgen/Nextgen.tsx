@@ -77,7 +77,7 @@ const Nextgen = () => {
             <div ref={sectionRef} className="nextgen">
                 <div className="nextgen__sticky">
                     <div>
-                        <h2 style={{textAlign: 'center'}}>Innovating is What We Do
+                        <h2 style={{textAlign: 'center'}}>Driving the next frontier
                         </h2>
                         <sub style={{textAlign: 'center', width: '100%', display: 'block'}}>
                             We blend science with business expertise to redefine your operational landscape.
