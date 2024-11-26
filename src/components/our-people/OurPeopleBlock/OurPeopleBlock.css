@@ -43,8 +43,8 @@
         flex-direction: row;
         gap: 32px;
         margin-top: 32px;
-        width: 100%;
         justify-content: flex-start;
+        margin-right: auto;
     }
 
 }
