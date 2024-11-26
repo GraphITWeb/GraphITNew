@@ -77,7 +77,7 @@ const Nextgen = () => {
             <div ref={sectionRef} className="nextgen">
                 <div className="nextgen__sticky">
                     <div>
-                        <h2 style={{textAlign: 'center'}}>Driving the next frontier
+                        <h2 style={{textAlign: 'center'}}>Driving The Next Frontier
                         </h2>
                         <sub style={{textAlign: 'center', width: '100%', display: 'block'}}>
                             We blend science with business expertise to redefine your operational landscape.
@@ -140,7 +140,18 @@ const Nextgen = () => {
                         <div className="nextgen__image">
                             <Image style={{width: '100%', height: '100%', borderRadius: 12}} src={images[active]}
                                    alt={''}/>
-                            <Button onClick={() => window.location.href = '/technical'} label={'Learn more'}
+                            <Button onClick={() => {
+                                if(active===0) {
+                                    window.location.href = '/next-gen'
+                                }
+                                else if(active===1) {
+                                    window.location.href = '/ai-copilots'
+                                }
+                                else {
+                                    window.location.href = '/technical'
+                                }
+
+                            }} label={'Learn more'}
                                     btnStyle={{padding: '12px 32px', position: "absolute", right: 24, bottom: 24}}
                                     btnDivStyle={{fontSize: 18}}/>
                         </div>

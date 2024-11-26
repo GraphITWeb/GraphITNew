@@ -1691,7 +1691,7 @@ const HomePage = () => {
                 <Unlocked/>
                 <div className="feedback">
                     <div style={{textAlign: "center"}}>
-                        <h2>Journey to Success</h2>
+                        <h2>Journey To Success</h2>
                         <sub style={{textAlign: 'center', width: '100%', display: 'block'}}>
                             See what business leaders say about our team and how we deliver value
                         </sub>
