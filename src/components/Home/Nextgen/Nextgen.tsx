@@ -75,7 +75,7 @@ const Nextgen = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (nextgenRef.current) {
+            if (nextgenRef.current&&isMobile) {
                 const { scrollLeft, scrollWidth, clientWidth } = nextgenRef.current;
                 const scrollPercent=(scrollLeft / (scrollWidth - clientWidth)) * 100
                 if(scrollPercent<33){
