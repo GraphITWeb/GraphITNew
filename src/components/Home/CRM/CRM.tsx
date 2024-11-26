@@ -3,6 +3,7 @@ import Image from "next/image";
 import Illustration from "@/assets/CaseTest.jpg";
 import AI from "@/assets/AI.jpg";
 import Netflix2 from "@/assets/Netflix2.jpg";
+import Case4 from "@/assets/Case4Main.jpg";
 import Button from "@/components/Button/Button";
 import './CRM.css';
 import {useEffect, useRef, useState} from "react";
@@ -25,7 +26,7 @@ const CRM = () => {
     const handleSlide = (direction: 'left' | 'right') => {
         if (crmRef.current) {
             const newIndex = direction === 'right' ? index + 1 : index - 1;
-            const normalizedIndex = (newIndex + 3) % 3;
+            const normalizedIndex = (newIndex + 4) % 4;
             const transformValue = `translateX(-${normalizedIndex * 100}vw)`;
             crmRef.current.style.transition = 'transform 1s ease';
             crmRef.current.style.transform = transformValue;
@@ -37,15 +38,15 @@ const CRM = () => {
         if(!isMobile){
             clearExistingTimeout();
             setIndex((prevIndex) => {
-                return direction === 'right' ? (prevIndex + 1) % 3 : (prevIndex + 3 - 1) % 3;
+                return direction === 'right' ? (prevIndex + 1) % 4 : (prevIndex + 4 - 1) % 4;
             });
             handleSlide(direction);
         }else{
             const newIndex = direction === 'right' ? index + 1 : index - 1;
             setIndex((prevIndex) => {
-                return direction === 'right' ? (prevIndex + 1) % 3 : (prevIndex + 3 - 1) % 3;
+                return direction === 'right' ? (prevIndex + 1) % 4 : (prevIndex + 4 - 1) % 4;
             });
-            const normalizedIndex = (newIndex + 3) % 3;
+            const normalizedIndex = (newIndex + 4) % 4;
             const scrollValue = normalizedIndex * window.innerWidth;
             console.log(scrollValue)
             if (crmRef.current) {
@@ -171,6 +172,39 @@ const CRM = () => {
                                 </h4>
                                 <p>
                                     AI-powered chatbot designed to make mental health support more accessible and effective. The platform permitted the client to offer human-like therapeutic interactions, boost user engagement and achieve scalable performance - setting a new standard for digital healthcare and broader wellness innovation.
+                                </p>
+                            </div>
+                            <Button onClick={() => window.location.href = '/case-studies'} label='See case studies'
+                                    btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>
+                        </div>
+                    </div>
+                    {/* Block 4 */}
+                    <div className={`CRM__block ${index === 3 ? 'active' : ''}`}>
+                        <div onClick={() => changeIndex('left')} className="CRM__block__arrow" style={{left: 32}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none">
+                                <path d="M10 18L4 12L10 6L11.4 7.45L7.85 11H20V13H7.85L11.4 16.55L10 18Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div onClick={() => changeIndex('right')} className="CRM__block__arrow" style={{right: 32}}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none">
+                                <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z"
+                                      fill="white"/>
+                            </svg>
+                        </div>
+                        <Image
+                            src={Case4}
+                            alt="Illustration"
+                            className={`w-full CRM__block__image ${visible ? 'visible' : ''}`}
+                        />
+                        <div className={`CRM__block__description ${visible ? 'visible' : ''}`}>
+                            <div>
+                                <h4>
+                                    Shaping Operational Efficiency: Data Solutions Driving Global Expansion
+                                </h4>
+                                <p>
+                                    Scalable data solution that reshaped the international e-commerce operations of a Fortune 500 member. Leveraging leading data frameworks, enabled to digitally transform the company, effectively refine their global strategies, and boost ROI - reimagining their paths to leadership in a highly competitive global market
                                 </p>
                             </div>
                             <Button onClick={() => window.location.href = '/case-studies'} label='See case studies'
