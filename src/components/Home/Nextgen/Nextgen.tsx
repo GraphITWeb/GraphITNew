@@ -72,6 +72,41 @@ const Nextgen = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (nextgenRef.current) {
+                const { scrollLeft, scrollWidth, clientWidth } = nextgenRef.current;
+                const scrollPercent=(scrollLeft / (scrollWidth - clientWidth)) * 100
+                if(scrollPercent<33){
+                    setActive(0)
+                }else if(scrollPercent<66){
+                    setActive(1)
+                }
+                else{
+                    setActive(2)
+                }
+            }
+        };
+
+        const element = nextgenRef.current;
+        if (element) {
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-expect-error
+            element.addEventListener("scroll", handleScroll);
+        }
+
+        return () => {
+            if (element) {
+                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                // @ts-expect-error
+                element.removeEventListener("scroll", handleScroll);
+            }
+        };
+    }, []);
+
+
+
     return (
         <>
             <div ref={sectionRef} className="nextgen">
