@@ -148,7 +148,7 @@ const Nextgen = () => {
                                     window.location.href = '/ai-copilots'
                                 }
                                 else {
-                                    window.location.href = '/data-platform'
+                                    window.location.href = '/data-platforms'
                                 }
 
                             }} label={'Learn more'}

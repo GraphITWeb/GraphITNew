@@ -9,7 +9,7 @@ import Business from "@/components/Home/Business/Business";
 export default function Page() {
     return (
         <div className="flex flex-col items-center justify-items-center">
-            <Main subText="Offerings" header="Empower Your Platform with Data Platform Solutions"
+            <Main subText="Offerings" header="Empower Your Platform with Data Platforms Solutions"
                   description="Together with you, we develop and deploy custom Data Platforms that integrate seamlessly into your platforms, empowering your end-users to access insights, make informed decisions, and unlock new possibilities through intuitive, conversational AI."/>
             <OfferingInfo
                 header1={'80%'}
