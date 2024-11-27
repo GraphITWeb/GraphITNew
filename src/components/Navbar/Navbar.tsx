@@ -61,12 +61,13 @@ const Navbar = () => {
                          style={{
                              height: 24,
                              lineHeight: 24,
-                             alignItems: "flex-end"
+                             alignItems: "flex-end",
+                             cursor: "pointer",
                          }}
                          className="navbar__mobile__div__first"
                          onMouseOver={() => setIsOpenDo(true)}
                          onMouseLeave={() => setIsOpenDo(false)}>
-                        <small style={{cursor: "pointer"}} onClick={() => window.location.href = '/what-we-do'}>What We
+                        <small onClick={() => window.location.href = '/what-we-do'}>What We
                             Do </small>
                         <svg style={{cursor: "pointer"}}
                              className={`${isOpen ? 'svgOpen' : ''} `}
