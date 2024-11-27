@@ -1,5 +1,6 @@
 import React from 'react';
 import './who-we-are.css';
+import Image from "next/image";
 import Main from "@/components/Main/Main";
 import OurVision from "@/components/who-we-are/OurVision/OurVision";
 import FutureImage from '../../assets/Future.jpg'
@@ -8,7 +9,6 @@ import Boutique from '../../assets/Boutique.jpg'
 import Posts from "@/components/what-we-do/Posts/Posts";
 import Google from '../../assets/Google.png';
 import AWS from '../../assets/AWS.jpg';
-import Image from "next/image";
 
 export default function WhoWeArePage() {
     return (

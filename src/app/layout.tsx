@@ -22,6 +22,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body>
+        <link rel="preload" as="image" href="../assets"/>
         <div>
             <Navbar/>
             {children}
