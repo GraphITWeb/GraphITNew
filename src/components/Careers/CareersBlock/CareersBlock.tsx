@@ -1,5 +1,7 @@
 import './CareersBlock.css';
 import React from "react";
+import Image from "next/image";
+import flagImage from '../../../assets/elements/british.png'
 interface CareersBlockProps{
     position: string;
     direction: string;
@@ -17,11 +19,25 @@ const CareersBlock: React.FC<CareersBlockProps>  = ({position,direction,country,
                       <h5>
                           {position}
                       </h5>
-                      <small className="flag pc" >
+                      <small className="flag pc"
+                             style={direction==='Engineering'?{color: 'var(--white)',
+                                 borderRadius:  100,
+                                 border: '1px solid rgba(242, 55, 4, 0.30)',
+                                 background: 'rgba(242, 55, 4, 0.20)',
+                                 padding:'2px 12px'
+                             }:{color: 'var(--white)',
+                                 borderRadius:  100,
+                                 border: '1px solid rgba(51, 138, 243, 0.30)',
+                                 background: 'rgba(51, 138, 243, 0.20)',
+                                 padding:'2px 12px'
+                             }}>
                           {direction}
                       </small>
                   </div>
                   <div className="flag pc" style={{gap:6}}>
+                      {country==='United Kingdom'?
+                          <Image src={flagImage} alt="flag"/>
+                          :
                       <svg style={{position: "relative", top: 0}} xmlns="http://www.w3.org/2000/svg"
                            width="18"
                            height="18" viewBox="0 0 20 20" fill="none">
@@ -35,28 +51,41 @@ const CareersBlock: React.FC<CareersBlockProps>  = ({position,direction,country,
                           <path
                               d="M10 17.2985C11.7259 17.2985 13.125 14.0308 13.125 9.99984C13.125 5.9689 11.7259 2.70117 10 2.70117C8.27411 2.70117 6.875 5.9689 6.875 9.99984C6.875 14.0308 8.27411 17.2985 10 17.2985Z"
                               stroke="white" strokeMiterlimit="10"/>
-                      </svg>
+                      </svg>}
                       <small>{country}</small>
                   </div>
                   <div className="flex-row justify-start gap-2 mobile">
                       <div className="flag mobile">
-                          <svg style={{position: "relative", top: 0}} xmlns="http://www.w3.org/2000/svg"
-                               width="20"
-                               height="20" viewBox="0 0 20 20" fill="none">
-                              <path
-                                  d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z"
-                                  stroke="white" strokeMiterlimit="10"/>
-                              <path d="M2.92773 7.5H17.0734" stroke="white" strokeLinecap="round"
-                                    strokeLinejoin="round"/>
-                              <path d="M2.92773 12.5H17.0734" stroke="white" strokeLinecap="round"
-                                    strokeLinejoin="round"/>
-                              <path
-                                  d="M10 17.2985C11.7259 17.2985 13.125 14.0308 13.125 9.99984C13.125 5.9689 11.7259 2.70117 10 2.70117C8.27411 2.70117 6.875 5.9689 6.875 9.99984C6.875 14.0308 8.27411 17.2985 10 17.2985Z"
-                                  stroke="white" strokeMiterlimit="10"/>
-                          </svg>
+                          {country==='United Kingdom'?
+                              <Image src={flagImage} alt="flag"/>
+                              :
+                              <svg style={{position: "relative", top: 0}} xmlns="http://www.w3.org/2000/svg"
+                                   width="18"
+                                   height="18" viewBox="0 0 20 20" fill="none">
+                                  <path
+                                      d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z"
+                                      stroke="white" strokeMiterlimit="10"/>
+                                  <path d="M2.92773 7.5H17.0734" stroke="white" strokeLinecap="round"
+                                        strokeLinejoin="round"/>
+                                  <path d="M2.92773 12.5H17.0734" stroke="white" strokeLinecap="round"
+                                        strokeLinejoin="round"/>
+                                  <path
+                                      d="M10 17.2985C11.7259 17.2985 13.125 14.0308 13.125 9.99984C13.125 5.9689 11.7259 2.70117 10 2.70117C8.27411 2.70117 6.875 5.9689 6.875 9.99984C6.875 14.0308 8.27411 17.2985 10 17.2985Z"
+                                      stroke="white" strokeMiterlimit="10"/>
+                              </svg>}
                           <small>{country}</small>
                       </div>
-                      <small className="flag mobile">
+                      <small className="flag mobile" style={direction==='Engineering'?{color: 'var(--white)',
+                          borderRadius:  100,
+                          border: '1px solid rgba(242, 55, 4, 0.30)',
+                          background: 'rgba(242, 55, 4, 0.20)',
+                          padding:'2px 12px'
+                      }:{color: 'var(--white)',
+                          borderRadius:  100,
+                          border: '1px solid rgba(51, 138, 243, 0.30)',
+                          background: 'rgba(51, 138, 243, 0.20)',
+                          padding:'2px 12px'
+                      }}>
                       {direction}
                       </small>
                   </div>
