@@ -32,7 +32,7 @@ const Copilots = () => {
                 opacity: isVisible ? 1 : 0,
                 whiteSpace: "word-wrap",
             }}>
-                  AI Copilot Potential
+                Transform Your Platform
             </h1>
 
             <div className="unlocked_block" style={{marginTop: '1vh'}}>

@@ -9,8 +9,8 @@ import Business from "@/components/Home/Business/Business";
 export default function Page() {
     return (
         <div className="flex flex-col items-center justify-items-center">
-            <Main subText="AI Copilots" header="AI Copilots: Your Data, Redefined"
-                  description="AI Copilots redefine data interaction, making smarter decisions and user engagement seamless."/>
+            <Main subText="AI Copilots" header="Your Data Interaction, Redefined"
+                  description="Our tailored AI Copilot solutions empower smarter decisions, create seamless, intuitive user experiences, and enhance productivity"/>
             <OfferingInfo
                 header1={'80%'}
                 header2={'2x'}
@@ -23,7 +23,7 @@ export default function Page() {
             <Copilots/>
             <div className="textPadding">
                 <h2>
-                    Reimagine Your Platform with
+                    Redefine your platform with
                     <span> AI Copilot</span>
                 </h2>
             </div>
