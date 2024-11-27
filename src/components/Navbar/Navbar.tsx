@@ -5,7 +5,7 @@ import Link from "next/link";
 import Button from "@/components/Button/Button";
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     const [isOpenMobile, setIsOpenMobile] = useState(false)
     const dropdownRef = useRef<HTMLDivElement>(null);
@@ -23,7 +23,7 @@ const Navbar = () => {
         };
     }, []);
 
-    const [isOpenDo, setIsOpenDo] = useState(false);
+    const [isOpenDo, setIsOpenDo] = useState(true);
     const [isOpenDoMobile, setIsOpenDoMobile] = useState(false)
     const dropdownDoRef = useRef<HTMLDivElement>(null);
     const handleClickOutsideDo = (event: MouseEvent) => {
