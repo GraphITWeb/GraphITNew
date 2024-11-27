@@ -4,24 +4,15 @@ import React, {useState} from "react";
 import Input from "@/components/Input/Input";
 import TextArea from "@/components/TextArea/TextArea";
 import Button from "@/components/Button/Button";
+import {ICareer} from "@/interfaces/interfaces";
 
 interface CareersBlockProps {
-    position: string;
-    direction: string;
-    country: string;
-    description: string;
-    time: string;
-    salary: string;
+    career: ICareer;
     setActiveCareers: (value: number | null) => void;
 }
 
 const CareersModal: React.FC<CareersBlockProps> = ({
-                                                       position,
-                                                       direction,
-                                                       country,
-                                                       description,
-                                                       time,
-                                                       salary,
+                                                       career,
                                                        setActiveCareers
                                                    }) => {
     const [firstName, setFirstName] = useState('');
@@ -48,7 +39,7 @@ const CareersModal: React.FC<CareersBlockProps> = ({
             <div className="careers__modal">
                 <div className="careers__modal__header">
                     <h5>
-                        {position} career
+                        {career.position} career
                     </h5>
                     <svg onClick={() => setActiveCareers(null)} style={{cursor: 'pointer'}}
                          xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -61,12 +52,12 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                 <div className="careers__modal__content">
                     <div className="careers__modal__body">
                         <small className="flag pc">
-                            {direction}
+                            {career.direction}
                         </small>
-                        <h2>{position}</h2>
+                        <h2>{career.position}</h2>
                         <div className="flex flex-row justify-start gap-2 mobile">
                             <small className="flag">
-                                {direction}
+                                {career.direction}
                             </small>
                             <div className="flag">
                                 <svg style={{position: "relative", top: 0}} xmlns="http://www.w3.org/2000/svg"
@@ -83,11 +74,11 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                                         d="M10 17.2985C11.7259 17.2985 13.125 14.0308 13.125 9.99984C13.125 5.9689 11.7259 2.70117 10 2.70117C8.27411 2.70117 6.875 5.9689 6.875 9.99984C6.875 14.0308 8.27411 17.2985 10 17.2985Z"
                                         stroke="white" strokeMiterlimit="10"/>
                                 </svg>
-                                <small>{country}</small>
+                                <small>{career.country}</small>
                             </div>
                         </div>
                         <p style={{marginTop: 16}}>
-                            {description}
+                            {career.shortDescription}
                         </p>
                         <div className="careers__modal__body__first">
                             <div className="careers__block__bottom">
@@ -98,7 +89,7 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                                         fill="#B3B3B3"/>
                                 </svg>
                                 <h6>
-                                    {time}
+                                    {career.time}
                                 </h6>
                                 <svg style={{marginLeft: 12}} xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                      viewBox="0 0 24 24" fill="none">
@@ -120,7 +111,7 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                                     </defs>
                                 </svg>
                                 <h6>
-                                    {salary}
+                                    {career.salary}
                                 </h6>
                             </div>
                             <div className="flag pc">
@@ -138,42 +129,38 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                                         d="M10 17.2985C11.7259 17.2985 13.125 14.0308 13.125 9.99984C13.125 5.9689 11.7259 2.70117 10 2.70117C8.27411 2.70117 6.875 5.9689 6.875 9.99984C6.875 14.0308 8.27411 17.2985 10 17.2985Z"
                                         stroke="white" strokeMiterlimit="10"/>
                                 </svg>
-                                <small>{country}</small>
+                                <small>{career.country}</small>
                             </div>
                         </div>
                         <span className="modal__span"/>
                         <h4>Description</h4>
-                        <p>We are seeking a motivated Mid-Level Data Engineer, who is ready for the new challenges and career growth. You will play a key role in building MVPs, contributing to pre-sales activities, and contributing to the growth of our Data Platforms practice. </p>
+                        <p>{career.description}</p>
                         <h4>Responsibilities</h4>
                         <div>
-                            <div style={{display:"flex",flexDirection:"row"}}>
-                                <p> &#9679;</p>
-                                <p>Collaborate with customers to understand their needs and deliver solutions.</p>
-                            </div>
-
-                            <li>Tackle technical challenges independently and proactively.</li>
-                            <li>Continuously enhance your skills and bring passion to your work.</li>
-                            <li>Design and implement ETL pipelines using Azure or AWS tools, ensuring eﬃcient data
-                                processing.
-                            </li>
-                            <li>Develop scalable and high-performance data warehouse solutions.</li>
-                            <li>Work closely with the team to align technical solutions with business objectives.</li>
+                            {career.responsibilities.map((responsibility) =>
+                                <div style={{display: "flex", flexDirection: "row", gap: 8}}>
+                                    <p> &#9679;</p>
+                                    <p>{responsibility}</p>
+                                </div>
+                            )}
                         </div>
                         <h4>Requirements</h4>
                         <div>
-                            <li>Collaborate with customers to understand their needs and deliver solutions.</li>
-                            <li>Tackle technical challenges independently and proactively.</li>
-                            <li>Continuously enhance your skills and bring passion to your work.</li>
-                            <li>Design and implement ETL pipelines using Azure or AWS tools, ensuring eﬃcient data
-                                processing.
-                            </li>
-                            <li>Develop scalable and high-performance data warehouse solutions.</li>
+                            {career.requirements.map((requirement) =>
+                                <div style={{display: "flex", flexDirection: "row", gap: 8}}>
+                                    <p> &#9679;</p>
+                                    <p>{requirement}</p>
+                                </div>
+                            )}
                         </div>
                         <h4>Preferred Qualifications</h4>
                         <div>
-                            <li>Collaborate with customers to understand their needs and deliver solutions.</li>
-                            <li>Tackle technical challenges independently and proactively.</li>
-                            <li>Continuously enhance your skills and bring passion to your work.</li>
+                            {career.qualifications.map((quality) =>
+                                <div style={{display: "flex", flexDirection: "row", gap: 8}}>
+                                    <p> &#9679;</p>
+                                    <p>{quality}</p>
+                                </div>
+                            )}
                         </div>
                         <div className="careers__modal__graphit">
                             <h4 style={{marginTop: 0}}>About Graphit</h4>

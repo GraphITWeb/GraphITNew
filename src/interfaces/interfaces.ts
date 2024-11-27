@@ -9,6 +9,19 @@ export interface IPost {
     description: string;
     tags: string[];
 }
+export interface ICareer {
+    position:string;
+    career: string;
+    shortDescription:string;
+    direction: string;
+    country:string;
+    description:string;
+    time:string;
+    salary:string;
+    responsibilities:string[];
+    requirements:string[];
+    qualifications:string[];
+}
 export interface PostProps {
     imgPost: StaticImageData;
     type: string;

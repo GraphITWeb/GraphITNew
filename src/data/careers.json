@@ -1,0 +1,133 @@
+[
+  {
+    "position":"Senior Generative AI",
+    "direction":"Engineering",
+    "country":"International",
+    "shortDescription":"We’re looking for an ambitious and motivated Senior Generative AI Engineer to join our rapidly growing international team.",
+    "time":"Full-time",
+    "salary":"Competitive",
+    "description": "We are seeking a motivated Senior-Level Generative AI Engineer, who is ready for the new challenges and career growth. You will play a key role in building MVPs, contributing to pre-sales activities and growth of our AI Copilots practice. ",
+    "responsibilities": [
+      "Develop and implement advanced Generative AI solutions, including intelligent assistants, Retrieval-Augmented Generation (RAG) systems, and other cutting-edge applications for language and creative content generation.",
+      "Design, build, and optimize LLM pipelines using frameworks such as LangChain, Transformers, and diffusion models for both text and image generation.",
+      "Conduct deep data analysis and modeling, ensuring the operationalization and deployment of machine learning models in production environments.",
+      "Leverage large-scale transformer models and generative pre-trained LLMs (e.g., GPT-4, Claude, Gemini) for innovative AI-driven solutions.",
+      "Collaborate with clients by participating in AI workshops, discoveries, and initial engagements to define project scope and requirements.",
+      "Deploy scalable AI solutions on cloud platforms such as Azure AI, AWS Sagemaker, and GCP Vertex AI.",
+      "Present results to stakeholders, gather business requirements, and translate complex concepts into actionable insights."
+    ],
+    "requirements": [
+      "Strong expertise in Generative AI and Natural Language Processing (NLP) techniques, including transformer-based models.",
+      "Proficiency in frameworks like LangChain, Hugging Face, PyTorch, and TensorFlow.",
+      "Hands-on experience with GPT-4, Claude, Gemini, or similar large-scale LLMs, including fine-tuning and model optimization.",
+      "Proficiency in cloud-based AI solutions, including deployment workflows on platforms such as Azure, AWS, or Google Cloud.",
+      "Skilled in building and operationalizing ML pipelines, from data manipulation and experiment design to deployment and insight generation.",
+      "Strong Python programming skills and expertise in data tools such as Pandas, NumPy, and vector databases (e.g., Pinecone, Weaviate, or FAISS).",
+      "Fluency in business English at an upper-intermediate level."
+    ],
+    "qualifications": [
+      "Background in big data tools and distributed computing frameworks such as Ray or Apache Spark.",
+      "Proven ability to deliver innovative AI solutions that solve real-world business challenges.",
+      "Understanding of MLOps tools and concepts, including CI/CD for machine learning pipelines (e.g., MLflow, Kubeflow).",
+      "Familiarity with responsible AI principles, including fairness, transparency, and data privacy.",
+      "Advanced degree (Master’s or Ph.D.) in Computer Science, Artificial Intelligence, or a related field.",
+      "Experience developing AI Agents and working with agent frameworks and technologies is a big plus."
+    ]
+  },
+  {
+    "position":"Data Engineer",
+    "direction":"Engineering",
+    "country":"International",
+    "shortDescription":"We’re looking for an ambitious and motivated Middle Data Engineer to join our rapidly growing international team.",
+    "time":"Full-time",
+    "salary":"Competitive",
+    "description": "We are seeking a motivated Mid-Level Data Engineer, who is ready for the new challenges and career growth. You will play a key role in building MVPs, contributing to pre-sales activities, and contributing to the growth of our Data Platforms practice. ",
+    "responsibilities": [
+      "Collaborate with customers to understand their needs and deliver solutions.",
+      "Tackle technical challenges independently and proactively.",
+      "Continuously enhance your skills and bring passion to your work.",
+      "Design and implement ETL pipelines using Azure or AWS tools, ensuring eﬃcient data processing.",
+      "Develop scalable and high-performance data warehouse solutions.",
+      "Work closely with the team to align technical solutions with business objectives."
+    ],
+    "requirements": [
+      "Collaborate with customers to understand their needs and deliver solutions.",
+      "Tackle technical challenges independently and proactively.",
+      "Continuously enhance your skills and bring passion to your work.",
+      "Design and implement ETL pipelines using Azure or AWS tools, ensuring eﬃcient data processing.",
+      "Develop scalable and high-performance data warehouse solutions."
+    ],
+    "qualifications": [
+      "Collaborate with customers to understand their needs and deliver solutions.",
+      "Tackle technical challenges independently and proactively.",
+      "Continuously enhance your skills and bring passion to your work."
+    ]
+  },
+  {
+    "position":"Account Manager",
+    "direction":"Sales",
+    "country":"International",
+    "shortDescription":"We are seeking a motivated and results-driven Account Manager to join our rapidly growing international team.",
+    "time":"Full-time",
+    "salary":"Competitive",
+    "description": "As an Account Manager, you will play a key role in building long-lasting client relationships, driving revenue growth, and supporting the adoption of our AI and Big Data solutions. This role is perfect for a dynamic individual who thrives in a fast-paced environment and is passionate about digital transformation.",
+    "responsibilities": [
+      "Build and maintain strong relationships with existing clients, ensuring customer satisfaction and long-term engagement.",
+      "Identify new business opportunities within your accounts and proactively drive growth.",
+      "Work closely with clients to understand their specific needs and craft tailored solutions using Graphit’s offerings.",
+      "Collaborate with internal teams to ensure successful delivery and integration of our AI and Big Data products.",
+      "Present and demonstrate the value of our products to potential clients, converting leads into satisfied customers.",
+      "Manage contract negotiations, renewals, and upsell opportunities to achieve sales targets.",
+      "Regularly report on account status, sales pipeline, and forecasted growth."
+    ],
+    "requirements": [
+      "Proven experience in sales or account management, preferably within a technology or SaaS environment.",
+      "Strong knowledge of AI, Big Data, or digital transformation technologies is a plus.",
+      "Excellent communication and interpersonal skills with the ability to build trust and credibility with clients.",
+      "A proactive, self-starter attitude and ability to work independently.",
+      "Demonstrated success in meeting or exceeding sales goals.",
+      "Strong organizational and time-management skills, with the ability to manage multiple accounts effectively.",
+      "Experience working with CRM softwares (e.g., Sales Navigator, Zoominfo, Apollo, etc.) and sales analytics tools."
+    ],
+    "qualifications": [
+      "Experience in selling AI, Big Data, or digital transformation solutions.",
+      "Ability to understand complex technical solutions and convey their value to non-technical stakeholders.",
+      "Passion for technology and staying ahead of industry trends."
+    ]
+  },
+  {
+    "position":"Account Executive",
+    "direction":"Sales",
+    "country":"International",
+    "shortDescription":"We’re looking for an ambitious and motivated Account Executive to join our rapidly growing international team.",
+    "time":"Full-time",
+    "salary":"Competitive",
+    "description": "As an Account Executive, you will be at the forefront of expanding our customer base by identifying and acquiring new business opportunities. You will play a crucial role in driving revenue growth and introducing our innovative AI and Big Data solutions to prospective clients. This is an exciting opportunity for an ambitious sales professional eager to grow in a fast-paced, technology-driven environment.",
+    "responsibilities": [
+      "Prospect and generate new business opportunities through outbound sales efforts, networking, and inbound lead management.",
+      "Manage the full sales cycle, from identifying leads to closing deals, while ensuring a seamless client experience.",
+      "Work closely with potential clients to understand their needs and present tailored solutions.",
+      "Qualify prospects, schedule meetings, and conduct presentations to demonstrate the value of our solutions",
+      "Negotiate contracts and close deals to meet or exceed sales targets and quotas.",
+      "Build and maintain strong relationships with key decision-makers, expanding our network and footprint.",
+      "Collaborate with the customer success team to ensure smooth onboarding and a seamless handoff post-sale.",
+      "Keep accurate records of sales activities, forecast pipeline, and track performance using CRM tools."
+    ],
+    "requirements": [
+      "Proven experience in B2B sales or account management, ideally within the tech or SaaS industry.",
+      "Strong understanding of AI, Big Data, or digital transformation technologies is highly desirable.",
+      "Excellent communication and presentation skills with the ability to articulate complex solutions to non-technical audiences.",
+      "Strong negotiation skills and a track record of closing deals successfully.",
+      "Goal-oriented with a demonstrated ability to meet and exceed sales targets.",
+      "Self-motivated with excellent time management and organizational skills.",
+      "Comfortable working in a fast-paced, startup environment."
+
+    ],
+    "qualifications": [
+      "Experience selling AI, Big Data, or enterprise software solutions.",
+      "Familiarity with CRM softwares (e.g., Sales Navigator, Zoominfo, Apollo, etc.) and sales analytics tools.",
+      "Ability to manage multiple opportunities and prioritize effectively.",
+      "Strong network within the tech or AI industry is a plus."
+    ]
+  }
+]

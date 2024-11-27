@@ -7,11 +7,11 @@ interface CareersBlockProps{
     description:string;
     time:string;
     salary:string;
-    setActiveCareers:(careers:number) => void;
+    setActiveCareers:() => void;
 }
 const CareersBlock: React.FC<CareersBlockProps>  = ({position,direction,country,description,time,salary,setActiveCareers}) => {
   return(<>
-          <div className="careers__block" onClick={()=>setActiveCareers(0)}>
+          <div className="careers__block" onClick={setActiveCareers}>
               <div className="careers__block__header">
                   <div className="careers__block__header__first">
                       <h5>
