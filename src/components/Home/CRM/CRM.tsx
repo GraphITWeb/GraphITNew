@@ -204,7 +204,7 @@ const CRM = () => {
                                     Shaping Operational Efficiency: Data Solutions Driving Global Expansion
                                 </h4>
                                 <p>
-                                    Scalable data solution that reshaped the international e-commerce operations of a Fortune 500 member. Leveraging leading data frameworks, enabled to digitally transform the company, effectively refine their global strategies, and boost ROI - reimagining their paths to leadership in a highly competitive global market
+                                    Scalable data solution that reshaped the international e-commerce operations of a Fortune 500 member. Leveraging leading data frameworks, enabled to digitally transform the company, effectively refine their global strategies, and boost ROI - reimagining their paths to leadership in a highly competitive market
                                 </p>
                             </div>
                             <Button onClick={() => window.location.href = '/case-studies'} label='See case studies'
