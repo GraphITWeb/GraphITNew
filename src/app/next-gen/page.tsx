@@ -3,7 +3,7 @@ import Main from "@/components/Main/Main";
 import Posts from "@/components/what-we-do/Posts/Posts";
 import OfferingInfo from "@/components/offering/OfferingInfo/OfferingInfo";
 import './nextgen.css'
-import StepSVG from "@/components/NextGen/stepSvg";
+import StepSVG from "@/components/offering/stepSvg";
 import Transform from "@/components/NextGen/Transform/Transform";
 import Business from "@/components/Home/Business/Business";
 

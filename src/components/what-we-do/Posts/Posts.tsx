@@ -3,7 +3,7 @@ import Button from "@/components/Button/Button";
 import React, {useEffect, useRef, useState} from "react";
 import './Posts.css';
 import Post from "@/components/what-we-do/Posts/Post";
-import postsData from '../../../data/posts.json';
+import postsData from '@/data/posts.json';
 import {IPost} from "@/interfaces/interfaces";
 
 const Posts = () => {

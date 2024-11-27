@@ -2,7 +2,7 @@ import React from 'react';
 import './our-values.css';
 import Main from "@/components/Main/Main";
 import WeMeant from "@/components/who-we-are/WeMeant/WeMeant";
-import TechnicalWhatBlock from "@/components/technical/TechnicalWhatBlock/TechnicalWhatBlock";
+import TechnicalWhatBlock from "@/components/our-values/TechnicalWhatBlock/TechnicalWhatBlock";
 
 export default function OurValuesPage() {
     return (

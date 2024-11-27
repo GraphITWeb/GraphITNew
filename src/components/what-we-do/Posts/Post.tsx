@@ -5,7 +5,7 @@ import {PostProps} from "@/interfaces/interfaces";
 
 const Post: React.FC<PostProps> = ({imgPost, type, time, title, link, description, tags}) => {
     return (
-        <div className="what__we__do__post">
+        <div className="what__we__do__post" onClick={()=>window.location.href=link}>
             <Image src={imgPost} alt="Post"/>
             <div className="flex flex-row gap-2 items-center">
                 <small style={{color: 'var(--orange)'}}>{type}</small>
@@ -16,7 +16,7 @@ const Post: React.FC<PostProps> = ({imgPost, type, time, title, link, descriptio
             </div>
             <div className="flex flex-row justify-between w-full">
                 <h5 style={{width:'90%'}}>{title}</h5>
-                <svg onClick={()=>window.location.href=link} style={{marginTop:4}} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <svg style={{marginTop:4}} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M6.4 18L5 16.6L14.6 7H6V5H18V17H16V8.4L6.4 18Z" fill="white"/>
                 </svg>
             </div>
