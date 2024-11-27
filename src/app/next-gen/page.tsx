@@ -10,7 +10,7 @@ export default function Page() {
 
     return (
         <div className="flex flex-col items-center justify-items-center">
-            <Main subText="Next-Gen AI Transformation" header="Take A Leap with<br/> Next-Gen AI Transformation"
+            <Main subText="Next-Gen AI Transformation" header="Take A Leap with Next-Gen AI Transformation"
                   description="With Generative AI, we transform challenges into innovation and growth, empowering your business to lead in an AI-driven world."/>
             <OfferingInfo
                 header1={'85%'}
