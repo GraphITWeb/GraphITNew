@@ -1,5 +1,5 @@
 'use client'
-import Button from "@/components/Button/Button";
+import Button from "@/components/UI/Button/Button";
 import React, {useEffect, useRef, useState} from "react";
 import './Posts.css';
 import Post from "@/components/what-we-do/Posts/Post";

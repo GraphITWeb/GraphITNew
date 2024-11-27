@@ -1,5 +1,5 @@
 'use client'
-import Button from "@/components/Button/Button";
+import Button from "@/components/UI/Button/Button";
 import './Business.css'
 export default function Business() {
     return (

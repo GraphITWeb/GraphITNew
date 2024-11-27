@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { IPost } from "@/interfaces/interfaces";
 import postsData from "@/data/posts.json";
-import Post from "@/components/Post/Post";
+import Post from "@/components/UI/Post/Post";
 import './Articles.css';
-import Dropdown from "@/components/Dropdown/Dropdown";
+import Dropdown from "@/components/UI/Dropdown/Dropdown";
 
 interface ArticlesProps {
     type: string;

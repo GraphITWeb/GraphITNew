@@ -4,7 +4,7 @@ import Illustration from "@/assets/CaseTest.jpg";
 import AI from "@/assets/AI.jpg";
 import Netflix from "@/assets/Netflix.jpg";
 import Case4 from "@/assets/Case4Main.jpg";
-import Button from "@/components/Button/Button";
+import Button from "@/components/UI/Button/Button";
 import './CRM.css';
 import {useEffect, useRef, useState} from "react";
 import useMobile from "@/hooks/useMobile";

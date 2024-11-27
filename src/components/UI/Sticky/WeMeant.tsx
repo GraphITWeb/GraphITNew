@@ -1,5 +1,5 @@
 'use client';
-import './WeMeant.css'
+import './Sticky.css'
 import {useEffect, useState} from "react";
 
 const WeMeant = () => {

@@ -1,9 +1,9 @@
 'use client'
 import './CareersModal.css';
 import React, {useState} from "react";
-import Input from "@/components/Input/Input";
-import TextArea from "@/components/TextArea/TextArea";
-import Button from "@/components/Button/Button";
+import Input from "@/components/UI/Input/Input";
+import TextArea from "@/components/UI/TextArea/TextArea";
+import Button from "@/components/UI/Button/Button";
 import {ICareer} from "@/interfaces/interfaces";
 import Image from "next/image";
 import flagImage from "@/assets/elements/british.png";

@@ -1,5 +1,5 @@
 'use client';
-import './Copilots.css'
+import './Sticky.css'
 import {useEffect, useState} from "react";
 
 const Copilots = () => {

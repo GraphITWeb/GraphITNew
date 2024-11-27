@@ -3,7 +3,7 @@ import Main from "@/components/Main/Main";
 import Posts from "@/components/what-we-do/Posts/Posts";
 import OfferingInfo from "@/components/offering/OfferingInfo/OfferingInfo";
 import StepSVG from "@/components/offering/stepSvg";
-import Copilots from "@/components/AICopilots/Copilots/Copilots";
+import Copilots from "@/components/UI/Sticky/Copilots";
 import Business from "@/components/Home/Business/Business";
 export default function Page() {
     return (

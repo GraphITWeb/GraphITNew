@@ -2,8 +2,8 @@ import type {Metadata} from "next";
 import "./globals.css";
 import "./case-study.css";
 import React from "react";
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/UI/Navbar/Navbar";
+import Footer from "@/components/UI/Footer/Footer";
 
 
 export const metadata: Metadata = {
@@ -22,7 +22,6 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body>
-        <link rel="preload" as="image" href="../assets"/>
         <div>
             <Navbar/>
             {children}

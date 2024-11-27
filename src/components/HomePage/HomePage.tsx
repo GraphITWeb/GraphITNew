@@ -12,7 +12,7 @@ import Nextgen from "@/components/Home/Nextgen/Nextgen";
 import Unlocked from "@/components/Home/Unlocked/Unlocked";
 import FeedbackItem from "@/components/Home/FeedbackItem/FeedbackItem";
 import React, {useEffect, useRef, useState} from "react";
-import Button from "@/components/Button/Button";
+import Button from "@/components/UI/Button/Button";
 
 const HomePage = () => {
     const [slideOut, setSlideOut] = useState(false)

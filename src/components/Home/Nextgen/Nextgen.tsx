@@ -5,7 +5,7 @@ import React, {useEffect, useRef, useState} from "react";
 import NextGenImage from "../../../assets/home/NextGen.jpg";
 import AICopilots from "../../../assets/home/AICopilot.jpg";
 import BigData from "../../../assets/home/BigData.jpg";
-import Button from "@/components/Button/Button";
+import Button from "@/components/UI/Button/Button";
 import useMobile from "@/hooks/useMobile";
 
 const Nextgen = () => {

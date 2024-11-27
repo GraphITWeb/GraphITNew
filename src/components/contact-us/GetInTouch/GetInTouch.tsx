@@ -1,9 +1,9 @@
 'use client'
 import './GetInTouch.css'
-import Input from "@/components/Input/Input";
+import Input from "@/components/UI/Input/Input";
 import {useState} from "react";
-import TextArea from "@/components/TextArea/TextArea";
-import Button from "@/components/Button/Button";
+import TextArea from "@/components/UI/TextArea/TextArea";
+import Button from "@/components/UI/Button/Button";
 const GetInTouch = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');

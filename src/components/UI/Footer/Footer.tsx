@@ -1,8 +1,8 @@
 "use client";
 import './Footer.css';
 import React, {useState} from "react";
-import Button from "@/components/Button/Button";
-import Input from "@/components/Input/Input";
+import Button from "@/components/UI/Button/Button";
+import Input from "@/components/UI/Input/Input";
 
 
 const Footer = () => {

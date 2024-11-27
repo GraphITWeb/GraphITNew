@@ -1,5 +1,5 @@
 'use client';
-import './Transform.css'
+import './Sticky.css'
 import {useEffect, useState} from "react";
 
 const Transform = () => {
