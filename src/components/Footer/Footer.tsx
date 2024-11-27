@@ -11,7 +11,7 @@ const Footer = () => {
         <>
             <footer>
                 <div className='footer__first'>
-                    <div className="flex flex-row gap-3 align-middle items-center text-center">
+                    <div onClick={()=>window.location.href='/'} className="flex flex-row gap-3 align-middle items-center text-center cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" id="Layer_5" data-name="Layer 5"
                              viewBox="-128.079 9.715 161.778 182.78" width={37}>
                             <path className="cls-2"
