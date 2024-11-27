@@ -23,7 +23,7 @@ const Navbar = () => {
         };
     }, []);
 
-    const [isOpenDo, setIsOpenDo] = useState(true);
+    const [isOpenDo, setIsOpenDo] = useState(false);
     const [isOpenDoMobile, setIsOpenDoMobile] = useState(false)
     const dropdownDoRef = useRef<HTMLDivElement>(null);
     const handleClickOutsideDo = (event: MouseEvent) => {
