@@ -136,7 +136,7 @@ const Navbar = () => {
                          className="navbar__mobile__div__first"
                          onMouseOver={() => setIsOpen(true)}
                          onMouseLeave={() => setIsOpen(false)}>
-                        <small style={{cursor: "pointer"}}>Who We Are </small>
+                        <small style={{cursor: "pointer"}} onClick={()=>window.location.href='/our-approach'}>Who We Are </small>
                         <svg style={{cursor: "pointer"}}
                              className={`${isOpen ? 'svgOpen' : ''} `}
                              xmlns="http://www.w3.org/2000/svg" width="21" height="21"
@@ -314,13 +314,14 @@ const Navbar = () => {
                         </>}
                     </div>
                     <div className="navbar__mobile__div__first">
-                        <div className="navbar__mobile__div__first__header" onClick={() => {
-                            setIsOpenMobile(!isOpenMobile)
-                        }}>
-                            <h4>
+                        <div className="navbar__mobile__div__first__header">
+                            <h4  onClick={()=>window.location.href='/our-approach'}>
                                 Who We Are
                             </h4>
                             <svg
+                                onClick={() => {
+                                    setIsOpenMobile(!isOpenMobile)
+                                }}
                                 className={`${isOpenMobile ? '' : 'svgOpen'} `}
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none">
