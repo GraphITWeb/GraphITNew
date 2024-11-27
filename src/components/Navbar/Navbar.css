@@ -57,7 +57,7 @@ a small,.navbar__pc div small{
 a small,.navbar__pc div small{
     color: var(--white);
 }
-a small::after,.navbar__pc div small::after {
+a::after,.navbar__pc div::after {
     content: "";
     position: absolute;
     bottom: -4px;
@@ -69,7 +69,7 @@ a small::after,.navbar__pc div small::after {
     transition: width 0.2s ease-in-out;
 }
 
-a small:hover::after,.navbar__pc div small:hover::after  {
+a:hover::after,.navbar__pc div:hover::after  {
     width: 100%;
 }
 .svgOpen{
@@ -88,11 +88,14 @@ a small:hover::after,.navbar__pc div small:hover::after  {
     align-items: flex-start;
     gap: 16px!important;
     border-radius: 12px;
-    border: 1px solid var(--light-blue);
+    border: 1px solid var(--light-blue) !important;
     background: rgba(18, 18, 46, 0.70);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     text-align: center;
+}
+.navbar__open::after{
+    opacity: 0!important;
 }
 .navbar__open span{
     width: 36px!important;

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Illustration from "@/assets/CaseTest.jpg";
 import AI from "@/assets/AI.jpg";
-import Netflix2 from "@/assets/Netflix2.jpg";
+import Netflix from "@/assets/Netflix.jpg";
 import Case4 from "@/assets/Case4Main.jpg";
 import Button from "@/components/Button/Button";
 import './CRM.css';
@@ -131,7 +131,7 @@ const CRM = () => {
                             </svg>
                         </div>
                         <Image
-                            src={Netflix2}
+                            src={Netflix}
                             alt="Illustration"
                             className={`w-full CRM__block__image ${visible ? 'visible' : ''}`}
                         />

@@ -1,12 +1,12 @@
 'use client'
 import People from "@/components/our-people/People/People";
 import React, {useRef} from "react";
-import Sviat from '../../../assets/Sviat.png'
-import Max from '../../../assets/Max.png';
-import Nick from "../../../assets/Nick.png";
-import Mykola from '../../../assets/Kolya.png'
-import Sasha from '../../../assets/Sasha.png'
-import Viktoriia from '../../../assets/Viktoriia.png'
+import Sviat from '../../../assets/our-people/Sviat.png'
+import Max from '../../../assets/our-people/Max.png';
+import Nick from "../../../assets/our-people/Nick.png";
+import Mykola from '../../../assets/our-people/Kolya.png'
+import Sasha from '../../../assets/our-people/Sasha.png'
+import Viktoriia from '../../../assets/our-people/Viktoriia.png'
 
 import './OurPeopleBlock.css'
 const OurPeopleBlock = () =>{

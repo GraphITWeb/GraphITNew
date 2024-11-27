@@ -12,7 +12,7 @@
 }
 .business {
     align-items: flex-start;
-    background: url("../../../assets/CTA.png") no-repeat center center;
+    background: url("../../../assets/elements/CTA.png") no-repeat center center;
     background-size: cover;
     gap: 80px;
 }
@@ -21,7 +21,7 @@
 }
 @media screen and (max-width: 768px) {
     .business{
-        background: url("../../../assets/CTAMobile.png") no-repeat center center;
+        background: url("../../../assets/elements/CTAMobile.png") no-repeat center center;
         background-size: cover;
     }
     .business{

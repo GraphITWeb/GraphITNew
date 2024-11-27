@@ -1,9 +1,9 @@
 'use client'
 import './home.css'
-import Ales from '../../assets/Ales.jpg'
-import Nima from '../../assets/Nima Photo.jpg'
-import Pavel from '../../assets/Pavel.png'
-import Ruslan from '../../assets/Ruslan Kravets Photo.jpeg'
+import Ales from '../../assets/home/Ales.jpg'
+import Nima from '../../assets/home/Nima.jpg'
+import Pavel from '../../assets/home/Pavel.png'
+import Ruslan from '../../assets/home/Ruslan.jpeg'
 
 import Business from "@/components/Home/Business/Business";
 import Companies from "@/components/Home/Companies/Companies";
