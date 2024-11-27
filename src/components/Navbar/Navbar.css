@@ -100,14 +100,15 @@ a:hover::after,.navbar__pc div:hover::after  {
 .navbar__open span{
     width: 36px!important;
     height: 36px!important;
-    span{
-        width: 24px!important;
-        height: 24px!important;
-        svg{
-            width: 14px!important;
-            height: 14px!important;
-        }
-    }
+}
+.navbar__open span span{
+    width: 24px!important;
+    height: 24px!important;
+
+}
+.navbar__open span span svg{
+    width: 14px!important;
+    height: 14px!important;
 }
 .navbar__open a:hover{
     border-radius: 4px;

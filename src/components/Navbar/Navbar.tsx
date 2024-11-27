@@ -5,14 +5,14 @@ import Link from "next/link";
 import Button from "@/components/Button/Button";
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
     const [isOpenMobile, setIsOpenMobile] = useState(false)
     const dropdownRef = useRef<HTMLDivElement>(null);
     const [mobileOpen, setMobileOpen] = useState(false);
     const handleClickOutside = (event: MouseEvent) => {
         if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-            setIsOpen(true);
+            setIsOpen(false);
         }
     };
 
