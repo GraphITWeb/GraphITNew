@@ -31,11 +31,11 @@ export default function Page() {
                 <div className="fade__reinvent"/>
                 <svg className="pc" style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2" height="177"
                      viewBox="0 0 2 177" fill="none">
-                    <path d="M1 1L1.00001 176" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                    <path d="M1 1L1.00001 176" stroke="#F23704" strokeLinecap="round" strokeDasharray="6 6"/>
                 </svg>
                 <svg className="mobile" style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2"
                      height="100" viewBox="0 0 2 100" fill="none">
-                    <path d="M1 1L1 99" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                    <path d="M1 1L1 99" stroke="#F23704" strokeLinecap="round" strokeDasharray="6 6"/>
                 </svg>
                 <div>
                     <StepSVG/>
@@ -52,11 +52,11 @@ export default function Page() {
                      fill="none">
                     <path
                         d="M1 1V155.912C1 162.54 6.37258 167.912 13 167.912H709C715.627 167.912 721 173.285 721 179.912V285"
-                        stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                        stroke="#F23704" strokeLinecap="round" strokeDasharray="6 6"/>
                 </svg>
                 <svg className="mobile" style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
                      fill="none">
-                    <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                    <path d="M1 1L0.999997 65" stroke="#F23704" strokeLinecap="round" strokeDasharray="6 6"/>
                 </svg>
                 <div style={{marginLeft: 'auto'}}>
                     <StepSVG/>
@@ -75,11 +75,11 @@ export default function Page() {
                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 362 274" fill="none">
                     <path
                         d="M1 273L1 125.14C1 118.513 6.37258 113.14 13 113.14L349 113.14C355.627 113.14 361 107.768 361 101.14L361 1"
-                        stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                        stroke="#F23704" strokeLinecap="round" strokeDasharray="6 6"/>
                 </svg>
                 <svg className="mobile" style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
                      fill="none">
-                    <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                    <path d="M1 1L0.999997 65" stroke="#F23704" strokeLinecap="round" strokeDasharray="6 6"/>
                 </svg>
                 <div style={{marginRight: 'auto', marginLeft: 'auto'}}>
                     <StepSVG/>
@@ -94,14 +94,14 @@ export default function Page() {
                 </div>
                 <svg className="mobile" style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
                      fill="none">
-                    <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                    <path d="M1 1L0.999997 65" stroke="#F23704" strokeLinecap="round" strokeDasharray="6 6"/>
                 </svg>
                 <svg className="pc" style={{marginLeft: 15, width: '25vw'}} xmlns="http://www.w3.org/2000/svg"
                      viewBox="0 0 362 274"
                      fill="none">
                     <path
                         d="M1 273L1 125.14C1 118.513 6.37258 113.14 13 113.14L349 113.14C355.627 113.14 361 107.768 361 101.14L361 1"
-                        stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                        stroke="#F23704" strokeLinecap="round" strokeDasharray="6 6"/>
                 </svg>
                 <div>
                     <StepSVG/>
@@ -116,14 +116,14 @@ export default function Page() {
                 </div>
                 <svg className="mobile" style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2" height="66" viewBox="0 0 2 66"
                      fill="none">
-                    <path d="M1 1L0.999997 65" stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                    <path d="M1 1L0.999997 65" stroke="#F23704" strokeLinecap="round" strokeDasharray="6 6"/>
                 </svg>
                 <svg className="pc" style={{marginLeft: 15, width: '50vw'}} xmlns="http://www.w3.org/2000/svg"
                      viewBox="0 0 722 262"
                      fill="none">
                     <path
                         d="M1 1L1 141.807C1 148.434 6.37258 153.807 13 153.807L709 153.807C715.627 153.807 721 159.18 721 165.807V261"
-                        stroke="#F23704" stroke-linecap="round" stroke-dasharray="6 6"/>
+                        stroke="#F23704" strokeLinecap="round" strokeDasharray="6 6"/>
                 </svg>
                 <div style={{marginLeft: 'auto'}}>
                     <StepSVG/>

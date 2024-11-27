@@ -8,7 +8,7 @@ export default function stepSvg(){
             <defs>
                 <filter id="filter0_dd_1723_10069" x="0" y="0" width="32" height="32"
                         filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                     <feColorMatrix in="SourceAlpha" type="matrix"
                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                     <feMorphology radius="4" operator="dilate" in="SourceAlpha"
