@@ -137,8 +137,8 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                         <p>{career.description}</p>
                         <h4>Responsibilities</h4>
                         <div>
-                            {career.responsibilities.map((responsibility) =>
-                                <div style={{display: "flex", flexDirection: "row", gap: 8}}>
+                            {career.responsibilities.map((responsibility,index) =>
+                                <div key={index} style={{display: "flex", flexDirection: "row", gap: 8}}>
                                     <p> &#9679;</p>
                                     <p>{responsibility}</p>
                                 </div>
@@ -146,8 +146,8 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                         </div>
                         <h4>Requirements</h4>
                         <div>
-                            {career.requirements.map((requirement) =>
-                                <div style={{display: "flex", flexDirection: "row", gap: 8}}>
+                            {career.requirements.map((requirement,index) =>
+                                <div key={index} style={{display: "flex", flexDirection: "row", gap: 8}}>
                                     <p> &#9679;</p>
                                     <p>{requirement}</p>
                                 </div>
@@ -155,8 +155,8 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                         </div>
                         <h4>Preferred Qualifications</h4>
                         <div>
-                            {career.qualifications.map((quality) =>
-                                <div style={{display: "flex", flexDirection: "row", gap: 8}}>
+                            {career.qualifications.map((quality,index) =>
+                                <div key={index} style={{display: "flex", flexDirection: "row", gap: 8}}>
                                     <p> &#9679;</p>
                                     <p>{quality}</p>
                                 </div>
