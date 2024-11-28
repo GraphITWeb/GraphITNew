@@ -4,7 +4,6 @@ import React, {useState} from "react";
 import Button from "@/components/UI/Button/Button";
 import Input from "@/components/UI/Input/Input";
 
-
 const Footer = () => {
     const [email, setEmail] = useState("");
     return (
