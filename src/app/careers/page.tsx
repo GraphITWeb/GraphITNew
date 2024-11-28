@@ -1,7 +1,7 @@
 import Main from "@/components/Main/Main";
 import React from "react";
 import Image from "next/image";
-import CareersImage from "@/assets/Careers.jpg";
+import CareersImage from "@/assets/Careers.webp";
 import './Careers.css'
 import CareersList from "@/components/Careers/CareersList/CareersList";
 export default function Careers() {

@@ -1,6 +1,6 @@
 'use client'
 import Main from "@/components/Main/Main";
-import Case from '../../assets/CaseCommerce.jpg'
+import Case from '../../assets/CaseCommerce.webp'
 import Image from "next/image";
 import React from "react";
 
