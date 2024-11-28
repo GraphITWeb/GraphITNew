@@ -2,7 +2,7 @@
 import './Sticky.css'
 import {useEffect, useState} from "react";
 
-const Copilots = () => {
+const DataPlatform = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     const handleScroll = () => {
@@ -32,26 +32,27 @@ const Copilots = () => {
                 opacity: isVisible ? 1 : 0,
                 whiteSpace: "word-wrap",
             }}>
-                Transform Your Platform
+                Transform Your<br/> Data
+
             </h1>
 
             <div className="unlocked_block" style={{marginTop: '1vh'}}>
                 <strong style={{color: 'var(--text-gray)'}}>
-                    <span style={{color: "var(--orange)"}}>Artificial Intelligence </span> is
-                    changing the way users interact with technology, creating demand for tools that simplify complex data and deliver actionable insights. However, many platforms struggle to provide a user-friendly experience, leaving end-users overwhelmed by inaccessible information.</strong>
-                </div>
+                    Data is an integral part to decision-making, but scattered and siloed information limits its potential. Our Data Platform solutions bring everything together into a unified, high-performance system, enabling real-time insights that fuel smarter decisions and operational efficiency. A sustainable, scalable data platform is key to AI readiness, and we help you build that foundation.
+                </strong>
+            </div>
             <div className="unlocked_block" style={{marginLeft:'auto'}}>
                 <strong style={{color: 'var(--text-gray)'}}>
-                    Our AI Copilot service addresses this challenge by embedding intelligent, conversational assistants directly into your platforms. These copilots are tailored to your users’ needs, enabling them to interact with your system more naturally, uncover insights effortlessly, and drive value from every interaction.
+                    At Graphit, we take a transformative approach. Our Data Platforms are embedded with a deep understanding of the client&#39;s existing architecture and aligned with best practices for AI readiness, integrating diverse data into one cohesive system. This streamlined infrastructure drives operational gains, improves decision accuracy, and enables predictive capabilities, all while reducing complexity and cutting costs.
                 </strong>
             </div>
             <div className="unlocked_block" style={{marginRight: 'auto',marginBottom: '60vh'}}>
                 <strong style={{color: 'var(--text-gray)'}}>
-                    We partner with you through every stage of the AI Copilot journey — from designing an intuitive user interface and integrating advanced AI models to deploying scalable solutions. At Graphit, we go beyond simply improving platform functionality — we pride ourselves for creating an engaging, empowering experience that sets your product apart and drives real value for your users.
+                    We guide you all the way from designing architecture and integrating data sources to deploying a scalable platform. Our goal is to create an efficient data environment that powers innovation, helps you adapt quickly, and drives long-term growth. With Graphit, you’re not just implementing a data solution — you’re transforming your operations with a resilient, scalable platform that drives sustained success and prepares your business for the AI future.
                 </strong>
             </div>
         </div>
     );
 }
 
-export default Copilots;
+export default DataPlatform;
