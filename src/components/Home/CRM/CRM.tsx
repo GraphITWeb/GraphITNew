@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import CaseLegal from "@/assets/CaseLegal.webp";
+import CaseLegal from "@/assets/CaseLegalMain.webp";
 import AI from "@/assets/CaseAI.webp";
 import Netflix from "@/assets/CaseNetflix.webp";
 import CaseCommerce from "@/assets/CaseCommerce.webp";
