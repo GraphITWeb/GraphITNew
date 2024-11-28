@@ -1,6 +1,6 @@
 'use client'
 import Main from "@/components/Main/Main";
-import Case from '../../assets/Netflix.jpg'
+import Case from '../../assets/CaseNetflix.webp'
 import Image from "next/image";
 import React from "react";
 

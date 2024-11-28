@@ -1,8 +1,8 @@
 'use client';
 import Image from "next/image";
 import CaseLegal from "@/assets/CaseLegal.webp";
-import AI from "@/assets/AI.webp";
-import Netflix from "@/assets/Netflix.jpg";
+import AI from "@/assets/CaseAI.webp";
+import Netflix from "@/assets/CaseNetflix.webp";
 import CaseCommerce from "@/assets/CaseCommerce.webp";
 import Button from "@/components/UI/Button/Button";
 import './CRM.css';
