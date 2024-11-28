@@ -42,7 +42,6 @@ const CareersList: React.FC<ListProps> = ({name}) => {
                               country={career.country}
                               description={career.shortDescription}
                               time={career.time}
-                              salary={career.salary}
                               setActiveCareers={()=>setActiveCareers(index)}
                               key={index}
                 />

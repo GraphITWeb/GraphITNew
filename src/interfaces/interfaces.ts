@@ -17,7 +17,6 @@ export interface ICareer {
     country:string;
     description:string;
     time:string;
-    salary:string;
     responsibilities:string[];
     requirements:string[];
     qualifications:string[];
