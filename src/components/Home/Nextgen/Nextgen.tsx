@@ -2,9 +2,9 @@
 import './Nextgen.css'
 import Image from "next/image";
 import React, {useEffect, useRef, useState} from "react";
-import NextGenImage from "../../../assets/home/NextGen.jpg";
-import AICopilots from "../../../assets/home/AICopilot.jpg";
-import BigData from "../../../assets/home/BigData.jpg";
+import NextGenImage from "../../../assets/home/NextGen.webp";
+import AICopilots from "../../../assets/home/AICopilot.webp";
+import BigData from "../../../assets/home/BigData.webp";
 import Button from "@/components/UI/Button/Button";
 import useMobile from "@/hooks/useMobile";
 
