@@ -4,7 +4,7 @@ import "./case-study.css";
 import React from "react";
 import Navbar from "@/components/UI/Navbar/Navbar";
 import Footer from "@/components/UI/Footer/Footer";
-
+import {useReportWebVitals} from "next/web-vitals";
 
 export const metadata: Metadata = {
     title: "Graphit",

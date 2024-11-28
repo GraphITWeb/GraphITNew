@@ -4,9 +4,13 @@ import Image from "next/image";
 import CareersImage from "@/assets/Careers.webp";
 import './Careers.css'
 import CareersList from "@/components/Careers/CareersList/CareersList";
+import Head from "next/head";
 export default function Careers() {
     return (
         <>
+            <Head>
+                <link rel="preload" href="../../assets/Careers.webp" as="image" />
+            </Head>
             <div className="flex flex-col items-center justify-items-center">
                 <Main subText="Careers" header="Where People Drive Progress"
                       description="Join a team where innovation meets opportunity. Explore a culture that empowers you to grow, lead, and make a lasting impact."
