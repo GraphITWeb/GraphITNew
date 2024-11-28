@@ -38,13 +38,6 @@ const Transform = () => {
                     Together with you, we build, deploy, and scale cutting-edge Generative AI solutions that drive unparalleled impact for your business and society. Artificial Intelligence is reshaping industries, creating new opportunities, and driving measurable business impact. Yet, many companies find it challenging to fully realize its potential due to outdated tools or misalignment between technology and business strategy.
                 </strong>
             </div>
-
-            <div className="unlocked_block" style={{marginLeft: 'auto'}}>
-                <strong style={{color: 'var(--text-gray)'}}>
-                    <span style={{color:"var(--orange)"}}>Artificial Intelligence (AI)</span> is reshaping
-                    industries, creating new opportunities, and driving measurable business impact. Yet, many companies find it challenging to fully realize its potential due to outdated tools or misalignment between technology and business strategy.
-                </strong>
-            </div>
             <div className="unlocked_block" style={{marginRight:'auto'}}>
                 <strong style={{color: 'var(--text-gray)'}}>
                     At Graphit, we take a fresh approach. Our Next-Gen AI Transformation offering is built to help businesses reimagine their operations and achieve sustainable growth through tailored Generative AI solutions. By aligning AI with your strategic vision, we turn complexity into clarity and innovation into results.
