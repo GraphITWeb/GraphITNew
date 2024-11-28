@@ -3,12 +3,12 @@ import './who-we-are.css';
 import Image from "next/image";
 import Main from "@/components/Main/Main";
 import OurVision from "@/components/who-we-are/OurVision/OurVision";
-import FutureImage from '../../assets/approach/Future.jpg'
-import Tailored from '../../assets/approach/Tailored.jpg'
-import Boutique from '../../assets/approach/Boutique.jpg'
+import FutureImage from '../../assets/approach/Future.webp'
+import Tailored from '../../assets/approach/Tailored.webp'
+import Boutique from '../../assets/approach/Boutique.webp'
 import Posts from "@/components/what-we-do/Posts/Posts";
-import Google from '../../assets/approach/Google.png';
-import AWS from '../../assets/approach/AWS.jpg';
+import Google from '../../assets/approach/Google.webp';
+import AWS from '../../assets/approach/AWS.webp';
 
 export default function WhoWeArePage() {
     return (

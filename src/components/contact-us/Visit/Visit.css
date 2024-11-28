@@ -5,7 +5,7 @@
     gap: 142px;
     align-self: stretch;
     /*background: var(--surface-blue);*/
-    background: url("../../../assets/elements/CTA.png") no-repeat center center;
+    background: url("../../../assets/elements/CTA.webp") no-repeat center center;
     background-size: cover;
     width: 100%;
 }
@@ -41,7 +41,7 @@
         gap: 40px;
         background: var(--surface-blue);
         flex-direction: column;
-        background: url("../../../assets/elements/CTAMobile.png") no-repeat center center;
+        background: url("../../../assets/elements/CTAMobile.webp") no-repeat center center;
         background-size: cover;
     }
 

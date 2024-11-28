@@ -8,7 +8,7 @@
     z-index: 1;
     position: relative;
     width: 100vw;
-    background: url("../../../assets/elements/CTA.png") no-repeat center center;
+    background: url("../../../assets/elements/CTA.webp") no-repeat center center;
     background-size: cover;
     gap: 80px;
 }
@@ -17,7 +17,7 @@
 }
 @media screen and (max-width: 768px) {
     .ToContact{
-        background: url("../../../assets/elements/CTAMobile.png") no-repeat center center;
+        background: url("../../../assets/elements/CTAMobile.webp") no-repeat center center;
         background-size: cover;
     }
     .ToContact{
