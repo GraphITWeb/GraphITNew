@@ -36,26 +36,24 @@ const Unlocked = () => {
             </h1>
 
             <div className="unlocked_block" style={{marginTop:'1vh'}}>
-                <h3>Understanding
-                    <div><h3>Your Needs</h3></div>
-                </h3>
+                <h5>Understanding<span> Your Needs</span>
+                </h5>
                 <strong style={{ color: 'var(--text-gray)' }}>
                     We begin by immersing ourselves in your organization’s strategic landscape, engaging with key stakeholders to identify unique challenges and goals. This foundational phase ensures that our AI-driven solutions are precisely aligned with your business vision.                </strong>
             </div>
 
             <div className="unlocked_block" style={{marginLeft:'auto'}}>
-                <h3>Identifying
-                    <div><h3>Opportunities</h3></div>
-                </h3>
+                <h5>Identifying<span>Opportunities</span>
+                </h5>
                 <strong style={{ color: 'var(--text-gray)' }}>
                     Leveraging our expertise in AI and analytics, we uncover hidden opportunities within your operations. From streamlining workflows to enhancing decision-making, we reveal areas where intelligent solutions can drive significant impact.
                 </strong>
             </div>
 
             <div className="unlocked_block" style={{marginBottom:'50vh'}}>
-                <h3>Creating
-                    <div><h3>Success Roadmap</h3></div>
-                </h3>
+                <h5>Creating
+                    <span>Success Roadmap</span>
+                </h5>
                 <strong style={{ color: 'var(--text-gray)' }}>
                     We craft a comprehensive roadmap that integrates AI and big data seamlessly into your business. Designed for flexibility and scalability, our approach ensures that each phase - from discovery to implementation - delivers measurable results and supports your long-term strategy.
                 </strong>

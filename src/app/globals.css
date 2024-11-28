@@ -208,14 +208,19 @@ small {
     text-align: justify;
 }
 
-.unlocked_block h3 {
+.unlocked_block h5 {
     color: var(--orange);
     display: flex;
     flex-direction: row;
     gap: 8px;
+    font-family: var(--figtree);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
 }
 
-.unlocked_block h3 div h3 {
+.unlocked_block h5 span {
     color: var(--white);
 }
 
@@ -334,6 +339,9 @@ small {
     .unlocked_block {
         width: Calc(100vw - 64px);
         padding: 20px;
+    }
+    .unlocked_block h5{
+        font-size: 24px;
     }
     h3{
         font-size: 24px;

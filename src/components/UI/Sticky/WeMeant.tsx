@@ -34,9 +34,7 @@ const WeMeant = () => {
             }}>WE MEANT IT WHEN WE SAID</h1>
 
             <div className="unlocked_block" style={{marginTop: '1vh'}}>
-                <h3>
-                    <div><h3 style={{color:"var(--orange)"}}>Innovate</h3></div>
-                </h3>
+                <h5>Innovate</h5>
                 <strong style={{color: 'var(--text-gray)'}}>
                     Push boundaries and unlock new horizons. At Graphit, innovation is more than a buzzword—it’s our way
                     of building intelligent, forward-thinking solutions that help organizations stay ahead in a rapidly
@@ -44,9 +42,7 @@ const WeMeant = () => {
             </div>
 
             <div className="unlocked_block" style={{marginLeft: 'auto'}}>
-                <h3>
-                    <div><h3 style={{color:"var(--orange)"}}>Redefine</h3></div>
-                </h3>
+                <h5>Redefine</h5>
                 <strong style={{color: 'var(--text-gray)'}}>
                     Reimagine what’s achievable by setting ambitious goals and carving out clear paths to success. We
                     work with our clients to refine strategies, clarify objectives, and design actionable steps that
@@ -55,9 +51,7 @@ const WeMeant = () => {
             </div>
 
             <div className="unlocked_block" style={{marginBottom: '50vh'}}>
-                <h3>
-                    <div><h3 style={{color:"var(--orange)"}}>Transform</h3></div>
-                </h3>
+                <h5>Transform</h5>
                 <strong style={{color: 'var(--text-gray)'}}>
                     Turn potential into reality. We identify untapped opportunities, leverage existing strengths, and
                     deploy AI-driven insights that enable lasting transformation, unlocking new levels of impact for our
