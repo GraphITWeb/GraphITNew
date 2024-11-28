@@ -11,7 +11,7 @@ export default function Careers() {
                 <Main subText="Careers" header="Where People Drive Progress"
                       description="Join a team where innovation meets opportunity. Explore a culture that empowers you to grow, lead, and make a lasting impact."
                       />
-                <Image src={CareersImage} className="careers__image" alt="Careers"/>
+                <Image priority={true} src={CareersImage} className="careers__image" alt="Careers"/>
                 <CareersList name='Open Positions'/>
             </div>
         </>

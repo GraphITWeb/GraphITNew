@@ -1,9 +1,9 @@
 'use client';
 import Image from "next/image";
-import Illustration from "@/assets/CaseTest.jpg";
+import CaseLegal from "@/assets/CaseLegal.jpg";
 import AI from "@/assets/AI.jpg";
 import Netflix from "@/assets/Netflix.jpg";
-import Case4 from "@/assets/Case4Main.jpg";
+import CaseCommerce from "@/assets/CaseCommerce.jpg";
 import Button from "@/components/UI/Button/Button";
 import './CRM.css';
 import {useEffect, useRef, useState} from "react";
@@ -97,7 +97,7 @@ const CRM = () => {
                             </svg>
                         </div>
                         <Image
-                            src={Illustration}
+                            src={CaseLegal}
                             alt="Illustration"
                             className={`w-full CRM__block__image ${visible ? 'visible' : ''}`}
                         />
@@ -194,7 +194,7 @@ const CRM = () => {
                             </svg>
                         </div>
                         <Image
-                            src={Case4}
+                            src={CaseCommerce}
                             alt="Illustration"
                             className={`w-full CRM__block__image ${visible ? 'visible' : ''}`}
                         />

@@ -3,7 +3,7 @@
     padding: 50px 80px 96px 80px;
 }
 .offering__info__block{
-    background: url("../../../assets/OfferingInfo.png") no-repeat center;
+    background: url("../../../assets/offering/OfferingInfo.png") no-repeat center;
     background-size: cover;
     display: flex;
     height: auto;

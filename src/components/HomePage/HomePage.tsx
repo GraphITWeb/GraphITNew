@@ -1,10 +1,5 @@
 'use client'
 import './home.css'
-import Ales from '../../assets/home/Ales.jpg'
-import Nima from '../../assets/home/Nima.jpg'
-import Pavel from '../../assets/home/Pavel.png'
-import Ruslan from '../../assets/home/Ruslan.jpeg'
-
 import Business from "@/components/Home/Business/Business";
 import Companies from "@/components/Home/Companies/Companies";
 import CRM from "@/components/Home/CRM/CRM";
@@ -13,7 +8,10 @@ import Unlocked from "@/components/Home/Unlocked/Unlocked";
 import FeedbackItem from "@/components/Home/FeedbackItem/FeedbackItem";
 import React, {useEffect, useRef, useState} from "react";
 import Button from "@/components/UI/Button/Button";
-
+import Ales from '../../assets/home/Ales.jpg'
+import Nima from '../../assets/home/Nima.jpg'
+import Pavel from '../../assets/home/Pavel.png'
+import Ruslan from '../../assets/home/Ruslan.jpeg'
 const HomePage = () => {
     const [slideOut, setSlideOut] = useState(false)
     useEffect(() => {
