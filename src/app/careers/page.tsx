@@ -1,6 +1,7 @@
 import Main from "@/components/Main/Main";
 import React from "react";
 import './Careers.css'
+import CareersImage from "@/assets/Careers.webp";
 import CareersList from "@/components/Careers/CareersList/CareersList";
 import Image from 'next/image'
 export default function Careers() {
@@ -12,9 +13,11 @@ export default function Careers() {
                       description="Join a team where innovation meets opportunity. Explore a culture that empowers you to grow, lead, and make a lasting impact."
                 />
                 <Image
-                    src="/assets/Careers.webp"
+                    src={CareersImage}
                     className="careers__image"
                     alt="Careers"
+                    width={2000}
+                    height={1333}
                     priority
                 />
                 <CareersList name='Open Positions'/>
