@@ -18,7 +18,8 @@ export default function Careers() {
                     alt="Careers"
                     width={2000}
                     height={1333}
-                    priority
+                    priority={true}
+                    loading={'eager'}
                 />
                 <CareersList name='Open Positions'/>
             </div>
