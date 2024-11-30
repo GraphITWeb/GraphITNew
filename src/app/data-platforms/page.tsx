@@ -40,11 +40,11 @@ export default function Page() {
                     <StepSVG/>
                     <div>
                         <h3>
-                            Data Extraction
+                            Envision Governance Strategy
                         </h3>
                         <p>
-                            texttexttexttexttexttexttexttexttexttexttexttexttexttexttext
-                            texttexttexttexttexttexttexttexttexttexttext
+                            We establish a comprehensive data governance strategy to ensure security, compliance, and
+                            data integrity, scaling frameworks for effective data management across your platform.
                         </p>
                     </div>
                 </div>
@@ -64,11 +64,12 @@ export default function Page() {
                     <StepSVG/>
                     <div>
                         <div>
-                            <h3>Cloud-Native Storage
+                            <h3>
+                                Pilot Data Pipelines
                             </h3>
                             <p>
-                                texttexttexttexttexttexttexttexttexttexttexttexttexttexttext
-                                texttexttexttexttexttexttexttexttexttexttext
+                                We develop and test initial extraction pipelines, verifying that the solutions are
+                                effective and fulfill your data requirements.
                             </p>
                         </div>
                     </div>
@@ -88,11 +89,11 @@ export default function Page() {
                     <StepSVG/>
                     <div>
                         <h3>
-                            Data Processing
+                            Architect Scalable Cloud Storage
                         </h3>
                         <p>
-                            texttexttexttexttexttexttexttexttexttexttexttexttexttexttext
-                            texttexttexttexttexttexttexttexttexttexttext
+                            We create scalable, secure cloud-native storage solutions that deliver seamless access, high
+                            availability, and compliance, optimising as your data needs grow.
                         </p>
                     </div>
                 </div>
@@ -112,11 +113,12 @@ export default function Page() {
                     <StepSVG/>
                     <div>
                         <h3>
-                            Data Governance
+                            Engineer Smart Data Processing
                         </h3>
                         <p>
-                            texttexttexttexttexttexttexttexttexttexttexttexttexttexttext
-                            texttexttexttexttexttexttexttexttexttexttext
+                            We design individually crafted data processing workflows, transforming and preparing your
+                            data for timely and accurate insights that adapt to your business goals.
+
                         </p>
                     </div>
                 </div>
@@ -135,11 +137,13 @@ export default function Page() {
                 <div style={{marginLeft: 'auto'}}>
                     <StepSVG/>
                     <div>
-                        <h3>Advanced BI
+                        <h3>
+                            Chart The BI Path
                         </h3>
                         <p>
-                            texttexttexttexttexttexttexttexttexttexttexttexttexttexttext
-                            texttexttexttexttexttexttexttexttexttexttext
+                            We build and rollout Business Intelligence solutions that provide meaningful insights via
+                            interactive dashboards and models, constantly evolving to support data-driven
+                            decision-making.
                         </p>
                     </div>
                 </div>
@@ -148,7 +152,8 @@ export default function Page() {
                      fill="none">
                     <path d="M1 1L0.999997 65" stroke="#F23704" strokeLinecap="round" strokeDasharray="6 6"/>
                 </svg>
-                <svg className="pc" style={{marginLeft: 15, width: '50vw',transform:'rotateY(-180deg)'}} xmlns="http://www.w3.org/2000/svg"
+                <svg className="pc" style={{marginLeft: 15, width: '50vw', transform: 'rotateY(-180deg)'}}
+                     xmlns="http://www.w3.org/2000/svg"
                      viewBox="0 0 722 262"
                      fill="none">
                     <path
@@ -159,11 +164,35 @@ export default function Page() {
                     <StepSVG/>
                     <div>
                         <h3>
-                            Data Quality Frameworks
+                            Institute Quality Assurance
                         </h3>
                         <p>
-                            texttexttexttexttexttexttexttexttexttexttexttexttexttexttext
-                            texttexttexttexttexttexttexttexttexttexttext
+                            We prepare you for further growth today. By implementing advanced data quality frameworks
+                            that secure data accuracy and consistency, we ensure your data evolves as your business
+                            requirements grow and change.
+                        </p>
+                    </div>
+                </div>
+                <svg className="mobile" style={{marginLeft: 15}} xmlns="http://www.w3.org/2000/svg" width="2"
+                     height="66" viewBox="0 0 2 66"
+                     fill="none">
+                    <path d="M1 1L0.999997 65" stroke="#F23704" strokeLinecap="round" strokeDasharray="6 6"/>
+                </svg>
+                <svg className="pc" style={{marginLeft: 15, width: '50vw'}} xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 722 262"
+                     fill="none">
+                    <path
+                        d="M1 1L1 141.807C1 148.434 6.37258 153.807 13 153.807L709 153.807C715.627 153.807 721 159.18 721 165.807V261"
+                        stroke="#F23704" strokeLinecap="round" strokeDasharray="6 6"/>
+                </svg>
+                <div style={{marginLeft: 'auto'}}>
+                    <StepSVG/>
+                    <div>
+                        <h3>
+                            Ready. Set. AI
+                        </h3>
+                        <p>
+                            Without a solid data platform, AI is just a dream. With your platform fully prepared, we’re ready to deploy AI that uses your data to revolutionize the user experience.
                         </p>
                     </div>
                 </div>
