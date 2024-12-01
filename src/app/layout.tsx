@@ -1,6 +1,7 @@
 import type {Metadata} from "next";
 import "./globals.css";
-import "./case-study.css";
+import './Footer.css';
+import './Navbar.css'
 import React from "react";
 import Navbar from "@/components/UI/Navbar/Navbar";
 import Footer from "@/components/UI/Footer/Footer";

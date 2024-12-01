@@ -1,5 +1,5 @@
 "use client";
-import './Navbar.css';
+import '../../../app/Navbar.css';
 import React, {useEffect, useRef, useState} from "react";
 import Link from "next/link";
 import Button from "@/components/UI/Button/Button";
