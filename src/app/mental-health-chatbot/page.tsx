@@ -3,7 +3,7 @@ import Main from "@/components/Main/Main";
 import Case from '../../assets/CaseAI.webp'
 import Image from "next/image";
 import React from "react";
-import "../../case-study.css";
+import "../case-study.css";
 
 export default function Page() {
     return (
