@@ -181,16 +181,6 @@ small {
     height: 48px;
 }
 
-.sticky__text {
-    font-size: 120px;
-    text-Align: center;
-    position: -webkit-sticky;
-    position: sticky;
-    top: Calc(50vh - 80px);
-    left: 50%;
-    z-index: -1;
-    transition: opacity 0.5s ease;
-}
 
 .unlocked_block {
     border-radius: 16px;
@@ -261,9 +251,6 @@ small {
 }
 
 @media screen and (max-width: 992px) {
-    .sticky__text {
-        font-size: 120px;
-    }
 
     .unlocked_block {
         width: Calc(100vw - 160px);
@@ -271,10 +258,6 @@ small {
 }
 
 @media screen and (max-width: 800px) {
-    .sticky__text {
-        font-size: 110px;
-    }
-
     .unlocked_block {
         width: Calc(100vw - 120px);
     }
@@ -332,9 +315,6 @@ small {
     cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-    .sticky__text {
-        font-size: 90px;
-    }
     .unlocked_block {
         width: Calc(100vw - 64px);
         padding: 20px;
@@ -377,9 +357,6 @@ small {
 }
 
 @media screen and (max-width: 576px) {
-    .sticky__text {
-        font-size: 64px;
-    }
     h2 {
         font-size: 32px;
     }
@@ -401,11 +378,5 @@ small {
     }
     .reinvent div div p {
         margin-top: 8px;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .sticky__text {
-        font-size: 56px;
     }
 }
