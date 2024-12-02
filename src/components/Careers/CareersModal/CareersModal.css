@@ -56,6 +56,11 @@
     overflow: scroll;
     max-height: 100%;
 }
+.careers__modal__body::-webkit-scrollbar:horizontal {
+    width: 0;
+    opacity: 0;
+    height: 0;
+}
 
 .careers__modal__body h4 {
     margin-top: 16px;
