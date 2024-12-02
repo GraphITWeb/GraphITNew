@@ -1,9 +1,9 @@
 import React from 'react';
 import Main from "@/components/Main/Main";
 import OfferingBlock from "@/components/what-we-do/OfferingBlock/OfferingBlock";
-import Offering from "../../assets/offering/OfferingNextGen.png";
-import Offering2 from "../../assets/offering/OfferingCopilot.png";
-import OfferingData from "../../assets/offering/OfferingData.png";
+import Offering from "../../assets/offering/OfferingNextGen.webp";
+import Offering2 from "../../assets/offering/OfferingCopilot.webp";
+import OfferingData from "../../assets/offering/OfferingData.webp";
 import './WhatWeDo.css'
 import Posts from "@/components/what-we-do/Posts/Posts";
 export default function Page() {
