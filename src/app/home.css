@@ -200,6 +200,7 @@
     }
     to {
         top: -100vh;
+        display: none;
     }
 }
 
