@@ -11,14 +11,14 @@ import {Figtree, Hanken_Grotesk} from 'next/font/google';
 
 const figtree = Figtree({
     weight: ['400', '500', '600', '700'],
-    subsets: ["latin","latin-ext"],
+    subsets: ["latin"],
     display: 'swap',
     variable:'--figtree',
 
 });
 const hanken = Hanken_Grotesk({
-    weight: ['400', '500', '600', '700']
-    , subsets: ["latin","latin-ext","cyrillic-ext","vietnamese"],
+    weight: ['400', '500', '600', '700'],
+    subsets: ["latin"],
     display: 'swap',
     variable:'--hanken-grotesk'
 });
