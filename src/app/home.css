@@ -203,9 +203,7 @@
     }
 }
 
-.slide-out {
-    animation: slideOut 0.66s ease-out forwards;
-}
+
 @keyframes animateTo {
     from {
         top: 50%;
@@ -242,8 +240,9 @@
     align-items: center;
     justify-content: center;
     max-width: 100vw;
+    animation: slideOut 0.66s ease-out forwards;
+    animation-delay: 1.25s;
 }
-
 @media screen and (max-width: 1200px) {
     .get__started__innovate {
         transform: scale(0.8);
