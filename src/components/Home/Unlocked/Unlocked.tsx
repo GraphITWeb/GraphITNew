@@ -1,5 +1,6 @@
 'use client';
 import './Unlocked.css';
+import '../../UI/Sticky/Sticky.css'
 import { useEffect, useState } from "react";
 
 const Unlocked = () => {
