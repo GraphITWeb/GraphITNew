@@ -23,7 +23,7 @@ export default function Page() {
             <div className="textPadding">
                 <h2>
                     Redefine your success with
-                    <span> Data Platform</span>
+                    <span> Data Platforms</span>
                 </h2>
             </div>
             <div className="reinvent">
