@@ -69,6 +69,8 @@
     flex-shrink: 0;
     padding: 24px;
     height: 100%;
+}
+.people__flip-card-back small{
     text-align: justify;
 }
 
