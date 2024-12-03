@@ -22,7 +22,7 @@ export default function Page() {
             <Copilots/>
             <div className="textPadding">
                 <h2>
-                    Redefine your platform with
+                    Redefine your platform with an
                     <span> AI Copilots</span>
                 </h2>
             </div>
