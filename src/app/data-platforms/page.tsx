@@ -22,7 +22,7 @@ export default function Page() {
             <DataPlatform/>
             <div className="textPadding">
                 <h2>
-                    Redefine your platform with
+                    Redefine your success with
                     <span> Data Platform</span>
                 </h2>
             </div>
