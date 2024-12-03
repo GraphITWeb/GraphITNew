@@ -67,7 +67,7 @@
     background: var(--surface-blue);
     transform: rotateY(-180deg);
     flex-shrink: 0;
-    padding: 12px;
+    padding: 24px;
     height: 100%;
     text-align: justify;
 }
@@ -85,7 +85,9 @@
     .people__flip-card-back,.people__flip-card {
         height: Calc((100vw - 64px)*1.2);
     }
-
+    .people__flip-card-back{
+        padding: 16px;
+    }
 }
 
 
