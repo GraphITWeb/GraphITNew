@@ -3,6 +3,7 @@ import '../../../app/Footer.css';
 import React, {useState} from "react";
 import Button from "@/components/UI/Button/Button";
 import Input from "@/components/UI/Input/Input";
+import Link from "next/link";
 
 const Footer = () => {
     const [email, setEmail] = useState("");
@@ -45,11 +46,21 @@ const Footer = () => {
                 <div className='footer__second'>
                     <div className='flex flex-row gap-9'>
                         <div className="flex flex-col gap-4 footer__pages" style={{width: 200}}>
-                            <p onClick={() => window.location.href = '/what-we-do'}>What We Do</p>
-                            <p onClick={() => window.location.href = '/our-approach'}>Who We Are</p>
-                            <p onClick={() => window.location.href = '/case-studies'}>Case Studies</p>
-                            <p onClick={() => window.location.href = '/careers'}>Careers</p>
-                            <p onClick={() => window.location.href = '/contact-us'}>Contact us</p>
+                            <Link href='/what-we-do' style={{width:"min-content"}} >
+                                <p>What We Do</p>
+                            </Link>
+                            <Link href='/our-approach' style={{width: "min-content"}}>
+                                <p>Who We Are</p>
+                            </Link>
+                            <Link href='/case-studies' style={{width: "min-content"}}>
+                                <p>Case Studies</p>
+                            </Link>
+                            <Link href='/careers' style={{width: "min-content"}}>
+                                <p>Careers</p>
+                            </Link>
+                            <Link href='/contact-us' style={{width: "min-content"}}>
+                                <p>Contact us</p>
+                            </Link>
                         </div>
                         <div className="flex flex-col gap-4 footer__pages" style={{width: 200}}>
                             <p>Privacy Statement</p>
