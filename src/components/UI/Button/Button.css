@@ -37,34 +37,16 @@
     color: #F23704;
 }
 
-.myBtn.secondary {
-    background: #2c2c2c;
-    color: #F5F5F5;
-    width: auto;
-    padding: 12px;
-}
-.myBtn.secondary .myBtn__label {
-    color: #F5F5F5;
-    text-align: left;
-    font-weight: 400;
-}
-
 .disabled {
     background: #d7dceb;
     color: #696f7d;
     box-shadow: none;
     cursor: not-allowed;
 }
-.myBtn.secondary.disabled{
-    background: #d7dceb;
-    color: #696f7d;
-    box-shadow: none;
-    cursor: not-allowed;
-}
-.myBtn.secondary.disabled .myBtn__label {
-    color: #696f7d;
-}
 
 .disabled:hover {
     background: #d7dceb;
+}
+.button__href::after{
+    all: unset!important;
 }

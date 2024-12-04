@@ -1,4 +1,3 @@
-'use client'
 import './Companies.css'
 import React from "react";
 const Wizz = () => {

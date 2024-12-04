@@ -110,7 +110,7 @@ const CRM = () => {
                                     Handcrafted intelligent legal assistant that transforms how legal professionals access and use information. By turning complex legal data into instant, actionable insights, it empowers users to navigate over 100,000 legal cases and laws effortlessly—redefining the future of legal practice.
                                 </p>
                             </div>
-                            <Button onClick={() => window.location.href = '/case-studies'} label='See case studies'
+                            <Button href = '/case-studies' label='See case studies'
                                     btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>
                         </div>
                     </div>
@@ -141,7 +141,7 @@ const CRM = () => {
                                 <p>
                                     Bespoke cloud-agnostic, high-performance platform, transforming network reliability. The solution empowered the client to enhance user experience, secure high-profile streaming clients like Disney and Netflix, and open-up new revenue streams - redefining the standards of streaming service performance.  </p>
                             </div>
-                            <Button onClick={() => window.location.href = '/case-studies'} label='See case studies'
+                            <Button href='/case-studies' label='See case studies'
                                     btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>
                         </div>
                     </div>
@@ -174,7 +174,7 @@ const CRM = () => {
                                     AI-powered chatbot designed to make mental health support more accessible and effective. The platform permitted the client to offer human-like therapeutic interactions, boost user engagement and achieve scalable performance - setting a new standard for digital healthcare and broader wellness innovation.
                                 </p>
                             </div>
-                            <Button onClick={() => window.location.href = '/case-studies'} label='See case studies'
+                            <Button href='/case-studies' label='See case studies'
                                     btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>
                         </div>
                     </div>
@@ -207,7 +207,7 @@ const CRM = () => {
                                     Scalable data solution that reshaped the international e-commerce operations of a Fortune 500 member. Leveraging leading data frameworks, enabled to digitally transform the company, effectively refine their global strategies, and boost ROI - reimagining their paths to leadership in a highly competitive market
                                 </p>
                             </div>
-                            <Button onClick={() => window.location.href = '/case-studies'} label='See case studies'
+                            <Button href = '/case-studies' label='See case studies'
                                     btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>
                         </div>
                     </div>

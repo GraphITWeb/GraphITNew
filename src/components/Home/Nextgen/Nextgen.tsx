@@ -28,8 +28,7 @@ const Nextgen = () => {
                     top: scrollToPosition,
                     behavior: 'smooth',
                 });
-            }
-            else{
+            } else {
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-expect-error
                 const scrollToPosition = window.scrollY + top + (index * sectionRef.current.offsetHeight) / 3;
@@ -75,15 +74,14 @@ const Nextgen = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (nextgenRef.current&&isMobile) {
-                const { scrollLeft, scrollWidth, clientWidth } = nextgenRef.current;
-                const scrollPercent=(scrollLeft / (scrollWidth - clientWidth)) * 100
-                if(scrollPercent<33){
+            if (nextgenRef.current && isMobile) {
+                const {scrollLeft, scrollWidth, clientWidth} = nextgenRef.current;
+                const scrollPercent = (scrollLeft / (scrollWidth - clientWidth)) * 100
+                if (scrollPercent < 33) {
                     setActive(0)
-                }else if(scrollPercent<66){
+                } else if (scrollPercent < 66) {
                     setActive(1)
-                }
-                else{
+                } else {
                     setActive(2)
                 }
             }
@@ -104,7 +102,6 @@ const Nextgen = () => {
             }
         };
     }, []);
-
 
 
     return (
@@ -175,20 +172,14 @@ const Nextgen = () => {
                         <div className="nextgen__image">
                             <Image style={{width: '100%', height: '100%', borderRadius: 12}} src={images[active]}
                                    alt={''}/>
-                            <Button onClick={() => {
-                                if(active===0) {
-                                    window.location.href = '/next-gen'
-                                }
-                                else if(active===1) {
-                                    window.location.href = '/ai-copilots'
-                                }
-                                else {
-                                    window.location.href = '/data-platforms'
-                                }
-
-                            }} label={'Learn more'}
-                                    btnStyle={{padding: '12px 32px', position: "absolute", right: 24, bottom: 24}}
-                                    btnDivStyle={{fontSize: 18}}/>
+                            <Button
+                                href={
+                                    active === 0 ? '/next-gen'
+                                        : active === 1 ? '/ai-copilots'
+                                            : '/data-platforms'}
+                                label={'Learn more'}
+                                btnStyle={{padding: '12px 32px', position: "absolute", right: 24, bottom: 24}}
+                                btnDivStyle={{fontSize: 18}}/>
                         </div>
                     </div>
                 </div>

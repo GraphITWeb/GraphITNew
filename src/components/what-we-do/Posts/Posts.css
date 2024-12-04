@@ -28,6 +28,9 @@
     overflow: visible;
     cursor: pointer;
 }
+.what__we__do__post::after{
+    all: unset;
+}
 .what__we__do__post img{
     transition: scale 0.5s ease;
     border-radius: 24px;

@@ -42,7 +42,7 @@ const Navbar = () => {
     return (
         <>
             <nav>
-                <div className="nav__logo"
+                <Link href='/' className="nav__logo"
                      onClick={() => window.location.href = '/'} style={{cursor: 'pointer'}}>
                     <svg xmlns="http://www.w3.org/2000/svg" id="Layer_5" data-name="Layer 5"
                          viewBox="-128.079 9.715 161.778 182.78" width={37}>
@@ -55,7 +55,7 @@ const Navbar = () => {
                         <div>i</div>
                         t
                     </div>
-                </div>
+                </Link>
                 <div className="flex flex-row gap-10 navbar__pc">
                     <div ref={dropdownDoRef}
                          style={{

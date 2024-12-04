@@ -1,7 +1,7 @@
-'use client'
 import React from "react";
 import './OfferingBlock.css';
 import {StaticImageData} from "next/image";
+import Link from "next/link";
 
 interface OfferingBlockProps {
     imgBlock: StaticImageData;
@@ -12,11 +12,11 @@ interface OfferingBlockProps {
 
 const OfferingBlock: React.FC<OfferingBlockProps> = ({imgBlock, title, description,link}) => {
     return (
-        <div className="offering__block" style={{
+        <Link className="offering__block" style={{
             background: `url(${imgBlock.src}) no-repeat center center`,
             backgroundSize: "cover",
         }}
-             onClick={()=>{window.location.href=link}}
+             href={link}
         >
             <h3 >{title}</h3>
             <sub style={{color:'var(--white)'}}>{description}</sub>
@@ -26,7 +26,7 @@ const OfferingBlock: React.FC<OfferingBlockProps> = ({imgBlock, title, descripti
                     <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white"/>
                 </svg>
             </div>
-        </div>
+        </Link>
     );
 };
 

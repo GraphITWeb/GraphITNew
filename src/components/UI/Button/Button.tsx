@@ -1,11 +1,13 @@
 "use client";
+
 import './Button.css';
 import React from 'react';
+import Link from 'next/link';
 
 interface ButtonProps {
     label: string;
-    secondary?: boolean;
     onClick?: () => void;
+    href?: string;
     btnStyle?: React.CSSProperties;
     btnDivStyle?: React.CSSProperties;
     disabled?: boolean;
@@ -13,23 +15,22 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({
                                            label,
-                                           secondary = false,
                                            onClick,
+                                           href,
                                            btnStyle,
                                            btnDivStyle,
                                            disabled = false
                                        }) => {
-
     const handleClick = () => {
         if (!disabled && onClick) {
             onClick();
         }
     };
 
-    return (
+    const ButtonContent = (
         <button
             style={{ ...btnStyle }}
-            className={`myBtn ${secondary ? 'secondary' : ''} ${disabled ? 'disabled' : ''}`}
+            className={`myBtn ${disabled ? 'disabled' : ''}`}
             onClick={handleClick}
             disabled={disabled}
         >
@@ -38,6 +39,17 @@ const Button: React.FC<ButtonProps> = ({
             </div>
         </button>
     );
+
+    if (href) {
+        return (
+            <Link href={href} className="button__href" passHref>
+                {ButtonContent}
+            </Link>
+        );
+    }
+
+    return ButtonContent;
 };
 
 export default Button;
+

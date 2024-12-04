@@ -1,4 +1,3 @@
-'use client'
 import Main from "@/components/Main/Main";
 import Case from '../../assets/CaseLegal.webp'
 import Image from "next/image";

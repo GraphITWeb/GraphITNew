@@ -17,6 +17,9 @@
 .offering__block:hover{
     opacity: 1;
 }
+.offering__block::after{
+    all: unset;
+}
 
 .offering__block div sub {
 color: #fff;

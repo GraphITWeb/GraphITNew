@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import '../../../app/Footer.css';
 import React, {useState} from "react";
 import Button from "@/components/UI/Button/Button";
@@ -11,7 +11,7 @@ const Footer = () => {
         <>
             <footer>
                 <div className='footer__first'>
-                    <div onClick={()=>window.location.href='/'} className="flex flex-row gap-3 align-middle items-center text-center cursor-pointer">
+                    <Link href='/' className="flex flex-row gap-3 align-middle items-center text-center cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" id="Layer_5" data-name="Layer 5"
                              viewBox="-128.079 9.715 161.778 182.78" width={37}>
                             <path className="cls-2"
@@ -23,7 +23,7 @@ const Footer = () => {
                             <div>i</div>
                             t
                         </div>
-                    </div>
+                    </Link>
                     <div className="flex flex-row gap-4">
                         <div className="social__circle">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"

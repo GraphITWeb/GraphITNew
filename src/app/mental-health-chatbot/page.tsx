@@ -1,4 +1,3 @@
-'use client'
 import Main from "@/components/Main/Main";
 import Case from '../../assets/CaseAI.webp'
 import Image from "next/image";

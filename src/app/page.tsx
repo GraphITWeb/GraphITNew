@@ -1,5 +1,4 @@
 import './home.css'
-import SeeWhatWeDoButton from "@/components/Home/SeeWhatWeDoButton/SeeWhatWeDoButton";
 import Business from "@/components/Home/Business/Business";
 import Companies from "@/components/Home/Companies/Companies";
 import CRM from "@/components/Home/CRM/CRM";
@@ -7,6 +6,7 @@ import Nextgen from "@/components/Home/Nextgen/Nextgen";
 import Unlocked from "@/components/Home/Unlocked/Unlocked";
 import React from "react";
 import FeedbackBlock from "@/components/Home/FeedbackBlock/FeedbackBlock";
+import Button from "@/components/UI/Button/Button";
 export default function HomePage (){
     return (
         <>
@@ -1646,7 +1646,8 @@ export default function HomePage (){
                             drive
                             impact at scale. We are strategists, engineers, and innovators dedicated to solving the
                             world’s toughest challenges. We are Graphit. </p>
-                        <SeeWhatWeDoButton/>
+                        <Button href = '/what-we-do' label='See what we do'
+                                btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>
                     </div>
                 </div>
                 <CRM/>

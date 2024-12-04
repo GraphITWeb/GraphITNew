@@ -17,6 +17,10 @@ nav{
     width: 124px;
     transition: transform 0.75s ease-out;
 }
+.nav__logo::after {
+    all: unset!important;
+
+}
 .nav__logo__text{
     color: var(--white);
     font-family: var(--hanken-grotesk);

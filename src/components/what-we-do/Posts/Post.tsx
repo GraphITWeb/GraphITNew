@@ -2,10 +2,11 @@ import Image from "next/image";
 import React from "react";
 import './Posts.css';
 import {PostProps} from "@/interfaces/interfaces";
+import Link from "next/link";
 
 const Post: React.FC<PostProps> = ({imgPost, type, time, title, link, description, tags}) => {
     return (
-        <div className="what__we__do__post" onClick={()=>window.location.href=link}>
+        <Link className="what__we__do__post" href={link}>
             <Image src={imgPost} alt="Post"/>
             <div className="flex flex-row gap-2 items-center">
                 <small style={{color: 'var(--orange)'}}>{type}</small>
@@ -35,7 +36,7 @@ const Post: React.FC<PostProps> = ({imgPost, type, time, title, link, descriptio
                     padding:'2px 12px'
                 }}>{tag}</small>)}
             </div>
-        </div>
+        </Link>
     )
 }
 export default Post
