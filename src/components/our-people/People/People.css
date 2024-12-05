@@ -81,6 +81,9 @@
     height: 48px;
 }
 @media screen and (max-width: 768px) {
+    .people__flip-card-back small{
+        font-size: 13px!important;
+    }
     .people__info {
         padding: 20px;
     }
