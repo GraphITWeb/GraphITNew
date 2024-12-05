@@ -38,6 +38,10 @@ const Navbar = () => {
             document.removeEventListener('mousedown', handleClickOutsideDo);
         };
     }, []);
+    useEffect(()=>{
+       setIsOpen(false)
+        setIsOpenMobile(false)
+    },[])
 
     return (
         <>
