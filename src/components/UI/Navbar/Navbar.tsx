@@ -41,7 +41,7 @@ const Navbar = () => {
     useEffect(()=>{
        setIsOpen(false)
         setIsOpenMobile(false)
-    },[])
+    },[window.location])
 
     return (
         <>
