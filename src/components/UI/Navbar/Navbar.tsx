@@ -248,8 +248,9 @@ const Navbar = () => {
                             </svg>
                         </div>
                         {isOpenDoMobile && <>
-                            <div className="navbar__mobile__div__first__block"
-                                 onClick={() => window.location.href = '/next-gen'}>
+                            <Link className="navbar__mobile__div__first__block"
+                                  onClick={() => setMobileOpen(false)}
+                                  href = '/next-gen'>
                                 <div className="our__vision__svg">
                                     <div className="our__vision__svg__small" style={{width: 40, height: 40}}>
                                         <svg viewBox="0 0 24 24" fill="none"
@@ -273,9 +274,10 @@ const Navbar = () => {
                                 <div className="navbar__mobile__div__first__block__small">
                                     <h5>Next-Gen AI</h5>
                                 </div>
-                            </div>
-                            <div className="navbar__mobile__div__first__block"
-                                 onClick={() => window.location.href = '/ai-copilots'}>
+                            </Link>
+                            <Link className="navbar__mobile__div__first__block"
+                                  onClick={() => setMobileOpen(false)}
+                                  href = '/ai-copilots'>
                                 <div className="our__vision__svg">
                                     <div className="our__vision__svg__small" style={{width: 40, height: 40}}>
 
@@ -289,9 +291,12 @@ const Navbar = () => {
                                 <div className="navbar__mobile__div__first__block__small">
                                     <h5>AI Copilots</h5>
                                 </div>
-                            </div>
-                            <div className="navbar__mobile__div__first__block"
-                                 onClick={() => window.location.href = '/data-platforms'}>
+                            </Link>
+                            <Link className="navbar__mobile__div__first__block"
+                                  href='/data-platforms'
+                                  onClick={() => setMobileOpen(false)
+                            }
+                                 >
                                 <div className="our__vision__svg">
                                     <div className="our__vision__svg__small" style={{width: 40, height: 40}}>
                                         <svg viewBox="0 0 24 24" width={20} height={20}
@@ -313,13 +318,13 @@ const Navbar = () => {
                                 <div className="navbar__mobile__div__first__block__small">
                                     <h5>Data Platforms</h5>
                                 </div>
-                            </div>
+                            </Link>
                         </>}
                     </div>
                     <div className="navbar__mobile__div__first">
                         <div className="navbar__mobile__div__first__header">
                             <Link href='/our-approach'
-                                  onClick={() => setIsOpenMobile(false)}
+                                  onClick={() => setMobileOpen(false)}
                             >
                                 <h4>
                                     Who We Are
@@ -337,7 +342,7 @@ const Navbar = () => {
                         </div>
                         {isOpenMobile && <>
                             <Link href='/our-approach' style={{marginRight: 'auto'}}
-                                  onClick={() => setIsOpenMobile(false)}
+                                  onClick={() => setMobileOpen(false)}
                             >
                                 <div className="navbar__mobile__div__first__block">
                                     <div className="our__vision__svg">
@@ -357,7 +362,7 @@ const Navbar = () => {
                                 </div>
                             </Link>
                             <Link href='/our-values' style={{marginRight: 'auto'}}
-                                  onClick={() => setIsOpenMobile(false)}
+                                  onClick={() => setMobileOpen(false)}
                             >
 
                                 <div className="navbar__mobile__div__first__block">
@@ -378,7 +383,7 @@ const Navbar = () => {
                                 </div>
                             </Link>
                             <Link href='/our-people' style={{marginRight: 'auto'}}
-                                  onClick={() => setIsOpenMobile(false)}
+                                  onClick={() => setMobileOpen(false)}
                             >
                                 <div className="navbar__mobile__div__first__block">
                                     <div className="our__vision__svg">
@@ -400,14 +405,14 @@ const Navbar = () => {
                         </>}
                     </div>
                     <Link className="navbar__mobile__div" href = '/case-studies'
-                          onClick={() => setIsOpenMobile(false)}
+                          onClick={() => setMobileOpen(false)}
                     >
                         <h4>
                             Case Studies
                         </h4>
                     </Link>
                     <Link className="navbar__mobile__div"  href = '/careers'
-                          onClick={() => setIsOpenMobile(false)}
+                          onClick={() => setMobileOpen(false)}
                     >
                         <h4>
                             Careers
