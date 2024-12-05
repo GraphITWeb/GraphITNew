@@ -7,7 +7,7 @@ import Nick from "../../../assets/our-people/Nick.png";
 import Mykola from '../../../assets/our-people/Kolya.png'
 import Sasha from '../../../assets/our-people/Sasha.png'
 import Viktoriia from '../../../assets/our-people/Viktoriia.png'
-
+import Anna from '../../../assets/our-people/Anna.png'
 import './OurPeopleBlock.css'
 
 const OurPeopleBlock = () => {
@@ -44,6 +44,10 @@ const OurPeopleBlock = () => {
                 <People imgUser={Viktoriia} name='Viktoria Denysenko'
                         description="Viktoriia is VP of Brand Development & Growth, spearheading strategic brand initiatives and driving market expansion through innovative communication strategies and content creation. She works closely with cross-functional teams to develop and implement comprehensive brand strategies that align with long-term business objectives. Her expertise spans marketing communications, event management, and digital content strategy, enabling her to build compelling narratives that resonate with diverse audiences and drive measurable results. Viktoriia holds a BA in Culture, Media and Creative Industries from King's College London, bringing a unique blend of creative insight and strategic thinking to technology space. Away from work, she enjoys her daily matcha ritual, loves running and pursues her passion for travel."
                         position='Vice President, Brand Development & Growth'/>
+                <People imgUser={Anna}
+                        name='Anna Haleznik'
+                        position='Vice President, Strategic Expansion'
+                        description='Anna has joined Graphit in her position as VP to lead company’s strategic expansion. As a specialist in marketing strategies and B2B communications, she focuses on creating and implementing comprehensive marketing campaigns aimed at building effective sales funnels and strengthening brand presence. Anna develops personalized strategies to attract target audiences, conducts in-depth segment analysis, and integrates modern automation tools. Her key objective is to drive marketing initiatives that promote business growth and foster long-term relationships with clients. Outside of work, Anna is passionate about sports, which helps her maintain focus, discipline, and resilience - qualities she applies everyday in her professional endeavors.'/>
             </div>
             <div className="our__people__buttons">
                 <div className="arrow" onClick={() => scroll('left')} style={{cursor: 'pointer'}}>
