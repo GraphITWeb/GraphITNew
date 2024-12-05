@@ -38,10 +38,6 @@ const Navbar = () => {
             document.removeEventListener('mousedown', handleClickOutsideDo);
         };
     }, []);
-    useEffect(()=>{
-       setIsOpen(false)
-        setIsOpenMobile(false)
-    },[window.location])
 
     return (
         <>
@@ -322,7 +318,9 @@ const Navbar = () => {
                     </div>
                     <div className="navbar__mobile__div__first">
                         <div className="navbar__mobile__div__first__header">
-                            <Link href='/our-approach'>
+                            <Link href='/our-approach'
+                                  onClick={() => setIsOpenMobile(false)}
+                            >
                                 <h4>
                                     Who We Are
                                 </h4>
@@ -338,7 +336,9 @@ const Navbar = () => {
                             </svg>
                         </div>
                         {isOpenMobile && <>
-                            <Link href='/our-approach' style={{marginRight: 'auto'}}>
+                            <Link href='/our-approach' style={{marginRight: 'auto'}}
+                                  onClick={() => setIsOpenMobile(false)}
+                            >
                                 <div className="navbar__mobile__div__first__block">
                                     <div className="our__vision__svg">
                                         <div className="our__vision__svg__small" style={{width: 40, height: 40}}>
@@ -356,7 +356,9 @@ const Navbar = () => {
                                     </div>
                                 </div>
                             </Link>
-                            <Link href='/our-values' style={{marginRight: 'auto'}}>
+                            <Link href='/our-values' style={{marginRight: 'auto'}}
+                                  onClick={() => setIsOpenMobile(false)}
+                            >
 
                                 <div className="navbar__mobile__div__first__block">
                                     <div className="our__vision__svg">
@@ -375,7 +377,9 @@ const Navbar = () => {
                                     </div>
                                 </div>
                             </Link>
-                            <Link href='/our-people' style={{marginRight: 'auto'}}>
+                            <Link href='/our-people' style={{marginRight: 'auto'}}
+                                  onClick={() => setIsOpenMobile(false)}
+                            >
                                 <div className="navbar__mobile__div__first__block">
                                     <div className="our__vision__svg">
                                         <div className="our__vision__svg__small" style={{width: 40, height: 40}}>
@@ -395,12 +399,16 @@ const Navbar = () => {
                             </Link>
                         </>}
                     </div>
-                    <Link className="navbar__mobile__div" href = '/case-studies'>
+                    <Link className="navbar__mobile__div" href = '/case-studies'
+                          onClick={() => setIsOpenMobile(false)}
+                    >
                         <h4>
                             Case Studies
                         </h4>
                     </Link>
-                    <Link className="navbar__mobile__div"  href = '/careers'>
+                    <Link className="navbar__mobile__div"  href = '/careers'
+                          onClick={() => setIsOpenMobile(false)}
+                    >
                         <h4>
                             Careers
                         </h4>
