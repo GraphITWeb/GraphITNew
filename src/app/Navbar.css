@@ -14,8 +14,8 @@ nav{
     vertical-align: middle;
     align-items: center;
     text-align: center;
-    width: 124px;
-    transition: transform 0.75s ease-out;
+    justify-content: flex-start;
+    transition: transform 1.5s ease-out;
 }
 .nav__logo::after {
     all: unset!important;
@@ -23,30 +23,22 @@ nav{
 }
 .nav__logo__text{
     color: var(--white);
-    font-family: var(--hanken-grotesk);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
     transform: translateX(-20px);
-    line-height: 140%;
     opacity: 0;
     display: flex;
-    transition: transform 0.75s ease-out, opacity 0.75s ease-out;
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
     flex-direction: row;
 }
 
-.nav__logo__text div{
-    color: var(--orange);
-}
 .nav__logo:hover .nav__logo__text{
     opacity: 1;
     transform: translateX(0) !important;
 }
-.nav__logo svg{
-    transition: transform 0.75s ease-out;
+.nav__logo .nav__logo__svg{
+    transition: transform 1.5s ease-out;
 }
-.nav__logo:hover svg{
-    transform: rotate(60deg);
+.nav__logo:hover .nav__logo__svg{
+    transform: rotate(120deg);
 }
 a,.navbar__pc div{
     display: flex;
