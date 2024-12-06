@@ -67,7 +67,7 @@ const CRM = () => {
     useEffect(() => {
         timeoutRef.current = setTimeout(() => {
             changeIndex('right');
-        }, 5000);
+        }, 10000);
 
         return () => clearExistingTimeout();
     }, [index]);
