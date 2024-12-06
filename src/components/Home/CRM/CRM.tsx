@@ -139,7 +139,8 @@ const CRM = () => {
                             <div>
                                 <h4>Revolutionising Streaming Performance: Scalable Data Platform for Telecom Leaders</h4>
                                 <p>
-                                    Bespoke cloud-agnostic, high-performance platform, transforming network reliability. The solution empowered the client to enhance user experience, secure high-profile streaming clients like Disney and Netflix, and open-up new revenue streams - redefining the standards of streaming service performance.  </p>
+                                    A bespoke, cloud-agnostic, high-performing solution that sets a new standard for network reliability. This approach equipped the client to improve audience engagement, secure premier streaming contracts (including Disney and Netflix), and unlock previously untapped revenue channels—ultimately setting a new benchmark for streaming service excellence.
+                                </p>
                             </div>
                             <Button href='/case-studies' label='See case studies'
                                     btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>

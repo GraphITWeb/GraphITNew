@@ -147,7 +147,9 @@
         min-height: 200px!important;
         border-radius: 12px;
     }
-
+    .CRM__block__description a{
+        width: 100%;
+    }
     .CRM__block__description button {
         width: 100%;
         padding: 8px 14px !important;
