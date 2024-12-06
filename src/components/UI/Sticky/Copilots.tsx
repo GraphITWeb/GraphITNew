@@ -37,17 +37,17 @@ const Copilots = () => {
 
             <div className="unlocked_block" style={{marginTop: '1vh'}}>
                 <strong style={{color: 'var(--text-gray)'}}>
-                    <span style={{color: "var(--orange)"}}>Artificial Intelligence </span> is
-                    changing the way users interact with technology, creating demand for tools that simplify complex data and deliver actionable insights. However, many platforms struggle to provide a user-friendly experience, leaving end-users overwhelmed by inaccessible information.</strong>
+                    Artificial Intelligence is changing the way users <span style={{color: 'var(--orange)',fontWeight:'700'}}>interact</span> with <span style={{color: 'var(--orange)',fontWeight:'700'}}>technology</span>, creating demand for tools that <span style={{color: 'var(--orange)',fontWeight:'700'}}>simplify</span> complex data and <span style={{color: 'var(--orange)',fontWeight:'700'}}>deliver</span> actionable insights. However, many platforms struggle to provide a user-friendly experience, leaving end-users overwhelmed by inaccessible information.</strong>
                 </div>
             <div className="unlocked_block" style={{marginLeft:'auto'}}>
                 <strong style={{color: 'var(--text-gray)'}}>
-                    Our AI Copilot service addresses this challenge by embedding intelligent, conversational assistants directly into your platforms. These copilots are tailored to your users’ needs, enabling them to interact with your system more naturally, uncover insights effortlessly, and drive value from every interaction.
+                    Our AI Copilot service addresses this challenge by embedding intelligent, conversational assistants <span style={{color: 'var(--orange)',fontWeight:'700'}}>directly into</span> your <span style={{color: 'var(--orange)',fontWeight:'700'}}>platforms</span>.
+                    These copilots are tailored to your users’ needs, enabling them to interact with your system more naturally, uncover insights effortlessly, and drive value from every interaction.
                 </strong>
             </div>
             <div className="unlocked_block" style={{marginRight: 'auto',marginBottom: '60vh'}}>
                 <strong style={{color: 'var(--text-gray)'}}>
-                    We partner with you through every stage of the AI Copilot journey — from designing an intuitive user interface and integrating advanced AI models to deploying scalable solutions. At Graphit, we go beyond simply improving platform functionality — we pride ourselves for creating an engaging, empowering experience that sets your product apart and drives real value for your users.
+                    We <span style={{color: 'var(--orange)',fontWeight:'700'}}>partner with you</span> through every stage of the AI Copilot journey — from designing an intuitive user interface and integrating advanced AI models to deploying scalable solutions. At Graphit, <span style={{color: 'var(--orange)',fontWeight:'700'}}>we go beyond</span> simply improving platform functionality — we pride ourselves for creating an engaging, empowering experience that sets your product apart and drives <span style={{color: 'var(--orange)',fontWeight:'700'}}>real value</span> for your users.
                 </strong>
             </div>
         </div>
