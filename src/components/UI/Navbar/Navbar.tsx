@@ -69,7 +69,7 @@ const Navbar = () => {
                             </defs>
                         </svg>
                     </div>
-                    <div style={{maxHeight: 42, width: 125,marginTop:6}} className="nav__logo__text">
+                    <div style={{maxHeight: 42, width: 125,marginTop:6,height:42}} className="nav__logo__text">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 733 197"
                              fill="none">
                             <g clipPath="url(#clip0_1870_11652)">

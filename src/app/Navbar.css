@@ -19,7 +19,6 @@ nav{
 }
 .nav__logo::after {
     all: unset!important;
-
 }
 .nav__logo__text{
     color: var(--white);
