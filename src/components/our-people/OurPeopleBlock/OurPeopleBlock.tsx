@@ -8,6 +8,9 @@ import Mykola from '../../../assets/our-people/Kolya.png'
 import Sasha from '../../../assets/our-people/Sasha.png'
 import Viktoriia from '../../../assets/our-people/Viktoriia.png'
 import Anna from '../../../assets/our-people/Anna.png'
+import Roman from '../../../assets/our-people/Roman.png'
+import Marian from '../../../assets/our-people/Marian.png'
+
 import './OurPeopleBlock.css'
 
 const OurPeopleBlock = () => {
@@ -49,6 +52,14 @@ const OurPeopleBlock = () => {
                         position='Vice President, Strategic Expansion'
                         description="Anna has joined Graphit in her position as VP to lead the company's strategic expansion. As a specialist in marketing strategies and B2B communications, she focuses on creating and implementing comprehensive marketing campaigns aimed at building effective sales funnels and strengthening brand presence. Anna develops personalized strategies to attract target audiences, conducts in-depth segment analysis, and integrates modern automation tools. Her key objective is to drive marketing initiatives that promote business growth and foster long-term relationships with clients. Outside of work, Anna is passionate about sports, which helps her maintain focus, discipline, and resilience - qualities she applies everyday in her professional endeavors."
                         />
+                <People imgUser={Roman}
+                        name="Roman Bozhovskyi"
+                        position='Senior Associate, Data Platforms'
+                        description="Roman is a Senior Associate at Graphit, where he contributes to crafting cutting-edge solutions as an engineer within Data Platforms practice. With a strong foundation in applied mathematics, he combines technical expertise with creative problem-solving to deliver seamless and impactful digital experiences. Roman obtained a BSc in Applied Mathematics at Lviv Polytechnic National University with  focus on algorithm design and system architecture. Beyond his professional pursuits, Roman formerly was a part of Ukrainian Premier League side FC Lviv. He also enjoys immersing himself in books, exploring new ideas, and practising meditation."/>
+                <People imgUser={Marian}
+                        name='Marian Kyrychenko'
+                        position='Senior Associate, AI Copilots'
+                        description="Marian is a Senior Associate within the AI Copilots practice. With a robust background in computer engineering, he brings a deep understanding of cutting-edge technologies to develop transformative AI-driven solutions. Marian holds a BEng in Computer Science from Lviv Polytechnic National University focusing on practical applications of machine and deep learning algorithms. Outside of his professional achievements, Marian is a former professional chess player and a two-time European Chess Champion. Beyond chess, Marian also enjoys cybersport and football as his hobbies. "/>
             </div>
             <div className="our__people__buttons">
                 <div className="arrow" onClick={() => scroll('left')} style={{cursor: 'pointer'}}>
