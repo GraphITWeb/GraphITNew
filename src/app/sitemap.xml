@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
     <url>
         <loc>https://graph-it.co.uk/</loc>
         <lastmod>2024-12-09T06:42:44+00:00</lastmod>
@@ -49,6 +46,4 @@
         <lastmod>2024-12-09T06:42:44+00:00</lastmod>
         <priority>0.64</priority>
     </url>
-
-
 </urlset>
