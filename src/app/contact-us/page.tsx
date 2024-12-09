@@ -5,6 +5,11 @@ import './ContactUs.css';
 import ContactUsBlock from "@/components/contact-us/ContactUsBlock/ContactUsBlock";
 import GetInTouch from "@/components/contact-us/GetInTouch/GetInTouch";
 import Visit from "@/components/contact-us/Visit/Visit";
+import type {Metadata} from "next";
+export const metadata: Metadata = {
+    title: "Graphit | Contact Us",
+    description: "Graphit is a London-based technology-consulting firm that operates on the intersection of data, AI and business strategy.",
+};
 export default function ContactUsPage() {
     return (
         <div className="flex flex-col items-center justify-items-center">

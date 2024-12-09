@@ -4,6 +4,11 @@ import './Careers.css'
 import CareersImage from "@/assets/Careers.webp";
 import CareersList from "@/components/Careers/CareersList/CareersList";
 import Image from 'next/image'
+import type {Metadata} from "next";
+export const metadata: Metadata = {
+    title: "Graphit | Careers",
+    description: "Graphit is a London-based technology-consulting firm that operates on the intersection of data, AI and business strategy.",
+};
 export default function Careers() {
 
     return (
