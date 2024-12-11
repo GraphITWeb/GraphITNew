@@ -9,7 +9,11 @@ import Boutique from '../../assets/approach/Boutique.webp'
 import Posts from "@/components/what-we-do/Posts/Posts";
 import Google from '../../assets/approach/Google.webp';
 import AWS from '../../assets/approach/AWS.webp';
-
+import type {Metadata} from "next";
+export const metadata: Metadata = {
+    title: "Graphit | Our Approach",
+    description:"At Graphit, we place clients at the center, combining tailored strategies and AI-driven insights to deliver solutions that fuel growth, enhance efficiency, and drive meaningful impact."
+}
 export default function WhoWeArePage() {
     return (
         <div className="flex flex-col items-center justify-items-center p-0 overflow-x-hidden">

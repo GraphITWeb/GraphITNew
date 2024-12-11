@@ -8,7 +8,7 @@ import Visit from "@/components/contact-us/Visit/Visit";
 import type {Metadata} from "next";
 export const metadata: Metadata = {
     title: "Graphit | Contact Us",
-    description: "Graphit is a London-based technology-consulting firm that operates on the intersection of data, AI and business strategy.",
+    description:"We have offices and teams around the world."
 };
 export default function ContactUsPage() {
     return (

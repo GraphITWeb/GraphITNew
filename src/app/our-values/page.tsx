@@ -3,7 +3,11 @@ import './our-values.css';
 import Main from "@/components/Main/Main";
 import WeMeant from "@/components/UI/Sticky/WeMeant";
 import TechnicalWhatBlock from "@/components/our-values/TechnicalWhatBlock/TechnicalWhatBlock";
-
+import type {Metadata} from "next";
+export const metadata: Metadata = {
+    title: "Graphit | Our Values",
+    description:"At Graphit, our core values—Innovate, Redefine, Transform—drive everything we do. These principles guide our approach to tackling complex client challenges."
+}
 export default function OurValuesPage() {
     return (
         <div className="flex flex-col items-center justify-items-center p-0">

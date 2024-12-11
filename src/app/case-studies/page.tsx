@@ -4,7 +4,7 @@ import Articles from "@/components/what-we-think/Articles/Articles";
 import type {Metadata} from "next";
 export const metadata: Metadata = {
     title: "Graphit | Case Studies",
-    description: "Graphit is a London-based technology-consulting firm that operates on the intersection of data, AI and business strategy.",
+    description:"See how we help our clients embrace and champion change with cutting-edge technology and future-focused strategy."
 };
 export default function CaseStudiesPage() {
     return (

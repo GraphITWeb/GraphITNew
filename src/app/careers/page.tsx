@@ -7,8 +7,8 @@ import Image from 'next/image'
 import type {Metadata} from "next";
 export const metadata: Metadata = {
     title: "Graphit | Careers",
-    description: "Graphit is a London-based technology-consulting firm that operates on the intersection of data, AI and business strategy.",
-};
+    description:"Join a team where innovation meets opportunity. Explore a culture that empowers you to grow, lead, and make a lasting impact."
+}
 export default function Careers() {
 
     return (
