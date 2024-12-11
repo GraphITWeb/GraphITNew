@@ -8,6 +8,7 @@ import Footer from "@/components/UI/Footer/Footer";
 import {Analytics} from "@vercel/analytics/react"
 import {SpeedInsights} from "@vercel/speed-insights/next"
 import {Figtree, Hanken_Grotesk} from 'next/font/google';
+import Head from "next/head";
 
 const figtree = Figtree({
     weight: ['400', '500', '600', '700'],
@@ -25,9 +26,6 @@ const hanken = Hanken_Grotesk({
 export const metadata: Metadata = {
     title: "Graphit",
     description: "Graphit is a London-based technology-consulting firm that operates on the intersection of data, AI and business strategy.",
-    icons: {
-        icon: './favicon.ico',
-    },
 };
 
 export default function RootLayout({
@@ -37,6 +35,77 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={`${figtree.variable} ${hanken.variable}`}>
+        <Head>
+            <link
+                rel="icon"
+                type="image/ico"
+                href="/white_theme-16x16.ico"
+                sizes="16x16"
+                media="(prefers-color-scheme: light)"
+            />
+            <link
+                rel="icon"
+                type="image/ico"
+                href="/white_theme-32x32.ico"
+                sizes="32x32"
+                media="(prefers-color-scheme: light)"
+            />
+            <link
+                rel="icon"
+                type="image/ico"
+                href="/white_theme-48x48.ico"
+                sizes="48x48"
+                media="(prefers-color-scheme: light)"
+            />
+            <link
+                rel="icon"
+                type="image/ico"
+                href="/white_theme-64x64.ico"
+                sizes="64x64"
+                media="(prefers-color-scheme: light)"
+            />
+            <link
+                rel="icon"
+                type="image/ico"
+                href="/white_theme.ico"
+                sizes="64x64"
+            />
+            <link
+                rel="icon"
+                type="image/ico"
+                href="/black_theme-16x16.ico"
+                sizes="16x16"
+                media="(prefers-color-scheme: dark)"
+            />
+            <link
+                rel="icon"
+                type="image/ico"
+                href="/black_theme-32x32.ico"
+                sizes="32x32"
+                media="(prefers-color-scheme: dark)"
+            />
+            <link
+                rel="icon"
+                type="image/ico"
+                href="/black_theme-48x48.ico"
+                sizes="48x48"
+                media="(prefers-color-scheme: dark)"
+            />
+            <link
+                rel="icon"
+                type="image/ico"
+                href="/black_theme-64x64.ico"
+                sizes="64x64"
+                media="(prefers-color-scheme: dark)"
+            />
+            <link
+                rel="icon"
+                type="image/ico"
+                href="/black_theme.ico"
+                sizes="64x64"
+                media="(prefers-color-scheme: dark)"
+            />
+        </Head>
         <body>
         <div>
             <Analytics/>
