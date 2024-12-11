@@ -15,16 +15,16 @@ const Footer = () => {
                         <div style={{width:180,height:42,maxWidth:200,maxHeight:42}}>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230"
                                  fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                <path fillRule="evenodd" clipRule="evenodd"
                                       d="M40.4909 71.2307L91.0212 42.1063L32.5079 75.8248L40.4909 71.2307ZM25.8073 71.9592V185.028L0 170.148V57.0795L51.8113 27.2042L77.6256 42.1025L25.8073 71.9592Z"
                                       fill="#FF0900"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                <path fillRule="evenodd" clipRule="evenodd"
                                       d="M202.418 51.8915L138.233 14.8823L163.188 29.2629L202.418 51.8915ZM100.82 30.7996H100.799L73.1934 14.8823L99.0044 0L134.884 20.6764L159.836 35.0556L159.839 35.0569L195.718 55.7526V115.807L169.889 130.692V70.615L100.82 30.7996Z"
                                       fill="#FF0900"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                <path fillRule="evenodd" clipRule="evenodd"
                                       d="M40.4902 155.974L97.9119 189.094L89.9504 184.5L40.4902 155.974ZM97.9334 189.094L202.418 128.859L163.188 151.466L97.9334 189.094ZM159.839 190.886L159.837 190.887L133.79 205.909L97.9119 226.604L62.034 205.909L47.1909 197.366V167.565L96.1149 195.784H99.7294L195.718 140.444V170.21L159.839 190.886Z"
                                       fill="#FF0900"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                <path fillRule="evenodd" clipRule="evenodd"
                                       d="M97.8281 142.625L72.499 128.018V98.8004L97.8281 84.1746L123.177 98.8011V128.017L97.8281 142.625Z"
                                       fill="white"/>
                                 <path

@@ -17,7 +17,7 @@ export default function HomePage (){
                 <svg xmlns="http://www.w3.org/2000/svg" width={196} height={227} viewBox="0 0 196 227"
                      className="nav__logo__svg"
                      fill="none">
-                    <g clip-path="url(#clip0_1870_11639)">
+                    <g clipPath="url(#clip0_1870_11639)">
                         <path fillRule="evenodd" clipRule="evenodd"
                               d="M25.8073 71.9592V185.028L0 170.148V57.0795L51.8113 27.2042L77.6256 42.1025L25.8073 71.9592Z"
                               fill="#FF0900"/>
