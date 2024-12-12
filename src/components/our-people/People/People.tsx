@@ -30,7 +30,7 @@ const People: React.FC<PeopleProps> = ({imgUser, name, position, description}) =
     }, [checkIfMobile]);
 
     const handleClick = (e: React.MouseEvent | React.TouchEvent) => {
-        e.preventDefault(); // Prevent default behavior
+        e.preventDefault();
         if (isMobile) {
             setIsFlipped(prev => !prev);
         }
@@ -41,7 +41,6 @@ const People: React.FC<PeopleProps> = ({imgUser, name, position, description}) =
             <div
                 className={`people__flip-card ${isMobile ? 'mobile' : ''}`}
                 onClick={handleClick}
-                onTouchStart={handleClick}
             >
                 <div className={`people__flip-card-inner ${isFlipped ? 'flipped' : ''}`}>
                     <div className="people__flip-card-front">
