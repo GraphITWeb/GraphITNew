@@ -67,17 +67,17 @@ export default function RootLayout({
             <link
                 rel="icon"
                 type="image/ico"
-                href="/white_theme.ico"
+                href="/white_theme-96x96.ico"
             />
             <link
                 rel="apple-touch-icon"
                 type="image/ico"
-                href="/white_theme.ico"
+                href="/white_theme-96x96.ico"
             />
             <link
                 rel="apple-touch-icon-precomposed"
                 type="image/ico"
-                href="/white_theme.ico"
+                href="/white_theme-96x96.ico"
             />
             <link
                 rel="icon"
