@@ -68,7 +68,16 @@ export default function RootLayout({
                 rel="icon"
                 type="image/ico"
                 href="/white_theme.ico"
-                sizes="64x64"
+            />
+            <link
+                rel="apple-touch-icon"
+                type="image/ico"
+                href="/white_theme.ico"
+            />
+            <link
+                rel="apple-touch-icon-precomposed"
+                type="image/ico"
+                href="/white_theme.ico"
             />
             <link
                 rel="icon"
