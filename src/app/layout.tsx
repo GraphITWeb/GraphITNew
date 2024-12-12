@@ -53,7 +53,7 @@ export default function RootLayout({
             />
             <link
                 rel="icon"
-                href="/black_theme.ico"
+                href="/black_theme-64x64.ico"
                 sizes="any"
                 media="(prefers-color-scheme: dark)"
             />
