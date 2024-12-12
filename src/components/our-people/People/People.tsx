@@ -10,7 +10,7 @@ interface PeopleProps {
 
 const People: React.FC<PeopleProps> = ({imgUser,name,position,description}) => {
     return (
-        <div className="people">
+        <>
                 <div className="people__flip-card">
                     <div className="people__flip-card-inner">
                         <div className="people__flip-card-front">
@@ -35,7 +35,7 @@ const People: React.FC<PeopleProps> = ({imgUser,name,position,description}) => {
                 <h3>{name}</h3>
                 <p>{position}</p>
             </div>
-        </div>
+        </>
     )
 }
 export default People;

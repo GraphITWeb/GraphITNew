@@ -31,7 +31,8 @@
         max-width: 100%;
         flex-wrap: unset;
         justify-content: flex-start;
-        padding: 0;
+        padding: 0 32px;
+        gap: 32px;
     }
     .our__people::-webkit-scrollbar{
         width: 0;
@@ -46,12 +47,12 @@
         justify-content: flex-start;
         margin-right: auto;
     }
-
 }
 @media screen and (max-width: 768px) {
     .our__people:first-child {
         margin-left: 32px;
     }
+
 }
 @media screen and (max-width: 556px) {
     .our__people:first-child {
