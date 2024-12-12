@@ -1,33 +1,38 @@
 import Image, {StaticImageData} from "next/image";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import './People.css'
+
 interface PeopleProps {
     imgUser: StaticImageData;
     name: string;
     position: string;
-    description:string;
+    description: string;
 }
 
-const People: React.FC<PeopleProps> = ({imgUser,name,position,description}) => {
+const People: React.FC<PeopleProps> = ({imgUser, name, position, description}) => {
     const [isFlipped, setIsFlipped] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
 
-    useEffect(() => {
-        const checkIfMobile = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
-
-        checkIfMobile();
-        window.addEventListener('resize', checkIfMobile);
-
-        return () => {
-            window.removeEventListener('resize', checkIfMobile);
-        };
+    const checkIfMobile = useCallback(() => {
+        const userAgent = typeof window.navigator === "undefined" ? "" : navigator.userAgent;
+        const mobile = Boolean(
+            userAgent.match(
+                /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+            )
+        );
+        setIsMobile(mobile);
     }, []);
 
-    const handleClick = () => {
+    useEffect(() => {
+        checkIfMobile();
+        window.addEventListener('resize', checkIfMobile);
+        return () => window.removeEventListener('resize', checkIfMobile);
+    }, [checkIfMobile]);
+
+    const handleClick = (e: React.MouseEvent | React.TouchEvent) => {
+        e.preventDefault(); // Prevent default behavior
         if (isMobile) {
-            setIsFlipped(!isFlipped);
+            setIsFlipped(prev => !prev);
         }
     };
 
@@ -36,6 +41,7 @@ const People: React.FC<PeopleProps> = ({imgUser,name,position,description}) => {
             <div
                 className={`people__flip-card ${isMobile ? 'mobile' : ''}`}
                 onClick={handleClick}
+                onTouchStart={handleClick}
             >
                 <div className={`people__flip-card-inner ${isFlipped ? 'flipped' : ''}`}>
                     <div className="people__flip-card-front">
@@ -63,5 +69,5 @@ const People: React.FC<PeopleProps> = ({imgUser,name,position,description}) => {
         </>
     )
 }
-export default People;
 
+export default People;
