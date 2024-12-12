@@ -11,6 +11,13 @@
     min-width: 400px;
     max-width: 400px;
 }
+.people{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 400px;
+    height: auto;
+}
 .our__people__buttons{
     display: none;
 }
