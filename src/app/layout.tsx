@@ -38,80 +38,23 @@ export default function RootLayout({
         <Head>
             <link
                 rel="icon"
-                type="image/ico"
-                href="/white_theme-16x16.ico"
-                sizes="16x16"
-                media="(prefers-color-scheme: light)"
-            />
-            <link
-                rel="icon"
-                type="image/ico"
-                href="/white_theme-32x32.ico"
-                sizes="32x32"
-                media="(prefers-color-scheme: light)"
-            />
-            <link
-                rel="icon"
-                type="image/ico"
-                href="/white_theme-48x48.ico"
-                sizes="48x48"
-                media="(prefers-color-scheme: light)"
-            />
-            <link
-                rel="icon"
-                type="image/ico"
-                href="/white_theme-64x64.ico"
-                sizes="64x64"
-                media="(prefers-color-scheme: light)"
-            />
-            <link
-                rel="icon"
-                type="image/ico"
+                sizes="any"
                 href="/favicon.ico"
             />
             <link
                 rel="apple-touch-icon"
-                type="image/ico"
                 href="/favicon.ico"
+                sizes="any"
             />
             <link
                 rel="apple-touch-icon-precomposed"
-                type="image/ico"
                 href="/favicon.ico"
+                sizes="any"
             />
             <link
                 rel="icon"
-                type="image/ico"
-                href="/black_theme-16x16.ico"
-                sizes="16x16"
-                media="(prefers-color-scheme: dark)"
-            />
-            <link
-                rel="icon"
-                type="image/ico"
-                href="/black_theme-32x32.ico"
-                sizes="32x32"
-                media="(prefers-color-scheme: dark)"
-            />
-            <link
-                rel="icon"
-                type="image/ico"
-                href="/black_theme-48x48.ico"
-                sizes="48x48"
-                media="(prefers-color-scheme: dark)"
-            />
-            <link
-                rel="icon"
-                type="image/ico"
-                href="/black_theme-64x64.ico"
-                sizes="64x64"
-                media="(prefers-color-scheme: dark)"
-            />
-            <link
-                rel="icon"
-                type="image/ico"
                 href="/black_theme.ico"
-                sizes="64x64"
+                sizes="any"
                 media="(prefers-color-scheme: dark)"
             />
         </Head>
