@@ -44,7 +44,7 @@ const DataPlatform = () => {
             </div>
             <div className="unlocked_block" style={{marginLeft:'auto'}}>
                 <strong style={{color: 'var(--text-gray)'}}>
-                    At Graphit, we take a <span style={{color: 'var(--orange)',fontWeight:'700'}}>transformative approach</span>. Our Data Platforms are embedded with a deep understanding of the client&#39;s existing architecture and aligned with best practices for AI readiness, integrating diverse data into one cohesive system. This streamlined infrastructure drives operational gains, improves decision accuracy, and enables predictive capabilities, all while reducing complexity and cutting costs.
+                    At Graphit, we take a <span style={{color: 'var(--orange)',fontWeight:'700'}}>transformative approach</span>. Our Data Platforms are embedded with a deep understanding of the client&#39;s existing architecture and aligned with <span style={{color: 'var(--orange)',fontWeight:'700'}}>best practices</span> for AI readiness, integrating diverse data into <span style={{color: 'var(--orange)',fontWeight:'700'}}>one cohesive system</span>. This streamlined infrastructure drives operational gains, improves decision accuracy, and enables predictive capabilities, all while reducing complexity and cutting costs.
                 </strong>
             </div>
             <div className="unlocked_block" style={{marginRight: 'auto',marginBottom: '60vh'}}>
