@@ -1,12 +1,13 @@
 'use client'
 import './CareersModal.css';
-import React, {useState} from "react";
+import React, { useState} from "react";
 import Input from "@/components/UI/Input/Input";
 import TextArea from "@/components/UI/TextArea/TextArea";
 import Button from "@/components/UI/Button/Button";
 import {ICareer} from "@/interfaces/interfaces";
 import Image from "next/image";
 import flagImage from "@/assets/elements/british.png";
+import emailjs from '@emailjs/browser';
 
 interface CareersBlockProps {
     career: ICareer;
@@ -20,20 +21,52 @@ const CareersModal: React.FC<CareersBlockProps> = ({
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
-    const [company, setCompany] = useState('');
     const [number, setNumber] = useState('');
     const [linkedin, setLinkedin] = useState('');
     const [message, setMessage] = useState('');
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [selectedFile, setSelectedFile] = useState(null);
+    const [selectedFile, setSelectedFile] = useState<File | null>(null);
     const [selectedName, setSelectedName] = useState("");
 
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error
-    const handleFileChange = (event) => {
-        const file = event.target.files[0];
-        setSelectedFile(file);
-        setSelectedName(file.name);
+    const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const file = event.target.files?.[0];
+        if (file) {
+            if (file.size > 10 * 1024 * 1024) {
+                alert('Розмір файлу не повинен перевищувати 10 МБ');
+                return;
+            }
+            setSelectedFile(file);
+            setSelectedName(file.name);
+        }
+    };
+    const handleSubmit = async (e: React.FormEvent) => {
+        console.log('handleSubmit');
+        try {
+            const form = e.target as HTMLFormElement;
+            const formData = new FormData(form);
+            formData.append('first_name', firstName);
+            formData.append('last_name', lastName);
+            formData.append('email', email);
+            formData.append('phone', number);
+            formData.append('linkedin', linkedin);
+            formData.append('message', message);
+            formData.append('file_name', selectedName);
+            if (selectedFile) {
+                formData.append('selectedFile', selectedFile);
+            }
+
+            const result = await emailjs.sendForm(
+                'service_k41ppv9', // Замініть на ваш EmailJS service ID
+                'template_an04hkp', // Замініть на ваш EmailJS template ID
+                formData as unknown as HTMLFormElement,
+                'Jy06b6xSZpfdujkkb' // Замініть на ваш EmailJS user ID
+            );
+
+            console.log(result.text);
+            // Додайте повідомлення про успіх або скиньте форму тут
+        } catch (error) {
+            console.error('Помилка відправки email:', error);
+            // Додайте обробку помилок тут
+        }
     };
 
     return (
@@ -219,11 +252,14 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                                     </>
                                 }
                             </div>
-                            <input accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,text/plain, application/pdf, image/*"
-                                   onChange={handleFileChange} type="file"/>
+                            <input
+                                accept=".pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                                onChange={handleFileChange} type="file"/>
                         </div>
-                        <Button label='Apply' btnStyle={{width: '100%', padding: '12px 0'}}
-                                btnDivStyle={{fontSize: 18, lineHeight: '24px', textAlign: 'center'}}/>
+                        <form onSubmit={handleSubmit}>
+                            <Button type="submit" label='Apply' btnStyle={{width: '100%', padding: '12px 0'}}
+                                    btnDivStyle={{fontSize: 18, lineHeight: '24px', textAlign: 'center'}}/>
+                        </form>
                     </div>
                 </div>
             </div>

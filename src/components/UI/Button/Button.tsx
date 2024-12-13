@@ -11,6 +11,7 @@ interface ButtonProps {
     btnStyle?: React.CSSProperties;
     btnDivStyle?: React.CSSProperties;
     disabled?: boolean;
+    type?: 'button' | 'submit' | 'reset';
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -19,7 +20,8 @@ const Button: React.FC<ButtonProps> = ({
                                            href,
                                            btnStyle,
                                            btnDivStyle,
-                                           disabled = false
+                                           disabled = false,
+                                            type = 'button',
                                        }) => {
     const handleClick = () => {
         if (!disabled && onClick) {
@@ -33,6 +35,7 @@ const Button: React.FC<ButtonProps> = ({
             className={`myBtn ${disabled ? 'disabled' : ''}`}
             onClick={handleClick}
             disabled={disabled}
+            type={type}
         >
             <div style={{ ...btnDivStyle }} className="myBtn__label">
                 {label}
