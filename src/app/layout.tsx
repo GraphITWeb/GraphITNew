@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Graphit",
     description: "Graphit is a London-based technology-consulting firm that operates on the intersection of data, AI and business strategy.",
     icons: {
-        icon: './favicon.ico',
+        icon: './favicon.ico?v=2',
     },
 };
 
