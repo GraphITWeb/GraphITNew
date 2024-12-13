@@ -52,6 +52,11 @@ export default function RootLayout({
                 sizes="any"
             />
             <link
+                rel="apple-touch-icon-precomposed"
+                href="/favicon.png"
+                sizes="any"
+            />
+            <link
                 rel="icon"
                 href="/black_theme-64x64.ico"
                 sizes="any"
