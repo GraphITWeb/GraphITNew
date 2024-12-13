@@ -14,7 +14,7 @@ const FeedbackItem: React.FC<FeedbackProps> = ({name,imgUser, description,positi
                 <div className="feedback__block__header">
                     <Image width={48} height={48} style={{borderRadius:'50%',minHeight:48}} src={imgUser} alt='user'/>
                     <div className="flex flex-col gap-0">
-                        <p style={{fontWeight: 500, color: 'white'}}>{name}</p>
+                        <p style={{fontWeight: 600, color: 'white'}}>{name}</p>
                         <small style={{color: 'var(--text-gray)'}}>{position}</small>
                     </div>
                 </div>

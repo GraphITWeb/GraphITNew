@@ -72,13 +72,13 @@ const OurPeopleBlock = () => {
         },
         {
             img: Sasha,
-            name: 'Alexandra Slyusar',
-            description: 'Alexandra is CIO at Graphit, leading the company’s growth through innovation and creative business development initiatives. She liaises with cross-functional teams to optimize client engagement and refine sales pipelines, ensuring alignment with long-term growth objectives. Prior to joining Graphit, Aleksandra gained valuable experience at organizations such as Nestlé and Christian Dior, where she developed expertise in customer relationship management, strategic marketing, and campaign execution. Aleksandra holds a BSc in Management from the London School of Economics (LSE) and is passionate about leveraging data to create innovative growth strategies. Outside of work, she enjoys visiting art galleries, exploring contemporary design, and traveling.',
+            name: 'Aleksandra Slyusar',
+            description: 'Aleksandra is CIO at Graphit, leading the company’s growth through innovation and creative business development initiatives. She liaises with cross-functional teams to optimize client engagement and refine sales pipelines, ensuring alignment with long-term growth objectives. Prior to joining Graphit, Aleksandra gained valuable experience at organizations such as Nestlé and Christian Dior, where she developed expertise in customer relationship management, strategic marketing, and campaign execution. Aleksandra holds a BSc in Management from the London School of Economics (LSE) and is passionate about leveraging data to create innovative growth strategies. Outside of work, she enjoys visiting art galleries, exploring contemporary design, and traveling.',
             position: 'CIO',
         },
         {
             img: Viktoriia,
-            name: 'Viktoria Denysenko',
+            name: 'Viktoriia Denysenko',
             description: "Viktoriia is VP of Brand Development & Growth, spearheading strategic brand initiatives and driving market expansion through innovative communication strategies and content creation. She works closely with cross-functional teams to develop and implement comprehensive brand strategies that align with long-term business objectives. Her expertise spans marketing communications, event management, and digital content strategy, enabling her to build compelling narratives that resonate with diverse audiences and drive measurable results. Viktoriia holds a BA in Culture, Media and Creative Industries from King's College London, bringing a unique blend of creative insight and strategic thinking to technology space. Away from work, she enjoys her daily matcha ritual, loves running and pursues her passion for travel.",
             position: 'Vice President, Brand Development & Growth',
         },

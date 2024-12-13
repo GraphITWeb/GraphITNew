@@ -58,7 +58,7 @@ const OurVision: React.FC<OurVisionProps> = ({ style, image, svgIcon, title, des
                     </div>
                 </div>
                 <h3 style={{ marginTop: 8 }}>{title}</h3>
-                <p>{description}</p>
+                <p style={{textAlign:"justify"}}>{description}</p>
             </div>
         </div>
     );

@@ -31,7 +31,7 @@ const WeMeant = () => {
             <h1 className="sticky__text" style={{
                 opacity: isVisible ? 1 : 0,
                 whiteSpace: "word-wrap",
-            }}>WE MEANT IT WHEN WE SAID</h1>
+            }}>WE MEANT IT WHEN<br/>WE SAID</h1>
 
             <div className="unlocked_block" style={{marginTop: '1vh'}}>
                 <h5>Innovate</h5>
