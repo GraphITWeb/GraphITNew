@@ -190,15 +190,11 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                         </div>
                         <div>
                             <small>Email</small>
-                            <Input placeholder='you@company.com' setValue={setEmail} value={email}/>
-                        </div>
-                        <div>
-                            <small>Company name</small>
-                            <Input placeholder='Company name' setValue={setCompany} value={company}/>
+                            <Input placeholder='you@gmail.com' setValue={setEmail} value={email}/>
                         </div>
                         <div>
                             <small>Phone number</small>
-                            <Input placeholder='+1 (555) 000-0000' setValue={setNumber} value={number}/>
+                            <Input placeholder='+44 (55) 0000 0000' setValue={setNumber} value={number}/>
                         </div>
                         <div>
                             <small>LinkedIn</small>
