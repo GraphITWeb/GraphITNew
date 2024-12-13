@@ -78,7 +78,7 @@ a:hover::after,.navbar__pc div:hover::after  {
     display: flex;
     flex-direction: column!important;
     top: 28px;
-    width: 160px;
+    width: 170px;
     padding: 12px;
     align-items: flex-start;
     gap: 16px!important;

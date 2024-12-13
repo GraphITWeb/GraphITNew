@@ -38,7 +38,7 @@ export default function ContactUsPage() {
                             fill="#F23704"/>
                     </svg>}
                     title="Email"
-                    description="Our friendly team is here to help."
+                    description="Our team is here to help."
                     details="transform@graph-it.co.uk"/>
                 <ContactUsBlock
                     icon={<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"

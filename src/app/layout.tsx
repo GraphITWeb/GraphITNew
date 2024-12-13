@@ -7,20 +7,13 @@ import Navbar from "@/components/UI/Navbar/Navbar";
 import Footer from "@/components/UI/Footer/Footer";
 import {Analytics} from "@vercel/analytics/react"
 import {SpeedInsights} from "@vercel/speed-insights/next"
-import {Figtree, Hanken_Grotesk} from 'next/font/google';
+import {Rethink_Sans} from 'next/font/google';
 
-const figtree = Figtree({
-    weight: ['400', '500', '600', '700'],
+const rethink = Rethink_Sans({
+    weight: ['400', '500', '600', '700','800'],
     subsets: ["latin"],
     display: 'swap',
-    variable:'--figtree',
-
-});
-const hanken = Hanken_Grotesk({
-    weight: ['400', '500', '600', '700'],
-    subsets: ["latin"],
-    display: 'swap',
-    variable:'--hanken-grotesk'
+    variable:'--rethink'
 });
 export const metadata: Metadata = {
     title: "Graphit",
@@ -36,7 +29,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className={`${figtree.variable} ${hanken.variable}`}>
+        <html lang="en" className={`${rethink.variable}`}>
         <body>
         <div>
             <Analytics/>
