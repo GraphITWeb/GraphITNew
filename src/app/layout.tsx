@@ -26,6 +26,9 @@ const hanken = Hanken_Grotesk({
 export const metadata: Metadata = {
     title: "Graphit",
     description: "Graphit is a London-based technology-consulting firm that operates on the intersection of data, AI and business strategy.",
+    icons: {
+        icon: './favicon.png',
+    },
 };
 
 export default function RootLayout({
@@ -35,34 +38,6 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={`${figtree.variable} ${hanken.variable}`}>
-        <Head>
-            <link
-                rel="icon"
-                sizes="any"
-                href="/favicon.ico"
-            />
-            <link
-                rel="apple-touch-icon"
-                href="/favicon.ico"
-                sizes="any"
-            />
-            <link
-                rel="apple-touch-icon-precomposed"
-                href="/favicon.ico"
-                sizes="any"
-            />
-            <link
-                rel="apple-touch-icon-precomposed"
-                href="/favicon.png"
-                sizes="any"
-            />
-            <link
-                rel="icon"
-                href="/black_theme-64x64.ico"
-                sizes="any"
-                media="(prefers-color-scheme: dark)"
-            />
-        </Head>
         <body>
         <div>
             <Analytics/>
