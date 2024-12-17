@@ -257,7 +257,7 @@ const CareersModal: React.FC<CareersBlockProps> = ({
                                 onChange={handleFileChange} type="file"/>
                         </div>
                         <form onSubmit={handleSubmit}>
-                            <Button type="submit" label='Apply' btnStyle={{width: '100%', padding: '12px 0'}}
+                            <Button type="submit" label='Apply' btnStyle={{width: '100%', padding: '12px 16px'}}
                                     btnDivStyle={{fontSize: 18, lineHeight: '24px', textAlign: 'center'}}/>
                         </form>
                     </div>
