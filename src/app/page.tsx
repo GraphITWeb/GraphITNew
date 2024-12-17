@@ -1664,7 +1664,7 @@ export default function HomePage (){
                             drive
                             impact at scale. We are strategists, engineers, and innovators dedicated to solving the
                             world’s toughest challenges. We are Graphit. </p>
-                        <Button href = '/what-we-do' label='See what we do'
+                        <Button href='/what-we-do' label='See what we do'
                                 btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>
                     </div>
                 </div>
