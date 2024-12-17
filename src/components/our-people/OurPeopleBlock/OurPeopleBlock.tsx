@@ -1,6 +1,6 @@
 'use client'
 import People from "@/components/our-people/People/People";
-import React, { useRef } from "react";
+import React, {useRef} from "react";
 import Sviat from '../../../assets/our-people/Sviat.png';
 import Max from '../../../assets/our-people/Max.png';
 import Nick from "../../../assets/our-people/Nick.png";
@@ -31,9 +31,9 @@ const OurPeopleBlock = () => {
             const distance = Math.abs(blockCenter - containerCenter);
 
             return distance < closest.distance
-                ? { index, distance }
+                ? {index, distance}
                 : closest;
-        }, { index: 0, distance: Infinity }).index;
+        }, {index: 0, distance: Infinity}).index;
 
         // Визначаємо новий індекс для скролу
         let targetIndex = direction === 'right' ? closestIndex + 1 : closestIndex - 1;
@@ -41,7 +41,7 @@ const OurPeopleBlock = () => {
 
         // Скрол до цільового елемента
         if (blocks[targetIndex]) {
-            blocks[targetIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+            blocks[targetIndex].scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'});
         }
     };
 
@@ -120,14 +120,14 @@ const OurPeopleBlock = () => {
                 ))}
             </div>
             <div className="our__people__buttons">
-                <div className="arrow" onClick={() => scroll('left')} style={{ cursor: 'pointer' }}>
+                <div className="arrow" onClick={() => scroll('left')} style={{cursor: 'pointer'}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M10 18L4 12L10 6L11.4 7.45L7.85 11H20V13H7.85L11.4 16.55L10 18Z" fill="white" />
+                        <path d="M10 18L4 12L10 6L11.4 7.45L7.85 11H20V13H7.85L11.4 16.55L10 18Z" fill="white"/>
                     </svg>
                 </div>
-                <div className="arrow" onClick={() => scroll('right')} style={{ cursor: 'pointer' }}>
+                <div className="arrow" onClick={() => scroll('right')} style={{cursor: 'pointer'}}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white" />
+                        <path d="M14 18L12.6 16.55L16.15 13H4V11H16.15L12.6 7.45L14 6L20 12L14 18Z" fill="white"/>
                     </svg>
                 </div>
             </div>
