@@ -21,8 +21,7 @@
 }
 @media screen and (max-width: 768px) {
     .business{
-        background: url("../../../assets/elements/CTAMobile.webp") no-repeat center center;
-        background-size: cover;
+        background: #12122E;
     }
     .business{
         padding: 64px 32px;
@@ -43,5 +42,4 @@
     .business button{
         max-width: none;
     }
-
 }

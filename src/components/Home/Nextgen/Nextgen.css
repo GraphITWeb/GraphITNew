@@ -108,6 +108,9 @@
 
 
 @media screen and (max-width: 768px) {
+    .nextgen {
+        background: none;
+    }
     .nextgen__block__block, .nextgen__image {
         width: 100%;
     }

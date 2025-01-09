@@ -1,5 +1,4 @@
 .unlocked_container{
-    background: url("../../../assets/elements/AIUnlocked.svg") no-repeat right bottom -100px;
     position: relative;
     display:flex;
     flex-direction:column;
