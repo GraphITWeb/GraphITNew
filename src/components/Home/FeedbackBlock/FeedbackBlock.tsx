@@ -20,7 +20,7 @@ const FeedbackBlock = () => {
         }
     };
     return (
-        <div className="feedback" style={{zIndex:-1}}>
+        <div className="feedback" style={{zIndex:1}}>
             <div style={{textAlign: "center"}}>
                 <h2>Journey To Success</h2>
                 <sub style={{textAlign: 'center', width: '100%', display: 'block'}}>
