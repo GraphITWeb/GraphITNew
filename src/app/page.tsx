@@ -145,7 +145,7 @@ export default function HomePage() {
                     </svg>
                     <svg
                         style={{right: 0, top: '70vh', maxWidth: 'Calc(90vw - 160px)'}}
-                        className="pc get__started__svg"
+                        className="get__started__svg tablet_disable"
                         xmlns="http://www.w3.org/2000/svg" width="210" height="227" viewBox="0 0 210 227" fill="none">
                         <path
                             d="M112.095 1.06934L167.68 33.1614V97.3455L112.095 129.438L56.5098 97.3455V33.1614L112.095 1.06934Z"

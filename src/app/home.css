@@ -292,6 +292,9 @@
         transform: scale(1);
         /*max-width: none;*/
     }
+    .tablet_disable{
+        display: none!important;
+    }
 }
 
 @media screen and (max-width: 768px) {
