@@ -18,17 +18,17 @@
         height: 450px;
         background: linear-gradient(270deg, #09091A 0%, rgba(9, 9, 26, 0.00) 100%);
     }
-    24.9% {
+    40% {
         left: 264px;
         height: 450px;
         background: linear-gradient(270deg, #09091A 0%, rgba(9, 9, 26, 0.00) 100%);
     }
-    25% {
+    40.1% {
         left: 264px;
         height: 450px;
         background: linear-gradient(90deg, #09091A 0%, rgba(9, 9, 26, 0.00) 100%);
     }
-    67.5% {
+    60% {
         left: 264px;
         height: 450px;
         background: linear-gradient(90deg, #09091A 0%, rgba(9, 9, 26, 0.00) 100%);
@@ -50,24 +50,24 @@
     width: 80px;
     top: 0;
     left: 0;
-    animation: absoluteAnimation 30s infinite ease-in-out;
+    animation: absoluteAnimation 25s infinite ease-in-out;
     transition: height 0.5s ease-in-out, left 0.5s ease-in-out;
 }
 
 @keyframes absoluteAnimation2 {
-    0%, 15% {
+    0%, 25% {
         left: -80px;
-        background: linear-gradient(270deg, #09091A 0%, rgba(9, 9, 26, 0.00) 100%);
-    }
-    49.9% {
-        left: 264px;
         background: linear-gradient(270deg, #09091A 0%, rgba(9, 9, 26, 0.00) 100%);
     }
     50% {
         left: 264px;
+        background: linear-gradient(270deg, #09091A 0%, rgba(9, 9, 26, 0.00) 100%);
+    }
+    50.1% {
+        left: 264px;
         background: linear-gradient(90deg, #09091A 0%, rgba(9, 9, 26, 0.00) 100%);
     }
-    74.9%, 100% {
+    75%, 100% {
         left: -80px;
         background: linear-gradient(90deg, #09091A 0%, rgba(9, 9, 26, 0.00) 100%);
     }
@@ -125,7 +125,7 @@
     bottom: 76px;
     left: 0;
     height: 300px;
-    animation: absoluteAnimation2 30s infinite ease-in-out;
+    animation: absoluteAnimation2 25s infinite ease-in-out;
     transition: height 0.5s ease-in-out, left 0.5s ease-in-out;
 }
 
