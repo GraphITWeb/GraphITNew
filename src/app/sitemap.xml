@@ -1,39 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://graph-it.co.uk/</loc>
+        <loc>https://eeeducation.vercel.app</loc>
         <lastmod>2024-12-09T06:42:44+00:00</lastmod>
     </url>
     <url>
-        <loc>https://graph-it.co.uk/what-we-do</loc>
-        <lastmod>2024-12-09T06:42:44+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://graph-it.co.uk/our-approach</loc>
-        <lastmod>2024-12-09T06:42:44+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://graph-it.co.uk/case-studies</loc>
-        <lastmod>2024-12-09T06:42:44+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://graph-it.co.uk/careers</loc>
-        <lastmod>2024-12-09T06:42:44+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://graph-it.co.uk/next-gen</loc>
-        <lastmod>2024-12-09T06:42:44+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://graph-it.co.uk/contact-us</loc>
-        <lastmod>2024-12-09T06:42:44+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://graph-it.co.uk/ai-copilots</loc>
-        <lastmod>2024-12-09T06:42:44+00:00</lastmod>
-    </url>
-    <url>
-        <loc>https://graph-it.co.uk/data-platforms</loc>
+        <loc>https://eeeducation.vercel.app/language-schools/united-kingdom</loc>
         <lastmod>2024-12-09T06:42:44+00:00</lastmod>
     </url>
 </urlset>
