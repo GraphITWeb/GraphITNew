@@ -5,8 +5,7 @@ import Sviat from '../../../assets/our-people/Sviat.png';
 import Max from '../../../assets/our-people/Max.png';
 import Nick from "../../../assets/our-people/Nick.png";
 import Mykola from '../../../assets/our-people/Kolya.png';
-import Sasha from '../../../assets/our-people/Sasha.png';
-import Viktoriia from '../../../assets/our-people/Viktoriia.png';
+import Travis from '../../../assets/our-people/Travis.png';
 import Anna from '../../../assets/our-people/Anna.png';
 import Roman from '../../../assets/our-people/Roman.png';
 import Marian from '../../../assets/our-people/Marian.png';
@@ -70,17 +69,17 @@ const OurPeopleBlock = () => {
             description: 'Mykola co-founded Graphit with a personal mission to redefine the application of AI in modern industries. As CTO, Mykola leverages his deep expertise in Generative AI to define the company’s technical vision and drives innovation across its offerings, including the flagship AI Copilot solutions. With over 6 years of experience in the AI field, he has led the development of impactful AI solutions for major multinational corporations, bridging cutting-edge technology with real-world applications. Mykola holds a BSc and MSc in Applied Science from the Ukrainian Catholic University and Lviv National Polytechnic University and pursued studies at Rushford Business School in Geneva. Outside of work, Mykola is a professional chess player who has competed internationally, enjoys traveling, music, and art.',
             position: 'Founder, CTO, Lead - AI Copilots',
         },
+        // {
+        //     img: Lennyn,
+        //     name: 'Lenynn Aguilera',
+        //     description: 'Lenynn brings a unique blend of legal insight and entrepreneurial strategy to his role as Chief Legal Officer at Graphit. A Law graduate of King’s College London, he also holds a Master of Laws and an MPhil in Real Estate Finance from the University of Cambridge. He is a Founder and Managing Partner at AXYOM Enterprises and Private Wealth, a boutique, multi-family office with holdings across real estate, technology, and entertainment. At Graphit, Lenynn helps shape the company’s legal architecture, IP framework, and supports cross-border growth & expansion initiatives. Outside the boardroom, he is an avid athlete and writer, with a passion for skiing, sailing, horse polo, and speculative fiction.',
+        //     position: 'Chief Legal Officer ',
+        // },
         {
-            img: Sasha,
-            name: 'Aleksandra Slyusar',
-            description: 'Aleksandra is CIO at Graphit, leading the company’s growth through innovation and creative business development initiatives. She liaises with cross-functional teams to optimize client engagement and refine sales pipelines, ensuring alignment with long-term growth objectives. Prior to joining Graphit, Aleksandra gained valuable experience at organizations such as Nestlé and Christian Dior, where she developed expertise in customer relationship management, strategic marketing, and campaign execution. Aleksandra holds a BSc in Management from the London School of Economics (LSE) and is passionate about leveraging data to create innovative growth strategies. Outside of work, she enjoys visiting art galleries, exploring contemporary design, and traveling.',
-            position: 'CIO',
-        },
-        {
-            img: Viktoriia,
-            name: 'Viktoriia Denysenko',
-            description: "Viktoriia is VP of Brand Development & Growth, spearheading strategic brand initiatives and driving market expansion through innovative communication strategies and content creation. She works closely with cross-functional teams to develop and implement comprehensive brand strategies that align with long-term business objectives. Her expertise spans marketing communications, event management, and digital content strategy, enabling her to build compelling narratives that resonate with diverse audiences and drive measurable results. Viktoriia holds a BA in Culture, Media and Creative Industries from King's College London, bringing a unique blend of creative insight and strategic thinking to technology space. Away from work, she enjoys her daily matcha ritual, loves running and pursues her passion for travel.",
-            position: 'Vice President, Brand Development & Growth',
+            img: Travis,
+            name: 'Travis Winstanley',
+            description: 'Travis is our sales and strategy consultant, bringing deep expertise in commercial growth and operational transformation. He was previously Chief Strategy Officer at Testronic, part of the Catalis Group—a £100m-revenue, private equity-backed services business. At Testronic, Travis led the group’s AI agenda, spearheading the adoption of data-driven processes and technology across sales, operations, and support functions to drive measurable performance improvements. He holds an MBA from Yale School of Management and a Master’s in Engineering from the University of Cambridge.',
+            position: 'Senior Advisor, Strategic Expansion'
         },
         {
             img: Anna,

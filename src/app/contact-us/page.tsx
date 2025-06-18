@@ -49,7 +49,7 @@ export default function ContactUsPage() {
                     </svg>}
                     title="Call us"
                     description="Mon-Fri from 8 am to 5 pm."
-                    details="+44 (0) 7423280274"
+                    details="+44 020 4621 0139"
                 />
             </div>
             <GetInTouch/>
