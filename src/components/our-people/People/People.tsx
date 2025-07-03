@@ -1,5 +1,5 @@
 import Image, {StaticImageData} from "next/image";
-import React, { useState, useEffect, useCallback } from "react";
+import React, {useState, useEffect, useCallback} from "react";
 import './People.css'
 
 interface PeopleProps {
@@ -7,9 +7,10 @@ interface PeopleProps {
     name: string;
     position: string;
     description: string;
+    linkedin: string;
 }
 
-const People: React.FC<PeopleProps> = ({imgUser, name, position, description}) => {
+const People: React.FC<PeopleProps> = ({imgUser, name, position, description, linkedin}) => {
     const [isFlipped, setIsFlipped] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
 
@@ -50,7 +51,9 @@ const People: React.FC<PeopleProps> = ({imgUser, name, position, description}) =
                         <small>
                             {description}
                         </small>
-                        <div className="flex flex-row items-center justify-start gap-5">
+                        <div
+                            onClick={() => window.open(linkedin, "_blank")}
+                            className="flex flex-row items-center justify-start gap-5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none">
                                 <path
