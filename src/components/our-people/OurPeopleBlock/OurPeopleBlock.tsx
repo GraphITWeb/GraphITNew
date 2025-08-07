@@ -9,6 +9,8 @@ import Travis from '../../../assets/our-people/Travis.png';
 import Anna from '../../../assets/our-people/Anna.png';
 import Roman from '../../../assets/our-people/Roman.png';
 import Marian from '../../../assets/our-people/Marian.png';
+import Lennyn from '../../../assets/our-people/Lennyn.png';
+
 import './OurPeopleBlock.css';
 
 const OurPeopleBlock = () => {
@@ -73,12 +75,13 @@ const OurPeopleBlock = () => {
             position: 'Founder, CTO, Lead - AI Copilots',
             linkedin:'https://www.linkedin.com/in/mick-kyrychenko/'
         },
-        // {
-        //     img: Lennyn,
-        //     name: 'Lenynn Aguilera',
-        //     description: 'Lenynn brings a unique blend of legal insight and entrepreneurial strategy to his role as Chief Legal Officer at Graphit. A Law graduate of King’s College London, he also holds a Master of Laws and an MPhil in Real Estate Finance from the University of Cambridge. He is a Founder and Managing Partner at AXYOM Enterprises and Private Wealth, a boutique, multi-family office with holdings across real estate, technology, and entertainment. At Graphit, Lenynn helps shape the company’s legal architecture, IP framework, and supports cross-border growth & expansion initiatives. Outside the boardroom, he is an avid athlete and writer, with a passion for skiing, sailing, horse polo, and speculative fiction.',
-        //     position: 'Chief Legal Officer ',
-        // },
+        {
+            img: Lennyn,
+            name: 'Lenynn Aguilera',
+            position: 'Senior Director, Strategic Expansion – North America & Caribbean',
+            linkedin: 'https://www.linkedin.com/in/alilenynnaguilera',
+            description: 'Lenynn brings a unique blend of business insight and entrepreneurial strategy to his role as Senior Director of Strategic Expansion at GraphIT. A Law graduate of King’s College London, he also holds a Master of Laws and an MPhil in Real Estate Finance from the University of Cambridge. He is a Founder and the Chief Executive Officer at AXYOM Enterprises and Private Wealth, a boutique, multi-family office with holdings across real estate, technology, and entertainment. At GraphIT, Lenynn leads growth and expansion efforts across North America and the Caribbean, while also supporting the company’s business architecture and cross-border structuring initiatives. Outside the boardroom, he is an avid athlete and writer, with a passion for skiing, sailing, horse polo, motorsports and science fiction.'
+        },
         {
             img: Travis,
             name: 'Travis Winstanley',
