@@ -8,6 +8,7 @@ import Footer from "@/components/UI/Footer/Footer";
 import {Analytics} from "@vercel/analytics/react"
 import {SpeedInsights} from "@vercel/speed-insights/next"
 import {Rethink_Sans} from 'next/font/google';
+import GoogleAnalytics from "@/app/GoogleAnalytics";
 
 const rethink = Rethink_Sans({
     weight: ['400', '500', '600', '700','800'],
@@ -30,8 +31,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={`${rethink.variable}`}>
+
         <body>
         <div>
+            <GoogleAnalytics />
             <Analytics/>
             <SpeedInsights/>
             <Navbar/>
