@@ -8,7 +8,7 @@ import './WhatWeDo.css'
 import Posts from "@/components/what-we-do/Posts/Posts";
 import type {Metadata} from "next";
 export const metadata: Metadata = {
-    title: "Graphit | What We Do",
+    title: "Datasoft Group | What We Do",
     description:"Our offerings are built to inspire and deliver results. Find out how we can partner with you to create impactful changes that last."
 };
 export default function Page() {

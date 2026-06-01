@@ -192,7 +192,7 @@ export default function HomePage() {
                                 </svg>
                             </div>
                             <p style={{marginBottom: 16, textAlign: "justify"}}>
-                                The future belongs to those who innovate. At Graphit, we turn ambition into action,
+                                The future belongs to those who innovate. At Datasoft Group, we turn ambition into action,
                                 empowering organizations to lead with advanced AI and data-driven insights. We blend
                                 deep
                                 technical expertise with bold strategy, building transformative solutions that shape
@@ -200,7 +200,7 @@ export default function HomePage() {
                                 experiences, our AI and data solutions enable organizations to break boundaries and
                                 drive
                                 impact at scale. We are strategists, engineers, and innovators dedicated to solving the
-                                world’s toughest challenges. We are Graphit. </p>
+                                world’s toughest challenges. We are Datasoft Group. </p>
                             <Button href='/what-we-do' label='See what we do'
                                     btnStyle={{padding: '12px 32px'}} btnDivStyle={{fontSize: 18}}/>
                         </div>

@@ -74,7 +74,7 @@ export default function Page() {
                 </p>
                 <h4>Our Approach</h4>
                 <p>
-                    Graphit led the end-to-end development of the Avocado AI chatbot by integrating advanced AI
+                    Datasoft Group led the end-to-end development of the Avocado AI chatbot by integrating advanced AI
                     technologies with insights from licensed psychologists.
                     The project began with close collaboration with psychologists who tested and refined the chatbot’s
                     responses iteratively.

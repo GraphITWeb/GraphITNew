@@ -11,14 +11,14 @@ import Google from '../../assets/approach/Google.webp';
 import AWS from '../../assets/approach/AWS.webp';
 import type {Metadata} from "next";
 export const metadata: Metadata = {
-    title: "Graphit | Our Approach",
-    description:"At Graphit, we place clients at the center, combining tailored strategies and AI-driven insights to deliver solutions that fuel growth, enhance efficiency, and drive meaningful impact."
+    title: "Datasoft Group | Our Approach",
+    description:"At Datasoft Group, we place clients at the center, combining tailored strategies and AI-driven insights to deliver solutions that fuel growth, enhance efficiency, and drive meaningful impact."
 }
 export default function WhoWeArePage() {
     return (
         <div className="flex flex-col items-center justify-items-center p-0 overflow-x-hidden">
             <Main subText="Who we are" header="Our approach"
-                  description="At Graphit, we place clients at the center, combining tailored strategies and AI-driven insights to deliver solutions that fuel growth, enhance efficiency, and drive meaningful impact."/>
+                  description="At Datasoft Group, we place clients at the center, combining tailored strategies and AI-driven insights to deliver solutions that fuel growth, enhance efficiency, and drive meaningful impact."/>
             <div className="our__vision">
                 <OurVision style={{flexDirection: 'row-reverse'}} image={FutureImage} title="Future-Focused Solutions"
                            description="The future demands action, not reaction. We harness bold thinking and transformative technology to design solutions that drive progress and scale impact. Our approach is proactive, adaptive, and relentlessly forward-looking—helping you stay ahead in a world that never stands still. "

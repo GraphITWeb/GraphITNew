@@ -75,7 +75,7 @@ export default function Page() {
                     ensure high-performance delivery for streaming service giants such as Disney, Netflix, and other
                     similar providers. The project required a cloud-agnostic, real-time data processing solution capable
                     of integrating seamlessly with a mobile application, achieving stringent performance standards with
-                    minimal latency. This flagship solution designed by Graphit team members played a critical role in
+                    minimal latency. This flagship solution designed by Datasoft Group team members played a critical role in
                     helping Client secure and retain high-profile clients, establishing a new revenue stream for the
                     company.
                 </p>

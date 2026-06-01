@@ -80,7 +80,7 @@ export default function Page() {
                 </p>
                 <h4>The Solution</h4>
                 <p>
-                    Graphit developed an advanced Generative AI-powered platform tailored to streamline and enhance
+                    Datasoft Group developed an advanced Generative AI-powered platform tailored to streamline and enhance
                     legal workflows for Swiss professionals. Using cutting-edge AI technologies, the solution integrates
                     real-time data processing, intuitive query handling, and intelligent drafting capabilities to
                     simplify every stage of the legal research and memo generation process.
@@ -102,7 +102,7 @@ export default function Page() {
                     <h4>Impact & Beyond
                     </h4>
                     <p>
-                        The implementation of this AI-driven solution has significantly shortened legal workflows, reducing the “research” phase from hours to minutes and the “drafting” phase from a full day to under two hours. This efficiency gain allows professionals to focus on higher-value tasks while delivering consistent, accurate, and actionable legal outputs. By automating such time-intensive processes, Graphit has improved productivity, enhanced client satisfaction, and elevated decision-making capabilities,  highlighting the transformative power of Generative AI in reshaping legal practices. As we continue to expand these innovations, we aim to drive greater operational efficiency and empower professionals to achieve exceptional outcomes across industries.
+                        The implementation of this AI-driven solution has significantly shortened legal workflows, reducing the “research” phase from hours to minutes and the “drafting” phase from a full day to under two hours. This efficiency gain allows professionals to focus on higher-value tasks while delivering consistent, accurate, and actionable legal outputs. By automating such time-intensive processes, Datasoft Group has improved productivity, enhanced client satisfaction, and elevated decision-making capabilities,  highlighting the transformative power of Generative AI in reshaping legal practices. As we continue to expand these innovations, we aim to drive greater operational efficiency and empower professionals to achieve exceptional outcomes across industries.
 
 
                     </p>

@@ -17,8 +17,8 @@ const rethink = Rethink_Sans({
     variable:'--rethink'
 });
 export const metadata: Metadata = {
-    title: "Graphit",
-    description: "Graphit is a London-based technology-consulting firm that operates on the intersection of data, AI and business strategy.",
+    title: "Datasoft Group",
+    description: "Datasoft Group is a London-based technology-consulting firm that operates on the intersection of data, AI and business strategy.",
     icons: {
         icon: 'graph-it.co.uk/favicon.ico',
     },

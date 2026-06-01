@@ -47,7 +47,7 @@ const Copilots = () => {
             </div>
             <div className="unlocked_block" style={{marginRight: 'auto',marginBottom: '60vh'}}>
                 <strong style={{color: 'var(--text-gray)'}}>
-                    We <span style={{color: 'var(--orange)',fontWeight:'700'}}>partner with you</span> through every stage of the AI Copilot journey — from designing an intuitive user interface and integrating advanced AI models to deploying scalable solutions. At Graphit, <span style={{color: 'var(--orange)',fontWeight:'700'}}>we go beyond</span> simply improving platform functionality — we pride ourselves for creating an engaging, empowering experience that sets your product apart and drives <span style={{color: 'var(--orange)',fontWeight:'700'}}>real value</span> for your users.
+                    We <span style={{color: 'var(--orange)',fontWeight:'700'}}>partner with you</span> through every stage of the AI Copilot journey — from designing an intuitive user interface and integrating advanced AI models to deploying scalable solutions. At Datasoft Group, <span style={{color: 'var(--orange)',fontWeight:'700'}}>we go beyond</span> simply improving platform functionality — we pride ourselves for creating an engaging, empowering experience that sets your product apart and drives <span style={{color: 'var(--orange)',fontWeight:'700'}}>real value</span> for your users.
                 </strong>
             </div>
         </div>

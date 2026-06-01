@@ -6,7 +6,7 @@ import CareersList from "@/components/Careers/CareersList/CareersList";
 import Image from 'next/image'
 import type {Metadata} from "next";
 export const metadata: Metadata = {
-    title: "Graphit | Careers",
+    title: "Datasoft Group | Careers",
     description:"Join a team where innovation meets opportunity. Explore a culture that empowers you to grow, lead, and make a lasting impact."
 }
 export default function Careers() {

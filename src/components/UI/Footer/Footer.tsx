@@ -122,7 +122,7 @@ const Footer = () => {
                                 btnDivStyle={{fontSize: 18}}/>
                     </div>
                 </div>
-                <p>© 2025 Graphit. All Rights Reserved.</p>
+                <p>© 2026 Datasoft Group. All Rights Reserved.</p>
             </footer>
         </>
     );

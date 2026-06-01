@@ -7,7 +7,7 @@ import GetInTouch from "@/components/contact-us/GetInTouch/GetInTouch";
 import Visit from "@/components/contact-us/Visit/Visit";
 import type {Metadata} from "next";
 export const metadata: Metadata = {
-    title: "Graphit | Contact Us",
+    title: "Datasoft Group | Contact Us",
     description:"We have offices and teams around the world."
 };
 export default function ContactUsPage() {

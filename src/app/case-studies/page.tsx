@@ -3,7 +3,7 @@ import Main from "@/components/Main/Main";
 import Articles from "@/components/what-we-think/Articles/Articles";
 import type {Metadata} from "next";
 export const metadata: Metadata = {
-    title: "Graphit | Case Studies",
+    title: "Datasoft Group | Case Studies",
     description:"See how we help our clients embrace and champion change with cutting-edge technology and future-focused strategy."
 };
 export default function CaseStudiesPage() {

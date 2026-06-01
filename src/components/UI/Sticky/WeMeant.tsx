@@ -36,7 +36,7 @@ const WeMeant = () => {
             <div className="unlocked_block" style={{marginTop: '1vh'}}>
                 <h5>Innovate</h5>
                 <strong style={{color: 'var(--text-gray)'}}>
-                    Push boundaries and unlock new horizons. At Graphit, innovation is more than a buzzword—it’s our way
+                    Push boundaries and unlock new horizons. At Datasoft Group, innovation is more than a buzzword—it’s our way
                     of building intelligent, forward-thinking solutions that help organizations stay ahead in a rapidly
                     evolving world.</strong>
             </div>
