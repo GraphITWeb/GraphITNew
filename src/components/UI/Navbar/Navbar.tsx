@@ -69,7 +69,7 @@ const Navbar = () => {
                             </defs>
                         </svg>
                     </div>
-                    <div style={{maxHeight: 42, width: 125,marginTop:6,height:42}} className="nav__logo__text">
+                    <div style={{height: 42, maxHeight: 42, whiteSpace: 'nowrap'}} className="nav__logo__text">
                        Datasoft Group
                     </div>
                 </Link>

@@ -12,7 +12,7 @@ const Footer = () => {
             <footer>
                 <div className='footer__first'>
                     <Link href='/' className="flex flex-row gap-3 align-middle items-center text-center cursor-pointer">
-                        <div style={{width:180,height:42,maxWidth:200,maxHeight:42}}>
+                        <div style={{height:42,maxHeight:42,display:'flex',alignItems:'center',color:'var(--white)',fontSize:24,fontWeight:700,letterSpacing:'0.3px',whiteSpace:'nowrap'}}>
                            Datasoft Group
                         </div>
                     </Link>
